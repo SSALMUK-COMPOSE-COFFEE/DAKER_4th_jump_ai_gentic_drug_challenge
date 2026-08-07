@@ -1,0 +1,1224 @@
+{
+ "_meta": {
+  "selection_rule": "holdout test 분할(NCT ID SHA-256 해시 기반)에 속한 트라이얼만 후보로 삼고, 집단별 정해진 수만큼 NCT ID 사전순으로 앞에서부터 선택한다. 감사 결과를 보고 고르지 않는다 — 체리피킹을 배제하기 위한 규칙.",
+  "quota": {
+   "중단-모집실패": 6,
+   "완주": 4,
+   "중단-경영": 2,
+   "중단-과학적": 2
+  },
+  "n_cases": 14,
+  "source_rows": 1463,
+  "warning": "audit 는 Tier 1 결정론적 감사만 반영한다. 현재 holdout 구분력이 미입증 상태이므로 이 데모는 '작동하는 예측기'가 아니라 '감사 근거를 어떻게 제시하는가'를 보여주는 것이다."
+ },
+ "cases": [
+  {
+   "nct_id": "NCT01038037",
+   "condition": "non-small cell lung cancer",
+   "group": "중단-모집실패",
+   "blind": {
+    "brief_title": "First-Line Chemotherapy and Panitumumab in Advanced Non-Small Cell Lung Cancer",
+    "start_date": "2010-01",
+    "planned_primary_completion": "2011-01",
+    "planned_enrollment": 39,
+    "planned_enrollment_type": "ESTIMATED",
+    "phases": [
+     "PHASE2"
+    ],
+    "allocation": "NON_RANDOMIZED",
+    "masking": null,
+    "n_arms": 0,
+    "primary_outcomes": [
+     {
+      "measure": "Response rate",
+      "timeframe": null
+     }
+    ],
+    "n_secondary_outcomes": 4,
+    "n_inclusion_items": 17,
+    "n_exclusion_items": 10,
+    "eligibility_criteria": "Inclusion Criteria:\nHistologically confirmed metastatic (stage IV) NSCLC\nMeasurable disease according to RECIST v.1.0\n2009\nKRAS, BRAF and PI3K wild type in primary tumor or metastatic tissue.\nAge ≥18\nPS &lt; 2\nAdequate organ function\nHaematology:\nNeutrophil count ≥1.5x10^9&#x2F;L\nPlatelet count ≥100x10^9&#x2F;L\nLeucocyte count &gt; 3,000&#x2F;mm\nHepatic function:\nTotal bilirubin ≤ 1.5 times the upper normal limit (UNL)\nSerum transaminases ≤ 2.5xUNL in absence of liver metastases, or ≤ 5xUNL in presence of liver metastases\nRenal Function:\nCreatinine clearance ≥ 50 mL&#x2F;min and serum creatinine ≤ 1.5xUNL\nMetabolic function:\nMagnesium ≥ lower limit of normal.\nCalcium ≥ lower limit of normal.\nConsent to translational research studies\nWritten informed consent\nExclusion Criteria:\nClinically significant cardiovascular disease (including myocardial infarction, unstable angina, symptomatic congestive heart failure, serious uncontrolled cardiac arrhythmia) ≤ 1 year before enrollment&#x2F;randomization, active severe infections or other concurrent disease.\nKnown CNS metastasis (pretreatment routine assessment not required)\nPrior chemotherapy for metastatic disease\nIndication for radiation therapy or prior radiotherapy within 30 days before treatment start.\nOther malignant diseases within 5 years prior to inclusion in the study, except basal cell squamous carcinoma of the skin and cervical carcinoma-in-situ.\nOther experimental therapy within 30 days prior to treatment initiation.\nHistory of interstitial lung disease e.g.\npneumonitis or pulmonary fibrosis or evidence of interstitial lung disease on baseline chest CT scan.\nPatients pregnant or breast feeding, or planning to become pregnant within 6 months after the end of treatment.\nPatients (male or female) not willing to use highly effective methods of contraception (per institutional standard) during treatment and for 6 months (male or female) after the end of treatment.",
+    "n_sites": 1,
+    "countries": [
+     "Denmark"
+    ],
+    "brief_summary": "The purpose of this study is to determine whether the addition of panitumumab to standard chemotherapy in first-line treatment of advanced Non Small Cell Lung Cancer improves the treatment outcome.\nPatients are selected based on triple mutational status."
+   },
+   "audit": {
+    "nct_id": "NCT01038037",
+    "bucket": "non-small cell lung cancer",
+    "title": "First-Line Chemotherapy and Panitumumab in Advanced Non-Small Cell Lung Cancer",
+    "start_date": "2010-01",
+    "diagnostic_score": 25,
+    "score_calibration": {
+     "calibrated": false,
+     "holdout_auc": 0.587,
+     "holdout_ci95": [
+      0.484,
+      0.693
+     ],
+     "note": "심각도 가중 합이며 위험 확률이 아니다. holdout 신뢰구간이 0.5를 포함해 구분력이 입증되지 않았다. 개별 finding 의 수치 근거를 보고 판단할 것."
+    },
+    "tier1_only": true,
+    "competition": null,
+    "findings": [
+     {
+      "code": "feature.planned_enrollment",
+      "severity": "high",
+      "title": "목표 등록수가 완주군보다 낮습니다",
+      "observed": 39.0,
+      "ref_completed": 70,
+      "ref_failed": 54,
+      "bucket_used": "non-small cell lung cancer|p2",
+      "evidence": "이 프로토콜의 목표 등록수는 39명입니다. 같은 적응증 완주군 중앙값은 70명, 모집 실패군 중앙값은 54명입니다. 실패군 쪽에 서 있습니다.",
+      "suggestion": "목표 등록수가 완주군보다 작습니다. 검정력 계산 근거를 명시하십시오."
+     }
+    ],
+    "notes": [
+     "경쟁 시험 밀도 감사를 건너뛰었습니다 (네트워크 미사용 모드).",
+     "Tier 1 결정론적 감사만 수행했습니다. LLM 호출 0회, 비용 $0."
+    ]
+   },
+   "reveal": {
+    "final_status": "TERMINATED",
+    "actual_enrollment": 23,
+    "enrollment_attainment": 0.59,
+    "actual_primary_completion": "2013-06",
+    "why_stopped": "<ol><li>Very low enrollment rate.</li><li>Recent studies question the effect of adding panitumumab in this category of patients.</li><li>Too high toxicity rate</li></ol>",
+    "category": "A",
+    "category_name": "설계 교정 가능",
+    "category_reason": "recruitment",
+    "category_evidence": "low enrollment",
+    "amend_eligibility": 0,
+    "n_versions": 9
+   }
+  },
+  {
+   "nct_id": "NCT01045382",
+   "condition": "acute myeloid leukemia",
+   "group": "중단-모집실패",
+   "blind": {
+    "brief_title": "MSC and HSC Coinfusion in Mismatched Minitransplants",
+    "start_date": "2010-02",
+    "planned_primary_completion": "2016-02",
+    "planned_enrollment": 120,
+    "planned_enrollment_type": "ESTIMATED",
+    "phases": [
+     "PHASE2"
+    ],
+    "allocation": "RANDOMIZED",
+    "masking": "DOUBLE",
+    "n_arms": 2,
+    "primary_outcomes": [
+     {
+      "measure": "To compare one-year overall survival in the 2 arms.",
+      "timeframe": "One year"
+     }
+    ],
+    "n_secondary_outcomes": 11,
+    "n_inclusion_items": 23,
+    "n_exclusion_items": 8,
+    "eligibility_criteria": "Inclusion Criteria:\nTheoretical indication for a standard allo-transplant, but not feasible because: Age &gt; 55 yrs.\nUnacceptable end organ performance.\nPatient&#x27;s refusal.\nIndication for a standard auto-transplant: perform mini-allotransplantation 2-6 months after standard autotransplant.\nMale or female; fertile female patients must use a reliable contraception method\nAge ≤ 75 year old\nInformed consent given by patient or his&#x2F;her guardian if of minor age.\nOne or two HLA mismatches with PBSC:\nOne antigenic mismatch at HLA-A or -B or -C or -DRB1 or -DQB1\nTwo allelic mismatches at HLA-A or -B or -C or -DRB1 or -DQB1\nOne antigenic mismatch: 1 allelic mismatch at HLA-A or -B or -C or -DRB1 or -DQB1.\nOne antigenic mismatch at -DQB1 and one other antigenic mismatch at HLA-A or -B or -C or -DRB1\nPatients with one single allelic mismatch at HLA-A or -B or -C or -DRB1 or -DQB1 can also be included in the protocol.\n\nHematological malignancies confirmed histologically and not rapidly progressing:\nAML in complete remission\nALL in complete remission\nCML unresponsive&#x2F;intolerant to Imatinib but not in blast crisis\nOther myeloproliferative disorders not in blast crisis and not with extensive myelofibrosis\nMDS with &lt;5% blasts\nMultiple myeloma not rapidly progressing\nCLL\nNon-Hodgkin&#x27;s lymphoma (aggressive NHL should be chemosensitive)\nHodgkin&#x27;s disease\n\nExclusion Criteria:\nAny condition not fulfilling inclusion criteria\nHIV positive\nTerminal organ failure, except for renal failure (dialysis acceptable)\nCardiac: Symptomatic coronary artery disease or other cardiac failure requiring therapy; ejection fraction &lt;35%; uncontrolled arrhythmia; uncontrolled hypertension\nPulmonary: DLCO &lt; 35% and&#x2F;or receiving supplementary continuous oxygen\nHepatic: Fulminant liver failure, cirrhosis of the liver with evidence of portal hypertension, alcoholic hepatitis, esophageal varices, a history of bleeding esophageal varices, hepatic encephalopathy, uncorrectable hepatic synthetic dysfunction evinced by prolongation of the prothrombin time, ascites related to portal hypertension, bacterial or fungal liver abscess, biliary obstruction, chronic viral hepatitis with total serum bilirubin &gt; 3 mg&#x2F;dL, and symptomatic biliary disease\n\nUncontrolled infection, arrhythmia or hypertension\nPrevious radiation therapy precluding the use of 2 Gy TBI\n10&#x2F;10 HLA-A, -B, -C, DRB1 and DQBI allele-matched donor fit to&#x2F;willing to donate PBSC.",
+    "n_sites": 10,
+    "countries": [
+     "Belgium"
+    ],
+    "brief_summary": "The present project aims at evaluating the capacity of MSC to improve one-year overall survival of patients transplanted with HLA-mismatched PBSC from related or unrelated donors after non-myeloablative conditioning.\nCo-infusion of MSC has been shown to facilitate engraftment of hematopoietic stem cell (HSC) in an immunodeficient mouse model.\nIn addition, it has been shown that infusion of third party MSC in HSC transplantation could be successfully used as treatment for grade II-IV steroid-refractory acute graft versus host disease.\nOne hundred and twenty patients with HLA-mismatched donors will be included over 6 years at multiple centers across Belgium through the transplant committee of the Belgian Hematological Society.\nThe conditioning regimen will consist of fludarabine and 2 Gy TBI, followed by the infusion of donor HSC.\nPatients will be randomized 1&#x2F;1 in double-blind fashion to receive or not MSC (1.5-.3.0 x106&#x2F;kg) from third-party (either haploidentical family members or unrelated volunteer) donors on day 0. Postgrafting immunosuppression will combine tacrolimus and MMF.\nExcept for the collection, expansion and infusion of MSC, the clinical management of the patient will not differ from that of routine NM-HCT."
+   },
+   "audit": {
+    "nct_id": "NCT01045382",
+    "bucket": "acute myeloid leukemia",
+    "title": "MSC and HSC Coinfusion in Mismatched Minitransplants",
+    "start_date": "2010-02",
+    "diagnostic_score": 74,
+    "score_calibration": {
+     "calibrated": false,
+     "holdout_auc": 0.587,
+     "holdout_ci95": [
+      0.484,
+      0.693
+     ],
+     "note": "심각도 가중 합이며 위험 확률이 아니다. holdout 신뢰구간이 0.5를 포함해 구분력이 입증되지 않았다. 개별 finding 의 수치 근거를 보고 판단할 것."
+    },
+    "tier1_only": true,
+    "competition": null,
+    "findings": [
+     {
+      "code": "feature.planned_duration_months",
+      "severity": "high",
+      "title": "계획 기간이 완주군보다 많습니다",
+      "observed": 72.0,
+      "ref_completed": 30.0,
+      "ref_failed": 28.25,
+      "bucket_used": "acute myeloid leukemia|p2",
+      "evidence": "이 프로토콜의 계획 기간은 72개월입니다. 같은 적응증 완주군 중앙값은 30개월, 모집 실패군 중앙값은 28.25개월입니다. 실패군 쪽에 서 있습니다.",
+      "suggestion": "계획 기간 72개월은 완주군(30개월)보다 깁니다. 기간을 늘려 모집 부담을 낮추는 방식은 데이터상 실패군의 특징입니다. 사이트 수를 늘려 기간을 단축하는 설계를 검토하십시오."
+     },
+     {
+      "code": "feature.n_secondary_outcomes",
+      "severity": "high",
+      "title": "2차 평가변수 수가 완주군보다 많습니다",
+      "observed": 11.0,
+      "ref_completed": 5.0,
+      "ref_failed": 5,
+      "bucket_used": "acute myeloid leukemia|p2",
+      "evidence": "이 프로토콜의 2차 평가변수 수는 11개입니다. 같은 적응증 완주군 중앙값은 5개, 모집 실패군 중앙값은 5개입니다. 실패군 쪽에 서 있습니다.",
+      "suggestion": "2차 평가변수가 많으면 사이트 부담과 데이터 수집 비용이 커집니다. 핵심만 남기십시오."
+     },
+     {
+      "code": "feature.n_inclusion_items",
+      "severity": "medium",
+      "title": "포함기준 항목수가 완주군보다 많습니다",
+      "observed": 23.0,
+      "ref_completed": 14,
+      "ref_failed": 16.5,
+      "bucket_used": "acute myeloid leukemia|p2",
+      "evidence": "이 프로토콜의 포함기준 항목수는 23개입니다. 같은 적응증 완주군 중앙값은 14개, 모집 실패군 중앙값은 16.5개입니다.",
+      "suggestion": "포함기준 항목수를 완주군 수준(14개)까지 줄이는 것을 검토하십시오. 임상적으로 필수적이지 않은 수치 컷오프와 병용약 금지 항목이 우선 후보입니다."
+     },
+     {
+      "code": "feature.monthly_enrollment_burden",
+      "severity": "medium",
+      "title": "월 모집 목표가 완주군보다 낮습니다",
+      "observed": 1.67,
+      "ref_completed": 2.0,
+      "ref_failed": 1.73,
+      "bucket_used": "acute myeloid leukemia|p2",
+      "evidence": "이 프로토콜의 월 모집 목표는 1.67명/월입니다. 같은 적응증 완주군 중앙값은 2명/월, 모집 실패군 중앙값은 1.73명/월입니다.",
+      "suggestion": "월 모집 목표가 완주군보다 낮습니다. 여유로운 계획이 아니라, 모집 가능 환자가 애초에 적다는 신호일 수 있습니다. 적격 환자 풀 추정치를 근거로 제시하십시오."
+     }
+    ],
+    "notes": [
+     "경쟁 시험 밀도 감사를 건너뛰었습니다 (네트워크 미사용 모드).",
+     "Tier 1 결정론적 감사만 수행했습니다. LLM 호출 0회, 비용 $0."
+    ]
+   },
+   "reveal": {
+    "final_status": "TERMINATED",
+    "actual_enrollment": 39,
+    "enrollment_attainment": 0.325,
+    "actual_primary_completion": "2021-08",
+    "why_stopped": "recruitment too slow",
+    "category": "A",
+    "category_name": "설계 교정 가능",
+    "category_reason": "recruitment",
+    "category_evidence": "recruitment too slow",
+    "amend_eligibility": 0,
+    "n_versions": 10
+   }
+  },
+  {
+   "nct_id": "NCT01160354",
+   "condition": "acute myeloid leukemia",
+   "group": "중단-모집실패",
+   "blind": {
+    "brief_title": "Plerixafor and Clofarabine in Frontline Treatment of Elderly Patients With Acute Myelogenous Leukemia (AML)",
+    "start_date": "2010-08",
+    "planned_primary_completion": "2012-08",
+    "planned_enrollment": 66,
+    "planned_enrollment_type": "ESTIMATED",
+    "phases": [
+     "PHASE1",
+     "PHASE2"
+    ],
+    "allocation": "NON_RANDOMIZED",
+    "masking": "NONE",
+    "n_arms": 2,
+    "primary_outcomes": [
+     {
+      "measure": "Number of Participants in Phase I with First Cycle Dose Limiting Toxicities (DLT) Observed",
+      "timeframe": "First cycle of treatment, i.e. first 4 weeks on study"
+     }
+    ],
+    "n_secondary_outcomes": 1,
+    "n_inclusion_items": 9,
+    "n_exclusion_items": 17,
+    "eligibility_criteria": "Inclusion Criteria:\nAge &gt;&#x2F;= 60 years\nDiagnosis of untreated AML (de novo, secondary, or with an antecedent hematologic disorder [AHD]) according to the World Health Organization (WHO) criteria\nEastern Cooperative Oncology Group (ECOG) performance status 0-2.\nAt least 2 of the following adverse prognostic factors: Age &gt;&#x2F;= 70 years; or AHD; or ECOG performance status of = 2; or intermediate or unfavorable (ie, adverse) karyotype defined as any cytogenetic profile except the presence of any of the following: t(8;21)(q22;q22), inv(16)(p13q22) or t(16;16)(p13;q22), t(15;17)(q22;q12) and variants.\nProvide signed, written informed consent.\nBe able to comply with study procedures and follow-up examinations.\nAdequate renal and hepatic function as indicated by all of the following: Total bilirubin &lt;&#x2F;=1.5 x institutional Upper Limit of Normal (ULN); an AST and ALT &lt;&#x2F;=2.5 x ULN; and an estimated creatinine clearance (CrCl) of &gt; 50 mL&#x2F;min, as calculated by the Cockroft-Gault equation.\nAdequate cardiac function as measured by at least 1 of the following: Left ventricular ejection fraction (LVEF) &gt;&#x2F;=40% on multigated acquisition (MUGA) scan or similar radionuclide angiographic scan; or Left ventricular fractional fractional shortening &gt;&#x2F;=22% on echocardiography exam; or LVEF &gt;&#x2F;=40% on echocardiography exam.\nExclusion Criteria:\nDiagnosis of acute promyelocytic leukemia (APL), (French-American-British classification M3 or WHO classification of APL with t(15;17)(q22;q12), (PML&#x2F;RAR alpha fusion gene and variants).\nPrior treatment with clofarabine.\nPrior treatment for AML or an AHD (excluding supportive care, hydroxyurea, hematopoietic cytokines, or lenalidomide [the latter specifically for an AHD only]).\nHematopoietic cytokines and lenalidomide must not have been received within 14 days prior to first dose of study drug; hydroxyurea is allowed on study to control WBC counts.\nIf any of the above treatments have been received for AML or an AHD within the permissible time periods, drug-related toxicities must have recovered to Grade 1 or less prior to first dose of study drug.\nPrior hematopoietic stem cell transplant (HSCT).\nPrior external beam radiation therapy to the pelvis.\nInvestigational agent received within 30 days prior to the first dose of study drug.\nIf received any investigational agent prior to this time point, drug-related toxicities must have recovered to Grade 1 or less prior to first dose of study drug.\nSystemic fungal, bacterial, viral, or other infection not controlled (defined as exhibiting ongoing signs&#x2F;symptoms related to the infection and without improvement, despite appropriate antibiotics or other treatment).\nAny other severe concurrent disease, or have a history of serious organ dysfunction or disease involving the heart, kidney, liver or other organ system that may place the patient at undue risk to undergo therapy with clofarabine.\nClinical evidence suggestive of central nervous system (CNS) involvement with leukemia unless a lumbar puncture confirms the absence of leukemic blasts in the cerebrospinal fluid (CSF)\nPrior positive test for the human immunodeficiency virus (HIV).\nWBC &gt;50 × 10^9&#x2F;L; the first 3 patients enrolled on the study will be required to have a WBC of &lt;20 × 10^9&#x2F;L.\nHave psychiatric disorders that would interfere with consent, study participation, or follow-up.\nHave been diagnosed with another malignancy, unless the patient has been disease free for at least 5 years following curative intent therapy, following exceptions: Patients with treated nonmelanoma skin cancer, in situ carcinoma, or cervical intraepithelial neoplasia, regardless of disease-free duration, if definitive treatment for the condition has been completed; Patients with organ-confined prostate cancer with no evidence of recurrent or progressive disease based on prostate-specific antigen (PSA) values if hormonal therapy has been initiated or radical prostatectomy has been performed.\nAre pregnant or lactating.",
+    "n_sites": 1,
+    "countries": [
+     "United States"
+    ],
+    "brief_summary": "The goal of Part 1 of this clinical research study is to learn about the safety of the combination of plerixafor and clofarabine when given to patients with previously untreated AML who are at least 60 years old.\nThe goal of Part 2 of this study is to learn if the combination of plerixafor and clofarabine can help to control previously untreated AML in patients who are at least 60 years old."
+   },
+   "audit": {
+    "nct_id": "NCT01160354",
+    "bucket": "acute myeloid leukemia",
+    "title": "Plerixafor and Clofarabine in Frontline Treatment of Elderly Patients With Acute Myelogenous Leukemia (AML)",
+    "start_date": "2010-08",
+    "diagnostic_score": 0,
+    "score_calibration": {
+     "calibrated": false,
+     "holdout_auc": 0.587,
+     "holdout_ci95": [
+      0.484,
+      0.693
+     ],
+     "note": "심각도 가중 합이며 위험 확률이 아니다. holdout 신뢰구간이 0.5를 포함해 구분력이 입증되지 않았다. 개별 finding 의 수치 근거를 보고 판단할 것."
+    },
+    "tier1_only": true,
+    "competition": null,
+    "findings": [],
+    "notes": [
+     "경쟁 시험 밀도 감사를 건너뛰었습니다 (네트워크 미사용 모드).",
+     "Tier 1 결정론적 감사만 수행했습니다. LLM 호출 0회, 비용 $0."
+    ]
+   },
+   "reveal": {
+    "final_status": "TERMINATED",
+    "actual_enrollment": 22,
+    "enrollment_attainment": 0.333,
+    "actual_primary_completion": "2016-03",
+    "why_stopped": "Slow Accrual",
+    "category": "A",
+    "category_name": "설계 교정 가능",
+    "category_reason": "recruitment",
+    "category_evidence": "slow accrual",
+    "amend_eligibility": 4,
+    "n_versions": 15
+   }
+  },
+  {
+   "nct_id": "NCT01200797",
+   "condition": "ovarian cancer",
+   "group": "중단-모집실패",
+   "blind": {
+    "brief_title": "SJG-136 in Treating Patients With Epithelial Ovarian, Primary Peritoneal, or Fallopian Tube Cancer That Did Not Respond to Previous Treatment With Cisplatin or Carboplatin",
+    "start_date": "2010-07",
+    "planned_primary_completion": "2010-07",
+    "planned_enrollment": 50,
+    "planned_enrollment_type": "ESTIMATED",
+    "phases": [
+     "PHASE2"
+    ],
+    "allocation": null,
+    "masking": "NONE",
+    "n_arms": 0,
+    "primary_outcomes": [
+     {
+      "measure": "Response rate",
+      "timeframe": null
+     },
+     {
+      "measure": "Nature and degree of toxicity",
+      "timeframe": null
+     },
+     {
+      "measure": "Progression-free survival",
+      "timeframe": null
+     },
+     {
+      "measure": "Overall survival",
+      "timeframe": null
+     },
+     {
+      "measure": "Time to progression",
+      "timeframe": null
+     }
+    ],
+    "n_secondary_outcomes": 2,
+    "n_inclusion_items": 42,
+    "n_exclusion_items": 0,
+    "eligibility_criteria": "DISEASE CHARACTERISTICS:\nHistologically confirmed epithelial ovarian, primary peritoneal, or fallopian tube carcinoma\nPersistent or recurrent disease\nNo borderline ovarian tumors, ovarian germ cell tumors, ovarian sex-cord stromal tumors, or other non-epithelial ovarian tumors\n\nMust have had ≥ 1 prior platinum-based (cisplatin or carboplatin) chemotherapy regimen for the management of primary disease\nIntraperitoneal chemotherapy allowed\n\nPlatinum-refractory or -resistant meeting 1 of the following criteria:\nProgression of disease during platinum-based chemotherapy\nPersistent disease at the completion of platinum-based chemotherapy\nLess than 6 months of disease-free interval after completion of platinum-based therapy\n\nMeasurable disease\nArchived tissue available from the original tumor debulking surgery for assessment of BRCA1 protein expression\nPATIENT CHARACTERISTICS:\nECOG performance status 0-2\nLife expectancy &gt; 3 months\nWBC ≥ 3,000&#x2F;mm³\nANC ≥ 1,500&#x2F;mm³\nPlatelet count ≥ 100,000&#x2F;mm³\nTotal bilirubin normal\nAST and ALT ≤ 2.5 times upper limit of normal\nCreatinine ≤ 1.5 mg&#x2F;dL OR creatinine clearance ≥ 60 mL&#x2F;min\nNegative pregnancy test\nFertile patients must use effective contraception during and for ≥ 3 months after completion of study therapy\nNo uncontrolled intercurrent illness including, but not limited to, any of the following:\nOngoing active infection\nSymptomatic congestive heart failure\nUnstable angina pectoris\nUncontrolled cardiac arrhythmia\nPsychiatric illness and&#x2F;or social situations that would limit compliance with the study requirements\n\nNo prior malignancy except cervical carcinoma in situ, ductal carcinoma in situ of the breast, non-melanoma skin cancer, or curatively treated malignancy without evidence of disease within the past 3 years\nNo baseline organ dysfunction or symptoms that qualify as ≥ grade 2 by CTEP CTCAE v 4.0\nAlopecia or other situations in which the organ dysfunction or symptoms are considered clinically insignificant or irrelevant to the study allowed\n\nPRIOR CONCURRENT THERAPY:\nSee Disease Characteristics\nNo more than 3 prior treatment regimens for epithelial ovarian, primary peritoneal, or fallopian tube carcinoma\nConsolidation or maintenance therapy initiated within 6 weeks after the completion of primary therapy will not be counted as an additional regimen\n\nAt least 4 weeks since prior chemotherapy (6 weeks for nitrosoureas or mitomycin C), radiotherapy, or surgery and recovered\nNo prior radiotherapy to &gt; 25% of the bone marrow\nNo prior SJG-136 or related compounds\nNo other concurrent investigational agents\nNo concurrent palliative radiotherapy\nNo other concurrent chemotherapy, immunotherapy, hormonal cancer therapy, radiotherapy, or surgery for cancer (including resection of metastases)",
+    "n_sites": 1,
+    "countries": [
+     "United States"
+    ],
+    "brief_summary": "RATIONALE: Drugs used in chemotherapy, such as SJG-136, work in different ways to stop the growth of tumor cells, either by killing the cells or by stopping them from dividing.\nPURPOSE: This phase II trial is studying how well SJG-126 works in treating patients with epithelial ovarian, primary peritoneal, or fallopian tube cancer that did not respond to previous treatment with cisplatin or carboplatin."
+   },
+   "audit": {
+    "nct_id": "NCT01200797",
+    "bucket": "ovarian cancer",
+    "title": "SJG-136 in Treating Patients With Epithelial Ovarian, Primary Peritoneal, or Fallopian Tube Cancer That Did Not Respond to Previous Treatment With Cisplatin or Carboplatin",
+    "start_date": "2010-07",
+    "diagnostic_score": 24,
+    "score_calibration": {
+     "calibrated": false,
+     "holdout_auc": 0.587,
+     "holdout_ci95": [
+      0.484,
+      0.693
+     ],
+     "note": "심각도 가중 합이며 위험 확률이 아니다. holdout 신뢰구간이 0.5를 포함해 구분력이 입증되지 않았다. 개별 finding 의 수치 근거를 보고 판단할 것."
+    },
+    "tier1_only": true,
+    "competition": null,
+    "findings": [
+     {
+      "code": "feature.total_competing_seats",
+      "severity": "medium",
+      "title": "경쟁 시험 목표 등록수 합계가 완주군보다 많습니다",
+      "observed": 348818.0,
+      "ref_completed": 143171.0,
+      "ref_failed": 128065.0,
+      "bucket_used": "ovarian cancer|p2",
+      "evidence": "이 프로토콜의 경쟁 시험 목표 등록수 합계는 348818명입니다. 같은 적응증 완주군 중앙값은 143171명, 모집 실패군 중앙값은 128065명입니다.",
+      "suggestion": "경쟁 시험 수는 프로토콜로 바꿀 수 없으므로, 겹치지 않는 환자군을 확보하는 방향으로 대응하십시오. ① 경쟁 시험이 제외하는 하위 집단(고령·동반질환·이전 치료 이력)을 오히려 포함, ② 경쟁이 덜한 지역·국가로 사이트 확장, ③ 동일 기전 경쟁 시험 대비 차별화 근거를 프로토콜에 명시. 이 항목은 holdout 에서 구분력이 확인된 유일한 신호이므로 우선 검토 대상입니다."
+     },
+     {
+      "code": "feature.n_inclusion_items",
+      "severity": "medium",
+      "title": "포함기준 항목수가 완주군보다 많습니다",
+      "observed": 42.0,
+      "ref_completed": 12.5,
+      "ref_failed": 18.5,
+      "bucket_used": "ovarian cancer|p2",
+      "evidence": "이 프로토콜의 포함기준 항목수는 42개입니다. 같은 적응증 완주군 중앙값은 12.5개, 모집 실패군 중앙값은 18.5개입니다.",
+      "suggestion": "포함기준 항목수를 완주군 수준(12.5개)까지 줄이는 것을 검토하십시오. 임상적으로 필수적이지 않은 수치 컷오프와 병용약 금지 항목이 우선 후보입니다."
+     }
+    ],
+    "notes": [
+     "경쟁 시험 밀도 감사를 건너뛰었습니다 (네트워크 미사용 모드).",
+     "Tier 1 결정론적 감사만 수행했습니다. LLM 호출 0회, 비용 $0."
+    ]
+   },
+   "reveal": {
+    "final_status": "TERMINATED",
+    "actual_enrollment": 19,
+    "enrollment_attainment": 0.38,
+    "actual_primary_completion": "2012-10",
+    "why_stopped": "Slow accrual was the reason for study termination.",
+    "category": "A",
+    "category_name": "설계 교정 가능",
+    "category_reason": "recruitment",
+    "category_evidence": "slow accrual",
+    "amend_eligibility": 3,
+    "n_versions": 6
+   }
+  },
+  {
+   "nct_id": "NCT01284348",
+   "condition": "non-small cell lung cancer",
+   "group": "중단-모집실패",
+   "blind": {
+    "brief_title": "Study of ACE-011 to Determine Safe and Effective Dose of ACE-011 for the Treatment of Chemotherapy Induced Anemia in Patients With Advanced Non-small Cell Lung Cancer",
+    "start_date": "2011-01",
+    "planned_primary_completion": "2012-05",
+    "planned_enrollment": 90,
+    "planned_enrollment_type": "ESTIMATED",
+    "phases": [
+     "PHASE2",
+     "PHASE3"
+    ],
+    "allocation": "RANDOMIZED",
+    "masking": "TRIPLE",
+    "n_arms": 3,
+    "primary_outcomes": [
+     {
+      "measure": "Hematopoietic response",
+      "timeframe": "Up to Day 43"
+     }
+    ],
+    "n_secondary_outcomes": 15,
+    "n_inclusion_items": 18,
+    "n_exclusion_items": 21,
+    "eligibility_criteria": "Inclusion Criteria:\nMen and women &gt; 18 years of age\nHistologically confirmed non-small cell cancer of the lung\nDocumented metastatic (Stage IV) disease\nMeasurable or non-measurable disease evaluable by Response Evaluation Criteria in Solid Tumors (RECIST)\nAll of the following laboratory values Hemoglobin &gt;6.5 to &lt;11.0 g&#x2F;dL Absolute neutrophil count &gt;500&#x2F;mm3 Platelet count &gt; 25,000&#x2F;mm3 (&gt;72 hours since prior platelet transfusion) Adequate renal function (creatinine &lt;1.5 x upper limit normal or &gt;50 mL&#x2F;min) Hepatic function (bilirubin &lt;1.5 x upper limit normal; aspartate aminotransferase (AST) and alanine aminotransferase (ALT) &lt; 3.0 x upper limit normal and &lt;5 upper limit normal for subjects with liver metastases) Corrected calcium within normal limits, previous hypercalcemia allowed\nMay have received up to 3 cycles of a current first line platinum based chemotherapy treatment regimen for metastatic non-small cell lung cancer.\nAllowed regimens are:\nGemcitabine plus cisplatin or carboplatin + bevacizumab Pemetrexed plus cisplatin or carboplatin + bevacizumab Paclitaxel plus carboplatin + bevacizumab\n\n&gt;28 days since previous treatment with ESA\n&gt;14 days since last red blood cell transfusions\nEastern Oncology Cooperative Group (ECOG) Performance status 0-2\nStable dose of biphosphonate therapy for &gt;2 months or if not currently on biphosphonates, no treatment within 2 months prior to Day 1\nFor females of childbearing potential, highly effective method of birth control for at least 28 days before starting study, during participation and at least 112 days following last dose of ACE-011\nMales must use latex condom or non-latex condom not made of (animal) membrane during any sexual contact with female of childbearing potential\nLife expectancy of &gt;3 months\nWilling to adhere to study visit schedule\nUnderstand and voluntarily sign informed consent\nExclusion Criteria:\nNational Cancer Institute Common Terminology for Adverse Events Grade &gt;3 toxicity\nPrior radiation to &gt;20% of whole skeleton\nPrior regimen(s) of platinum based chemotherapy for metastatic non-small cell lung cancer\nCentral nervous system metastases\nClinically significant pulmonary, endocrine, neurologic, gastrointestinal, hepatic, or genitourinary disease unrelated to underlying non-small cell lung cancer\nClassification of 3 or higher heart failure (as classified by New York Heart Association)\nHistory of thrombosis, deep vein thrombosis, pulmonary emboli, or embolic stroke, if not stable on anticoagulants and&#x2F;or one of these events occurring in past 6 months\nDiagnosis of a myeloid malignancy or known history of myelodysplasia\nHistory of second malignancy within 3 years\nRecent history (within 14 days of Day 1) of IV&#x2F;oral antibiotics due to post septic episode\nUncontrolled hypertension (systolic must be &lt;160mmHg diastolic must be &lt;100mmHG)\nKnown human immunodeficiency virus (HIV)\nKnown active hepatitis B or C antibody\nIron deficiency\nHistory of anemia as a result of inherited hemoglobinopathy\nHistory of anemia due to autoimmune or hereditary hemolysis or gastrointestinal bleeding\nUrine protein&#x2F;creatinine ratio &gt;1.0\nReceived treatment with another investigational drug or device within 28 days\nAny prior use of ACE-011\nPregnant or lactating females\nHistory of severe or severe anaphylactic reaction or hypersensitivity to recombinant proteins or excipients in investigational product\nMajor surgery within 30 days",
+    "n_sites": 1,
+    "countries": [
+     "United States"
+    ],
+    "brief_summary": "The purpose of this study is to determine an effective and safe dose of ACE-011 for the treatment of chemotherapy induced anemia (CIA) in patients with metastatic non-small cell lung cancer who are being treated with first-line platinum based chemotherapy.\nOther studies have shown that dosing with ACE-011 resulted in a significant increase in hematopoietic parameters, beginning rapidly and sooner than would be expected from treatment with an Erythropoietin Stimulating Agent {ESA}.\nThis fact, as well as the fairly rapid and persistent elevation in the relative hemoglobin, hematocrit and red blood cell counts of the majority of subjects from each dose of ACE-011, suggests an entirely novel mechanism of red blood cell production.\nThe ability for ACE-011 to rapidly increase and sustain hemoglobin levels in anemic patients, while showing a safety benefit as well as no decrement in overall survival, suggests that ACE-011 may serve as an alternative treatment for CIA."
+   },
+   "audit": {
+    "nct_id": "NCT01284348",
+    "bucket": "non-small cell lung cancer",
+    "title": "Study of ACE-011 to Determine Safe and Effective Dose of ACE-011 for the Treatment of Chemotherapy Induced Anemia in Patients With Advanced Non-small Cell Lung Cancer",
+    "start_date": "2011-01",
+    "diagnostic_score": 25,
+    "score_calibration": {
+     "calibrated": false,
+     "holdout_auc": 0.587,
+     "holdout_ci95": [
+      0.484,
+      0.693
+     ],
+     "note": "심각도 가중 합이며 위험 확률이 아니다. holdout 신뢰구간이 0.5를 포함해 구분력이 입증되지 않았다. 개별 finding 의 수치 근거를 보고 판단할 것."
+    },
+    "tier1_only": true,
+    "competition": null,
+    "findings": [
+     {
+      "code": "feature.n_secondary_outcomes",
+      "severity": "high",
+      "title": "2차 평가변수 수가 완주군보다 많습니다",
+      "observed": 15.0,
+      "ref_completed": 5.0,
+      "ref_failed": 4.0,
+      "bucket_used": "non-small cell lung cancer",
+      "evidence": "이 프로토콜의 2차 평가변수 수는 15개입니다. 같은 적응증 완주군 중앙값은 5개, 모집 실패군 중앙값은 4개입니다. 실패군 쪽에 서 있습니다.",
+      "suggestion": "2차 평가변수가 많으면 사이트 부담과 데이터 수집 비용이 커집니다. 핵심만 남기십시오."
+     }
+    ],
+    "notes": [
+     "경쟁 시험 밀도 감사를 건너뛰었습니다 (네트워크 미사용 모드).",
+     "Tier 1 결정론적 감사만 수행했습니다. LLM 호출 0회, 비용 $0."
+    ]
+   },
+   "reveal": {
+    "final_status": "TERMINATED",
+    "actual_enrollment": 26,
+    "enrollment_attainment": 0.289,
+    "actual_primary_completion": "2012-09-21",
+    "why_stopped": "Persistent low enrollment made study continuation no longer feasible",
+    "category": "A",
+    "category_name": "설계 교정 가능",
+    "category_reason": "recruitment",
+    "category_evidence": "low enrollment",
+    "amend_eligibility": 4,
+    "n_versions": 15
+   }
+  },
+  {
+   "nct_id": "NCT01440517",
+   "condition": "heart failure",
+   "group": "중단-모집실패",
+   "blind": {
+    "brief_title": "Results of Tc99m-Maraciclatide Scintigraphy in Subjects With Diabetes Mellitus and Heart Failure With Preserved Left Ventricular Ejection Fraction",
+    "start_date": "2011-08",
+    "planned_primary_completion": "2012-08",
+    "planned_enrollment": 30,
+    "planned_enrollment_type": "ESTIMATED",
+    "phases": [
+     "PHASE2"
+    ],
+    "allocation": "NON_RANDOMIZED",
+    "masking": "NONE",
+    "n_arms": 1,
+    "primary_outcomes": [
+     {
+      "measure": "Evidence of active myocardial angiogenesis&#x2F;remodeling",
+      "timeframe": "Time zero equals the date of contrast imaging and for up to 24 hours for safety monitoring post contrast administration."
+     }
+    ],
+    "n_secondary_outcomes": 1,
+    "n_inclusion_items": 6,
+    "n_exclusion_items": 5,
+    "eligibility_criteria": "Inclusion Criteria:\nThe subject is between 18 and 80 years of age.\nThe subject was diagnosed with DM type 2 based upon accepted clinical criteria and currently takes at least one diabetes medication.\nFor HF subjects: The subject was diagnosed with HF with preserved EF within the previous 1 year, at which time LVEF was determined to be ≥45%.\nFor comparison subjects: The subject was determined to have diastolic dysfunction on EKG within the previous year and currently has no signs or symptoms of HF.\nThe subject has been clinically stable for at least 7 days prior to the study imaging procedures (e.g., not experiencing continuing chest pain, hemodynamic instability, worsening HF symptoms, or clinically significant arrhythmia).\nExclusion Criteria:\nThe subject had an acute myocardial infarction within the past 30 days.\nThe subject had a cardiac revascularization (e.g., percutaneous transluminal coronary angiography [PTCA], percutaneous coronary intervention (PCI), or coronary artery bypass graft [CABG]) within the past 30 days.\nThe subject has severe renal dysfunction.\nThe subject is claustrophobic or has a movement disorder that prevents him&#x2F;her from lying still in a supine position for up to 20 minutes at a time.\nThe subject has participated in a research study using ionizing radiation in the previous 12 months.",
+    "n_sites": 1,
+    "countries": [
+     "United States"
+    ],
+    "brief_summary": "The purpose of this study is to evaluate the results of 99mTc maraciclatide scintigraphy in diabetic subjects with HFPEF.\nA maximum of 20 subjects with Diabetes Mellitus (DM) and Heart Failure With Preserved Left Ventricular Ejection Fraction (HFPEF) will be enrolled and imaged with 99mTc maraciclatide.\nIn addition, a maximum of 10 subjects with DM and diastolic dysfunction but no diagnosis of heart failure (HF) will be enrolled and imaged with 99mTc-maraciclatide."
+   },
+   "audit": {
+    "nct_id": "NCT01440517",
+    "bucket": "heart failure",
+    "title": "Results of Tc99m-Maraciclatide Scintigraphy in Subjects With Diabetes Mellitus and Heart Failure With Preserved Left Ventricular Ejection Fraction",
+    "start_date": "2011-08",
+    "diagnostic_score": 25,
+    "score_calibration": {
+     "calibrated": false,
+     "holdout_auc": 0.587,
+     "holdout_ci95": [
+      0.484,
+      0.693
+     ],
+     "note": "심각도 가중 합이며 위험 확률이 아니다. holdout 신뢰구간이 0.5를 포함해 구분력이 입증되지 않았다. 개별 finding 의 수치 근거를 보고 판단할 것."
+    },
+    "tier1_only": true,
+    "competition": null,
+    "findings": [
+     {
+      "code": "feature.planned_enrollment",
+      "severity": "high",
+      "title": "목표 등록수가 완주군보다 낮습니다",
+      "observed": 30.0,
+      "ref_completed": 60.0,
+      "ref_failed": 45.0,
+      "bucket_used": "__ALL__|p2",
+      "evidence": "이 프로토콜의 목표 등록수는 30명입니다. 같은 적응증 완주군 중앙값은 60명, 모집 실패군 중앙값은 45명입니다. 실패군 쪽에 서 있습니다.",
+      "suggestion": "목표 등록수가 완주군보다 작습니다. 검정력 계산 근거를 명시하십시오."
+     }
+    ],
+    "notes": [
+     "경쟁 시험 밀도 감사를 건너뛰었습니다 (네트워크 미사용 모드).",
+     "Tier 1 결정론적 감사만 수행했습니다. LLM 호출 0회, 비용 $0."
+    ]
+   },
+   "reveal": {
+    "final_status": "TERMINATED",
+    "actual_enrollment": 4,
+    "enrollment_attainment": 0.133,
+    "actual_primary_completion": "2012-03",
+    "why_stopped": "Lack of Subject Recruitment",
+    "category": "A",
+    "category_name": "설계 교정 가능",
+    "category_reason": "recruitment",
+    "category_evidence": "lack of subject recruitment",
+    "amend_eligibility": 0,
+    "n_versions": 3
+   }
+  },
+  {
+   "nct_id": "NCT00994123",
+   "condition": "non-small cell lung cancer",
+   "group": "완주",
+   "blind": {
+    "brief_title": "A Study of MM-121 Combination Therapy in Patients With Advanced Non-Small Cell Lung Cancer",
+    "start_date": "2009-10",
+    "planned_primary_completion": "2011-01",
+    "planned_enrollment": 40,
+    "planned_enrollment_type": "ESTIMATED",
+    "phases": [
+     "PHASE1",
+     "PHASE2"
+    ],
+    "allocation": "NON_RANDOMIZED",
+    "masking": "NONE",
+    "n_arms": 1,
+    "primary_outcomes": [
+     {
+      "measure": "Phase 1: To determine the recommended Phase 2 dose of the MM-121 + erlotinib combination based upon either the maximum tolerated dose (MTD) or the maximum feasible dose of the combination in patients with NSCLC.",
+      "timeframe": "December 2009"
+     }
+    ],
+    "n_secondary_outcomes": 1,
+    "n_inclusion_items": 4,
+    "n_exclusion_items": 5,
+    "eligibility_criteria": "Inclusion Criteria:\nPatients with locally advanced or metastatic non-small cell lung cancer.\nPatients must be &gt;&#x2F;= 18 years of age.\nPatients must have adequate Performance Status (PS) as measured by ECOG.\nExclusion Criteria:\nPatients who have received prior anti-EGFR or anti-ErbB3 therapeutics.\nPatients with a recent history (within 5 years) of another malignancy.\nPatients who are pregnant or nursing.\nPatients with clinically significant heart failure.\nPatients with clinically significant eye or gastrointestinal abnormalities.",
+    "n_sites": 1,
+    "countries": [
+     "United States"
+    ],
+    "brief_summary": "A Phase 1-2 study of MM-121 in combination with standard therapy for non-small cell lung cancer (NSCLC)."
+   },
+   "audit": {
+    "nct_id": "NCT00994123",
+    "bucket": "non-small cell lung cancer",
+    "title": "A Study of MM-121 Combination Therapy in Patients With Advanced Non-Small Cell Lung Cancer",
+    "start_date": "2009-10",
+    "diagnostic_score": 12,
+    "score_calibration": {
+     "calibrated": false,
+     "holdout_auc": 0.587,
+     "holdout_ci95": [
+      0.484,
+      0.693
+     ],
+     "note": "심각도 가중 합이며 위험 확률이 아니다. holdout 신뢰구간이 0.5를 포함해 구분력이 입증되지 않았다. 개별 finding 의 수치 근거를 보고 판단할 것."
+    },
+    "tier1_only": true,
+    "competition": null,
+    "findings": [
+     {
+      "code": "feature.n_concurrent_phase2",
+      "severity": "medium",
+      "title": "개시 시점 동시 모집 Phase 2 시험 수가 완주군보다 많습니다",
+      "observed": 177.0,
+      "ref_completed": 60,
+      "ref_failed": 126,
+      "bucket_used": "__ALL__|p1p2",
+      "evidence": "이 프로토콜의 개시 시점 동시 모집 Phase 2 시험 수는 177건입니다. 같은 적응증 완주군 중앙값은 60건, 모집 실패군 중앙값은 126건입니다.",
+      "suggestion": "경쟁 시험 수는 프로토콜로 바꿀 수 없으므로, 겹치지 않는 환자군을 확보하는 방향으로 대응하십시오. ① 경쟁 시험이 제외하는 하위 집단(고령·동반질환·이전 치료 이력)을 오히려 포함, ② 경쟁이 덜한 지역·국가로 사이트 확장, ③ 동일 기전 경쟁 시험 대비 차별화 근거를 프로토콜에 명시. 이 항목은 holdout 에서 구분력이 확인된 유일한 신호이므로 우선 검토 대상입니다."
+     }
+    ],
+    "notes": [
+     "경쟁 시험 밀도 감사를 건너뛰었습니다 (네트워크 미사용 모드).",
+     "Tier 1 결정론적 감사만 수행했습니다. LLM 호출 0회, 비용 $0."
+    ]
+   },
+   "reveal": {
+    "final_status": "COMPLETED",
+    "actual_enrollment": 162,
+    "enrollment_attainment": 4.05,
+    "actual_primary_completion": "2014-11",
+    "why_stopped": null,
+    "category": "?",
+    "category_name": "미분류",
+    "category_reason": "empty",
+    "category_evidence": null,
+    "amend_eligibility": 1,
+    "n_versions": 14
+   }
+  },
+  {
+   "nct_id": "NCT01039207",
+   "condition": "ovarian cancer",
+   "group": "완주",
+   "blind": {
+    "brief_title": "AMG 102 in Treating Patients With Persistent or Recurrent Ovarian Epithelial Cancer, Fallopian Tube Cancer, or Primary Peritoneal Cancer",
+    "start_date": "2010-01",
+    "planned_primary_completion": "2011-03",
+    "planned_enrollment": 50,
+    "planned_enrollment_type": "ESTIMATED",
+    "phases": [
+     "PHASE2"
+    ],
+    "allocation": null,
+    "masking": "NONE",
+    "n_arms": 0,
+    "primary_outcomes": [
+     {
+      "measure": "Progression-free survival (PFS) rate at 6 months",
+      "timeframe": null
+     },
+     {
+      "measure": "Objective tumor response rate",
+      "timeframe": null
+     }
+    ],
+    "n_secondary_outcomes": 4,
+    "n_inclusion_items": 60,
+    "n_exclusion_items": 0,
+    "eligibility_criteria": "DISEASE CHARACTERISTICS:\nHistologically confirmed recurrent or persistent ovarian epithelial, fallopian tube, or primary peritoneal carcinoma\nHistologic confirmation of the original primary tumor via pathology report required\n\nMeasurable disease, defined as ≥ 1 lesion that can be accurately measured in ≥ 1 dimension (longest diameter to be recorded) as ≥ 10 mm by CT scan, MRI, or caliper measurement by clinical exam OR ≥ 20 mm by chest x-ray\nLymph nodes must be ≥ 15 mm in short axis when measured by CT scan or MRI\n\nHas ≥ 1 &quot;target lesion&quot; to be used to assess response, as defined by RECIST criteria\nTumors within a previously irradiated field will be designated as &quot;non-target&quot; lesions unless progression is documented or a biopsy is obtained to confirm persistence ≥ 90 days following completion of radiotherapy\n\nMust have received 1 prior platinum-based chemotherapeutic regimen containing carboplatin, cisplatin, or another organoplatinum compound for management of primary disease\nInitial treatment may have included intraperitoneal therapy, high-dose therapy, consolidation therapy, non-cytotoxic agents, or extended therapy administered after surgical or non-surgical assessment\nMust have a platinum-free interval of &lt; 12 months, progressed during platinum-based therapy, or have persistent disease after platinum-based therapy\nOne additional cytotoxic regimen for management of recurrent or persistent disease allowed\n\nIneligible for a higher priority GOG protocol, if one exists (e.g., any active GOG phase III protocol for the same patient population)\nPATIENT CHARACTERISTICS:\nGOG performance status (PS) 0-2 (for patients who received 1 prior regimen)\nGOG PS 0-1 (for patients who received 2 prior regimens)\nANC ≥ 1,500&#x2F;mm^3\nPlatelet count ≥ 100,000&#x2F;mm^3\nCreatinine ≤ 1.5 times upper limit of normal (ULN)\nBilirubin ≤ 1.5 times ULN\nSGOT ≤ 3.0 times ULN\nAlkaline phosphatase ≤ 2.5 times ULN\nPTT ≤ 1.5 times ULN\nINR ≤ 1.5 times ULN\nProteinuria ≤ 1+ by urinalysis OR ≤ 1 g&#x2F;24 hrs by 24-hour urine collection\nNot pregnant or nursing\nNegative pregnancy test\nFertile patients must use effective contraception\nNo neuropathy (sensory or motor) &gt; grade 1\nNo peripheral edema or lymphedema &gt; grade 2\nNo active bleeding diathesis\nNo thromboembolic or ischemic event within the past 12 months, including any of the following:\nDeep venous thrombosis\nPulmonary embolism\nTransient ischemic attack\nCerebral infarction\nMyocardial infarction\n\nNo serious or non-healing wound\nNo known HIV or hepatitis C positivity or chronic or active hepatitis B\nNo active infection requiring antibiotics\nUncomplicated urinary tract infection allowed\n\nNo other concurrent serious infection or nonmalignant medical illness that is uncontrolled or whose control may be jeopardized by study treatment\nNo psychiatric condition or other condition that would preclude giving informed consent or meeting study requirements\nNo other invasive malignancies within the past 5 years except for nonmelanoma skin cancer or localized cancer of the breast, head and neck, or skin\nPRIOR CONCURRENT THERAPY:\nSee Disease Characteristics\nRecovered from prior surgery, radiotherapy, or chemotherapy\nNo prior cancer treatment that would contraindicate study treatment\nNo prior fully human anti-HGF monoclonal antibody AMG 102 or other HGF&#x2F;c-met pathway inhibitors\nNo prior non-cytotoxic therapy for management of recurrent or persistent disease\nPrior biologic (non-cytotoxic) therapy as part of primary treatment regimen allowed\n\nNo prior radiotherapy to any portion of the abdominal cavity or pelvis OTHER THAN for the treatment of ovarian, fallopian tube, or primary peritoneal cancer within the past 5 years\nPrior radiotherapy for localized cancer of the breast, head and neck, or skin is allowed provided it was completed &gt; 3 years ago and the patient remains free of recurrent or metastatic disease\n\nNo prior chemotherapy for any abdominal or pelvic tumor OTHER THAN for the treatment of ovarian, fallopian tube, or primary peritoneal cancer within the past 5 years\nPrior adjuvant chemotherapy for localized breast cancer allowed provided it was completed &gt; 3 years ago and the patient remains free of recurrent or metastatic disease\n\nMore than 30 days since prior surgery (14 days for minor surgical procedures)\nCentral venous catheter placement allowed at any time point prior to study enrollment provided the patient has recovered and any surgical wound has healed\n\nAt least 1 week since prior hormonal therapy directed at the malignant tumor\nAt least 3 weeks since any other prior therapy directed at the malignant tumor, including immunologic agents\nMore than 7 days since prior and no concurrent therapeutic anti-coagulation therapy with warfarin, heparin, or low molecular weight heparin\nLow-dose warfarin (≤ 2 mg orally daily) for prophylaxis against central venous catheter thrombosis allowed",
+    "n_sites": 0,
+    "countries": [],
+    "brief_summary": "RATIONALE: Monoclonal antibodies, such as AMG 102, can block tumor growth in different ways.\nSome block the ability of tumor cells to grow and spread.\nOthers find tumor cells and help kill them or carry tumor-killing substances to them.\nPURPOSE: This phase II trial is studying how well AMG 102 works in treating patients with persistent or recurrent ovarian epithelial cancer, fallopian tube cancer, or primary peritoneal cancer."
+   },
+   "audit": {
+    "nct_id": "NCT01039207",
+    "bucket": "ovarian cancer",
+    "title": "AMG 102 in Treating Patients With Persistent or Recurrent Ovarian Epithelial Cancer, Fallopian Tube Cancer, or Primary Peritoneal Cancer",
+    "start_date": "2010-01",
+    "diagnostic_score": 50,
+    "score_calibration": {
+     "calibrated": false,
+     "holdout_auc": 0.587,
+     "holdout_ci95": [
+      0.484,
+      0.693
+     ],
+     "note": "심각도 가중 합이며 위험 확률이 아니다. holdout 신뢰구간이 0.5를 포함해 구분력이 입증되지 않았다. 개별 finding 의 수치 근거를 보고 판단할 것."
+    },
+    "tier1_only": true,
+    "competition": null,
+    "findings": [
+     {
+      "code": "feature.total_competing_seats",
+      "severity": "high",
+      "title": "경쟁 시험 목표 등록수 합계가 완주군보다 많습니다",
+      "observed": 357164.0,
+      "ref_completed": 143171.0,
+      "ref_failed": 128065.0,
+      "bucket_used": "ovarian cancer|p2",
+      "evidence": "이 프로토콜의 경쟁 시험 목표 등록수 합계는 357164명입니다. 같은 적응증 완주군 중앙값은 143171명, 모집 실패군 중앙값은 128065명입니다. 실패군 쪽에 서 있습니다.",
+      "suggestion": "경쟁 시험 수는 프로토콜로 바꿀 수 없으므로, 겹치지 않는 환자군을 확보하는 방향으로 대응하십시오. ① 경쟁 시험이 제외하는 하위 집단(고령·동반질환·이전 치료 이력)을 오히려 포함, ② 경쟁이 덜한 지역·국가로 사이트 확장, ③ 동일 기전 경쟁 시험 대비 차별화 근거를 프로토콜에 명시. 이 항목은 holdout 에서 구분력이 확인된 유일한 신호이므로 우선 검토 대상입니다."
+     },
+     {
+      "code": "feature.n_inclusion_items",
+      "severity": "high",
+      "title": "포함기준 항목수가 완주군보다 많습니다",
+      "observed": 60.0,
+      "ref_completed": 12.5,
+      "ref_failed": 18.5,
+      "bucket_used": "ovarian cancer|p2",
+      "evidence": "이 프로토콜의 포함기준 항목수는 60개입니다. 같은 적응증 완주군 중앙값은 12.5개, 모집 실패군 중앙값은 18.5개입니다. 실패군 쪽에 서 있습니다.",
+      "suggestion": "포함기준 항목수를 완주군 수준(12.5개)까지 줄이는 것을 검토하십시오. 임상적으로 필수적이지 않은 수치 컷오프와 병용약 금지 항목이 우선 후보입니다."
+     }
+    ],
+    "notes": [
+     "경쟁 시험 밀도 감사를 건너뛰었습니다 (네트워크 미사용 모드).",
+     "등록 시점 사이트 목록이 비어 있어 사이트당 모집 부담을 계산하지 못했습니다 (실측 결측률 33%).",
+     "Tier 1 결정론적 감사만 수행했습니다. LLM 호출 0회, 비용 $0."
+    ]
+   },
+   "reveal": {
+    "final_status": "COMPLETED",
+    "actual_enrollment": 31,
+    "enrollment_attainment": 0.62,
+    "actual_primary_completion": "2012-07",
+    "why_stopped": null,
+    "category": "?",
+    "category_name": "미분류",
+    "category_reason": "empty",
+    "category_evidence": null,
+    "amend_eligibility": 5,
+    "n_versions": 31
+   }
+  },
+  {
+   "nct_id": "NCT01136174",
+   "condition": "idiopathic pulmonary fibrosis",
+   "group": "완주",
+   "blind": {
+    "brief_title": "Safety and PK Study of BIBF 1120 in Japanese Patients With IPF",
+    "start_date": "2010-05",
+    "planned_primary_completion": "2011-03",
+    "planned_enrollment": 46,
+    "planned_enrollment_type": "ESTIMATED",
+    "phases": [
+     "PHASE2"
+    ],
+    "allocation": "RANDOMIZED",
+    "masking": "DOUBLE",
+    "n_arms": 4,
+    "primary_outcomes": [
+     {
+      "measure": "Incidence and intensity of adverse events",
+      "timeframe": "2 weeks for cohort 1&amp; 2 and 4 weeks for cohort 3"
+     },
+     {
+      "measure": "Withdrawal due to adverse events",
+      "timeframe": "2 weeks for cohort 1&amp; 2 and 4 weeks for cohort 3"
+     }
+    ],
+    "n_secondary_outcomes": 3,
+    "n_inclusion_items": 4,
+    "n_exclusion_items": 10,
+    "eligibility_criteria": "Inclusion Criteria:\nDiagnosis of idiopathic pulmonary fibrosis (IPF) according to American Thoracic Society (ATS) &#x2F;European Respiratory Society (ERS) guideline\nForced vital capacity (FVC) 50-90%\nDLCO 30-79%\nFor patients on pirfenidone, have been on a steady dose for at least 3 months\nExclusion Criteria:\nAspartate aminotransferase (AST), alanine aminotransferase (ALT) &gt; 1.5 x upper limit of normal range (ULN) at screening.\nBilirubin &gt; 1.5 x ULN at screening.\nRelevant airways obstruction (i.e.\npre-bronchodilator FEV1&#x2F;FVC &lt;0.7) at screening.\nContinuous oxygen supplementation.\nActive infection at screening or randomisation.\nBeing treated with any of the following concomitant medications.\nOral corticosteroid medication at unstable dose\nketoconazole or atazanavir\n\nPatients who are expected to go on to lung transplantation, have rapidly deteriorating disease, or have a life expectancy less than 3 months from screening",
+    "n_sites": 8,
+    "countries": [
+     "Japan"
+    ],
+    "brief_summary": "To investigate safety of BIBF 1120 in Japanese patients with IPF, with and without pirfenidone background treatment.\nTo assess pharmacokinetics of BIBF 1120 in Japanese patients, with and without pirfenidone background treatment.\nTo assess pharmacokinetics of pirfenidone in Japanese patients, alone and in combination with BIBF 1120 treatment."
+   },
+   "audit": {
+    "nct_id": "NCT01136174",
+    "bucket": "idiopathic pulmonary fibrosis",
+    "title": "Safety and PK Study of BIBF 1120 in Japanese Patients With IPF",
+    "start_date": "2010-05",
+    "diagnostic_score": 12,
+    "score_calibration": {
+     "calibrated": false,
+     "holdout_auc": 0.587,
+     "holdout_ci95": [
+      0.484,
+      0.693
+     ],
+     "note": "심각도 가중 합이며 위험 확률이 아니다. holdout 신뢰구간이 0.5를 포함해 구분력이 입증되지 않았다. 개별 finding 의 수치 근거를 보고 판단할 것."
+    },
+    "tier1_only": true,
+    "competition": null,
+    "findings": [
+     {
+      "code": "feature.planned_enrollment",
+      "severity": "medium",
+      "title": "목표 등록수가 완주군보다 낮습니다",
+      "observed": 46.0,
+      "ref_completed": 60.0,
+      "ref_failed": 45.0,
+      "bucket_used": "__ALL__|p2",
+      "evidence": "이 프로토콜의 목표 등록수는 46명입니다. 같은 적응증 완주군 중앙값은 60명, 모집 실패군 중앙값은 45명입니다.",
+      "suggestion": "목표 등록수가 완주군보다 작습니다. 검정력 계산 근거를 명시하십시오."
+     }
+    ],
+    "notes": [
+     "경쟁 시험 밀도 감사를 건너뛰었습니다 (네트워크 미사용 모드).",
+     "Tier 1 결정론적 감사만 수행했습니다. LLM 호출 0회, 비용 $0."
+    ]
+   },
+   "reveal": {
+    "final_status": "COMPLETED",
+    "actual_enrollment": 50,
+    "enrollment_attainment": 1.087,
+    "actual_primary_completion": "2011-03",
+    "why_stopped": null,
+    "category": "?",
+    "category_name": "미분류",
+    "category_reason": "empty",
+    "category_evidence": null,
+    "amend_eligibility": 3,
+    "n_versions": 20
+   }
+  },
+  {
+   "nct_id": "NCT01137526",
+   "condition": "alzheimer disease",
+   "group": "완주",
+   "blind": {
+    "brief_title": "Efficacy and Safety Study of ABT-384 in Subjects With Mild-to-Moderate Alzheimer&#x27;s Disease",
+    "start_date": "2010-05",
+    "planned_primary_completion": "2011-06",
+    "planned_enrollment": 260,
+    "planned_enrollment_type": "ESTIMATED",
+    "phases": [
+     "PHASE2"
+    ],
+    "allocation": "RANDOMIZED",
+    "masking": "QUADRUPLE",
+    "n_arms": 4,
+    "primary_outcomes": [
+     {
+      "measure": "Change from baseline to final observation in the Alzheimer&#x27;s Disease Assessment Scale-Cognition portion (ADAS-cog) total score",
+      "timeframe": "12 Weeks"
+     }
+    ],
+    "n_secondary_outcomes": 4,
+    "n_inclusion_items": 12,
+    "n_exclusion_items": 8,
+    "eligibility_criteria": "Inclusion Criteria:\nThe subject and caregiver must voluntarily sign and date and informed consent.\nIf the subject is not fully competent, full informed consent must be obtained from a legal representative and assent must be obtained from the subject.\nSubject is male or female between the ages of 55 and 90 years of age, inclusive, at the time of randomization.\nSubject meets the NINCDS&#x2F;ADRDA criteria for probable AD.\nSubject has a Mini-Mental Status Examination (MMSE) score of 10 to 24, inclusive, at Screening Visit 1.\nSubject has a Cornell Scale for Depression in Dementia (CSDD) score ≤ 10 at Screening Visit 1.\nWith the exception of a diagnosis of mild-to-moderate AD and the presence of stable medical conditions, the subject is generally in good health based on medical history, physical examination, vital signs, clinical lab tests and 12-lead ECG.\nIf female, subject must be postmenopausal for at least 2 years or surgically sterile.\nIf male, the subject is surgically sterile (vasectomy), is sexually inactive, or is using a barrier method of birth control.\nSubject has an identified reliable, caregiver (e.g., family member, social worker, nurse), who will provide support and ensure compliance with the study medication and procedures.\nSubject and caregiver are fluent in the language used for administration of the rating scales or cognitive tests and have sufficient visual, hearing and graphomotor skills to complete procedures.\nExclusion Criteria:\nSubject has a known hypersensitivity or intolerance to donepezil that lead to discontinuation or a known reported history of donepezil treatment failure.\nSubject is currently taking or has taken a medication for the treatment of AD or dementia within 60 days of Screening Visit 1, or is participating in cognitive therapy for the treatment of AD or dementia.\nSubject has a history of a drug or alcohol disorder (abuse&#x2F;dependence), based on either DSM-IV-TR or ICD-10 criteria, excluding nicotine, within 2 years prior to Screening Visit 1.\nSubject&#x27;s AST or ALT are above 1.5 x ULN or total bilirubin is above 1.0 x ULN at Screening Visit 1 or Screening Visit 2.\nIn the opinion of the investigator, the subject has any clinically significant uncontrolled medical or psychiatric illness that would affect the safety of the subject.\nThe subject has a history of favism, hemoglobinopathy, thalassemia or drug induced or other acute hemolytic anemia.\nThe subject has a current thyroid disease or history of thyroid disease, and is not currently being treated with a stable dose of thyroid replacement medication.\nFor any reason the investigator considers the subject to be an unsuitable candidate to receive ABT-384 or donepezil.",
+    "n_sites": 2,
+    "countries": [
+     "United Kingdom"
+    ],
+    "brief_summary": "The purpose of this study is to test if the investigational medication, ABT-384, is a safe and effective treatment for adults with mild-to-moderate Alzheimer&#x27;s Disease"
+   },
+   "audit": {
+    "nct_id": "NCT01137526",
+    "bucket": "alzheimer disease",
+    "title": "Efficacy and Safety Study of ABT-384 in Subjects With Mild-to-Moderate Alzheimer&#x27;s Disease",
+    "start_date": "2010-05",
+    "diagnostic_score": 0,
+    "score_calibration": {
+     "calibrated": false,
+     "holdout_auc": 0.587,
+     "holdout_ci95": [
+      0.484,
+      0.693
+     ],
+     "note": "심각도 가중 합이며 위험 확률이 아니다. holdout 신뢰구간이 0.5를 포함해 구분력이 입증되지 않았다. 개별 finding 의 수치 근거를 보고 판단할 것."
+    },
+    "tier1_only": true,
+    "competition": null,
+    "findings": [],
+    "notes": [
+     "경쟁 시험 밀도 감사를 건너뛰었습니다 (네트워크 미사용 모드).",
+     "Tier 1 결정론적 감사만 수행했습니다. LLM 호출 0회, 비용 $0."
+    ]
+   },
+   "reveal": {
+    "final_status": "COMPLETED",
+    "actual_enrollment": 267,
+    "enrollment_attainment": 1.027,
+    "actual_primary_completion": "2011-07",
+    "why_stopped": null,
+    "category": "?",
+    "category_name": "미분류",
+    "category_reason": "empty",
+    "category_evidence": null,
+    "amend_eligibility": 3,
+    "n_versions": 13
+   }
+  },
+  {
+   "nct_id": "NCT00995449",
+   "condition": "rheumatoid arthritis",
+   "group": "중단-경영",
+   "blind": {
+    "brief_title": "Study of KB003 In Biologics-Inadequate Rheumatoid Arthritis",
+    "start_date": "2009-10",
+    "planned_primary_completion": "2011-05",
+    "planned_enrollment": 208,
+    "planned_enrollment_type": "ESTIMATED",
+    "phases": [
+     "PHASE2"
+    ],
+    "allocation": "RANDOMIZED",
+    "masking": "QUADRUPLE",
+    "n_arms": 4,
+    "primary_outcomes": [
+     {
+      "measure": "American College of Rheumatology 20% improvement criteria (ACR20) Response",
+      "timeframe": "Week 14"
+     }
+    ],
+    "n_secondary_outcomes": 4,
+    "n_inclusion_items": 4,
+    "n_exclusion_items": 1,
+    "eligibility_criteria": "Inclusion Criteria:\nAt least 6 swollen and at least 6 tender joints\nCRP &gt; ULN\nPrior inadequate response from biologic therapy\nStable regimens of concomitant RA therapies\nExclusion Criteria:\nUnstable medical conditions",
+    "n_sites": 2,
+    "countries": [
+     "United States"
+    ],
+    "brief_summary": "The purpose of this study is to evaluate the safety, pharmacokinetics, and efficacy of various repeat-dose regimens of KB003 in subjects with active Rheumatoid Arthritis (RA) who have had an inadequate prior treatment outcome from biologic therapy."
+   },
+   "audit": {
+    "nct_id": "NCT00995449",
+    "bucket": "rheumatoid arthritis",
+    "title": "Study of KB003 In Biologics-Inadequate Rheumatoid Arthritis",
+    "start_date": "2009-10",
+    "diagnostic_score": 0,
+    "score_calibration": {
+     "calibrated": false,
+     "holdout_auc": 0.587,
+     "holdout_ci95": [
+      0.484,
+      0.693
+     ],
+     "note": "심각도 가중 합이며 위험 확률이 아니다. holdout 신뢰구간이 0.5를 포함해 구분력이 입증되지 않았다. 개별 finding 의 수치 근거를 보고 판단할 것."
+    },
+    "tier1_only": true,
+    "competition": null,
+    "findings": [],
+    "notes": [
+     "경쟁 시험 밀도 감사를 건너뛰었습니다 (네트워크 미사용 모드).",
+     "Tier 1 결정론적 감사만 수행했습니다. LLM 호출 0회, 비용 $0."
+    ]
+   },
+   "reveal": {
+    "final_status": "TERMINATED",
+    "actual_enrollment": 9,
+    "enrollment_attainment": 0.043,
+    "actual_primary_completion": "2011-03",
+    "why_stopped": "Program refocus",
+    "category": "C",
+    "category_name": "외생적·경영",
+    "category_reason": "business_decision",
+    "category_evidence": "program refocus",
+    "amend_eligibility": 1,
+    "n_versions": 11
+   }
+  },
+  {
+   "nct_id": "NCT01069965",
+   "condition": "type 2 diabetes",
+   "group": "중단-경영",
+   "blind": {
+    "brief_title": "Safety and Efficacy of BGP-15 in Patients With Type 2 Diabetes Mellitus",
+    "start_date": "2010-04",
+    "planned_primary_completion": "2010-11",
+    "planned_enrollment": 300,
+    "planned_enrollment_type": "ESTIMATED",
+    "phases": [
+     "PHASE2"
+    ],
+    "allocation": "RANDOMIZED",
+    "masking": "DOUBLE",
+    "n_arms": 6,
+    "primary_outcomes": [
+     {
+      "measure": "Change from Baseline in Glycosylated Hemoglobin at Week 13",
+      "timeframe": "Baseline and Week 13"
+     }
+    ],
+    "n_secondary_outcomes": 3,
+    "n_inclusion_items": 20,
+    "n_exclusion_items": 17,
+    "eligibility_criteria": "Inclusion criteria\nPatients meeting all of the following criteria will be eligible for enrollment:\nMale and female patients with T2DM at time of diagnosis as defined by the American Diabetes Association (ADA) criteria;\nAge between 30 and 70 years (inclusive);\nHbA1c ≥7.5% - ≤12.0% at Screening, Visit 1;\nFPG ≤270 mg&#x2F;dL (15.0 mmol&#x2F;L);\nBody mass index (BMI) &gt;27 and ≤40 kg&#x2F;m2;\nCurrent treatment with either metformin alone or in combination with SU.\nThe dose of the current treatment must be stable for at least 8 weeks prior to randomization.\nPatients being treated with metformin must be at their optimal or near-optimal dose (≥1500 mg&#x2F;day ± 500 mg&#x2F;day for a range of 1000 to 2000 mg&#x2F;day), and patients being treated with SU must be receiving at least one half of the maximum approved SU dose;\nWomen may be enrolled if all three of the following criteria are met:\nThey have a negative serum pregnancy test at Screening;\nThey are not breast feeding; and,\nThey do not plan to become pregnant during the study AND if one of the following three criteria is met:\ni.\nThey have had a hysterectomy or tubal ligation at least 6 months prior to signing the informed consent form; ii.\nThey have been postmenopausal for at least 1 year; or, iii.\nThey are of childbearing potential and will practice one of the following methods of birth control throughout the study: injectable or implantable hormonal contraception or intrauterine device; or two of the following methods of birth control throughout the study: oral or patch contraception plus a barrier contraceptive (eg, diaphragm plus spermicide, male or female condom plus spermicide, or vasectomized male partner).\nAbstinence, partner&#x27;s use of condoms, and vasectomy are NOT acceptable methods of contraception;\n\nWillingness to sign an informed consent document; and,\nNo conditions that hinder participation in the trial, as determined by the Investigator and Sponsor.\nExclusion criteria\nPatients meeting any of the following criteria will be ineligible for enrollment:\nTreatment with peroxisome proliferator-activated receptor (PPAR) agonists (including fibrates) within the last 3 months;\nTreatment with dipeptidyl peptidase 4 (DPP-4) inhibitors, acarbose, or incretins within the last 3 months;\nChronic use of insulin injections within the last 1 month;\nHypoglycemia requiring third party assistance within the last 3 months;\nImpaired hepatic function measured as alanine aminotransferase (ALAT) &gt;2X the upper reference limit;\nImpaired renal function measured as serum creatinine &gt;150 umol&#x2F;L (1.7 mg&#x2F;dL);\nDecompensated heart failure (New York Heart Association [NYHA] class III and IV);\nUnstable angina pectoris or myocardial infarction within the last 12 months;\nClinically significant ECG abnormalities at screening including QTc interval (Bazett&#x27;s) ≥450 msec or AV block &gt;1st degree;\nUncontrolled, treated or untreated hypertension (systolic blood pressure [BP] ≥160 mmHg and&#x2F;or diastolic BP ≥100 mmHg);\nAny condition that the Investigator and&#x2F;or Sponsor feel would interfere with trial participation or evaluation of the results eg, drug abuse or serious disease such as acquired immunodeficiency syndrome&#x2F;human immunodeficiency syndrome (AIDS&#x2F;HIV) antibodies, Hepatitis B, or Hepatitis C;\nPregnancy or breastfeeding, the intention to become pregnant, or judged to be using inadequate contraceptive measures;\nHistory of alcohol and&#x2F;or drug dependence within the last 2 years;\nReceipt of any investigational drug or medical device within 3 months prior to this trial;\nFasting triglycerides &gt;700 mg&#x2F;dL at screening; or,\nDiagnosis or treatment of cancer within the past 5 years except for excision of basal cell or squamous cell skin lesions.",
+    "n_sites": 0,
+    "countries": [],
+    "brief_summary": "This is a safety and dose finding efficacy study to evaluate the effects of BGP-15 over the dose range of 100 mg&#x2F;day to 400 mg&#x2F;day.\nDoses are applied once or twice a day for 13 weeks as add-on therapy to the combination of metformin and sulfonylurea treatment or metformin alone in patients with Type 2 Diabetes Mellitus."
+   },
+   "audit": {
+    "nct_id": "NCT01069965",
+    "bucket": "type 2 diabetes",
+    "title": "Safety and Efficacy of BGP-15 in Patients With Type 2 Diabetes Mellitus",
+    "start_date": "2010-04",
+    "diagnostic_score": 37,
+    "score_calibration": {
+     "calibrated": false,
+     "holdout_auc": 0.587,
+     "holdout_ci95": [
+      0.484,
+      0.693
+     ],
+     "note": "심각도 가중 합이며 위험 확률이 아니다. holdout 신뢰구간이 0.5를 포함해 구분력이 입증되지 않았다. 개별 finding 의 수치 근거를 보고 판단할 것."
+    },
+    "tier1_only": true,
+    "competition": null,
+    "findings": [
+     {
+      "code": "feature.n_inclusion_items",
+      "severity": "high",
+      "title": "포함기준 항목수가 완주군보다 많습니다",
+      "observed": 20.0,
+      "ref_completed": 7.0,
+      "ref_failed": 8.0,
+      "bucket_used": "type 2 diabetes|p2",
+      "evidence": "이 프로토콜의 포함기준 항목수는 20개입니다. 같은 적응증 완주군 중앙값은 7개, 모집 실패군 중앙값은 8개입니다. 실패군 쪽에 서 있습니다.",
+      "suggestion": "포함기준 항목수를 완주군 수준(7개)까지 줄이는 것을 검토하십시오. 임상적으로 필수적이지 않은 수치 컷오프와 병용약 금지 항목이 우선 후보입니다."
+     },
+     {
+      "code": "feature.n_concurrent_phase2",
+      "severity": "medium",
+      "title": "개시 시점 동시 모집 Phase 2 시험 수가 완주군보다 많습니다",
+      "observed": 37.0,
+      "ref_completed": 30,
+      "ref_failed": 28.0,
+      "bucket_used": "type 2 diabetes|p2",
+      "evidence": "이 프로토콜의 개시 시점 동시 모집 Phase 2 시험 수는 37건입니다. 같은 적응증 완주군 중앙값은 30건, 모집 실패군 중앙값은 28건입니다.",
+      "suggestion": "경쟁 시험 수는 프로토콜로 바꿀 수 없으므로, 겹치지 않는 환자군을 확보하는 방향으로 대응하십시오. ① 경쟁 시험이 제외하는 하위 집단(고령·동반질환·이전 치료 이력)을 오히려 포함, ② 경쟁이 덜한 지역·국가로 사이트 확장, ③ 동일 기전 경쟁 시험 대비 차별화 근거를 프로토콜에 명시. 이 항목은 holdout 에서 구분력이 확인된 유일한 신호이므로 우선 검토 대상입니다."
+     }
+    ],
+    "notes": [
+     "경쟁 시험 밀도 감사를 건너뛰었습니다 (네트워크 미사용 모드).",
+     "등록 시점 사이트 목록이 비어 있어 사이트당 모집 부담을 계산하지 못했습니다 (실측 결측률 33%).",
+     "Tier 1 결정론적 감사만 수행했습니다. LLM 호출 0회, 비용 $0."
+    ]
+   },
+   "reveal": {
+    "final_status": "TERMINATED",
+    "actual_enrollment": 196,
+    "enrollment_attainment": 0.653,
+    "actual_primary_completion": "2011-08",
+    "why_stopped": "Funding support withdrawn.",
+    "category": "C",
+    "category_name": "외생적·경영",
+    "category_reason": "funding",
+    "category_evidence": "funding",
+    "amend_eligibility": 0,
+    "n_versions": 13
+   }
+  },
+  {
+   "nct_id": "NCT01285310",
+   "condition": "rheumatoid arthritis",
+   "group": "중단-과학적",
+   "blind": {
+    "brief_title": "Study of Apremilast to Evaluate the Safety and Effectiveness for Patients With Rheumatoid Arthritis",
+    "start_date": "2010-12",
+    "planned_primary_completion": "2012-01",
+    "planned_enrollment": 210,
+    "planned_enrollment_type": "ESTIMATED",
+    "phases": [
+     "PHASE2"
+    ],
+    "allocation": "RANDOMIZED",
+    "masking": "QUADRUPLE",
+    "n_arms": 3,
+    "primary_outcomes": [
+     {
+      "measure": "Efficacy of two doses of apremilast (20 mg BID and 30 mg BID)",
+      "timeframe": "24 weeks"
+     }
+    ],
+    "n_secondary_outcomes": 19,
+    "n_inclusion_items": 2,
+    "n_exclusion_items": 1,
+    "eligibility_criteria": "Inclusion Criteria:\n• Adult subjects with active rheumatoid arthritis on a stable dose of methotrexate\nExclusion Criteria:\n• Pregnancy, severe acute or chronic conditions, including serious infections or clinically significant laboratory abnormalities",
+    "n_sites": 25,
+    "countries": [
+     "United States"
+    ],
+    "brief_summary": "The purpose of this study is to determine whether Apremilast is safe and effective in the treatment of patients with rheumatoid arthritis, specifically in improving signs and symptoms of rheumatoid arthritis (tender and swollen joints, pain, physical function and structure) in treated patients who have had an inadequate response to Methotrexate."
+   },
+   "audit": {
+    "nct_id": "NCT01285310",
+    "bucket": "rheumatoid arthritis",
+    "title": "Study of Apremilast to Evaluate the Safety and Effectiveness for Patients With Rheumatoid Arthritis",
+    "start_date": "2010-12",
+    "diagnostic_score": 37,
+    "score_calibration": {
+     "calibrated": false,
+     "holdout_auc": 0.587,
+     "holdout_ci95": [
+      0.484,
+      0.693
+     ],
+     "note": "심각도 가중 합이며 위험 확률이 아니다. holdout 신뢰구간이 0.5를 포함해 구분력이 입증되지 않았다. 개별 finding 의 수치 근거를 보고 판단할 것."
+    },
+    "tier1_only": true,
+    "competition": null,
+    "findings": [
+     {
+      "code": "feature.n_secondary_outcomes",
+      "severity": "high",
+      "title": "2차 평가변수 수가 완주군보다 많습니다",
+      "observed": 19.0,
+      "ref_completed": 4.0,
+      "ref_failed": 5.0,
+      "bucket_used": "__ALL__|p2",
+      "evidence": "이 프로토콜의 2차 평가변수 수는 19개입니다. 같은 적응증 완주군 중앙값은 4개, 모집 실패군 중앙값은 5개입니다. 실패군 쪽에 서 있습니다.",
+      "suggestion": "2차 평가변수가 많으면 사이트 부담과 데이터 수집 비용이 커집니다. 핵심만 남기십시오."
+     },
+     {
+      "code": "feature.total_competing_seats",
+      "severity": "medium",
+      "title": "경쟁 시험 목표 등록수 합계가 완주군보다 많습니다",
+      "observed": 135655.0,
+      "ref_completed": 45496.0,
+      "ref_failed": 53945,
+      "bucket_used": "__ALL__|p2",
+      "evidence": "이 프로토콜의 경쟁 시험 목표 등록수 합계는 135655명입니다. 같은 적응증 완주군 중앙값은 45496명, 모집 실패군 중앙값은 53945명입니다.",
+      "suggestion": "경쟁 시험 수는 프로토콜로 바꿀 수 없으므로, 겹치지 않는 환자군을 확보하는 방향으로 대응하십시오. ① 경쟁 시험이 제외하는 하위 집단(고령·동반질환·이전 치료 이력)을 오히려 포함, ② 경쟁이 덜한 지역·국가로 사이트 확장, ③ 동일 기전 경쟁 시험 대비 차별화 근거를 프로토콜에 명시. 이 항목은 holdout 에서 구분력이 확인된 유일한 신호이므로 우선 검토 대상입니다."
+     }
+    ],
+    "notes": [
+     "경쟁 시험 밀도 감사를 건너뛰었습니다 (네트워크 미사용 모드).",
+     "Tier 1 결정론적 감사만 수행했습니다. LLM 호출 0회, 비용 $0."
+    ]
+   },
+   "reveal": {
+    "final_status": "TERMINATED",
+    "actual_enrollment": 237,
+    "enrollment_attainment": 1.129,
+    "actual_primary_completion": "2012-02-21",
+    "why_stopped": "Study is terminated due to lack of efficacy",
+    "category": "B",
+    "category_name": "과학적",
+    "category_reason": "lack_of_efficacy",
+    "category_evidence": "lack of efficacy",
+    "amend_eligibility": 2,
+    "n_versions": 11
+   }
+  },
+  {
+   "nct_id": "NCT01497119",
+   "condition": "atopic dermatitis",
+   "group": "중단-과학적",
+   "blind": {
+    "brief_title": "A Study of JNJ-39758979 in Adult Japanese Patients With Moderate Atopic Dermatitis",
+    "start_date": "2011-09",
+    "planned_primary_completion": "2012-05",
+    "planned_enrollment": 105,
+    "planned_enrollment_type": "ESTIMATED",
+    "phases": [
+     "PHASE2"
+    ],
+    "allocation": "RANDOMIZED",
+    "masking": "DOUBLE",
+    "n_arms": 3,
+    "primary_outcomes": [
+     {
+      "measure": "Changes in clinical laboratory tests",
+      "timeframe": "Up to approximately 14 weeks"
+     },
+     {
+      "measure": "The number of adverse events",
+      "timeframe": "Up to approximately 14 weeks"
+     },
+     {
+      "measure": "Changes in electrocardiograms",
+      "timeframe": "Up to approximately 14 weeks"
+     },
+     {
+      "measure": "Changes in vital signs",
+      "timeframe": "Up to approximately 14 weeks"
+     },
+     {
+      "measure": "Change in EASI (Eczema Area and Severity Index) score",
+      "timeframe": "Up to approximately 14 weeks"
+     },
+     {
+      "measure": "Changes in physical examination evaluations",
+      "timeframe": "Up to 10 weeks"
+     }
+    ],
+    "n_secondary_outcomes": 5,
+    "n_inclusion_items": 6,
+    "n_exclusion_items": 7,
+    "eligibility_criteria": "Inclusion Criteria:\nDiagnosis of atopic dermatitis based on the criteria of the Japanese Dermatological Association and have: pruritus (itching); eczema-like changes in a typical pattern, and a chronic or chronically relapsing course.\nChildhood onset (under age of 13) of atopic dermatitis.\nDiagnosis of moderate atopic dermatitis based on the Rajka Langeland score between 4.5 and 7.5, inclusive.\nHave at least 3 ratings of &quot;Moderate itching&quot;, &quot;Severe itching&quot;, or &quot;Extremely severe itching&quot; either at night or during the day based on the Pruritus Categorical Response Scale (PCRS) in the 7 days prior to randomization.\nAtopic dermatitis with 10% to 50% (inclusive) Body Surface Area (BSA) involvement.\nExclusion Criteria:\nHave current signs or symptoms of liver or renal insufficiency or cardiac, vascular, pulmonary, gastrointestinal, endocrine, neurologic, hematologic, psychiatric, or metabolic disturbances that are severe, progressive or uncontrolled in the Investigator&#x27;s opinion.\nPatients with well controlled asthma, allergic rhinitis, or allergic conjunctivitis are allowed to participate.\nAtopic dermatitis patients with other chronic conditions will not be excluded if the Investigator has determined that the condition is not severe or progressive and is being controlled with stable therapy.\nHave any known malignancy or have a history of malignancy (with the exception of basal cell carcinoma, squamous cell carcinoma in situ of the skin, or squamous cell carcinoma of the skin that has been treated with no evidence of recurrence within 5 years prior to the first administration of study agent).\nEvidence of any other skin condition that, in the opinion of the Investigator, would interfere with the assessment of atopic dermatitis.\nUse of non-steroid immunosuppressive or immunomodulatory agents within 4 weeks of randomization, including cyclosporine A, azathioprine, mycophenolate mofetil, and interferon gamma.\nUse of systemic corticosteroids within 4 weeks of randomization.",
+    "n_sites": 14,
+    "countries": [
+     "Japan"
+    ],
+    "brief_summary": "The purpose of this study is to evaluate the safety, tolerability, and efficacy of JNJ-39758979 in adult Japanese patients with moderate, active atopic dermatitis."
+   },
+   "audit": {
+    "nct_id": "NCT01497119",
+    "bucket": "atopic dermatitis",
+    "title": "A Study of JNJ-39758979 in Adult Japanese Patients With Moderate Atopic Dermatitis",
+    "start_date": "2011-09",
+    "diagnostic_score": 0,
+    "score_calibration": {
+     "calibrated": false,
+     "holdout_auc": 0.587,
+     "holdout_ci95": [
+      0.484,
+      0.693
+     ],
+     "note": "심각도 가중 합이며 위험 확률이 아니다. holdout 신뢰구간이 0.5를 포함해 구분력이 입증되지 않았다. 개별 finding 의 수치 근거를 보고 판단할 것."
+    },
+    "tier1_only": true,
+    "competition": null,
+    "findings": [],
+    "notes": [
+     "경쟁 시험 밀도 감사를 건너뛰었습니다 (네트워크 미사용 모드).",
+     "Tier 1 결정론적 감사만 수행했습니다. LLM 호출 0회, 비용 $0."
+    ]
+   },
+   "reveal": {
+    "final_status": "TERMINATED",
+    "actual_enrollment": 88,
+    "enrollment_attainment": 0.838,
+    "actual_primary_completion": "2012-02",
+    "why_stopped": "This study was terminated prematurely due to 2 cases of agranulocytosis.",
+    "category": "B",
+    "category_name": "과학적",
+    "category_reason": "safety_toxicity",
+    "category_evidence": "2 cases of agranulocytosis",
+    "amend_eligibility": 0,
+    "n_versions": 10
+   }
+  }
+ ]
+}

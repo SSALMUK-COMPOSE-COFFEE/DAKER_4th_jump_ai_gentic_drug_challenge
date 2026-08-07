@@ -1,0 +1,74 @@
+{
+ "_meta": {
+  "n_corpus": 1463,
+  "n_cases": 400,
+  "llm_calls": 0,
+  "measures": "게이트의 기계적 위조 검출력",
+  "does_not_measure": "LLM 의 실제 환각률 (A4 구현 후 별도 측정)"
+ },
+ "by_kind": {
+  "정상 (통과해야 함)": {
+   "n": 40,
+   "correct": 40,
+   "expect_pass": true
+  },
+  "존재하지 않는 NCT ID": {
+   "n": 40,
+   "correct": 40,
+   "expect_pass": false
+  },
+  "인용문 변조": {
+   "n": 40,
+   "correct": 40,
+   "expect_pass": false
+  },
+  "시간 컷오프 위반 (미래 전례)": {
+   "n": 40,
+   "correct": 40,
+   "expect_pass": false
+  },
+  "인용문이 너무 짧음": {
+   "n": 40,
+   "correct": 40,
+   "expect_pass": false
+  },
+  "모집 공격에 비A분류 전례": {
+   "n": 40,
+   "correct": 40,
+   "expect_pass": false
+  },
+  "수치 조작 (QUANT)": {
+   "n": 40,
+   "correct": 40,
+   "expect_pass": false
+  },
+  "검증 미통과 피처를 근거로": {
+   "n": 40,
+   "correct": 40,
+   "expect_pass": false
+  },
+  "금지 근거 (스폰서 유형)": {
+   "n": 40,
+   "correct": 40,
+   "expect_pass": false
+  },
+  "무근거 공격 (인용 0)": {
+   "n": 40,
+   "correct": 40,
+   "expect_pass": false
+  }
+ },
+ "reject_reasons": {
+  "전례 NCT ID 가 코퍼스에 없음 (환각)": 40,
+  "전례 인용문이 원문과 불일치 (환각)": 40,
+  "시간 컷오프 위반 (미래 전례 인용)": 40,
+  "인용문이 너무 짧아 대조 불가": 40,
+  "모집 공격의 근거인데 A 분류(모집 실패) 전례가 아님": 40,
+  "수치가 T1 출력과 불일치 (환각)": 40,
+  "검증을 통과하지 못한 피처를 위험 근거로 사용": 40,
+  "금지된 공격 근거": 40,
+  "무근거 공격 (인용 0개)": 40
+ },
+ "forgery_detection_rate": 1.0,
+ "false_rejection_rate": 0.0
+}

@@ -1,0 +1,40 @@
+적응증별 완주군 현황:
+  acute myeloid leukemia             완주군   0건  ← 보충 필요
+  alzheimer disease                  완주군  40건
+  amyotrophic lateral sclerosis      완주군   0건  ← 보충 필요
+  atopic dermatitis                  완주군  40건
+  cystic fibrosis                    완주군   0건  ← 보충 필요
+  glioblastoma                       완주군   0건  ← 보충 필요
+  heart failure                      완주군   0건  ← 보충 필요
+  idiopathic pulmonary fibrosis      완주군   0건  ← 보충 필요
+  non-small cell lung cancer         완주군  40건
+  ovarian cancer                     완주군   0건  ← 보충 필요
+  pancreatic cancer                  완주군   0건  ← 보충 필요
+  rheumatoid arthritis               완주군  40건
+  sickle cell disease                완주군   0건  ← 보충 필요
+  systemic lupus erythematosus       완주군   0건  ← 보충 필요
+  type 2 diabetes                    완주군  40건
+
+10개 적응증에서 COMPLETED 수집 시작 (목표 각 40건)
+
+[resume] 기존 1072건 건너뜀
+[search] acute myeloid leukemia / COMPLETED: 40건
+  → 누적 1112건
+[search] amyotrophic lateral sclerosis / COMPLETED: 40건
+  → 누적 1152건
+[search] cystic fibrosis / COMPLETED: 40건
+  → 누적 1192건
+[search] glioblastoma / COMPLETED: 40건
+  → 누적 1231건
+[search] heart failure / COMPLETED: 40건
+  → 누적 1271건
+[search] idiopathic pulmonary fibrosis / COMPLETED: 40건
+  → 누적 1311건
+[search] ovarian cancer / COMPLETED: 40건
+  → 누적 1348건
+[search] pancreatic cancer / COMPLETED: 40건
+  → 누적 1383건
+[search] sickle cell disease / COMPLETED: 40건
+  → 누적 1423건
+[search] systemic lupus erythematosus / COMPLETED: 40건
+  → 누적 1463건

@@ -1,0 +1,1262 @@
+{
+ "_meta": {
+  "source": "data/raw/ctgov_phase2.jsonl",
+  "n_rows": 1463,
+  "n_boot": 400,
+  "boot_seed": 20260730
+ },
+ "comparisons": {
+  "recruit_vs_completed": {
+   "n_pos": 121,
+   "n_neg": 591,
+   "indication_only_control": 0.722,
+   "features": {
+    "n_concurrent_phase2": {
+     "none": {
+      "auc": 0.688,
+      "ci95": [
+       0.632,
+       0.739
+      ]
+     },
+     "indication": {
+      "auc": 0.472,
+      "ci95": [
+       0.411,
+       0.53
+      ]
+     },
+     "phase": {
+      "auc": 0.689,
+      "ci95": [
+       0.637,
+       0.745
+      ]
+     },
+     "sponsor": {
+      "auc": 0.661,
+      "ci95": [
+       0.602,
+       0.717
+      ]
+     },
+     "indication+phase": {
+      "auc": 0.474,
+      "ci95": [
+       0.408,
+       0.547
+      ]
+     }
+    },
+    "n_concurrent_trials": {
+     "none": {
+      "auc": 0.673,
+      "ci95": [
+       0.622,
+       0.721
+      ]
+     },
+     "indication": {
+      "auc": 0.515,
+      "ci95": [
+       0.449,
+       0.579
+      ]
+     },
+     "phase": {
+      "auc": 0.677,
+      "ci95": [
+       0.621,
+       0.732
+      ]
+     },
+     "sponsor": {
+      "auc": 0.646,
+      "ci95": [
+       0.594,
+       0.707
+      ]
+     },
+     "indication+phase": {
+      "auc": 0.518,
+      "ci95": [
+       0.451,
+       0.584
+      ]
+     }
+    },
+    "total_competing_seats": {
+     "none": {
+      "auc": 0.571,
+      "ci95": [
+       0.524,
+       0.622
+      ]
+     },
+     "indication": {
+      "auc": 0.515,
+      "ci95": [
+       0.447,
+       0.585
+      ]
+     },
+     "phase": {
+      "auc": 0.581,
+      "ci95": [
+       0.524,
+       0.63
+      ]
+     },
+     "sponsor": {
+      "auc": 0.562,
+      "ci95": [
+       0.504,
+       0.621
+      ]
+     },
+     "indication+phase": {
+      "auc": 0.514,
+      "ci95": [
+       0.444,
+       0.587
+      ]
+     }
+    },
+    "n_inclusion_items": {
+     "none": {
+      "auc": 0.637,
+      "ci95": [
+       0.575,
+       0.695
+      ]
+     },
+     "indication": {
+      "auc": 0.555,
+      "ci95": [
+       0.493,
+       0.621
+      ]
+     },
+     "phase": {
+      "auc": 0.654,
+      "ci95": [
+       0.588,
+       0.717
+      ]
+     },
+     "sponsor": {
+      "auc": 0.61,
+      "ci95": [
+       0.546,
+       0.681
+      ]
+     },
+     "indication+phase": {
+      "auc": 0.564,
+      "ci95": [
+       0.49,
+       0.629
+      ]
+     }
+    },
+    "n_exclusion_items": {
+     "none": {
+      "auc": 0.533,
+      "ci95": [
+       0.477,
+       0.589
+      ]
+     },
+     "indication": {
+      "auc": 0.498,
+      "ci95": [
+       0.43,
+       0.56
+      ]
+     },
+     "phase": {
+      "auc": 0.547,
+      "ci95": [
+       0.482,
+       0.61
+      ]
+     },
+     "sponsor": {
+      "auc": 0.516,
+      "ci95": [
+       0.453,
+       0.58
+      ]
+     },
+     "indication+phase": {
+      "auc": 0.502,
+      "ci95": [
+       0.436,
+       0.584
+      ]
+     }
+    },
+    "n_eligibility_items": {
+     "none": {
+      "auc": 0.596,
+      "ci95": [
+       0.539,
+       0.663
+      ]
+     },
+     "indication": {
+      "auc": 0.525,
+      "ci95": [
+       0.461,
+       0.584
+      ]
+     },
+     "phase": {
+      "auc": 0.616,
+      "ci95": [
+       0.559,
+       0.678
+      ]
+     },
+     "sponsor": {
+      "auc": 0.569,
+      "ci95": [
+       0.506,
+       0.633
+      ]
+     },
+     "indication+phase": {
+      "auc": 0.532,
+      "ci95": [
+       0.468,
+       0.605
+      ]
+     }
+    },
+    "eligibility_chars": {
+     "none": {
+      "auc": 0.572,
+      "ci95": [
+       0.517,
+       0.631
+      ]
+     },
+     "indication": {
+      "auc": 0.508,
+      "ci95": [
+       0.445,
+       0.571
+      ]
+     },
+     "phase": {
+      "auc": 0.588,
+      "ci95": [
+       0.526,
+       0.65
+      ]
+     },
+     "sponsor": {
+      "auc": 0.561,
+      "ci95": [
+       0.504,
+       0.623
+      ]
+     },
+     "indication+phase": {
+      "auc": 0.514,
+      "ci95": [
+       0.443,
+       0.583
+      ]
+     }
+    },
+    "planned_enrollment": {
+     "none": {
+      "auc": 0.594,
+      "ci95": [
+       0.531,
+       0.642
+      ]
+     },
+     "indication": {
+      "auc": 0.582,
+      "ci95": [
+       0.52,
+       0.647
+      ]
+     },
+     "phase": {
+      "auc": 0.591,
+      "ci95": [
+       0.54,
+       0.651
+      ]
+     },
+     "sponsor": {
+      "auc": 0.554,
+      "ci95": [
+       0.5,
+       0.614
+      ]
+     },
+     "indication+phase": {
+      "auc": 0.574,
+      "ci95": [
+       0.508,
+       0.64
+      ]
+     }
+    },
+    "planned_duration_months": {
+     "none": {
+      "auc": 0.64,
+      "ci95": [
+       0.592,
+       0.688
+      ]
+     },
+     "indication": {
+      "auc": 0.581,
+      "ci95": [
+       0.526,
+       0.64
+      ]
+     },
+     "phase": {
+      "auc": 0.636,
+      "ci95": [
+       0.578,
+       0.693
+      ]
+     },
+     "sponsor": {
+      "auc": 0.571,
+      "ci95": [
+       0.51,
+       0.627
+      ]
+     },
+     "indication+phase": {
+      "auc": 0.576,
+      "ci95": [
+       0.511,
+       0.649
+      ]
+     }
+    },
+    "monthly_enrollment_burden": {
+     "none": {
+      "auc": 0.678,
+      "ci95": [
+       0.629,
+       0.742
+      ]
+     },
+     "indication": {
+      "auc": 0.632,
+      "ci95": [
+       0.559,
+       0.701
+      ]
+     },
+     "phase": {
+      "auc": 0.674,
+      "ci95": [
+       0.614,
+       0.73
+      ]
+     },
+     "sponsor": {
+      "auc": 0.604,
+      "ci95": [
+       0.543,
+       0.662
+      ]
+     },
+     "indication+phase": {
+      "auc": 0.628,
+      "ci95": [
+       0.553,
+       0.693
+      ]
+     }
+    },
+    "n_secondary_outcomes": {
+     "none": {
+      "auc": 0.461,
+      "ci95": [
+       0.398,
+       0.534
+      ]
+     },
+     "indication": {
+      "auc": 0.454,
+      "ci95": [
+       0.383,
+       0.52
+      ]
+     },
+     "phase": {
+      "auc": 0.485,
+      "ci95": [
+       0.417,
+       0.555
+      ]
+     },
+     "sponsor": {
+      "auc": 0.492,
+      "ci95": [
+       0.425,
+       0.568
+      ]
+     },
+     "indication+phase": {
+      "auc": 0.476,
+      "ci95": [
+       0.397,
+       0.558
+      ]
+     }
+    }
+   },
+   "robust_features": [
+    "planned_duration_months",
+    "monthly_enrollment_burden"
+   ]
+  },
+  "scientific_vs_completed": {
+   "n_pos": 116,
+   "n_neg": 591,
+   "indication_only_control": 0.659,
+   "features": {
+    "n_concurrent_phase2": {
+     "none": {
+      "auc": 0.545,
+      "ci95": [
+       0.492,
+       0.6
+      ]
+     },
+     "indication": {
+      "auc": 0.529,
+      "ci95": [
+       0.467,
+       0.591
+      ]
+     },
+     "phase": {
+      "auc": 0.521,
+      "ci95": [
+       0.465,
+       0.583
+      ]
+     },
+     "sponsor": {
+      "auc": 0.573,
+      "ci95": [
+       0.517,
+       0.631
+      ]
+     },
+     "indication+phase": {
+      "auc": 0.547,
+      "ci95": [
+       0.479,
+       0.612
+      ]
+     }
+    },
+    "n_concurrent_trials": {
+     "none": {
+      "auc": 0.562,
+      "ci95": [
+       0.513,
+       0.613
+      ]
+     },
+     "indication": {
+      "auc": 0.517,
+      "ci95": [
+       0.454,
+       0.575
+      ]
+     },
+     "phase": {
+      "auc": 0.546,
+      "ci95": [
+       0.488,
+       0.605
+      ]
+     },
+     "sponsor": {
+      "auc": 0.586,
+      "ci95": [
+       0.529,
+       0.638
+      ]
+     },
+     "indication+phase": {
+      "auc": 0.507,
+      "ci95": [
+       0.437,
+       0.576
+      ]
+     }
+    },
+    "total_competing_seats": {
+     "none": {
+      "auc": 0.599,
+      "ci95": [
+       0.546,
+       0.653
+      ]
+     },
+     "indication": {
+      "auc": 0.522,
+      "ci95": [
+       0.465,
+       0.576
+      ]
+     },
+     "phase": {
+      "auc": 0.601,
+      "ci95": [
+       0.541,
+       0.655
+      ]
+     },
+     "sponsor": {
+      "auc": 0.613,
+      "ci95": [
+       0.554,
+       0.666
+      ]
+     },
+     "indication+phase": {
+      "auc": 0.524,
+      "ci95": [
+       0.459,
+       0.59
+      ]
+     }
+    },
+    "n_inclusion_items": {
+     "none": {
+      "auc": 0.498,
+      "ci95": [
+       0.443,
+       0.551
+      ]
+     },
+     "indication": {
+      "auc": 0.477,
+      "ci95": [
+       0.415,
+       0.545
+      ]
+     },
+     "phase": {
+      "auc": 0.469,
+      "ci95": [
+       0.412,
+       0.536
+      ]
+     },
+     "sponsor": {
+      "auc": 0.509,
+      "ci95": [
+       0.455,
+       0.572
+      ]
+     },
+     "indication+phase": {
+      "auc": 0.465,
+      "ci95": [
+       0.397,
+       0.543
+      ]
+     }
+    },
+    "n_exclusion_items": {
+     "none": {
+      "auc": 0.526,
+      "ci95": [
+       0.47,
+       0.581
+      ]
+     },
+     "indication": {
+      "auc": 0.508,
+      "ci95": [
+       0.448,
+       0.577
+      ]
+     },
+     "phase": {
+      "auc": 0.493,
+      "ci95": [
+       0.423,
+       0.559
+      ]
+     },
+     "sponsor": {
+      "auc": 0.524,
+      "ci95": [
+       0.46,
+       0.593
+      ]
+     },
+     "indication+phase": {
+      "auc": 0.487,
+      "ci95": [
+       0.413,
+       0.558
+      ]
+     }
+    },
+    "n_eligibility_items": {
+     "none": {
+      "auc": 0.515,
+      "ci95": [
+       0.46,
+       0.566
+      ]
+     },
+     "indication": {
+      "auc": 0.496,
+      "ci95": [
+       0.438,
+       0.557
+      ]
+     },
+     "phase": {
+      "auc": 0.483,
+      "ci95": [
+       0.42,
+       0.548
+      ]
+     },
+     "sponsor": {
+      "auc": 0.525,
+      "ci95": [
+       0.469,
+       0.585
+      ]
+     },
+     "indication+phase": {
+      "auc": 0.48,
+      "ci95": [
+       0.41,
+       0.551
+      ]
+     }
+    },
+    "eligibility_chars": {
+     "none": {
+      "auc": 0.558,
+      "ci95": [
+       0.499,
+       0.616
+      ]
+     },
+     "indication": {
+      "auc": 0.542,
+      "ci95": [
+       0.487,
+       0.6
+      ]
+     },
+     "phase": {
+      "auc": 0.534,
+      "ci95": [
+       0.473,
+       0.597
+      ]
+     },
+     "sponsor": {
+      "auc": 0.555,
+      "ci95": [
+       0.49,
+       0.618
+      ]
+     },
+     "indication+phase": {
+      "auc": 0.532,
+      "ci95": [
+       0.459,
+       0.603
+      ]
+     }
+    },
+    "planned_enrollment": {
+     "none": {
+      "auc": 0.328,
+      "ci95": [
+       0.274,
+       0.388
+      ]
+     },
+     "indication": {
+      "auc": 0.348,
+      "ci95": [
+       0.295,
+       0.415
+      ]
+     },
+     "phase": {
+      "auc": 0.316,
+      "ci95": [
+       0.26,
+       0.381
+      ]
+     },
+     "sponsor": {
+      "auc": 0.354,
+      "ci95": [
+       0.296,
+       0.406
+      ]
+     },
+     "indication+phase": {
+      "auc": 0.342,
+      "ci95": [
+       0.279,
+       0.412
+      ]
+     }
+    },
+    "planned_duration_months": {
+     "none": {
+      "auc": 0.557,
+      "ci95": [
+       0.507,
+       0.618
+      ]
+     },
+     "indication": {
+      "auc": 0.591,
+      "ci95": [
+       0.531,
+       0.643
+      ]
+     },
+     "phase": {
+      "auc": 0.538,
+      "ci95": [
+       0.473,
+       0.599
+      ]
+     },
+     "sponsor": {
+      "auc": 0.599,
+      "ci95": [
+       0.545,
+       0.654
+      ]
+     },
+     "indication+phase": {
+      "auc": 0.591,
+      "ci95": [
+       0.527,
+       0.648
+      ]
+     }
+    },
+    "monthly_enrollment_burden": {
+     "none": {
+      "auc": 0.369,
+      "ci95": [
+       0.317,
+       0.442
+      ]
+     },
+     "indication": {
+      "auc": 0.4,
+      "ci95": [
+       0.328,
+       0.467
+      ]
+     },
+     "phase": {
+      "auc": 0.354,
+      "ci95": [
+       0.293,
+       0.413
+      ]
+     },
+     "sponsor": {
+      "auc": 0.406,
+      "ci95": [
+       0.35,
+       0.473
+      ]
+     },
+     "indication+phase": {
+      "auc": 0.401,
+      "ci95": [
+       0.329,
+       0.471
+      ]
+     }
+    },
+    "n_secondary_outcomes": {
+     "none": {
+      "auc": 0.562,
+      "ci95": [
+       0.499,
+       0.624
+      ]
+     },
+     "indication": {
+      "auc": 0.541,
+      "ci95": [
+       0.47,
+       0.609
+      ]
+     },
+     "phase": {
+      "auc": 0.553,
+      "ci95": [
+       0.489,
+       0.622
+      ]
+     },
+     "sponsor": {
+      "auc": 0.542,
+      "ci95": [
+       0.478,
+       0.61
+      ]
+     },
+     "indication+phase": {
+      "auc": 0.533,
+      "ci95": [
+       0.468,
+       0.611
+      ]
+     }
+    }
+   },
+   "robust_features": []
+  },
+  "business_vs_completed": {
+   "n_pos": 141,
+   "n_neg": 591,
+   "indication_only_control": 0.665,
+   "features": {
+    "n_concurrent_phase2": {
+     "none": {
+      "auc": 0.617,
+      "ci95": [
+       0.567,
+       0.67
+      ]
+     },
+     "indication": {
+      "auc": 0.559,
+      "ci95": [
+       0.503,
+       0.619
+      ]
+     },
+     "phase": {
+      "auc": 0.602,
+      "ci95": [
+       0.554,
+       0.655
+      ]
+     },
+     "sponsor": {
+      "auc": 0.632,
+      "ci95": [
+       0.58,
+       0.684
+      ]
+     },
+     "indication+phase": {
+      "auc": 0.568,
+      "ci95": [
+       0.492,
+       0.637
+      ]
+     }
+    },
+    "n_concurrent_trials": {
+     "none": {
+      "auc": 0.652,
+      "ci95": [
+       0.602,
+       0.7
+      ]
+     },
+     "indication": {
+      "auc": 0.609,
+      "ci95": [
+       0.55,
+       0.666
+      ]
+     },
+     "phase": {
+      "auc": 0.643,
+      "ci95": [
+       0.594,
+       0.695
+      ]
+     },
+     "sponsor": {
+      "auc": 0.662,
+      "ci95": [
+       0.615,
+       0.707
+      ]
+     },
+     "indication+phase": {
+      "auc": 0.598,
+      "ci95": [
+       0.533,
+       0.659
+      ]
+     }
+    },
+    "total_competing_seats": {
+     "none": {
+      "auc": 0.645,
+      "ci95": [
+       0.601,
+       0.693
+      ]
+     },
+     "indication": {
+      "auc": 0.599,
+      "ci95": [
+       0.542,
+       0.654
+      ]
+     },
+     "phase": {
+      "auc": 0.652,
+      "ci95": [
+       0.6,
+       0.703
+      ]
+     },
+     "sponsor": {
+      "auc": 0.652,
+      "ci95": [
+       0.605,
+       0.696
+      ]
+     },
+     "indication+phase": {
+      "auc": 0.598,
+      "ci95": [
+       0.531,
+       0.657
+      ]
+     }
+    },
+    "n_inclusion_items": {
+     "none": {
+      "auc": 0.557,
+      "ci95": [
+       0.504,
+       0.613
+      ]
+     },
+     "indication": {
+      "auc": 0.544,
+      "ci95": [
+       0.482,
+       0.6
+      ]
+     },
+     "phase": {
+      "auc": 0.534,
+      "ci95": [
+       0.474,
+       0.593
+      ]
+     },
+     "sponsor": {
+      "auc": 0.564,
+      "ci95": [
+       0.515,
+       0.625
+      ]
+     },
+     "indication+phase": {
+      "auc": 0.541,
+      "ci95": [
+       0.472,
+       0.611
+      ]
+     }
+    },
+    "n_exclusion_items": {
+     "none": {
+      "auc": 0.561,
+      "ci95": [
+       0.507,
+       0.615
+      ]
+     },
+     "indication": {
+      "auc": 0.548,
+      "ci95": [
+       0.491,
+       0.602
+      ]
+     },
+     "phase": {
+      "auc": 0.531,
+      "ci95": [
+       0.472,
+       0.593
+      ]
+     },
+     "sponsor": {
+      "auc": 0.558,
+      "ci95": [
+       0.505,
+       0.61
+      ]
+     },
+     "indication+phase": {
+      "auc": 0.524,
+      "ci95": [
+       0.458,
+       0.585
+      ]
+     }
+    },
+    "n_eligibility_items": {
+     "none": {
+      "auc": 0.563,
+      "ci95": [
+       0.504,
+       0.614
+      ]
+     },
+     "indication": {
+      "auc": 0.552,
+      "ci95": [
+       0.502,
+       0.602
+      ]
+     },
+     "phase": {
+      "auc": 0.534,
+      "ci95": [
+       0.476,
+       0.6
+      ]
+     },
+     "sponsor": {
+      "auc": 0.566,
+      "ci95": [
+       0.519,
+       0.62
+      ]
+     },
+     "indication+phase": {
+      "auc": 0.531,
+      "ci95": [
+       0.472,
+       0.599
+      ]
+     }
+    },
+    "eligibility_chars": {
+     "none": {
+      "auc": 0.576,
+      "ci95": [
+       0.525,
+       0.631
+      ]
+     },
+     "indication": {
+      "auc": 0.558,
+      "ci95": [
+       0.499,
+       0.61
+      ]
+     },
+     "phase": {
+      "auc": 0.545,
+      "ci95": [
+       0.477,
+       0.601
+      ]
+     },
+     "sponsor": {
+      "auc": 0.574,
+      "ci95": [
+       0.521,
+       0.623
+      ]
+     },
+     "indication+phase": {
+      "auc": 0.537,
+      "ci95": [
+       0.469,
+       0.599
+      ]
+     }
+    },
+    "planned_enrollment": {
+     "none": {
+      "auc": 0.487,
+      "ci95": [
+       0.436,
+       0.538
+      ]
+     },
+     "indication": {
+      "auc": 0.494,
+      "ci95": [
+       0.442,
+       0.556
+      ]
+     },
+     "phase": {
+      "auc": 0.501,
+      "ci95": [
+       0.447,
+       0.565
+      ]
+     },
+     "sponsor": {
+      "auc": 0.501,
+      "ci95": [
+       0.45,
+       0.553
+      ]
+     },
+     "indication+phase": {
+      "auc": 0.514,
+      "ci95": [
+       0.445,
+       0.579
+      ]
+     }
+    },
+    "planned_duration_months": {
+     "none": {
+      "auc": 0.579,
+      "ci95": [
+       0.528,
+       0.629
+      ]
+     },
+     "indication": {
+      "auc": 0.571,
+      "ci95": [
+       0.512,
+       0.629
+      ]
+     },
+     "phase": {
+      "auc": 0.572,
+      "ci95": [
+       0.516,
+       0.626
+      ]
+     },
+     "sponsor": {
+      "auc": 0.603,
+      "ci95": [
+       0.553,
+       0.657
+      ]
+     },
+     "indication+phase": {
+      "auc": 0.573,
+      "ci95": [
+       0.506,
+       0.632
+      ]
+     }
+    },
+    "monthly_enrollment_burden": {
+     "none": {
+      "auc": 0.542,
+      "ci95": [
+       0.489,
+       0.59
+      ]
+     },
+     "indication": {
+      "auc": 0.543,
+      "ci95": [
+       0.48,
+       0.611
+      ]
+     },
+     "phase": {
+      "auc": 0.555,
+      "ci95": [
+       0.503,
+       0.612
+      ]
+     },
+     "sponsor": {
+      "auc": 0.58,
+      "ci95": [
+       0.533,
+       0.631
+      ]
+     },
+     "indication+phase": {
+      "auc": 0.571,
+      "ci95": [
+       0.508,
+       0.64
+      ]
+     }
+    },
+    "n_secondary_outcomes": {
+     "none": {
+      "auc": 0.564,
+      "ci95": [
+       0.506,
+       0.627
+      ]
+     },
+     "indication": {
+      "auc": 0.559,
+      "ci95": [
+       0.485,
+       0.642
+      ]
+     },
+     "phase": {
+      "auc": 0.554,
+      "ci95": [
+       0.495,
+       0.622
+      ]
+     },
+     "sponsor": {
+      "auc": 0.556,
+      "ci95": [
+       0.489,
+       0.618
+      ]
+     },
+     "indication+phase": {
+      "auc": 0.55,
+      "ci95": [
+       0.485,
+       0.626
+      ]
+     }
+    }
+   },
+   "robust_features": [
+    "n_concurrent_trials",
+    "total_competing_seats",
+    "planned_duration_months"
+   ]
+  }
+ }
+}

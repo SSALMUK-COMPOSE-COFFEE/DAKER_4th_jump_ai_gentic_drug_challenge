@@ -1,0 +1,1277 @@
+{
+ "_meta": {
+  "window": [
+   "2010-01-01",
+   "2020-12-31"
+  ],
+  "study_type": "INTERVENTIONAL",
+  "phase_filter_note": "AREA[Phase]PHASE2 는 PHASE1|PHASE2, PHASE2|PHASE3 바스켓을 포함한다. 코퍼스(ctgov_phase2.jsonl)와 동일한 필터이므로 비교 가능하다. PHASE2_PURE 는 바스켓을 제외한 대조값.",
+  "classifier": "labels.taxonomy.classify (규칙 기반 1차 패스, LLM 미사용)",
+  "census_not_sample": true,
+  "generated_by": "src/analysis/census.py"
+ },
+ "phase_status_counts": {
+  "PHASE1": {
+   "all": 30416,
+   "COMPLETED": 21359,
+   "TERMINATED": 3301,
+   "WITHDRAWN": 1129,
+   "UNKNOWN": 3100,
+   "ACTIVE_NOT_RECRUITING": 945,
+   "RECRUITING": 463,
+   "SUSPENDED": 97,
+   "ENROLLING_BY_INVITATION": 20,
+   "NOT_YET_RECRUITING": 2
+  },
+  "PHASE2": {
+   "all": 38987,
+   "COMPLETED": 22401,
+   "TERMINATED": 5299,
+   "WITHDRAWN": 1875,
+   "UNKNOWN": 6608,
+   "ACTIVE_NOT_RECRUITING": 1799,
+   "RECRUITING": 817,
+   "SUSPENDED": 140,
+   "ENROLLING_BY_INVITATION": 32,
+   "NOT_YET_RECRUITING": 16
+  },
+  "PHASE3": {
+   "all": 21498,
+   "COMPLETED": 13982,
+   "TERMINATED": 2116,
+   "WITHDRAWN": 771,
+   "UNKNOWN": 3468,
+   "ACTIVE_NOT_RECRUITING": 735,
+   "RECRUITING": 335,
+   "SUSPENDED": 67,
+   "ENROLLING_BY_INVITATION": 11,
+   "NOT_YET_RECRUITING": 13
+  },
+  "PHASE2_PURE": {
+   "all": 27823,
+   "COMPLETED": 16322,
+   "TERMINATED": 3867,
+   "WITHDRAWN": 1332
+  }
+ },
+ "why_stopped_blocks": {
+  "PHASE1": {
+   "ALL_STOPPED": {
+    "n": 4430,
+    "n_reason_empty": 590,
+    "n_reason_stated": 3840,
+    "n_rule_matched": 2415,
+    "n_rule_unmatched": 1425,
+    "rule_coverage_of_stated": 0.6289,
+    "by_category": {
+     "A": 705,
+     "B": 420,
+     "C": 1276,
+     "D": 14,
+     "?": 2015
+    },
+    "share_A_of_all": 0.1591,
+    "share_A_of_stated": 0.1836,
+    "share_A_of_matched": 0.2919,
+    "share_A_of_stated_bounds": [
+     0.1836,
+     0.5547
+    ],
+    "top_reasons": [
+     [
+      "?/unmatched",
+      1425
+     ],
+     [
+      "A/recruitment",
+      692
+     ],
+     [
+      "?/empty",
+      590
+     ],
+     [
+      "C/business_decision",
+      376
+     ],
+     [
+      "C/funding",
+      357
+     ],
+     [
+      "C/sponsor_decision",
+      270
+     ],
+     [
+      "B/safety_toxicity",
+      268
+     ],
+     [
+      "B/lack_of_efficacy",
+      127
+     ],
+     [
+      "C/covid",
+      113
+     ],
+     [
+      "C/pi_left",
+      86
+     ],
+     [
+      "C/drug_supply",
+      32
+     ],
+     [
+      "C/program_terminated",
+      28
+     ]
+    ]
+   },
+   "TERMINATED": {
+    "n": 3301,
+    "n_reason_empty": 361,
+    "n_reason_stated": 2940,
+    "n_rule_matched": 1929,
+    "n_rule_unmatched": 1011,
+    "rule_coverage_of_stated": 0.6561,
+    "by_category": {
+     "A": 546,
+     "B": 393,
+     "C": 977,
+     "D": 13,
+     "?": 1372
+    },
+    "share_A_of_all": 0.1654,
+    "share_A_of_stated": 0.1857,
+    "share_A_of_matched": 0.283,
+    "share_A_of_stated_bounds": [
+     0.1857,
+     0.5296
+    ],
+    "top_reasons": [
+     [
+      "?/unmatched",
+      1011
+     ],
+     [
+      "A/recruitment",
+      538
+     ],
+     [
+      "?/empty",
+      361
+     ],
+     [
+      "C/business_decision",
+      334
+     ],
+     [
+      "B/safety_toxicity",
+      249
+     ],
+     [
+      "C/sponsor_decision",
+      233
+     ],
+     [
+      "C/funding",
+      216
+     ],
+     [
+      "B/lack_of_efficacy",
+      121
+     ],
+     [
+      "C/covid",
+      91
+     ],
+     [
+      "C/pi_left",
+      61
+     ],
+     [
+      "C/drug_supply",
+      23
+     ],
+     [
+      "B/interim_analysis",
+      23
+     ]
+    ]
+   },
+   "WITHDRAWN": {
+    "n": 1129,
+    "n_reason_empty": 229,
+    "n_reason_stated": 900,
+    "n_rule_matched": 486,
+    "n_rule_unmatched": 414,
+    "rule_coverage_of_stated": 0.54,
+    "by_category": {
+     "A": 159,
+     "B": 27,
+     "C": 299,
+     "D": 1,
+     "?": 643
+    },
+    "share_A_of_all": 0.1408,
+    "share_A_of_stated": 0.1767,
+    "share_A_of_matched": 0.3272,
+    "share_A_of_stated_bounds": [
+     0.1767,
+     0.6367
+    ],
+    "top_reasons": [
+     [
+      "?/unmatched",
+      414
+     ],
+     [
+      "?/empty",
+      229
+     ],
+     [
+      "A/recruitment",
+      154
+     ],
+     [
+      "C/funding",
+      141
+     ],
+     [
+      "C/business_decision",
+      42
+     ],
+     [
+      "C/sponsor_decision",
+      37
+     ],
+     [
+      "C/pi_left",
+      25
+     ],
+     [
+      "C/covid",
+      22
+     ],
+     [
+      "B/safety_toxicity",
+      19
+     ],
+     [
+      "C/never_initiated",
+      11
+     ],
+     [
+      "C/program_terminated",
+      10
+     ],
+     [
+      "C/drug_supply",
+      9
+     ]
+    ]
+   }
+  },
+  "PHASE2": {
+   "ALL_STOPPED": {
+    "n": 7175,
+    "n_reason_empty": 714,
+    "n_reason_stated": 6461,
+    "n_rule_matched": 4290,
+    "n_rule_unmatched": 2171,
+    "rule_coverage_of_stated": 0.664,
+    "by_category": {
+     "A": 1639,
+     "B": 795,
+     "C": 1813,
+     "D": 43,
+     "?": 2885
+    },
+    "share_A_of_all": 0.2284,
+    "share_A_of_stated": 0.2537,
+    "share_A_of_matched": 0.3821,
+    "share_A_of_stated_bounds": [
+     0.2537,
+     0.5897
+    ],
+    "top_reasons": [
+     [
+      "?/unmatched",
+      2171
+     ],
+     [
+      "A/recruitment",
+      1615
+     ],
+     [
+      "?/empty",
+      714
+     ],
+     [
+      "C/funding",
+      617
+     ],
+     [
+      "C/business_decision",
+      357
+     ],
+     [
+      "C/sponsor_decision",
+      355
+     ],
+     [
+      "B/lack_of_efficacy",
+      354
+     ],
+     [
+      "B/safety_toxicity",
+      324
+     ],
+     [
+      "C/covid",
+      257
+     ],
+     [
+      "C/pi_left",
+      121
+     ],
+     [
+      "B/interim_analysis",
+      117
+     ],
+     [
+      "C/drug_supply",
+      45
+     ]
+    ]
+   },
+   "TERMINATED": {
+    "n": 5300,
+    "n_reason_empty": 415,
+    "n_reason_stated": 4885,
+    "n_rule_matched": 3407,
+    "n_rule_unmatched": 1478,
+    "rule_coverage_of_stated": 0.6974,
+    "by_category": {
+     "A": 1321,
+     "B": 755,
+     "C": 1295,
+     "D": 36,
+     "?": 1893
+    },
+    "share_A_of_all": 0.2492,
+    "share_A_of_stated": 0.2704,
+    "share_A_of_matched": 0.3877,
+    "share_A_of_stated_bounds": [
+     0.2704,
+     0.573
+    ],
+    "top_reasons": [
+     [
+      "?/unmatched",
+      1478
+     ],
+     [
+      "A/recruitment",
+      1305
+     ],
+     [
+      "?/empty",
+      415
+     ],
+     [
+      "C/funding",
+      363
+     ],
+     [
+      "B/lack_of_efficacy",
+      345
+     ],
+     [
+      "C/sponsor_decision",
+      298
+     ],
+     [
+      "B/safety_toxicity",
+      294
+     ],
+     [
+      "C/business_decision",
+      293
+     ],
+     [
+      "C/covid",
+      213
+     ],
+     [
+      "B/interim_analysis",
+      116
+     ],
+     [
+      "C/pi_left",
+      81
+     ],
+     [
+      "C/drug_supply",
+      30
+     ]
+    ]
+   },
+   "WITHDRAWN": {
+    "n": 1875,
+    "n_reason_empty": 299,
+    "n_reason_stated": 1576,
+    "n_rule_matched": 883,
+    "n_rule_unmatched": 693,
+    "rule_coverage_of_stated": 0.5603,
+    "by_category": {
+     "A": 318,
+     "B": 40,
+     "C": 518,
+     "D": 7,
+     "?": 992
+    },
+    "share_A_of_all": 0.1696,
+    "share_A_of_stated": 0.2018,
+    "share_A_of_matched": 0.3601,
+    "share_A_of_stated_bounds": [
+     0.2018,
+     0.6415
+    ],
+    "top_reasons": [
+     [
+      "?/unmatched",
+      693
+     ],
+     [
+      "A/recruitment",
+      310
+     ],
+     [
+      "?/empty",
+      299
+     ],
+     [
+      "C/funding",
+      254
+     ],
+     [
+      "C/business_decision",
+      64
+     ],
+     [
+      "C/sponsor_decision",
+      57
+     ],
+     [
+      "C/covid",
+      44
+     ],
+     [
+      "C/pi_left",
+      40
+     ],
+     [
+      "B/safety_toxicity",
+      30
+     ],
+     [
+      "C/never_initiated",
+      19
+     ],
+     [
+      "C/drug_supply",
+      15
+     ],
+     [
+      "C/interest_withdrawn",
+      12
+     ]
+    ]
+   }
+  },
+  "PHASE3": {
+   "ALL_STOPPED": {
+    "n": 2887,
+    "n_reason_empty": 404,
+    "n_reason_stated": 2483,
+    "n_rule_matched": 1559,
+    "n_rule_unmatched": 924,
+    "rule_coverage_of_stated": 0.6279,
+    "by_category": {
+     "A": 480,
+     "B": 410,
+     "C": 662,
+     "D": 7,
+     "?": 1328
+    },
+    "share_A_of_all": 0.1663,
+    "share_A_of_stated": 0.1933,
+    "share_A_of_matched": 0.3079,
+    "share_A_of_stated_bounds": [
+     0.1933,
+     0.5654
+    ],
+    "top_reasons": [
+     [
+      "?/unmatched",
+      924
+     ],
+     [
+      "A/recruitment",
+      473
+     ],
+     [
+      "?/empty",
+      404
+     ],
+     [
+      "B/lack_of_efficacy",
+      194
+     ],
+     [
+      "C/business_decision",
+      184
+     ],
+     [
+      "C/sponsor_decision",
+      173
+     ],
+     [
+      "C/funding",
+      157
+     ],
+     [
+      "B/safety_toxicity",
+      136
+     ],
+     [
+      "C/covid",
+      96
+     ],
+     [
+      "B/interim_analysis",
+      80
+     ],
+     [
+      "C/pi_left",
+      25
+     ],
+     [
+      "C/program_terminated",
+      12
+     ]
+    ]
+   },
+   "TERMINATED": {
+    "n": 2116,
+    "n_reason_empty": 238,
+    "n_reason_stated": 1878,
+    "n_rule_matched": 1258,
+    "n_rule_unmatched": 620,
+    "rule_coverage_of_stated": 0.6699,
+    "by_category": {
+     "A": 401,
+     "B": 392,
+     "C": 459,
+     "D": 6,
+     "?": 858
+    },
+    "share_A_of_all": 0.1895,
+    "share_A_of_stated": 0.2135,
+    "share_A_of_matched": 0.3188,
+    "share_A_of_stated_bounds": [
+     0.2135,
+     0.5437
+    ],
+    "top_reasons": [
+     [
+      "?/unmatched",
+      620
+     ],
+     [
+      "A/recruitment",
+      396
+     ],
+     [
+      "?/empty",
+      238
+     ],
+     [
+      "B/lack_of_efficacy",
+      190
+     ],
+     [
+      "C/business_decision",
+      143
+     ],
+     [
+      "C/sponsor_decision",
+      136
+     ],
+     [
+      "B/safety_toxicity",
+      123
+     ],
+     [
+      "C/covid",
+      80
+     ],
+     [
+      "B/interim_analysis",
+      79
+     ],
+     [
+      "C/funding",
+      69
+     ],
+     [
+      "C/pi_left",
+      12
+     ],
+     [
+      "C/program_terminated",
+      8
+     ]
+    ]
+   },
+   "WITHDRAWN": {
+    "n": 771,
+    "n_reason_empty": 166,
+    "n_reason_stated": 605,
+    "n_rule_matched": 301,
+    "n_rule_unmatched": 304,
+    "rule_coverage_of_stated": 0.4975,
+    "by_category": {
+     "A": 79,
+     "B": 18,
+     "C": 203,
+     "D": 1,
+     "?": 470
+    },
+    "share_A_of_all": 0.1025,
+    "share_A_of_stated": 0.1306,
+    "share_A_of_matched": 0.2625,
+    "share_A_of_stated_bounds": [
+     0.1306,
+     0.6331
+    ],
+    "top_reasons": [
+     [
+      "?/unmatched",
+      304
+     ],
+     [
+      "?/empty",
+      166
+     ],
+     [
+      "C/funding",
+      88
+     ],
+     [
+      "A/recruitment",
+      77
+     ],
+     [
+      "C/business_decision",
+      41
+     ],
+     [
+      "C/sponsor_decision",
+      37
+     ],
+     [
+      "C/covid",
+      16
+     ],
+     [
+      "C/pi_left",
+      13
+     ],
+     [
+      "B/safety_toxicity",
+      13
+     ],
+     [
+      "B/lack_of_efficacy",
+      4
+     ],
+     [
+      "C/program_terminated",
+      4
+     ],
+     [
+      "C/drug_supply",
+      3
+     ]
+    ]
+   }
+  }
+ },
+ "prevalence": {
+  "PHASE1": {
+   "n_determined": 25789,
+   "n_terminated": 3301,
+   "n_withdrawn": 1129,
+   "n_harvested_terminated": 3301,
+   "n_harvested_withdrawn": 1129,
+   "n_A_terminated": 546,
+   "n_A_withdrawn": 159,
+   "prevalence_A_terminated": 0.02117,
+   "prevalence_A_incl_withdrawn": 0.02734,
+   "prevalence_A_terminated_upper": 0.06037
+  },
+  "PHASE2": {
+   "n_determined": 29575,
+   "n_terminated": 5299,
+   "n_withdrawn": 1875,
+   "n_harvested_terminated": 5300,
+   "n_harvested_withdrawn": 1875,
+   "n_A_terminated": 1321,
+   "n_A_withdrawn": 318,
+   "prevalence_A_terminated": 0.04467,
+   "prevalence_A_incl_withdrawn": 0.05542,
+   "prevalence_A_terminated_upper": 0.09464
+  },
+  "PHASE3": {
+   "n_determined": 16869,
+   "n_terminated": 2116,
+   "n_withdrawn": 771,
+   "n_harvested_terminated": 2116,
+   "n_harvested_withdrawn": 771,
+   "n_A_terminated": 401,
+   "n_A_withdrawn": 79,
+   "prevalence_A_terminated": 0.02377,
+   "prevalence_A_incl_withdrawn": 0.02845,
+   "prevalence_A_terminated_upper": 0.06053
+  }
+ },
+ "indication_counts": {
+  "non-small cell lung cancer": {
+   "all": 1468,
+   "COMPLETED": 601,
+   "TERMINATED": 266,
+   "WITHDRAWN": 72
+  },
+  "atopic dermatitis": {
+   "all": 222,
+   "COMPLETED": 179,
+   "TERMINATED": 22,
+   "WITHDRAWN": 5
+  },
+  "type 2 diabetes": {
+   "all": 577,
+   "COMPLETED": 430,
+   "TERMINATED": 51,
+   "WITHDRAWN": 19
+  },
+  "rheumatoid arthritis": {
+   "all": 281,
+   "COMPLETED": 189,
+   "TERMINATED": 45,
+   "WITHDRAWN": 13
+  },
+  "alzheimer disease": {
+   "all": 339,
+   "COMPLETED": 237,
+   "TERMINATED": 43,
+   "WITHDRAWN": 12
+  },
+  "pancreatic cancer": {
+   "all": 700,
+   "COMPLETED": 329,
+   "TERMINATED": 123,
+   "WITHDRAWN": 34
+  },
+  "glioblastoma": {
+   "all": 403,
+   "COMPLETED": 199,
+   "TERMINATED": 77,
+   "WITHDRAWN": 22
+  },
+  "amyotrophic lateral sclerosis": {
+   "all": 132,
+   "COMPLETED": 84,
+   "TERMINATED": 13,
+   "WITHDRAWN": 6
+  },
+  "idiopathic pulmonary fibrosis": {
+   "all": 72,
+   "COMPLETED": 48,
+   "TERMINATED": 13,
+   "WITHDRAWN": 5
+  },
+  "systemic lupus erythematosus": {
+   "all": 128,
+   "COMPLETED": 87,
+   "TERMINATED": 23,
+   "WITHDRAWN": 2
+  },
+  "sickle cell disease": {
+   "all": 150,
+   "COMPLETED": 78,
+   "TERMINATED": 24,
+   "WITHDRAWN": 9
+  },
+  "cystic fibrosis": {
+   "all": 147,
+   "COMPLETED": 108,
+   "TERMINATED": 25,
+   "WITHDRAWN": 2
+  },
+  "acute myeloid leukemia": {
+   "all": 783,
+   "COMPLETED": 369,
+   "TERMINATED": 162,
+   "WITHDRAWN": 43
+  },
+  "ovarian cancer": {
+   "all": 617,
+   "COMPLETED": 317,
+   "TERMINATED": 109,
+   "WITHDRAWN": 24
+  },
+  "heart failure": {
+   "all": 374,
+   "COMPLETED": 234,
+   "TERMINATED": 55,
+   "WITHDRAWN": 21
+  }
+ },
+ "phase2_terminated_breakdown": {
+  "phase2_pure": {
+   "n": 3868,
+   "n_reason_empty": 299,
+   "n_reason_stated": 3569,
+   "n_rule_matched": 2543,
+   "n_rule_unmatched": 1026,
+   "rule_coverage_of_stated": 0.7125,
+   "by_category": {
+    "A": 1056,
+    "B": 566,
+    "C": 896,
+    "D": 25,
+    "?": 1325
+   },
+   "share_A_of_all": 0.273,
+   "share_A_of_stated": 0.2959,
+   "share_A_of_matched": 0.4153,
+   "share_A_of_stated_bounds": [
+    0.2959,
+    0.5834
+   ],
+   "top_reasons": [
+    [
+     "A/recruitment",
+     1047
+    ],
+    [
+     "?/unmatched",
+     1026
+    ],
+    [
+     "?/empty",
+     299
+    ],
+    [
+     "B/lack_of_efficacy",
+     264
+    ],
+    [
+     "C/funding",
+     264
+    ],
+    [
+     "B/safety_toxicity",
+     211
+    ],
+    [
+     "C/business_decision",
+     195
+    ],
+    [
+     "C/sponsor_decision",
+     184
+    ],
+    [
+     "C/covid",
+     159
+    ],
+    [
+     "B/interim_analysis",
+     91
+    ],
+    [
+     "C/pi_left",
+     60
+    ],
+    [
+     "C/drug_supply",
+     22
+    ]
+   ]
+  },
+  "phase1_2_basket": {
+   "n": 1098,
+   "n_reason_empty": 83,
+   "n_reason_stated": 1015,
+   "n_rule_matched": 667,
+   "n_rule_unmatched": 348,
+   "rule_coverage_of_stated": 0.6571,
+   "by_category": {
+    "A": 193,
+    "B": 145,
+    "C": 320,
+    "D": 9,
+    "?": 431
+   },
+   "share_A_of_all": 0.1758,
+   "share_A_of_stated": 0.1901,
+   "share_A_of_matched": 0.2894,
+   "share_A_of_stated_bounds": [
+    0.1901,
+    0.533
+   ],
+   "top_reasons": [
+    [
+     "?/unmatched",
+     348
+    ],
+    [
+     "A/recruitment",
+     189
+    ],
+    [
+     "C/sponsor_decision",
+     94
+    ],
+    [
+     "C/funding",
+     83
+    ],
+    [
+     "?/empty",
+     83
+    ],
+    [
+     "C/business_decision",
+     83
+    ],
+    [
+     "B/safety_toxicity",
+     72
+    ],
+    [
+     "B/lack_of_efficacy",
+     59
+    ],
+    [
+     "C/covid",
+     30
+    ],
+    [
+     "C/pi_left",
+     19
+    ],
+    [
+     "B/interim_analysis",
+     14
+    ],
+    [
+     "D/landscape_shift",
+     8
+    ]
+   ]
+  },
+  "phase2_3_basket": {
+   "n": 334,
+   "n_reason_empty": 33,
+   "n_reason_stated": 301,
+   "n_rule_matched": 197,
+   "n_rule_unmatched": 104,
+   "rule_coverage_of_stated": 0.6545,
+   "by_category": {
+    "A": 72,
+    "B": 44,
+    "C": 79,
+    "D": 2,
+    "?": 137
+   },
+   "share_A_of_all": 0.2156,
+   "share_A_of_stated": 0.2392,
+   "share_A_of_matched": 0.3655,
+   "share_A_of_stated_bounds": [
+    0.2392,
+    0.5847
+   ],
+   "top_reasons": [
+    [
+     "?/unmatched",
+     104
+    ],
+    [
+     "A/recruitment",
+     69
+    ],
+    [
+     "?/empty",
+     33
+    ],
+    [
+     "C/covid",
+     24
+    ],
+    [
+     "B/lack_of_efficacy",
+     22
+    ],
+    [
+     "C/sponsor_decision",
+     20
+    ],
+    [
+     "C/funding",
+     16
+    ],
+    [
+     "C/business_decision",
+     15
+    ],
+    [
+     "B/safety_toxicity",
+     11
+    ],
+    [
+     "B/interim_analysis",
+     11
+    ],
+    [
+     "A/protocol_design",
+     3
+    ],
+    [
+     "C/pi_left",
+     2
+    ]
+   ]
+  },
+  "sponsor_INDUSTRY": {
+   "n": 2146,
+   "n_reason_empty": 228,
+   "n_reason_stated": 1918,
+   "n_rule_matched": 1330,
+   "n_rule_unmatched": 588,
+   "rule_coverage_of_stated": 0.6934,
+   "by_category": {
+    "A": 256,
+    "B": 417,
+    "C": 637,
+    "D": 20,
+    "?": 816
+   },
+   "share_A_of_all": 0.1193,
+   "share_A_of_stated": 0.1335,
+   "share_A_of_matched": 0.1925,
+   "share_A_of_stated_bounds": [
+    0.1335,
+    0.44
+   ],
+   "top_reasons": [
+    [
+     "?/unmatched",
+     588
+    ],
+    [
+     "C/business_decision",
+     279
+    ],
+    [
+     "C/sponsor_decision",
+     257
+    ],
+    [
+     "A/recruitment",
+     250
+    ],
+    [
+     "?/empty",
+     228
+    ],
+    [
+     "B/lack_of_efficacy",
+     210
+    ],
+    [
+     "B/safety_toxicity",
+     172
+    ],
+    [
+     "C/covid",
+     65
+    ],
+    [
+     "B/interim_analysis",
+     35
+    ],
+    [
+     "C/funding",
+     29
+    ],
+    [
+     "D/landscape_shift",
+     16
+    ],
+    [
+     "C/program_terminated",
+     6
+    ]
+   ]
+  },
+  "sponsor_OTHER": {
+   "n": 2862,
+   "n_reason_empty": 156,
+   "n_reason_stated": 2706,
+   "n_rule_matched": 1899,
+   "n_rule_unmatched": 807,
+   "rule_coverage_of_stated": 0.7018,
+   "by_category": {
+    "A": 964,
+    "B": 298,
+    "C": 622,
+    "D": 15,
+    "?": 963
+   },
+   "share_A_of_all": 0.3368,
+   "share_A_of_stated": 0.3562,
+   "share_A_of_matched": 0.5076,
+   "share_A_of_stated_bounds": [
+    0.3562,
+    0.6545
+   ],
+   "top_reasons": [
+    [
+     "A/recruitment",
+     955
+    ],
+    [
+     "?/unmatched",
+     807
+    ],
+    [
+     "C/funding",
+     322
+    ],
+    [
+     "?/empty",
+     156
+    ],
+    [
+     "C/covid",
+     143
+    ],
+    [
+     "B/lack_of_efficacy",
+     123
+    ],
+    [
+     "B/safety_toxicity",
+     102
+    ],
+    [
+     "C/pi_left",
+     73
+    ],
+    [
+     "B/interim_analysis",
+     73
+    ],
+    [
+     "C/sponsor_decision",
+     41
+    ],
+    [
+     "C/drug_supply",
+     22
+    ],
+    [
+     "D/landscape_shift",
+     12
+    ]
+   ]
+  },
+  "sponsor_NIH": {
+   "n": 178,
+   "n_reason_empty": 24,
+   "n_reason_stated": 154,
+   "n_rule_matched": 108,
+   "n_rule_unmatched": 46,
+   "rule_coverage_of_stated": 0.7013,
+   "by_category": {
+    "A": 60,
+    "B": 22,
+    "C": 26,
+    "D": 0,
+    "?": 70
+   },
+   "share_A_of_all": 0.3371,
+   "share_A_of_stated": 0.3896,
+   "share_A_of_matched": 0.5556,
+   "share_A_of_stated_bounds": [
+    0.3896,
+    0.6883
+   ],
+   "top_reasons": [
+    [
+     "A/recruitment",
+     60
+    ],
+    [
+     "?/unmatched",
+     46
+    ],
+    [
+     "?/empty",
+     24
+    ],
+    [
+     "B/safety_toxicity",
+     14
+    ],
+    [
+     "C/pi_left",
+     8
+    ],
+    [
+     "C/drug_supply",
+     7
+    ],
+    [
+     "B/lack_of_efficacy",
+     5
+    ],
+    [
+     "C/funding",
+     4
+    ],
+    [
+     "C/business_decision",
+     3
+    ],
+    [
+     "C/covid",
+     3
+    ],
+    [
+     "B/interim_analysis",
+     3
+    ],
+    [
+     "C/program_terminated",
+     1
+    ]
+   ]
+  }
+ }
+}

@@ -1,0 +1,42 @@
+{
+ "_meta": {
+  "n_boot": 2000,
+  "seed": 20260731,
+  "resample_unit": "프로토콜 (클러스터). 공격은 같은 프롬프트를 공유해 독립이 아니다.",
+  "n_protocols": 48,
+  "n_attacks": 89,
+  "llm_calls": 99
+ },
+ "t3_rejection": {
+  "n": 27,
+  "of": 89,
+  "rate": 0.3034,
+  "ci95": [
+   0.2027,
+   0.4059
+  ]
+ },
+ "hallucination": {
+  "n": 3,
+  "of": 89,
+  "rate": 0.0337,
+  "ci95": [
+   0.0,
+   0.0759
+  ]
+ },
+ "reject_reasons": {
+  "검증을 통과하지 못한 피처를 위험 근거로 사용": 20,
+  "인용문이 너무 짧아 대조 불가": 5,
+  "전례 인용문이 원문과 불일치 (환각)": 3
+ },
+ "idonly": {
+  "n_generated": 39,
+  "n_passed": 0,
+  "leakage_rate": 0.0,
+  "contrast": {
+   "full_context_pass": 0.6966,
+   "id_only_pass": 0.0
+  }
+ }
+}

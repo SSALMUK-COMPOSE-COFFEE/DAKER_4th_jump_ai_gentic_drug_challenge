@@ -1,0 +1,5850 @@
+{
+ "_meta": {
+  "source": "data/raw/ctgov_phase2.jsonl",
+  "n_rows": 1463,
+  "features": [
+   "n_concurrent_phase2",
+   "n_concurrent_trials",
+   "total_competing_seats",
+   "n_inclusion_items",
+   "n_exclusion_items",
+   "n_eligibility_items",
+   "eligibility_chars",
+   "planned_enrollment",
+   "planned_duration_months",
+   "monthly_enrollment_burden",
+   "n_secondary_outcomes"
+  ],
+  "higher_is_riskier": [
+   "eligibility_chars",
+   "n_concurrent_phase2",
+   "n_concurrent_trials",
+   "n_eligibility_items",
+   "n_exclusion_items",
+   "n_inclusion_items",
+   "n_secondary_outcomes",
+   "planned_duration_months",
+   "total_competing_seats"
+  ],
+  "note": "cohort=completed 는 완주군, recruit_failed 는 whyStopped 가 모집 실패(A분류)인 중단군. 표본이 6건 미만인 조합은 null 로 남긴다."
+ },
+ "buckets": {
+  "non-small cell lung cancer|p2": {
+   "recruit_failed": {
+    "n_concurrent_phase2": {
+     "n": 21,
+     "p25": 152,
+     "median": 165,
+     "p75": 217,
+     "p90": 236
+    },
+    "n_concurrent_trials": {
+     "n": 21,
+     "p25": 300,
+     "median": 359,
+     "p75": 458,
+     "p90": 502
+    },
+    "total_competing_seats": {
+     "n": 21,
+     "p25": 42572,
+     "median": 56025,
+     "p75": 102712,
+     "p90": 110773
+    },
+    "n_inclusion_items": {
+     "n": 23,
+     "p25": 11,
+     "median": 20,
+     "p75": 27,
+     "p90": 36
+    },
+    "n_exclusion_items": {
+     "n": 22,
+     "p25": 7,
+     "median": 13.5,
+     "p75": 25,
+     "p90": 31
+    },
+    "n_eligibility_items": {
+     "n": 23,
+     "p25": 20,
+     "median": 36,
+     "p75": 49,
+     "p90": 65
+    },
+    "eligibility_chars": {
+     "n": 23,
+     "p25": 1808,
+     "median": 3191,
+     "p75": 5768,
+     "p90": 8570
+    },
+    "planned_enrollment": {
+     "n": 22,
+     "p25": 35,
+     "median": 52.0,
+     "p75": 120,
+     "p90": 146
+    },
+    "planned_duration_months": {
+     "n": 21,
+     "p25": 19.0,
+     "median": 24.5,
+     "p75": 36.0,
+     "p90": 48.0
+    },
+    "monthly_enrollment_burden": {
+     "n": 21,
+     "p25": 1.32,
+     "median": 1.67,
+     "p75": 3.46,
+     "p90": 5.58
+    },
+    "n_secondary_outcomes": {
+     "n": 20,
+     "p25": 2,
+     "median": 4.0,
+     "p75": 5,
+     "p90": 6
+    }
+   },
+   "completed": {
+    "n_concurrent_phase2": {
+     "n": 30,
+     "p25": 143,
+     "median": 168.0,
+     "p75": 201,
+     "p90": 237
+    },
+    "n_concurrent_trials": {
+     "n": 30,
+     "p25": 285,
+     "median": 334.0,
+     "p75": 443,
+     "p90": 515
+    },
+    "total_competing_seats": {
+     "n": 30,
+     "p25": 37168,
+     "median": 49380.0,
+     "p75": 101572,
+     "p90": 111675
+    },
+    "n_inclusion_items": {
+     "n": 31,
+     "p25": 9,
+     "median": 16,
+     "p75": 24,
+     "p90": 29
+    },
+    "n_exclusion_items": {
+     "n": 30,
+     "p25": 10,
+     "median": 16.0,
+     "p75": 29,
+     "p90": 41
+    },
+    "n_eligibility_items": {
+     "n": 31,
+     "p25": 23,
+     "median": 31,
+     "p75": 53,
+     "p90": 63
+    },
+    "eligibility_chars": {
+     "n": 31,
+     "p25": 1847,
+     "median": 3499,
+     "p75": 7000,
+     "p90": 8374
+    },
+    "planned_enrollment": {
+     "n": 31,
+     "p25": 40,
+     "median": 70,
+     "p75": 120,
+     "p90": 160
+    },
+    "planned_duration_months": {
+     "n": 29,
+     "p25": 19.0,
+     "median": 26.0,
+     "p75": 37.3,
+     "p90": 78.0
+    },
+    "monthly_enrollment_burden": {
+     "n": 29,
+     "p25": 1.67,
+     "median": 3.33,
+     "p75": 4.74,
+     "p90": 9.8
+    },
+    "n_secondary_outcomes": {
+     "n": 29,
+     "p25": 4,
+     "median": 5,
+     "p75": 7,
+     "p90": 10
+    }
+   }
+  },
+  "non-small cell lung cancer": {
+   "recruit_failed": {
+    "n_concurrent_phase2": {
+     "n": 24,
+     "p25": 152,
+     "median": 163.0,
+     "p75": 217,
+     "p90": 236
+    },
+    "n_concurrent_trials": {
+     "n": 24,
+     "p25": 300,
+     "median": 321.0,
+     "p75": 458,
+     "p90": 502
+    },
+    "total_competing_seats": {
+     "n": 24,
+     "p25": 42572,
+     "median": 48360.5,
+     "p75": 102712,
+     "p90": 110773
+    },
+    "n_inclusion_items": {
+     "n": 26,
+     "p25": 12,
+     "median": 19.0,
+     "p75": 26,
+     "p90": 36
+    },
+    "n_exclusion_items": {
+     "n": 25,
+     "p25": 7,
+     "median": 15,
+     "p75": 24,
+     "p90": 31
+    },
+    "n_eligibility_items": {
+     "n": 26,
+     "p25": 20,
+     "median": 36.0,
+     "p75": 48,
+     "p90": 65
+    },
+    "eligibility_chars": {
+     "n": 26,
+     "p25": 2028,
+     "median": 3216.5,
+     "p75": 5621,
+     "p90": 8570
+    },
+    "planned_enrollment": {
+     "n": 25,
+     "p25": 35,
+     "median": 54,
+     "p75": 100,
+     "p90": 146
+    },
+    "planned_duration_months": {
+     "n": 24,
+     "p25": 19.0,
+     "median": 27.25,
+     "p75": 41.0,
+     "p90": 50.0
+    },
+    "monthly_enrollment_burden": {
+     "n": 24,
+     "p25": 1.32,
+     "median": 1.65,
+     "p75": 3.61,
+     "p90": 5.62
+    },
+    "n_secondary_outcomes": {
+     "n": 23,
+     "p25": 2,
+     "median": 4,
+     "p75": 5,
+     "p90": 9
+    }
+   },
+   "completed": {
+    "n_concurrent_phase2": {
+     "n": 39,
+     "p25": 142,
+     "median": 166,
+     "p75": 185,
+     "p90": 237
+    },
+    "n_concurrent_trials": {
+     "n": 39,
+     "p25": 274,
+     "median": 311,
+     "p75": 420,
+     "p90": 513
+    },
+    "total_competing_seats": {
+     "n": 39,
+     "p25": 36546,
+     "median": 47563,
+     "p75": 101252,
+     "p90": 111675
+    },
+    "n_inclusion_items": {
+     "n": 40,
+     "p25": 9,
+     "median": 16.0,
+     "p75": 22,
+     "p90": 31
+    },
+    "n_exclusion_items": {
+     "n": 39,
+     "p25": 8,
+     "median": 14,
+     "p75": 24,
+     "p90": 38
+    },
+    "n_eligibility_items": {
+     "n": 40,
+     "p25": 20,
+     "median": 30.5,
+     "p75": 52,
+     "p90": 63
+    },
+    "eligibility_chars": {
+     "n": 40,
+     "p25": 1641,
+     "median": 3431.5,
+     "p75": 5688,
+     "p90": 8374
+    },
+    "planned_enrollment": {
+     "n": 40,
+     "p25": 45,
+     "median": 68.0,
+     "p75": 120,
+     "p90": 180
+    },
+    "planned_duration_months": {
+     "n": 38,
+     "p25": 19.0,
+     "median": 26.0,
+     "p75": 37.0,
+     "p90": 48.0
+    },
+    "monthly_enrollment_burden": {
+     "n": 38,
+     "p25": 1.82,
+     "median": 3.09,
+     "p75": 5.0,
+     "p90": 7.74
+    },
+    "n_secondary_outcomes": {
+     "n": 38,
+     "p25": 3,
+     "median": 5.0,
+     "p75": 8,
+     "p90": 10
+    }
+   }
+  },
+  "__ALL__|p2": {
+   "recruit_failed": {
+    "n_concurrent_phase2": {
+     "n": 90,
+     "p25": 51,
+     "median": 140.5,
+     "p75": 177,
+     "p90": 229
+    },
+    "n_concurrent_trials": {
+     "n": 90,
+     "p25": 256,
+     "median": 311.5,
+     "p75": 409,
+     "p90": 485
+    },
+    "total_competing_seats": {
+     "n": 90,
+     "p25": 33083,
+     "median": 56572.5,
+     "p75": 112270,
+     "p90": 141112
+    },
+    "n_inclusion_items": {
+     "n": 92,
+     "p25": 9,
+     "median": 15.0,
+     "p75": 22,
+     "p90": 30
+    },
+    "n_exclusion_items": {
+     "n": 88,
+     "p25": 8,
+     "median": 14.0,
+     "p75": 22,
+     "p90": 27
+    },
+    "n_eligibility_items": {
+     "n": 92,
+     "p25": 19,
+     "median": 29.0,
+     "p75": 39,
+     "p90": 50
+    },
+    "eligibility_chars": {
+     "n": 92,
+     "p25": 1614,
+     "median": 2901.5,
+     "p75": 4187,
+     "p90": 6017
+    },
+    "planned_enrollment": {
+     "n": 91,
+     "p25": 30,
+     "median": 44,
+     "p75": 86,
+     "p90": 146
+    },
+    "planned_duration_months": {
+     "n": 88,
+     "p25": 17.5,
+     "median": 24.0,
+     "p75": 38.0,
+     "p90": 54.0
+    },
+    "monthly_enrollment_burden": {
+     "n": 88,
+     "p25": 1.04,
+     "median": 1.61,
+     "p75": 3.5,
+     "p90": 8.6
+    },
+    "n_secondary_outcomes": {
+     "n": 75,
+     "p25": 2,
+     "median": 5,
+     "p75": 7,
+     "p90": 11
+    }
+   },
+   "completed": {
+    "n_concurrent_phase2": {
+     "n": 434,
+     "p25": 28,
+     "median": 48.0,
+     "p75": 132,
+     "p90": 182
+    },
+    "n_concurrent_trials": {
+     "n": 434,
+     "p25": 91,
+     "median": 253.0,
+     "p75": 321,
+     "p90": 421
+    },
+    "total_competing_seats": {
+     "n": 434,
+     "p25": 16261,
+     "median": 45496.0,
+     "p75": 118562,
+     "p90": 145974
+    },
+    "n_inclusion_items": {
+     "n": 438,
+     "p25": 6,
+     "median": 9.0,
+     "p75": 13,
+     "p90": 21
+    },
+    "n_exclusion_items": {
+     "n": 429,
+     "p25": 7,
+     "median": 12,
+     "p75": 18,
+     "p90": 28
+    },
+    "n_eligibility_items": {
+     "n": 438,
+     "p25": 14,
+     "median": 22.0,
+     "p75": 32,
+     "p90": 46
+    },
+    "eligibility_chars": {
+     "n": 438,
+     "p25": 1209,
+     "median": 2064.0,
+     "p75": 3531,
+     "p90": 5187
+    },
+    "planned_enrollment": {
+     "n": 438,
+     "p25": 36,
+     "median": 60.0,
+     "p75": 132,
+     "p90": 250
+    },
+    "planned_duration_months": {
+     "n": 430,
+     "p25": 12.0,
+     "median": 19.0,
+     "p75": 29.9,
+     "p90": 42.0
+    },
+    "monthly_enrollment_burden": {
+     "n": 430,
+     "p25": 1.73,
+     "median": 3.66,
+     "p75": 8.0,
+     "p90": 14.52
+    },
+    "n_secondary_outcomes": {
+     "n": 394,
+     "p25": 2,
+     "median": 4.0,
+     "p75": 7,
+     "p90": 12
+    }
+   }
+  },
+  "__ALL__": {
+   "recruit_failed": {
+    "n_concurrent_phase2": {
+     "n": 118,
+     "p25": 51,
+     "median": 141.0,
+     "p75": 177,
+     "p90": 229
+    },
+    "n_concurrent_trials": {
+     "n": 118,
+     "p25": 256,
+     "median": 309.0,
+     "p75": 409,
+     "p90": 458
+    },
+    "total_competing_seats": {
+     "n": 118,
+     "p25": 25892,
+     "median": 50547.0,
+     "p75": 106261,
+     "p90": 138100
+    },
+    "n_inclusion_items": {
+     "n": 120,
+     "p25": 8,
+     "median": 13.5,
+     "p75": 22,
+     "p90": 28
+    },
+    "n_exclusion_items": {
+     "n": 115,
+     "p25": 7,
+     "median": 13,
+     "p75": 20,
+     "p90": 27
+    },
+    "n_eligibility_items": {
+     "n": 120,
+     "p25": 19,
+     "median": 27.5,
+     "p75": 38,
+     "p90": 49
+    },
+    "eligibility_chars": {
+     "n": 120,
+     "p25": 1437,
+     "median": 2789.0,
+     "p75": 3983,
+     "p90": 5768
+    },
+    "planned_enrollment": {
+     "n": 119,
+     "p25": 26,
+     "median": 42,
+     "p75": 80,
+     "p90": 142
+    },
+    "planned_duration_months": {
+     "n": 116,
+     "p25": 17.5,
+     "median": 25.5,
+     "p75": 39.9,
+     "p90": 55.0
+    },
+    "monthly_enrollment_burden": {
+     "n": 116,
+     "p25": 0.97,
+     "median": 1.54,
+     "p75": 3.16,
+     "p90": 8.0
+    },
+    "n_secondary_outcomes": {
+     "n": 101,
+     "p25": 2,
+     "median": 4,
+     "p75": 6,
+     "p90": 11
+    }
+   },
+   "completed": {
+    "n_concurrent_phase2": {
+     "n": 587,
+     "p25": 29,
+     "median": 49,
+     "p75": 136,
+     "p90": 183
+    },
+    "n_concurrent_trials": {
+     "n": 587,
+     "p25": 92,
+     "median": 257,
+     "p75": 321,
+     "p90": 422
+    },
+    "total_competing_seats": {
+     "n": 587,
+     "p25": 16261,
+     "median": 45388,
+     "p75": 118492,
+     "p90": 166240
+    },
+    "n_inclusion_items": {
+     "n": 591,
+     "p25": 6,
+     "median": 9,
+     "p75": 13,
+     "p90": 21
+    },
+    "n_exclusion_items": {
+     "n": 578,
+     "p25": 7,
+     "median": 11.0,
+     "p75": 18,
+     "p90": 27
+    },
+    "n_eligibility_items": {
+     "n": 591,
+     "p25": 13,
+     "median": 21,
+     "p75": 32,
+     "p90": 46
+    },
+    "eligibility_chars": {
+     "n": 591,
+     "p25": 1128,
+     "median": 2004,
+     "p75": 3501,
+     "p90": 5316
+    },
+    "planned_enrollment": {
+     "n": 591,
+     "p25": 33,
+     "median": 60,
+     "p75": 125,
+     "p90": 250
+    },
+    "planned_duration_months": {
+     "n": 582,
+     "p25": 12.0,
+     "median": 19.0,
+     "p75": 31.0,
+     "p90": 46.0
+    },
+    "monthly_enrollment_burden": {
+     "n": 582,
+     "p25": 1.67,
+     "median": 3.37,
+     "p75": 7.52,
+     "p90": 14.29
+    },
+    "n_secondary_outcomes": {
+     "n": 520,
+     "p25": 2,
+     "median": 4.0,
+     "p75": 7,
+     "p90": 12
+    }
+   }
+  },
+  "non-small cell lung cancer|p1p2": {
+   "recruit_failed": {
+    "n_concurrent_phase2": null,
+    "n_concurrent_trials": null,
+    "total_competing_seats": null,
+    "n_inclusion_items": null,
+    "n_exclusion_items": null,
+    "n_eligibility_items": null,
+    "eligibility_chars": null,
+    "planned_enrollment": null,
+    "planned_duration_months": null,
+    "monthly_enrollment_burden": null,
+    "n_secondary_outcomes": null
+   },
+   "completed": {
+    "n_concurrent_phase2": {
+     "n": 9,
+     "p25": 140,
+     "median": 142,
+     "p75": 166,
+     "p90": 252
+    },
+    "n_concurrent_trials": {
+     "n": 9,
+     "p25": 268,
+     "median": 285,
+     "p75": 311,
+     "p90": 513
+    },
+    "total_competing_seats": {
+     "n": 9,
+     "p25": 36057,
+     "median": 37077,
+     "p75": 47804,
+     "p90": 118636
+    },
+    "n_inclusion_items": {
+     "n": 9,
+     "p25": 5,
+     "median": 16,
+     "p75": 16,
+     "p90": 36
+    },
+    "n_exclusion_items": {
+     "n": 9,
+     "p25": 5,
+     "median": 9,
+     "p75": 18,
+     "p90": 22
+    },
+    "n_eligibility_items": {
+     "n": 9,
+     "p25": 13,
+     "median": 23,
+     "p75": 34,
+     "p90": 45
+    },
+    "eligibility_chars": {
+     "n": 9,
+     "p25": 1226,
+     "median": 1411,
+     "p75": 3998,
+     "p90": 5688
+    },
+    "planned_enrollment": {
+     "n": 9,
+     "p25": 55,
+     "median": 60,
+     "p75": 158,
+     "p90": 332
+    },
+    "planned_duration_months": {
+     "n": 9,
+     "p25": 21.0,
+     "median": 27.0,
+     "p75": 28.9,
+     "p90": 48.0
+    },
+    "monthly_enrollment_burden": {
+     "n": 9,
+     "p25": 2.62,
+     "median": 2.86,
+     "p75": 5.47,
+     "p90": 6.92
+    },
+    "n_secondary_outcomes": {
+     "n": 9,
+     "p25": 2,
+     "median": 7,
+     "p75": 9,
+     "p90": 11
+    }
+   }
+  },
+  "__ALL__|p1p2": {
+   "recruit_failed": {
+    "n_concurrent_phase2": {
+     "n": 23,
+     "p25": 47,
+     "median": 142,
+     "p75": 211,
+     "p90": 229
+    },
+    "n_concurrent_trials": {
+     "n": 23,
+     "p25": 188,
+     "median": 304,
+     "p75": 418,
+     "p90": 427
+    },
+    "total_competing_seats": {
+     "n": 23,
+     "p25": 20359,
+     "median": 45482,
+     "p75": 64606,
+     "p90": 137674
+    },
+    "n_inclusion_items": {
+     "n": 23,
+     "p25": 5,
+     "median": 12,
+     "p75": 21,
+     "p90": 22
+    },
+    "n_exclusion_items": {
+     "n": 22,
+     "p25": 4,
+     "median": 9.0,
+     "p75": 15,
+     "p90": 20
+    },
+    "n_eligibility_items": {
+     "n": 23,
+     "p25": 8,
+     "median": 20,
+     "p75": 31,
+     "p90": 39
+    },
+    "eligibility_chars": {
+     "n": 23,
+     "p25": 516,
+     "median": 2028,
+     "p75": 3485,
+     "p90": 4156
+    },
+    "planned_enrollment": {
+     "n": 23,
+     "p25": 20,
+     "median": 33,
+     "p75": 57,
+     "p90": 97
+    },
+    "planned_duration_months": {
+     "n": 23,
+     "p25": 17.0,
+     "median": 27.0,
+     "p75": 50.0,
+     "p90": 56.0
+    },
+    "monthly_enrollment_burden": {
+     "n": 23,
+     "p25": 0.82,
+     "median": 1.36,
+     "p75": 2.37,
+     "p90": 3.18
+    },
+    "n_secondary_outcomes": {
+     "n": 21,
+     "p25": 1,
+     "median": 2,
+     "p75": 4,
+     "p90": 5
+    }
+   },
+   "completed": {
+    "n_concurrent_phase2": {
+     "n": 125,
+     "p25": 32,
+     "median": 60,
+     "p75": 142,
+     "p90": 218
+    },
+    "n_concurrent_trials": {
+     "n": 125,
+     "p25": 102,
+     "median": 268,
+     "p75": 321,
+     "p90": 427
+    },
+    "total_competing_seats": {
+     "n": 125,
+     "p25": 16301,
+     "median": 36057,
+     "p75": 98688,
+     "p90": 137500
+    },
+    "n_inclusion_items": {
+     "n": 125,
+     "p25": 5,
+     "median": 9,
+     "p75": 13,
+     "p90": 23
+    },
+    "n_exclusion_items": {
+     "n": 122,
+     "p25": 6,
+     "median": 11.0,
+     "p75": 18,
+     "p90": 24
+    },
+    "n_eligibility_items": {
+     "n": 125,
+     "p25": 13,
+     "median": 20,
+     "p75": 31,
+     "p90": 49
+    },
+    "eligibility_chars": {
+     "n": 125,
+     "p25": 968,
+     "median": 1808,
+     "p75": 3342,
+     "p90": 5416
+    },
+    "planned_enrollment": {
+     "n": 125,
+     "p25": 21,
+     "median": 45,
+     "p75": 66,
+     "p90": 145
+    },
+    "planned_duration_months": {
+     "n": 124,
+     "p25": 12.0,
+     "median": 19.05,
+     "p75": 31.5,
+     "p90": 48.0
+    },
+    "monthly_enrollment_burden": {
+     "n": 124,
+     "p25": 1.11,
+     "median": 2.25,
+     "p75": 4.8,
+     "p90": 10.0
+    },
+    "n_secondary_outcomes": {
+     "n": 102,
+     "p25": 2,
+     "median": 3.5,
+     "p75": 7,
+     "p90": 11
+    }
+   }
+  },
+  "non-small cell lung cancer|p2p3": {
+   "recruit_failed": {
+    "n_concurrent_phase2": null,
+    "n_concurrent_trials": null,
+    "total_competing_seats": null,
+    "n_inclusion_items": null,
+    "n_exclusion_items": null,
+    "n_eligibility_items": null,
+    "eligibility_chars": null,
+    "planned_enrollment": null,
+    "planned_duration_months": null,
+    "monthly_enrollment_burden": null,
+    "n_secondary_outcomes": null
+   }
+  },
+  "__ALL__|p2p3": {
+   "recruit_failed": {
+    "n_concurrent_phase2": null,
+    "n_concurrent_trials": null,
+    "total_competing_seats": null,
+    "n_inclusion_items": null,
+    "n_exclusion_items": null,
+    "n_eligibility_items": null,
+    "eligibility_chars": null,
+    "planned_enrollment": null,
+    "planned_duration_months": null,
+    "monthly_enrollment_burden": null,
+    "n_secondary_outcomes": null
+   },
+   "completed": {
+    "n_concurrent_phase2": {
+     "n": 28,
+     "p25": 30,
+     "median": 42.0,
+     "p75": 78,
+     "p90": 136
+    },
+    "n_concurrent_trials": {
+     "n": 28,
+     "p25": 88,
+     "median": 244.0,
+     "p75": 330,
+     "p90": 381
+    },
+    "total_competing_seats": {
+     "n": 28,
+     "p25": 24522,
+     "median": 117920.5,
+     "p75": 212440,
+     "p90": 283659
+    },
+    "n_inclusion_items": {
+     "n": 28,
+     "p25": 4,
+     "median": 5.0,
+     "p75": 10,
+     "p90": 27
+    },
+    "n_exclusion_items": {
+     "n": 27,
+     "p25": 4,
+     "median": 8,
+     "p75": 16,
+     "p90": 24
+    },
+    "n_eligibility_items": {
+     "n": 28,
+     "p25": 8,
+     "median": 13.0,
+     "p75": 27,
+     "p90": 47
+    },
+    "eligibility_chars": {
+     "n": 28,
+     "p25": 571,
+     "median": 1354.5,
+     "p75": 2643,
+     "p90": 6405
+    },
+    "planned_enrollment": {
+     "n": 28,
+     "p25": 80,
+     "median": 195.0,
+     "p75": 381,
+     "p90": 750
+    },
+    "planned_duration_months": {
+     "n": 28,
+     "p25": 11.0,
+     "median": 20.55,
+     "p75": 48.0,
+     "p90": 54.0
+    },
+    "monthly_enrollment_burden": {
+     "n": 28,
+     "p25": 4.38,
+     "median": 10.03,
+     "p75": 17.08,
+     "p90": 23.06
+    },
+    "n_secondary_outcomes": {
+     "n": 24,
+     "p25": 4,
+     "median": 5.5,
+     "p75": 9,
+     "p90": 11
+    }
+   }
+  },
+  "atopic dermatitis|p2": {
+   "recruit_failed": {
+    "n_concurrent_phase2": null,
+    "n_concurrent_trials": null,
+    "total_competing_seats": null,
+    "n_inclusion_items": null,
+    "n_exclusion_items": null,
+    "n_eligibility_items": null,
+    "eligibility_chars": null,
+    "planned_enrollment": null,
+    "planned_duration_months": null,
+    "monthly_enrollment_burden": null,
+    "n_secondary_outcomes": null
+   },
+   "completed": {
+    "n_concurrent_phase2": {
+     "n": 35,
+     "p25": 18,
+     "median": 28,
+     "p75": 38,
+     "p90": 46
+    },
+    "n_concurrent_trials": {
+     "n": 35,
+     "p25": 58,
+     "median": 80,
+     "p75": 134,
+     "p90": 152
+    },
+    "total_competing_seats": {
+     "n": 35,
+     "p25": 8784,
+     "median": 23117,
+     "p75": 46388,
+     "p90": 49659
+    },
+    "n_inclusion_items": {
+     "n": 35,
+     "p25": 6,
+     "median": 8,
+     "p75": 12,
+     "p90": 17
+    },
+    "n_exclusion_items": {
+     "n": 35,
+     "p25": 5,
+     "median": 10,
+     "p75": 18,
+     "p90": 28
+    },
+    "n_eligibility_items": {
+     "n": 35,
+     "p25": 11,
+     "median": 19,
+     "p75": 27,
+     "p90": 42
+    },
+    "eligibility_chars": {
+     "n": 35,
+     "p25": 1184,
+     "median": 1848,
+     "p75": 3477,
+     "p90": 4923
+    },
+    "planned_enrollment": {
+     "n": 35,
+     "p25": 48,
+     "median": 94,
+     "p75": 200,
+     "p90": 250
+    },
+    "planned_duration_months": {
+     "n": 35,
+     "p25": 8.0,
+     "median": 10.3,
+     "p75": 15.1,
+     "p90": 19.0
+    },
+    "monthly_enrollment_burden": {
+     "n": 35,
+     "p25": 4.48,
+     "median": 8.4,
+     "p75": 16.92,
+     "p90": 26.25
+    },
+    "n_secondary_outcomes": {
+     "n": 30,
+     "p25": 2,
+     "median": 3.5,
+     "p75": 7,
+     "p90": 14
+    }
+   }
+  },
+  "atopic dermatitis": {
+   "recruit_failed": {
+    "n_concurrent_phase2": null,
+    "n_concurrent_trials": null,
+    "total_competing_seats": null,
+    "n_inclusion_items": null,
+    "n_exclusion_items": null,
+    "n_eligibility_items": null,
+    "eligibility_chars": null,
+    "planned_enrollment": null,
+    "planned_duration_months": null,
+    "monthly_enrollment_burden": null,
+    "n_secondary_outcomes": null
+   },
+   "completed": {
+    "n_concurrent_phase2": {
+     "n": 40,
+     "p25": 18,
+     "median": 27.5,
+     "p75": 39,
+     "p90": 46
+    },
+    "n_concurrent_trials": {
+     "n": 40,
+     "p25": 58,
+     "median": 80.5,
+     "p75": 135,
+     "p90": 152
+    },
+    "total_competing_seats": {
+     "n": 40,
+     "p25": 8784,
+     "median": 23494.5,
+     "p75": 46388,
+     "p90": 49659
+    },
+    "n_inclusion_items": {
+     "n": 40,
+     "p25": 6,
+     "median": 8.0,
+     "p75": 12,
+     "p90": 17
+    },
+    "n_exclusion_items": {
+     "n": 40,
+     "p25": 6,
+     "median": 10.0,
+     "p75": 18,
+     "p90": 39
+    },
+    "n_eligibility_items": {
+     "n": 40,
+     "p25": 11,
+     "median": 18.5,
+     "p75": 27,
+     "p90": 61
+    },
+    "eligibility_chars": {
+     "n": 40,
+     "p25": 1285,
+     "median": 1751.0,
+     "p75": 3477,
+     "p90": 7083
+    },
+    "planned_enrollment": {
+     "n": 40,
+     "p25": 51,
+     "median": 100.0,
+     "p75": 210,
+     "p90": 280
+    },
+    "planned_duration_months": {
+     "n": 40,
+     "p25": 8.0,
+     "median": 10.2,
+     "p75": 16.0,
+     "p90": 19.4
+    },
+    "monthly_enrollment_burden": {
+     "n": 40,
+     "p25": 4.92,
+     "median": 8.67,
+     "p75": 16.1,
+     "p90": 26.25
+    },
+    "n_secondary_outcomes": {
+     "n": 33,
+     "p25": 3,
+     "median": 5,
+     "p75": 9,
+     "p90": 14
+    }
+   }
+  },
+  "atopic dermatitis|p2p3": {
+   "completed": {
+    "n_concurrent_phase2": null,
+    "n_concurrent_trials": null,
+    "total_competing_seats": null,
+    "n_inclusion_items": null,
+    "n_exclusion_items": null,
+    "n_eligibility_items": null,
+    "eligibility_chars": null,
+    "planned_enrollment": null,
+    "planned_duration_months": null,
+    "monthly_enrollment_burden": null,
+    "n_secondary_outcomes": null
+   }
+  },
+  "atopic dermatitis|p1p2": {
+   "completed": {
+    "n_concurrent_phase2": null,
+    "n_concurrent_trials": null,
+    "total_competing_seats": null,
+    "n_inclusion_items": null,
+    "n_exclusion_items": null,
+    "n_eligibility_items": null,
+    "eligibility_chars": null,
+    "planned_enrollment": null,
+    "planned_duration_months": null,
+    "monthly_enrollment_burden": null,
+    "n_secondary_outcomes": null
+   }
+  },
+  "type 2 diabetes|p2": {
+   "recruit_failed": {
+    "n_concurrent_phase2": {
+     "n": 6,
+     "p25": 24,
+     "median": 28.0,
+     "p75": 29,
+     "p90": 31
+    },
+    "n_concurrent_trials": {
+     "n": 6,
+     "p25": 247,
+     "median": 253.0,
+     "p75": 259,
+     "p90": 260
+    },
+    "total_competing_seats": {
+     "n": 6,
+     "p25": 103914,
+     "median": 116786.0,
+     "p75": 119505,
+     "p90": 164536
+    },
+    "n_inclusion_items": {
+     "n": 6,
+     "p25": 7,
+     "median": 8.0,
+     "p75": 9,
+     "p90": 12
+    },
+    "n_exclusion_items": {
+     "n": 6,
+     "p25": 8,
+     "median": 11.5,
+     "p75": 15,
+     "p90": 21
+    },
+    "n_eligibility_items": {
+     "n": 6,
+     "p25": 15,
+     "median": 20.5,
+     "p75": 26,
+     "p90": 29
+    },
+    "eligibility_chars": {
+     "n": 6,
+     "p25": 844,
+     "median": 1504.5,
+     "p75": 1939,
+     "p90": 3817
+    },
+    "planned_enrollment": {
+     "n": 6,
+     "p25": 50,
+     "median": 108.5,
+     "p75": 268,
+     "p90": 496
+    },
+    "planned_duration_months": {
+     "n": 6,
+     "p25": 12.0,
+     "median": 16.85,
+     "p75": 17.6,
+     "p90": 29.5
+    },
+    "monthly_enrollment_burden": {
+     "n": 6,
+     "p25": 2.54,
+     "median": 7.33,
+     "p75": 29.45,
+     "p90": 30.62
+    },
+    "n_secondary_outcomes": {
+     "n": 6,
+     "p25": 3,
+     "median": 12.5,
+     "p75": 16,
+     "p90": 17
+    }
+   },
+   "completed": {
+    "n_concurrent_phase2": {
+     "n": 29,
+     "p25": 27,
+     "median": 30,
+     "p75": 32,
+     "p90": 40
+    },
+    "n_concurrent_trials": {
+     "n": 29,
+     "p25": 255,
+     "median": 260,
+     "p75": 277,
+     "p90": 290
+    },
+    "total_competing_seats": {
+     "n": 29,
+     "p25": 118562,
+     "median": 125913,
+     "p75": 141381,
+     "p90": 144755
+    },
+    "n_inclusion_items": {
+     "n": 30,
+     "p25": 6,
+     "median": 7.0,
+     "p75": 8,
+     "p90": 17
+    },
+    "n_exclusion_items": {
+     "n": 30,
+     "p25": 8,
+     "median": 14.0,
+     "p75": 18,
+     "p90": 31
+    },
+    "n_eligibility_items": {
+     "n": 30,
+     "p25": 14,
+     "median": 21.0,
+     "p75": 26,
+     "p90": 54
+    },
+    "eligibility_chars": {
+     "n": 30,
+     "p25": 1105,
+     "median": 1827.0,
+     "p75": 3308,
+     "p90": 6179
+    },
+    "planned_enrollment": {
+     "n": 30,
+     "p25": 40,
+     "median": 91.0,
+     "p75": 168,
+     "p90": 375
+    },
+    "planned_duration_months": {
+     "n": 29,
+     "p25": 10.0,
+     "median": 13.0,
+     "p75": 19.0,
+     "p90": 24.0
+    },
+    "monthly_enrollment_burden": {
+     "n": 29,
+     "p25": 3.08,
+     "median": 5.33,
+     "p75": 17.74,
+     "p90": 30.49
+    },
+    "n_secondary_outcomes": {
+     "n": 30,
+     "p25": 2,
+     "median": 4.5,
+     "p75": 11,
+     "p90": 20
+    }
+   }
+  },
+  "type 2 diabetes": {
+   "recruit_failed": {
+    "n_concurrent_phase2": {
+     "n": 7,
+     "p25": 24,
+     "median": 28,
+     "p75": 31,
+     "p90": 33
+    },
+    "n_concurrent_trials": {
+     "n": 7,
+     "p25": 247,
+     "median": 249,
+     "p75": 259,
+     "p90": 260
+    },
+    "total_competing_seats": {
+     "n": 7,
+     "p25": 97272,
+     "median": 115764,
+     "p75": 119505,
+     "p90": 164536
+    },
+    "n_inclusion_items": {
+     "n": 7,
+     "p25": 2,
+     "median": 8,
+     "p75": 9,
+     "p90": 12
+    },
+    "n_exclusion_items": {
+     "n": 7,
+     "p25": 6,
+     "median": 9,
+     "p75": 15,
+     "p90": 21
+    },
+    "n_eligibility_items": {
+     "n": 7,
+     "p25": 8,
+     "median": 18,
+     "p75": 26,
+     "p90": 29
+    },
+    "eligibility_chars": {
+     "n": 7,
+     "p25": 587,
+     "median": 1174,
+     "p75": 1939,
+     "p90": 3817
+    },
+    "planned_enrollment": {
+     "n": 7,
+     "p25": 24,
+     "median": 75,
+     "p75": 268,
+     "p90": 496
+    },
+    "planned_duration_months": {
+     "n": 7,
+     "p25": 12.0,
+     "median": 16.2,
+     "p75": 17.6,
+     "p90": 29.5
+    },
+    "monthly_enrollment_burden": {
+     "n": 7,
+     "p25": 1.37,
+     "median": 2.84,
+     "p75": 29.45,
+     "p90": 30.62
+    },
+    "n_secondary_outcomes": {
+     "n": 6,
+     "p25": 3,
+     "median": 12.5,
+     "p75": 16,
+     "p90": 17
+    }
+   },
+   "completed": {
+    "n_concurrent_phase2": {
+     "n": 39,
+     "p25": 27,
+     "median": 31,
+     "p75": 33,
+     "p90": 40
+    },
+    "n_concurrent_trials": {
+     "n": 39,
+     "p25": 244,
+     "median": 260,
+     "p75": 272,
+     "p90": 290
+    },
+    "total_competing_seats": {
+     "n": 39,
+     "p25": 104000,
+     "median": 124007,
+     "p75": 141381,
+     "p90": 144755
+    },
+    "n_inclusion_items": {
+     "n": 40,
+     "p25": 5,
+     "median": 7.0,
+     "p75": 9,
+     "p90": 17
+    },
+    "n_exclusion_items": {
+     "n": 40,
+     "p25": 7,
+     "median": 13.5,
+     "p75": 18,
+     "p90": 30
+    },
+    "n_eligibility_items": {
+     "n": 40,
+     "p25": 13,
+     "median": 20.0,
+     "p75": 26,
+     "p90": 40
+    },
+    "eligibility_chars": {
+     "n": 40,
+     "p25": 1088,
+     "median": 1510.0,
+     "p75": 3308,
+     "p90": 4438
+    },
+    "planned_enrollment": {
+     "n": 40,
+     "p25": 28,
+     "median": 73.5,
+     "p75": 120,
+     "p90": 260
+    },
+    "planned_duration_months": {
+     "n": 39,
+     "p25": 8.0,
+     "median": 13.0,
+     "p75": 19.0,
+     "p90": 29.9
+    },
+    "monthly_enrollment_burden": {
+     "n": 39,
+     "p25": 2.37,
+     "median": 5.0,
+     "p75": 15.33,
+     "p90": 21.54
+    },
+    "n_secondary_outcomes": {
+     "n": 37,
+     "p25": 3,
+     "median": 5,
+     "p75": 10,
+     "p90": 14
+    }
+   }
+  },
+  "type 2 diabetes|p1p2": {
+   "recruit_failed": {
+    "n_concurrent_phase2": null,
+    "n_concurrent_trials": null,
+    "total_competing_seats": null,
+    "n_inclusion_items": null,
+    "n_exclusion_items": null,
+    "n_eligibility_items": null,
+    "eligibility_chars": null,
+    "planned_enrollment": null,
+    "planned_duration_months": null,
+    "monthly_enrollment_burden": null,
+    "n_secondary_outcomes": null
+   },
+   "completed": {
+    "n_concurrent_phase2": {
+     "n": 6,
+     "p25": 31,
+     "median": 34.0,
+     "p75": 39,
+     "p90": 41
+    },
+    "n_concurrent_trials": {
+     "n": 6,
+     "p25": 225,
+     "median": 240.5,
+     "p75": 260,
+     "p90": 261
+    },
+    "total_competing_seats": {
+     "n": 6,
+     "p25": 102519,
+     "median": 103283.5,
+     "p75": 122315,
+     "p90": 133304
+    },
+    "n_inclusion_items": {
+     "n": 6,
+     "p25": 5,
+     "median": 6.5,
+     "p75": 9,
+     "p90": 17
+    },
+    "n_exclusion_items": {
+     "n": 6,
+     "p25": 6,
+     "median": 12.5,
+     "p75": 21,
+     "p90": 23
+    },
+    "n_eligibility_items": {
+     "n": 6,
+     "p25": 13,
+     "median": 18.0,
+     "p75": 30,
+     "p90": 40
+    },
+    "eligibility_chars": {
+     "n": 6,
+     "p25": 968,
+     "median": 1366.0,
+     "p75": 3563,
+     "p90": 4037
+    },
+    "planned_enrollment": {
+     "n": 6,
+     "p25": 16,
+     "median": 22.5,
+     "p75": 60,
+     "p90": 162
+    },
+    "planned_duration_months": {
+     "n": 6,
+     "p25": 7.0,
+     "median": 13.0,
+     "p75": 54.0,
+     "p90": 78.9
+    },
+    "monthly_enrollment_burden": {
+     "n": 6,
+     "p25": 1.11,
+     "median": 1.73,
+     "p75": 6.0,
+     "p90": 20.25
+    },
+    "n_secondary_outcomes": null
+   }
+  },
+  "type 2 diabetes|p2p3": {
+   "completed": {
+    "n_concurrent_phase2": null,
+    "n_concurrent_trials": null,
+    "total_competing_seats": null,
+    "n_inclusion_items": null,
+    "n_exclusion_items": null,
+    "n_eligibility_items": null,
+    "eligibility_chars": null,
+    "planned_enrollment": null,
+    "planned_duration_months": null,
+    "monthly_enrollment_burden": null,
+    "n_secondary_outcomes": null
+   }
+  },
+  "rheumatoid arthritis|p1p2": {
+   "recruit_failed": {
+    "n_concurrent_phase2": null,
+    "n_concurrent_trials": null,
+    "total_competing_seats": null,
+    "n_inclusion_items": null,
+    "n_exclusion_items": null,
+    "n_eligibility_items": null,
+    "eligibility_chars": null,
+    "planned_enrollment": null,
+    "planned_duration_months": null,
+    "monthly_enrollment_burden": null,
+    "n_secondary_outcomes": null
+   },
+   "completed": {
+    "n_concurrent_phase2": {
+     "n": 6,
+     "p25": 50,
+     "median": 56.5,
+     "p75": 62,
+     "p90": 64
+    },
+    "n_concurrent_trials": {
+     "n": 6,
+     "p25": 277,
+     "median": 291.0,
+     "p75": 300,
+     "p90": 303
+    },
+    "total_competing_seats": {
+     "n": 6,
+     "p25": 98688,
+     "median": 132027.0,
+     "p75": 137530,
+     "p90": 138100
+    },
+    "n_inclusion_items": {
+     "n": 6,
+     "p25": 4,
+     "median": 9.5,
+     "p75": 12,
+     "p90": 15
+    },
+    "n_exclusion_items": {
+     "n": 6,
+     "p25": 10,
+     "median": 11.5,
+     "p75": 13,
+     "p90": 21
+    },
+    "n_eligibility_items": {
+     "n": 6,
+     "p25": 15,
+     "median": 20.5,
+     "p75": 25,
+     "p90": 36
+    },
+    "eligibility_chars": {
+     "n": 6,
+     "p25": 874,
+     "median": 1998.0,
+     "p75": 2784,
+     "p90": 3342
+    },
+    "planned_enrollment": {
+     "n": 6,
+     "p25": 48,
+     "median": 91.0,
+     "p75": 120,
+     "p90": 276
+    },
+    "planned_duration_months": {
+     "n": 6,
+     "p25": 12.0,
+     "median": 15.5,
+     "p75": 23.0,
+     "p90": 24.0
+    },
+    "monthly_enrollment_burden": {
+     "n": 6,
+     "p25": 4.5,
+     "median": 7.29,
+     "p75": 10.0,
+     "p90": 18.4
+    },
+    "n_secondary_outcomes": null
+   }
+  },
+  "rheumatoid arthritis": {
+   "recruit_failed": {
+    "n_concurrent_phase2": null,
+    "n_concurrent_trials": null,
+    "total_competing_seats": null,
+    "n_inclusion_items": null,
+    "n_exclusion_items": null,
+    "n_eligibility_items": null,
+    "eligibility_chars": null,
+    "planned_enrollment": null,
+    "planned_duration_months": null,
+    "monthly_enrollment_burden": null,
+    "n_secondary_outcomes": null
+   },
+   "completed": {
+    "n_concurrent_phase2": {
+     "n": 40,
+     "p25": 50,
+     "median": 56.5,
+     "p75": 63,
+     "p90": 68
+    },
+    "n_concurrent_trials": {
+     "n": 40,
+     "p25": 275,
+     "median": 287.0,
+     "p75": 300,
+     "p90": 302
+    },
+    "total_competing_seats": {
+     "n": 40,
+     "p25": 97420,
+     "median": 128498.5,
+     "p75": 133381,
+     "p90": 137500
+    },
+    "n_inclusion_items": {
+     "n": 40,
+     "p25": 5,
+     "median": 8.5,
+     "p75": 12,
+     "p90": 14
+    },
+    "n_exclusion_items": {
+     "n": 40,
+     "p25": 5,
+     "median": 8.5,
+     "p75": 13,
+     "p90": 21
+    },
+    "n_eligibility_items": {
+     "n": 40,
+     "p25": 10,
+     "median": 16.5,
+     "p75": 23,
+     "p90": 34
+    },
+    "eligibility_chars": {
+     "n": 40,
+     "p25": 1042,
+     "median": 1698.5,
+     "p75": 2567,
+     "p90": 4089
+    },
+    "planned_enrollment": {
+     "n": 40,
+     "p25": 60,
+     "median": 140.0,
+     "p75": 250,
+     "p90": 350
+    },
+    "planned_duration_months": {
+     "n": 40,
+     "p25": 12.0,
+     "median": 16.0,
+     "p75": 23.0,
+     "p90": 27.3
+    },
+    "monthly_enrollment_burden": {
+     "n": 40,
+     "p25": 4.58,
+     "median": 10.0,
+     "p75": 14.71,
+     "p90": 18.4
+    },
+    "n_secondary_outcomes": {
+     "n": 32,
+     "p25": 3,
+     "median": 5.5,
+     "p75": 9,
+     "p90": 12
+    }
+   }
+  },
+  "rheumatoid arthritis|p2": {
+   "recruit_failed": {
+    "n_concurrent_phase2": null,
+    "n_concurrent_trials": null,
+    "total_competing_seats": null,
+    "n_inclusion_items": null,
+    "n_exclusion_items": null,
+    "n_eligibility_items": null,
+    "eligibility_chars": null,
+    "planned_enrollment": null,
+    "planned_duration_months": null,
+    "monthly_enrollment_burden": null,
+    "n_secondary_outcomes": null
+   },
+   "completed": {
+    "n_concurrent_phase2": {
+     "n": 34,
+     "p25": 49,
+     "median": 56.5,
+     "p75": 63,
+     "p90": 68
+    },
+    "n_concurrent_trials": {
+     "n": 34,
+     "p25": 274,
+     "median": 287.0,
+     "p75": 299,
+     "p90": 301
+    },
+    "total_competing_seats": {
+     "n": 34,
+     "p25": 97254,
+     "median": 128498.5,
+     "p75": 133169,
+     "p90": 134262
+    },
+    "n_inclusion_items": {
+     "n": 34,
+     "p25": 5,
+     "median": 7.5,
+     "p75": 11,
+     "p90": 13
+    },
+    "n_exclusion_items": {
+     "n": 34,
+     "p25": 5,
+     "median": 7.0,
+     "p75": 10,
+     "p90": 17
+    },
+    "n_eligibility_items": {
+     "n": 34,
+     "p25": 10,
+     "median": 15.0,
+     "p75": 22,
+     "p90": 33
+    },
+    "eligibility_chars": {
+     "n": 34,
+     "p25": 1042,
+     "median": 1589.0,
+     "p75": 2521,
+     "p90": 4089
+    },
+    "planned_enrollment": {
+     "n": 34,
+     "p25": 60,
+     "median": 158.0,
+     "p75": 250,
+     "p90": 350
+    },
+    "planned_duration_months": {
+     "n": 34,
+     "p25": 11.0,
+     "median": 16.35,
+     "p75": 22.2,
+     "p90": 27.3
+    },
+    "monthly_enrollment_burden": {
+     "n": 34,
+     "p25": 4.85,
+     "median": 10.95,
+     "p75": 14.71,
+     "p90": 17.5
+    },
+    "n_secondary_outcomes": {
+     "n": 27,
+     "p25": 3,
+     "median": 6,
+     "p75": 9,
+     "p90": 22
+    }
+   }
+  },
+  "alzheimer disease|p2": {
+   "recruit_failed": {
+    "n_concurrent_phase2": null,
+    "n_concurrent_trials": null,
+    "total_competing_seats": null,
+    "n_inclusion_items": null,
+    "n_exclusion_items": null,
+    "n_eligibility_items": null,
+    "eligibility_chars": null,
+    "planned_enrollment": null,
+    "planned_duration_months": null,
+    "monthly_enrollment_burden": null,
+    "n_secondary_outcomes": null
+   },
+   "completed": {
+    "n_concurrent_phase2": {
+     "n": 31,
+     "p25": 78,
+     "median": 82,
+     "p75": 97,
+     "p90": 103
+    },
+    "n_concurrent_trials": {
+     "n": 31,
+     "p25": 221,
+     "median": 321,
+     "p75": 375,
+     "p90": 400
+    },
+    "total_competing_seats": {
+     "n": 31,
+     "p25": 64202,
+     "median": 125860,
+     "p75": 286876,
+     "p90": 289231
+    },
+    "n_inclusion_items": {
+     "n": 31,
+     "p25": 5,
+     "median": 10,
+     "p75": 13,
+     "p90": 16
+    },
+    "n_exclusion_items": {
+     "n": 31,
+     "p25": 8,
+     "median": 11,
+     "p75": 21,
+     "p90": 31
+    },
+    "n_eligibility_items": {
+     "n": 31,
+     "p25": 14,
+     "median": 21,
+     "p75": 38,
+     "p90": 44
+    },
+    "eligibility_chars": {
+     "n": 31,
+     "p25": 952,
+     "median": 1890,
+     "p75": 4540,
+     "p90": 5819
+    },
+    "planned_enrollment": {
+     "n": 31,
+     "p25": 55,
+     "median": 120,
+     "p75": 200,
+     "p90": 260
+    },
+    "planned_duration_months": {
+     "n": 30,
+     "p25": 13.3,
+     "median": 18.8,
+     "p75": 32.0,
+     "p90": 46.0
+    },
+    "monthly_enrollment_burden": {
+     "n": 30,
+     "p25": 3.46,
+     "median": 5.0,
+     "p75": 10.0,
+     "p90": 20.0
+    },
+    "n_secondary_outcomes": {
+     "n": 23,
+     "p25": 3,
+     "median": 6,
+     "p75": 7,
+     "p90": 12
+    }
+   }
+  },
+  "alzheimer disease": {
+   "recruit_failed": {
+    "n_concurrent_phase2": null,
+    "n_concurrent_trials": null,
+    "total_competing_seats": null,
+    "n_inclusion_items": null,
+    "n_exclusion_items": null,
+    "n_eligibility_items": null,
+    "eligibility_chars": null,
+    "planned_enrollment": null,
+    "planned_duration_months": null,
+    "monthly_enrollment_burden": null,
+    "n_secondary_outcomes": null
+   },
+   "completed": {
+    "n_concurrent_phase2": {
+     "n": 40,
+     "p25": 78,
+     "median": 81.0,
+     "p75": 96,
+     "p90": 103
+    },
+    "n_concurrent_trials": {
+     "n": 40,
+     "p25": 222,
+     "median": 317.5,
+     "p75": 356,
+     "p90": 400
+    },
+    "total_competing_seats": {
+     "n": 40,
+     "p25": 64557,
+     "median": 232416.0,
+     "p75": 286876,
+     "p90": 289231
+    },
+    "n_inclusion_items": {
+     "n": 40,
+     "p25": 7,
+     "median": 10.0,
+     "p75": 13,
+     "p90": 19
+    },
+    "n_exclusion_items": {
+     "n": 40,
+     "p25": 8,
+     "median": 11.5,
+     "p75": 26,
+     "p90": 41
+    },
+    "n_eligibility_items": {
+     "n": 40,
+     "p25": 16,
+     "median": 24.0,
+     "p75": 42,
+     "p90": 58
+    },
+    "eligibility_chars": {
+     "n": 40,
+     "p25": 1494,
+     "median": 2683.5,
+     "p75": 4585,
+     "p90": 6920
+    },
+    "planned_enrollment": {
+     "n": 40,
+     "p25": 45,
+     "median": 100.0,
+     "p75": 230,
+     "p90": 375
+    },
+    "planned_duration_months": {
+     "n": 39,
+     "p25": 13.0,
+     "median": 18.8,
+     "p75": 32.0,
+     "p90": 52.0
+    },
+    "monthly_enrollment_burden": {
+     "n": 39,
+     "p25": 3.0,
+     "median": 4.6,
+     "p75": 11.11,
+     "p90": 20.0
+    },
+    "n_secondary_outcomes": {
+     "n": 28,
+     "p25": 3,
+     "median": 6.0,
+     "p75": 7,
+     "p90": 12
+    }
+   }
+  },
+  "alzheimer disease|p1p2": {
+   "completed": {
+    "n_concurrent_phase2": null,
+    "n_concurrent_trials": null,
+    "total_competing_seats": null,
+    "n_inclusion_items": null,
+    "n_exclusion_items": null,
+    "n_eligibility_items": null,
+    "eligibility_chars": null,
+    "planned_enrollment": null,
+    "planned_duration_months": null,
+    "monthly_enrollment_burden": null,
+    "n_secondary_outcomes": null
+   }
+  },
+  "alzheimer disease|p2p3": {
+   "completed": {
+    "n_concurrent_phase2": null,
+    "n_concurrent_trials": null,
+    "total_competing_seats": null,
+    "n_inclusion_items": null,
+    "n_exclusion_items": null,
+    "n_eligibility_items": null,
+    "eligibility_chars": null,
+    "planned_enrollment": null,
+    "planned_duration_months": null,
+    "monthly_enrollment_burden": null,
+    "n_secondary_outcomes": null
+   }
+  },
+  "pancreatic cancer|p2p3": {
+   "recruit_failed": {
+    "n_concurrent_phase2": null,
+    "n_concurrent_trials": null,
+    "total_competing_seats": null,
+    "n_inclusion_items": null,
+    "n_exclusion_items": null,
+    "n_eligibility_items": null,
+    "eligibility_chars": null,
+    "planned_enrollment": null,
+    "planned_duration_months": null,
+    "monthly_enrollment_burden": null,
+    "n_secondary_outcomes": null
+   }
+  },
+  "pancreatic cancer": {
+   "recruit_failed": {
+    "n_concurrent_phase2": {
+     "n": 15,
+     "p25": 130,
+     "median": 148,
+     "p75": 189,
+     "p90": 193
+    },
+    "n_concurrent_trials": {
+     "n": 15,
+     "p25": 321,
+     "median": 340,
+     "p75": 433,
+     "p90": 458
+    },
+    "total_competing_seats": {
+     "n": 15,
+     "p25": 39344,
+     "median": 51108,
+     "p75": 68611,
+     "p90": 79020
+    },
+    "n_inclusion_items": {
+     "n": 15,
+     "p25": 9,
+     "median": 17,
+     "p75": 24,
+     "p90": 38
+    },
+    "n_exclusion_items": {
+     "n": 13,
+     "p25": 9,
+     "median": 12,
+     "p75": 14,
+     "p90": 19
+    },
+    "n_eligibility_items": {
+     "n": 15,
+     "p25": 24,
+     "median": 29,
+     "p75": 38,
+     "p90": 50
+    },
+    "eligibility_chars": {
+     "n": 15,
+     "p25": 1265,
+     "median": 3451,
+     "p75": 4063,
+     "p90": 6778
+    },
+    "planned_enrollment": {
+     "n": 15,
+     "p25": 27,
+     "median": 40,
+     "p75": 86,
+     "p90": 150
+    },
+    "planned_duration_months": {
+     "n": 15,
+     "p25": 21.0,
+     "median": 33.0,
+     "p75": 49.0,
+     "p90": 62.7
+    },
+    "monthly_enrollment_burden": {
+     "n": 15,
+     "p25": 0.82,
+     "median": 1.1,
+     "p75": 3.5,
+     "p90": 6.73
+    },
+    "n_secondary_outcomes": {
+     "n": 13,
+     "p25": 1,
+     "median": 3,
+     "p75": 4,
+     "p90": 8
+    }
+   },
+   "completed": {
+    "n_concurrent_phase2": {
+     "n": 34,
+     "p25": 124,
+     "median": 149.5,
+     "p75": 178,
+     "p90": 205
+    },
+    "n_concurrent_trials": {
+     "n": 34,
+     "p25": 280,
+     "median": 346.0,
+     "p75": 419,
+     "p90": 485
+    },
+    "total_competing_seats": {
+     "n": 34,
+     "p25": 25487,
+     "median": 50943.0,
+     "p75": 64622,
+     "p90": 84072
+    },
+    "n_inclusion_items": {
+     "n": 35,
+     "p25": 9,
+     "median": 13,
+     "p75": 20,
+     "p90": 28
+    },
+    "n_exclusion_items": {
+     "n": 33,
+     "p25": 8,
+     "median": 13,
+     "p75": 17,
+     "p90": 24
+    },
+    "n_eligibility_items": {
+     "n": 35,
+     "p25": 22,
+     "median": 27,
+     "p75": 36,
+     "p90": 50
+    },
+    "eligibility_chars": {
+     "n": 35,
+     "p25": 1431,
+     "median": 2493,
+     "p75": 3779,
+     "p90": 6280
+    },
+    "planned_enrollment": {
+     "n": 35,
+     "p25": 34,
+     "median": 43,
+     "p75": 66,
+     "p90": 92
+    },
+    "planned_duration_months": {
+     "n": 34,
+     "p25": 16.0,
+     "median": 30.25,
+     "p75": 36.0,
+     "p90": 47.0
+    },
+    "monthly_enrollment_burden": {
+     "n": 34,
+     "p25": 1.05,
+     "median": 1.85,
+     "p75": 2.67,
+     "p90": 4.17
+    },
+    "n_secondary_outcomes": {
+     "n": 33,
+     "p25": 2,
+     "median": 4,
+     "p75": 5,
+     "p90": 7
+    }
+   }
+  },
+  "pancreatic cancer|p2": {
+   "recruit_failed": {
+    "n_concurrent_phase2": {
+     "n": 10,
+     "p25": 137,
+     "median": 173.5,
+     "p75": 192,
+     "p90": 205
+    },
+    "n_concurrent_trials": {
+     "n": 10,
+     "p25": 334,
+     "median": 396.0,
+     "p75": 456,
+     "p90": 489
+    },
+    "total_competing_seats": {
+     "n": 10,
+     "p25": 50215,
+     "median": 59957.5,
+     "p75": 78822,
+     "p90": 85818
+    },
+    "n_inclusion_items": {
+     "n": 10,
+     "p25": 17,
+     "median": 22.0,
+     "p75": 30,
+     "p90": 50
+    },
+    "n_exclusion_items": {
+     "n": 8,
+     "p25": 12,
+     "median": 13.0,
+     "p75": 19,
+     "p90": 30
+    },
+    "n_eligibility_items": {
+     "n": 10,
+     "p25": 28,
+     "median": 35.5,
+     "p75": 39,
+     "p90": 53
+    },
+    "eligibility_chars": {
+     "n": 10,
+     "p25": 2763,
+     "median": 3780.5,
+     "p75": 5091,
+     "p90": 7582
+    },
+    "planned_enrollment": {
+     "n": 10,
+     "p25": 26,
+     "median": 32.5,
+     "p75": 42,
+     "p90": 150
+    },
+    "planned_duration_months": {
+     "n": 10,
+     "p25": 21.0,
+     "median": 29.55,
+     "p75": 36.0,
+     "p90": 62.7
+    },
+    "monthly_enrollment_burden": {
+     "n": 10,
+     "p25": 0.71,
+     "median": 1.02,
+     "p75": 3.08,
+     "p90": 4.55
+    },
+    "n_secondary_outcomes": {
+     "n": 8,
+     "p25": 1,
+     "median": 3.0,
+     "p75": 8,
+     "p90": 9
+    }
+   },
+   "completed": {
+    "n_concurrent_phase2": {
+     "n": 25,
+     "p25": 127,
+     "median": 150,
+     "p75": 186,
+     "p90": 206
+    },
+    "n_concurrent_trials": {
+     "n": 25,
+     "p25": 301,
+     "median": 349,
+     "p75": 422,
+     "p90": 486
+    },
+    "total_competing_seats": {
+     "n": 25,
+     "p25": 37941,
+     "median": 51134,
+     "p75": 65718,
+     "p90": 84072
+    },
+    "n_inclusion_items": {
+     "n": 26,
+     "p25": 9,
+     "median": 13.0,
+     "p75": 20,
+     "p90": 28
+    },
+    "n_exclusion_items": {
+     "n": 25,
+     "p25": 9,
+     "median": 14,
+     "p75": 17,
+     "p90": 24
+    },
+    "n_eligibility_items": {
+     "n": 26,
+     "p25": 22,
+     "median": 30.5,
+     "p75": 36,
+     "p90": 45
+    },
+    "eligibility_chars": {
+     "n": 26,
+     "p25": 1380,
+     "median": 2943.5,
+     "p75": 3779,
+     "p90": 5429
+    },
+    "planned_enrollment": {
+     "n": 26,
+     "p25": 33,
+     "median": 42.0,
+     "p75": 68,
+     "p90": 92
+    },
+    "planned_duration_months": {
+     "n": 25,
+     "p25": 17.0,
+     "median": 31.0,
+     "p75": 36.0,
+     "p90": 48.0
+    },
+    "monthly_enrollment_burden": {
+     "n": 25,
+     "p25": 1.04,
+     "median": 1.79,
+     "p75": 2.67,
+     "p90": 3.94
+    },
+    "n_secondary_outcomes": {
+     "n": 24,
+     "p25": 3,
+     "median": 4.0,
+     "p75": 6,
+     "p90": 7
+    }
+   }
+  },
+  "pancreatic cancer|p1p2": {
+   "recruit_failed": {
+    "n_concurrent_phase2": null,
+    "n_concurrent_trials": null,
+    "total_competing_seats": null,
+    "n_inclusion_items": null,
+    "n_exclusion_items": null,
+    "n_eligibility_items": null,
+    "eligibility_chars": null,
+    "planned_enrollment": null,
+    "planned_duration_months": null,
+    "monthly_enrollment_burden": null,
+    "n_secondary_outcomes": null
+   },
+   "completed": {
+    "n_concurrent_phase2": {
+     "n": 9,
+     "p25": 124,
+     "median": 138,
+     "p75": 166,
+     "p90": 205
+    },
+    "n_concurrent_trials": {
+     "n": 9,
+     "p25": 280,
+     "median": 335,
+     "p75": 403,
+     "p90": 485
+    },
+    "total_competing_seats": {
+     "n": 9,
+     "p25": 25487,
+     "median": 50224,
+     "p75": 64126,
+     "p90": 85391
+    },
+    "n_inclusion_items": {
+     "n": 9,
+     "p25": 10,
+     "median": 15,
+     "p75": 23,
+     "p90": 72
+    },
+    "n_exclusion_items": {
+     "n": 8,
+     "p25": 7,
+     "median": 9.0,
+     "p75": 13,
+     "p90": 30
+    },
+    "n_eligibility_items": {
+     "n": 9,
+     "p25": 19,
+     "median": 25,
+     "p75": 27,
+     "p90": 72
+    },
+    "eligibility_chars": {
+     "n": 9,
+     "p25": 2047,
+     "median": 2247,
+     "p75": 2479,
+     "p90": 10240
+    },
+    "planned_enrollment": {
+     "n": 9,
+     "p25": 37,
+     "median": 45,
+     "p75": 50,
+     "p90": 133
+    },
+    "planned_duration_months": {
+     "n": 9,
+     "p25": 16.0,
+     "median": 24.0,
+     "p75": 34.4,
+     "p90": 43.0
+    },
+    "monthly_enrollment_burden": {
+     "n": 9,
+     "p25": 1.17,
+     "median": 2.24,
+     "p75": 2.62,
+     "p90": 7.82
+    },
+    "n_secondary_outcomes": {
+     "n": 9,
+     "p25": 2,
+     "median": 2,
+     "p75": 3,
+     "p90": 8
+    }
+   }
+  },
+  "glioblastoma|p1p2": {
+   "recruit_failed": {
+    "n_concurrent_phase2": null,
+    "n_concurrent_trials": null,
+    "total_competing_seats": null,
+    "n_inclusion_items": null,
+    "n_exclusion_items": null,
+    "n_eligibility_items": null,
+    "eligibility_chars": null,
+    "planned_enrollment": null,
+    "planned_duration_months": null,
+    "monthly_enrollment_burden": null,
+    "n_secondary_outcomes": null
+   },
+   "completed": {
+    "n_concurrent_phase2": {
+     "n": 12,
+     "p25": 141,
+     "median": 144.0,
+     "p75": 149,
+     "p90": 163
+    },
+    "n_concurrent_trials": {
+     "n": 12,
+     "p25": 273,
+     "median": 276.0,
+     "p75": 290,
+     "p90": 335
+    },
+    "total_competing_seats": {
+     "n": 12,
+     "p25": 18500,
+     "median": 19034.5,
+     "p75": 21369,
+     "p90": 24439
+    },
+    "n_inclusion_items": {
+     "n": 12,
+     "p25": 11,
+     "median": 15.0,
+     "p75": 23,
+     "p90": 33
+    },
+    "n_exclusion_items": {
+     "n": 12,
+     "p25": 10,
+     "median": 11.5,
+     "p75": 15,
+     "p90": 16
+    },
+    "n_eligibility_items": {
+     "n": 12,
+     "p25": 19,
+     "median": 27.5,
+     "p75": 39,
+     "p90": 48
+    },
+    "eligibility_chars": {
+     "n": 12,
+     "p25": 1483,
+     "median": 2291.5,
+     "p75": 3792,
+     "p90": 6938
+    },
+    "planned_enrollment": {
+     "n": 12,
+     "p25": 18,
+     "median": 30.0,
+     "p75": 108,
+     "p90": 190
+    },
+    "planned_duration_months": {
+     "n": 12,
+     "p25": 11.0,
+     "median": 16.0,
+     "p75": 35.0,
+     "p90": 48.0
+    },
+    "monthly_enrollment_burden": {
+     "n": 12,
+     "p25": 0.92,
+     "median": 2.38,
+     "p75": 5.0,
+     "p90": 5.43
+    },
+    "n_secondary_outcomes": {
+     "n": 9,
+     "p25": 2,
+     "median": 4,
+     "p75": 8,
+     "p90": 25
+    }
+   }
+  },
+  "glioblastoma": {
+   "recruit_failed": {
+    "n_concurrent_phase2": {
+     "n": 12,
+     "p25": 141,
+     "median": 142.0,
+     "p75": 145,
+     "p90": 145
+    },
+    "n_concurrent_trials": {
+     "n": 12,
+     "p25": 256,
+     "median": 268.5,
+     "p75": 292,
+     "p90": 293
+    },
+    "total_competing_seats": {
+     "n": 12,
+     "p25": 18582,
+     "median": 18959.0,
+     "p75": 20654,
+     "p90": 20815
+    },
+    "n_inclusion_items": {
+     "n": 12,
+     "p25": 13,
+     "median": 21.5,
+     "p75": 28,
+     "p90": 34
+    },
+    "n_exclusion_items": {
+     "n": 11,
+     "p25": 7,
+     "median": 14,
+     "p75": 26,
+     "p90": 32
+    },
+    "n_eligibility_items": {
+     "n": 12,
+     "p25": 28,
+     "median": 34.0,
+     "p75": 46,
+     "p90": 52
+    },
+    "eligibility_chars": {
+     "n": 12,
+     "p25": 3443,
+     "median": 4171.5,
+     "p75": 5765,
+     "p90": 7281
+    },
+    "planned_enrollment": {
+     "n": 12,
+     "p25": 30,
+     "median": 46.5,
+     "p75": 80,
+     "p90": 80
+    },
+    "planned_duration_months": {
+     "n": 11,
+     "p25": 29.0,
+     "median": 54.0,
+     "p75": 64.9,
+     "p90": 72.0
+    },
+    "monthly_enrollment_burden": {
+     "n": 11,
+     "p25": 0.28,
+     "median": 0.85,
+     "p75": 1.59,
+     "p90": 2.08
+    },
+    "n_secondary_outcomes": {
+     "n": 9,
+     "p25": 2,
+     "median": 3,
+     "p75": 3,
+     "p90": 5
+    }
+   },
+   "completed": {
+    "n_concurrent_phase2": {
+     "n": 39,
+     "p25": 140,
+     "median": 142,
+     "p75": 147,
+     "p90": 163
+    },
+    "n_concurrent_trials": {
+     "n": 39,
+     "p25": 252,
+     "median": 273,
+     "p75": 283,
+     "p90": 335
+    },
+    "total_competing_seats": {
+     "n": 39,
+     "p25": 18026,
+     "median": 18974,
+     "p75": 20419,
+     "p90": 24451
+    },
+    "n_inclusion_items": {
+     "n": 39,
+     "p25": 10,
+     "median": 14,
+     "p75": 23,
+     "p90": 34
+    },
+    "n_exclusion_items": {
+     "n": 37,
+     "p25": 10,
+     "median": 15,
+     "p75": 21,
+     "p90": 32
+    },
+    "n_eligibility_items": {
+     "n": 39,
+     "p25": 22,
+     "median": 32,
+     "p75": 42,
+     "p90": 55
+    },
+    "eligibility_chars": {
+     "n": 39,
+     "p25": 1854,
+     "median": 2887,
+     "p75": 5161,
+     "p90": 7170
+    },
+    "planned_enrollment": {
+     "n": 39,
+     "p25": 30,
+     "median": 44,
+     "p75": 79,
+     "p90": 160
+    },
+    "planned_duration_months": {
+     "n": 38,
+     "p25": 15.0,
+     "median": 24.0,
+     "p75": 31.0,
+     "p90": 48.0
+    },
+    "monthly_enrollment_burden": {
+     "n": 38,
+     "p25": 1.21,
+     "median": 2.29,
+     "p75": 3.29,
+     "p90": 5.42
+    },
+    "n_secondary_outcomes": {
+     "n": 33,
+     "p25": 2,
+     "median": 3,
+     "p75": 6,
+     "p90": 9
+    }
+   }
+  },
+  "glioblastoma|p2": {
+   "recruit_failed": {
+    "n_concurrent_phase2": {
+     "n": 9,
+     "p25": 140,
+     "median": 141,
+     "p75": 143,
+     "p90": 170
+    },
+    "n_concurrent_trials": {
+     "n": 9,
+     "p25": 256,
+     "median": 270,
+     "p75": 292,
+     "p90": 348
+    },
+    "total_competing_seats": {
+     "n": 9,
+     "p25": 18626,
+     "median": 18972,
+     "p75": 20654,
+     "p90": 25531
+    },
+    "n_inclusion_items": {
+     "n": 9,
+     "p25": 13,
+     "median": 21,
+     "p75": 26,
+     "p90": 38
+    },
+    "n_exclusion_items": {
+     "n": 9,
+     "p25": 11,
+     "median": 14,
+     "p75": 26,
+     "p90": 33
+    },
+    "n_eligibility_items": {
+     "n": 9,
+     "p25": 32,
+     "median": 35,
+     "p75": 46,
+     "p90": 70
+    },
+    "eligibility_chars": {
+     "n": 9,
+     "p25": 3667,
+     "median": 4259,
+     "p75": 5765,
+     "p90": 7967
+    },
+    "planned_enrollment": {
+     "n": 9,
+     "p25": 46,
+     "median": 48,
+     "p75": 80,
+     "p90": 108
+    },
+    "planned_duration_months": {
+     "n": 8,
+     "p25": 29.0,
+     "median": 51.0,
+     "p75": 64.9,
+     "p90": 72.0
+    },
+    "monthly_enrollment_burden": {
+     "n": 8,
+     "p25": 0.85,
+     "median": 1.0,
+     "p75": 2.08,
+     "p90": 6.79
+    },
+    "n_secondary_outcomes": {
+     "n": 6,
+     "p25": 1,
+     "median": 3.0,
+     "p75": 3,
+     "p90": 5
+    }
+   },
+   "completed": {
+    "n_concurrent_phase2": {
+     "n": 27,
+     "p25": 140,
+     "median": 142,
+     "p75": 147,
+     "p90": 162
+    },
+    "n_concurrent_trials": {
+     "n": 27,
+     "p25": 252,
+     "median": 260,
+     "p75": 282,
+     "p90": 334
+    },
+    "total_competing_seats": {
+     "n": 27,
+     "p25": 18017,
+     "median": 18946,
+     "p75": 20416,
+     "p90": 24451
+    },
+    "n_inclusion_items": {
+     "n": 27,
+     "p25": 10,
+     "median": 14,
+     "p75": 26,
+     "p90": 40
+    },
+    "n_exclusion_items": {
+     "n": 25,
+     "p25": 10,
+     "median": 18,
+     "p75": 25,
+     "p90": 35
+    },
+    "n_eligibility_items": {
+     "n": 27,
+     "p25": 24,
+     "median": 36,
+     "p75": 48,
+     "p90": 64
+    },
+    "eligibility_chars": {
+     "n": 27,
+     "p25": 2199,
+     "median": 3187,
+     "p75": 5258,
+     "p90": 7170
+    },
+    "planned_enrollment": {
+     "n": 27,
+     "p25": 33,
+     "median": 46,
+     "p75": 70,
+     "p90": 95
+    },
+    "planned_duration_months": {
+     "n": 26,
+     "p25": 18.0,
+     "median": 24.0,
+     "p75": 31.0,
+     "p90": 46.0
+    },
+    "monthly_enrollment_burden": {
+     "n": 26,
+     "p25": 1.25,
+     "median": 2.29,
+     "p75": 3.29,
+     "p90": 4.75
+    },
+    "n_secondary_outcomes": {
+     "n": 24,
+     "p25": 2,
+     "median": 3.0,
+     "p75": 6,
+     "p90": 8
+    }
+   }
+  },
+  "amyotrophic lateral sclerosis|p2": {
+   "recruit_failed": {
+    "n_concurrent_phase2": null,
+    "n_concurrent_trials": null,
+    "total_competing_seats": null,
+    "n_inclusion_items": null,
+    "n_exclusion_items": null,
+    "n_eligibility_items": null,
+    "eligibility_chars": null,
+    "planned_enrollment": null,
+    "planned_duration_months": null,
+    "monthly_enrollment_burden": null,
+    "n_secondary_outcomes": null
+   },
+   "completed": {
+    "n_concurrent_phase2": {
+     "n": 23,
+     "p25": 22,
+     "median": 24,
+     "p75": 26,
+     "p90": 35
+    },
+    "n_concurrent_trials": {
+     "n": 23,
+     "p25": 50,
+     "median": 63,
+     "p75": 75,
+     "p90": 84
+    },
+    "total_competing_seats": {
+     "n": 23,
+     "p25": 3627,
+     "median": 4407,
+     "p75": 8243,
+     "p90": 210505
+    },
+    "n_inclusion_items": {
+     "n": 23,
+     "p25": 6,
+     "median": 9,
+     "p75": 12,
+     "p90": 13
+    },
+    "n_exclusion_items": {
+     "n": 23,
+     "p25": 8,
+     "median": 12,
+     "p75": 14,
+     "p90": 18
+    },
+    "n_eligibility_items": {
+     "n": 23,
+     "p25": 15,
+     "median": 21,
+     "p75": 25,
+     "p90": 27
+    },
+    "eligibility_chars": {
+     "n": 23,
+     "p25": 1123,
+     "median": 1862,
+     "p75": 2473,
+     "p90": 2837
+    },
+    "planned_enrollment": {
+     "n": 23,
+     "p25": 20,
+     "median": 40,
+     "p75": 90,
+     "p90": 192
+    },
+    "planned_duration_months": {
+     "n": 23,
+     "p25": 11.7,
+     "median": 18.0,
+     "p75": 27.0,
+     "p90": 36.0
+    },
+    "monthly_enrollment_burden": {
+     "n": 23,
+     "p25": 1.25,
+     "median": 2.14,
+     "p75": 5.0,
+     "p90": 8.0
+    },
+    "n_secondary_outcomes": {
+     "n": 21,
+     "p25": 3,
+     "median": 6,
+     "p75": 8,
+     "p90": 11
+    }
+   }
+  },
+  "amyotrophic lateral sclerosis": {
+   "recruit_failed": {
+    "n_concurrent_phase2": null,
+    "n_concurrent_trials": null,
+    "total_competing_seats": null,
+    "n_inclusion_items": null,
+    "n_exclusion_items": null,
+    "n_eligibility_items": null,
+    "eligibility_chars": null,
+    "planned_enrollment": null,
+    "planned_duration_months": null,
+    "monthly_enrollment_burden": null,
+    "n_secondary_outcomes": null
+   },
+   "completed": {
+    "n_concurrent_phase2": {
+     "n": 40,
+     "p25": 21,
+     "median": 24.0,
+     "p75": 28,
+     "p90": 40
+    },
+    "n_concurrent_trials": {
+     "n": 40,
+     "p25": 48,
+     "median": 62.0,
+     "p75": 79,
+     "p90": 94
+    },
+    "total_competing_seats": {
+     "n": 40,
+     "p25": 3575,
+     "median": 4403.0,
+     "p75": 8730,
+     "p90": 211550
+    },
+    "n_inclusion_items": {
+     "n": 40,
+     "p25": 5,
+     "median": 8.0,
+     "p75": 12,
+     "p90": 13
+    },
+    "n_exclusion_items": {
+     "n": 40,
+     "p25": 6,
+     "median": 10.5,
+     "p75": 15,
+     "p90": 19
+    },
+    "n_eligibility_items": {
+     "n": 40,
+     "p25": 13,
+     "median": 19.0,
+     "p75": 25,
+     "p90": 30
+    },
+    "eligibility_chars": {
+     "n": 40,
+     "p25": 1052,
+     "median": 1570.0,
+     "p75": 2473,
+     "p90": 2837
+    },
+    "planned_enrollment": {
+     "n": 40,
+     "p25": 20,
+     "median": 40.0,
+     "p75": 160,
+     "p90": 294
+    },
+    "planned_duration_months": {
+     "n": 40,
+     "p25": 12.0,
+     "median": 17.0,
+     "p75": 27.0,
+     "p90": 39.0
+    },
+    "monthly_enrollment_burden": {
+     "n": 40,
+     "p25": 1.5,
+     "median": 2.61,
+     "p75": 5.0,
+     "p90": 17.78
+    },
+    "n_secondary_outcomes": {
+     "n": 38,
+     "p25": 2,
+     "median": 5.0,
+     "p75": 8,
+     "p90": 11
+    }
+   }
+  },
+  "idiopathic pulmonary fibrosis|p2": {
+   "recruit_failed": {
+    "n_concurrent_phase2": null,
+    "n_concurrent_trials": null,
+    "total_competing_seats": null,
+    "n_inclusion_items": null,
+    "n_exclusion_items": null,
+    "n_eligibility_items": null,
+    "eligibility_chars": null,
+    "planned_enrollment": null,
+    "planned_duration_months": null,
+    "monthly_enrollment_burden": null,
+    "n_secondary_outcomes": null
+   },
+   "completed": {
+    "n_concurrent_phase2": {
+     "n": 33,
+     "p25": 14,
+     "median": 17,
+     "p75": 21,
+     "p90": 27
+    },
+    "n_concurrent_trials": {
+     "n": 33,
+     "p25": 38,
+     "median": 44,
+     "p75": 50,
+     "p90": 53
+    },
+    "total_competing_seats": {
+     "n": 33,
+     "p25": 3855,
+     "median": 4611,
+     "p75": 5673,
+     "p90": 6180
+    },
+    "n_inclusion_items": {
+     "n": 33,
+     "p25": 5,
+     "median": 7,
+     "p75": 10,
+     "p90": 16
+    },
+    "n_exclusion_items": {
+     "n": 33,
+     "p25": 11,
+     "median": 14,
+     "p75": 17,
+     "p90": 25
+    },
+    "n_eligibility_items": {
+     "n": 33,
+     "p25": 17,
+     "median": 22,
+     "p75": 26,
+     "p90": 35
+    },
+    "eligibility_chars": {
+     "n": 33,
+     "p25": 1619,
+     "median": 2618,
+     "p75": 3362,
+     "p90": 3891
+    },
+    "planned_enrollment": {
+     "n": 33,
+     "p25": 36,
+     "median": 60,
+     "p75": 150,
+     "p90": 300
+    },
+    "planned_duration_months": {
+     "n": 33,
+     "p25": 12.0,
+     "median": 18.0,
+     "p75": 24.9,
+     "p90": 46.0
+    },
+    "monthly_enrollment_burden": {
+     "n": 33,
+     "p25": 2.38,
+     "median": 4.75,
+     "p75": 6.86,
+     "p90": 11.11
+    },
+    "n_secondary_outcomes": {
+     "n": 28,
+     "p25": 3,
+     "median": 4.0,
+     "p75": 7,
+     "p90": 20
+    }
+   }
+  },
+  "idiopathic pulmonary fibrosis": {
+   "recruit_failed": {
+    "n_concurrent_phase2": null,
+    "n_concurrent_trials": null,
+    "total_competing_seats": null,
+    "n_inclusion_items": null,
+    "n_exclusion_items": null,
+    "n_eligibility_items": null,
+    "eligibility_chars": null,
+    "planned_enrollment": null,
+    "planned_duration_months": null,
+    "monthly_enrollment_burden": null,
+    "n_secondary_outcomes": null
+   },
+   "completed": {
+    "n_concurrent_phase2": {
+     "n": 40,
+     "p25": 14,
+     "median": 18.0,
+     "p75": 22,
+     "p90": 27
+    },
+    "n_concurrent_trials": {
+     "n": 40,
+     "p25": 37,
+     "median": 42.0,
+     "p75": 50,
+     "p90": 53
+    },
+    "total_competing_seats": {
+     "n": 40,
+     "p25": 3928,
+     "median": 4851.0,
+     "p75": 5716,
+     "p90": 6180
+    },
+    "n_inclusion_items": {
+     "n": 40,
+     "p25": 5,
+     "median": 7.0,
+     "p75": 10,
+     "p90": 16
+    },
+    "n_exclusion_items": {
+     "n": 40,
+     "p25": 11,
+     "median": 14.0,
+     "p75": 17,
+     "p90": 25
+    },
+    "n_eligibility_items": {
+     "n": 40,
+     "p25": 17,
+     "median": 21.0,
+     "p75": 26,
+     "p90": 35
+    },
+    "eligibility_chars": {
+     "n": 40,
+     "p25": 1563,
+     "median": 2123.0,
+     "p75": 3335,
+     "p90": 3891
+    },
+    "planned_enrollment": {
+     "n": 40,
+     "p25": 24,
+     "median": 57.0,
+     "p75": 123,
+     "p90": 300
+    },
+    "planned_duration_months": {
+     "n": 40,
+     "p25": 12.7,
+     "median": 18.45,
+     "p75": 36.0,
+     "p90": 48.0
+    },
+    "monthly_enrollment_burden": {
+     "n": 40,
+     "p25": 1.71,
+     "median": 3.71,
+     "p75": 6.83,
+     "p90": 11.11
+    },
+    "n_secondary_outcomes": {
+     "n": 35,
+     "p25": 2,
+     "median": 4,
+     "p75": 6,
+     "p90": 12
+    }
+   }
+  },
+  "systemic lupus erythematosus|p1p2": {
+   "recruit_failed": {
+    "n_concurrent_phase2": null,
+    "n_concurrent_trials": null,
+    "total_competing_seats": null,
+    "n_inclusion_items": null,
+    "n_exclusion_items": null,
+    "n_eligibility_items": null,
+    "eligibility_chars": null,
+    "planned_enrollment": null,
+    "planned_duration_months": null,
+    "monthly_enrollment_burden": null,
+    "n_secondary_outcomes": null
+   },
+   "completed": {
+    "n_concurrent_phase2": {
+     "n": 8,
+     "p25": 30,
+     "median": 32.5,
+     "p75": 41,
+     "p90": 43
+    },
+    "n_concurrent_trials": {
+     "n": 8,
+     "p25": 86,
+     "median": 89.5,
+     "p75": 99,
+     "p90": 102
+    },
+    "total_competing_seats": {
+     "n": 8,
+     "p25": 16301,
+     "median": 17524.0,
+     "p75": 21886,
+     "p90": 22919
+    },
+    "n_inclusion_items": {
+     "n": 8,
+     "p25": 5,
+     "median": 9.5,
+     "p75": 28,
+     "p90": 41
+    },
+    "n_exclusion_items": {
+     "n": 8,
+     "p25": 3,
+     "median": 16.0,
+     "p75": 33,
+     "p90": 40
+    },
+    "n_eligibility_items": {
+     "n": 8,
+     "p25": 8,
+     "median": 25.5,
+     "p75": 68,
+     "p90": 74
+    },
+    "eligibility_chars": {
+     "n": 8,
+     "p25": 998,
+     "median": 2293.0,
+     "p75": 6348,
+     "p90": 9740
+    },
+    "planned_enrollment": {
+     "n": 8,
+     "p25": 32,
+     "median": 62.0,
+     "p75": 72,
+     "p90": 186
+    },
+    "planned_duration_months": {
+     "n": 8,
+     "p25": 13.0,
+     "median": 16.55,
+     "p75": 31.5,
+     "p90": 61.0
+    },
+    "monthly_enrollment_burden": {
+     "n": 8,
+     "p25": 2.14,
+     "median": 2.67,
+     "p75": 5.0,
+     "p90": 5.9
+    },
+    "n_secondary_outcomes": {
+     "n": 6,
+     "p25": 1,
+     "median": 6.5,
+     "p75": 17,
+     "p90": 17
+    }
+   }
+  },
+  "systemic lupus erythematosus": {
+   "recruit_failed": {
+    "n_concurrent_phase2": null,
+    "n_concurrent_trials": null,
+    "total_competing_seats": null,
+    "n_inclusion_items": null,
+    "n_exclusion_items": null,
+    "n_eligibility_items": null,
+    "eligibility_chars": null,
+    "planned_enrollment": null,
+    "planned_duration_months": null,
+    "monthly_enrollment_burden": null,
+    "n_secondary_outcomes": null
+   },
+   "completed": {
+    "n_concurrent_phase2": {
+     "n": 39,
+     "p25": 27,
+     "median": 32,
+     "p75": 37,
+     "p90": 41
+    },
+    "n_concurrent_trials": {
+     "n": 39,
+     "p25": 82,
+     "median": 88,
+     "p75": 93,
+     "p90": 100
+    },
+    "total_competing_seats": {
+     "n": 39,
+     "p25": 15315,
+     "median": 17301,
+     "p75": 19261,
+     "p90": 22919
+    },
+    "n_inclusion_items": {
+     "n": 40,
+     "p25": 5,
+     "median": 7.0,
+     "p75": 11,
+     "p90": 28
+    },
+    "n_exclusion_items": {
+     "n": 40,
+     "p25": 7,
+     "median": 10.0,
+     "p75": 20,
+     "p90": 33
+    },
+    "n_eligibility_items": {
+     "n": 40,
+     "p25": 12,
+     "median": 17.0,
+     "p75": 31,
+     "p90": 52
+    },
+    "eligibility_chars": {
+     "n": 40,
+     "p25": 998,
+     "median": 1705.5,
+     "p75": 3849,
+     "p90": 6348
+    },
+    "planned_enrollment": {
+     "n": 40,
+     "p25": 32,
+     "median": 71.0,
+     "p75": 186,
+     "p90": 300
+    },
+    "planned_duration_months": {
+     "n": 39,
+     "p25": 17.9,
+     "median": 23.0,
+     "p75": 33.0,
+     "p90": 42.0
+    },
+    "monthly_enrollment_burden": {
+     "n": 39,
+     "p25": 1.71,
+     "median": 3.03,
+     "p75": 9.09,
+     "p90": 12.5
+    },
+    "n_secondary_outcomes": {
+     "n": 36,
+     "p25": 2,
+     "median": 5.0,
+     "p75": 12,
+     "p90": 16
+    }
+   }
+  },
+  "systemic lupus erythematosus|p2": {
+   "recruit_failed": {
+    "n_concurrent_phase2": null,
+    "n_concurrent_trials": null,
+    "total_competing_seats": null,
+    "n_inclusion_items": null,
+    "n_exclusion_items": null,
+    "n_eligibility_items": null,
+    "eligibility_chars": null,
+    "planned_enrollment": null,
+    "planned_duration_months": null,
+    "monthly_enrollment_burden": null,
+    "n_secondary_outcomes": null
+   },
+   "completed": {
+    "n_concurrent_phase2": {
+     "n": 31,
+     "p25": 27,
+     "median": 31,
+     "p75": 37,
+     "p90": 40
+    },
+    "n_concurrent_trials": {
+     "n": 31,
+     "p25": 82,
+     "median": 88,
+     "p75": 92,
+     "p90": 97
+    },
+    "total_competing_seats": {
+     "n": 31,
+     "p25": 15315,
+     "median": 17301,
+     "p75": 19261,
+     "p90": 21783
+    },
+    "n_inclusion_items": {
+     "n": 32,
+     "p25": 5,
+     "median": 7.0,
+     "p75": 9,
+     "p90": 21
+    },
+    "n_exclusion_items": {
+     "n": 32,
+     "p25": 7,
+     "median": 9.5,
+     "p75": 20,
+     "p90": 22
+    },
+    "n_eligibility_items": {
+     "n": 32,
+     "p25": 12,
+     "median": 17.0,
+     "p75": 30,
+     "p90": 48
+    },
+    "eligibility_chars": {
+     "n": 32,
+     "p25": 1010,
+     "median": 1643.0,
+     "p75": 2926,
+     "p90": 5103
+    },
+    "planned_enrollment": {
+     "n": 32,
+     "p25": 36,
+     "median": 95.0,
+     "p75": 280,
+     "p90": 300
+    },
+    "planned_duration_months": {
+     "n": 31,
+     "p25": 18.9,
+     "median": 24.0,
+     "p75": 33.0,
+     "p90": 35.0
+    },
+    "monthly_enrollment_burden": {
+     "n": 31,
+     "p25": 1.71,
+     "median": 3.2,
+     "p75": 11.33,
+     "p90": 12.5
+    },
+    "n_secondary_outcomes": {
+     "n": 30,
+     "p25": 2,
+     "median": 5.0,
+     "p75": 11,
+     "p90": 16
+    }
+   }
+  },
+  "sickle cell disease|p1p2": {
+   "recruit_failed": {
+    "n_concurrent_phase2": null,
+    "n_concurrent_trials": null,
+    "total_competing_seats": null,
+    "n_inclusion_items": null,
+    "n_exclusion_items": null,
+    "n_eligibility_items": null,
+    "eligibility_chars": null,
+    "planned_enrollment": null,
+    "planned_duration_months": null,
+    "monthly_enrollment_burden": null,
+    "n_secondary_outcomes": null
+   },
+   "completed": {
+    "n_concurrent_phase2": {
+     "n": 9,
+     "p25": 38,
+     "median": 41,
+     "p75": 46,
+     "p90": 60
+    },
+    "n_concurrent_trials": {
+     "n": 9,
+     "p25": 83,
+     "median": 85,
+     "p75": 90,
+     "p90": 147
+    },
+    "total_competing_seats": {
+     "n": 9,
+     "p25": 5246,
+     "median": 5318,
+     "p75": 5489,
+     "p90": 18842
+    },
+    "n_inclusion_items": {
+     "n": 9,
+     "p25": 4,
+     "median": 6,
+     "p75": 9,
+     "p90": 34
+    },
+    "n_exclusion_items": {
+     "n": 9,
+     "p25": 4,
+     "median": 6,
+     "p75": 12,
+     "p90": 19
+    },
+    "n_eligibility_items": {
+     "n": 9,
+     "p25": 10,
+     "median": 13,
+     "p75": 16,
+     "p90": 53
+    },
+    "eligibility_chars": {
+     "n": 9,
+     "p25": 555,
+     "median": 756,
+     "p75": 1003,
+     "p90": 5416
+    },
+    "planned_enrollment": {
+     "n": 9,
+     "p25": 12,
+     "median": 40,
+     "p75": 47,
+     "p90": 270
+    },
+    "planned_duration_months": {
+     "n": 9,
+     "p25": 12.0,
+     "median": 16.0,
+     "p75": 30.0,
+     "p90": 45.0
+    },
+    "monthly_enrollment_burden": {
+     "n": 9,
+     "p25": 0.62,
+     "median": 1.11,
+     "p75": 5.22,
+     "p90": 75.0
+    },
+    "n_secondary_outcomes": {
+     "n": 7,
+     "p25": 1,
+     "median": 2,
+     "p75": 7,
+     "p90": 18
+    }
+   }
+  },
+  "sickle cell disease": {
+   "recruit_failed": {
+    "n_concurrent_phase2": {
+     "n": 6,
+     "p25": 52,
+     "median": 52.5,
+     "p75": 54,
+     "p90": 67
+    },
+    "n_concurrent_trials": {
+     "n": 6,
+     "p25": 106,
+     "median": 114.5,
+     "p75": 125,
+     "p90": 146
+    },
+    "total_competing_seats": {
+     "n": 6,
+     "p25": 8378,
+     "median": 8941.5,
+     "p75": 9689,
+     "p90": 214080
+    },
+    "n_inclusion_items": {
+     "n": 6,
+     "p25": 4,
+     "median": 5.5,
+     "p75": 16,
+     "p90": 22
+    },
+    "n_exclusion_items": {
+     "n": 6,
+     "p25": 5,
+     "median": 10.0,
+     "p75": 15,
+     "p90": 27
+    },
+    "n_eligibility_items": {
+     "n": 6,
+     "p25": 11,
+     "median": 15.0,
+     "p75": 30,
+     "p90": 49
+    },
+    "eligibility_chars": {
+     "n": 6,
+     "p25": 516,
+     "median": 1143.5,
+     "p75": 2777,
+     "p90": 4521
+    },
+    "planned_enrollment": {
+     "n": 6,
+     "p25": 15,
+     "median": 20.0,
+     "p75": 41,
+     "p90": 41
+    },
+    "planned_duration_months": {
+     "n": 6,
+     "p25": 24.0,
+     "median": 26.05,
+     "p75": 48.0,
+     "p90": 60.0
+    },
+    "monthly_enrollment_burden": {
+     "n": 6,
+     "p25": 0.59,
+     "median": 0.76,
+     "p75": 0.83,
+     "p90": 0.85
+    },
+    "n_secondary_outcomes": null
+   },
+   "completed": {
+    "n_concurrent_phase2": {
+     "n": 40,
+     "p25": 38,
+     "median": 45.5,
+     "p75": 60,
+     "p90": 63
+    },
+    "n_concurrent_trials": {
+     "n": 40,
+     "p25": 83,
+     "median": 92.0,
+     "p75": 137,
+     "p90": 149
+    },
+    "total_competing_seats": {
+     "n": 40,
+     "p25": 5289,
+     "median": 6025.5,
+     "p75": 18782,
+     "p90": 212669
+    },
+    "n_inclusion_items": {
+     "n": 40,
+     "p25": 4,
+     "median": 6.0,
+     "p75": 9,
+     "p90": 14
+    },
+    "n_exclusion_items": {
+     "n": 39,
+     "p25": 6,
+     "median": 10,
+     "p75": 18,
+     "p90": 21
+    },
+    "n_eligibility_items": {
+     "n": 40,
+     "p25": 12,
+     "median": 16.0,
+     "p75": 26,
+     "p90": 33
+    },
+    "eligibility_chars": {
+     "n": 40,
+     "p25": 789,
+     "median": 1185.0,
+     "p75": 2325,
+     "p90": 3446
+    },
+    "planned_enrollment": {
+     "n": 40,
+     "p25": 20,
+     "median": 45.0,
+     "p75": 100,
+     "p90": 190
+    },
+    "planned_duration_months": {
+     "n": 40,
+     "p25": 12.0,
+     "median": 21.45,
+     "p75": 35.0,
+     "p90": 48.0
+    },
+    "monthly_enrollment_burden": {
+     "n": 40,
+     "p25": 1.0,
+     "median": 2.0,
+     "p75": 5.22,
+     "p90": 10.0
+    },
+    "n_secondary_outcomes": {
+     "n": 37,
+     "p25": 2,
+     "median": 3,
+     "p75": 7,
+     "p90": 18
+    }
+   }
+  },
+  "sickle cell disease|p2": {
+   "recruit_failed": {
+    "n_concurrent_phase2": null,
+    "n_concurrent_trials": null,
+    "total_competing_seats": null,
+    "n_inclusion_items": null,
+    "n_exclusion_items": null,
+    "n_eligibility_items": null,
+    "eligibility_chars": null,
+    "planned_enrollment": null,
+    "planned_duration_months": null,
+    "monthly_enrollment_burden": null,
+    "n_secondary_outcomes": null
+   },
+   "completed": {
+    "n_concurrent_phase2": {
+     "n": 29,
+     "p25": 39,
+     "median": 49,
+     "p75": 58,
+     "p90": 63
+    },
+    "n_concurrent_trials": {
+     "n": 29,
+     "p25": 87,
+     "median": 94,
+     "p75": 131,
+     "p90": 150
+    },
+    "total_competing_seats": {
+     "n": 29,
+     "p25": 5775,
+     "median": 7562,
+     "p75": 18782,
+     "p90": 212669
+    },
+    "n_inclusion_items": {
+     "n": 29,
+     "p25": 5,
+     "median": 7,
+     "p75": 10,
+     "p90": 14
+    },
+    "n_exclusion_items": {
+     "n": 28,
+     "p25": 7,
+     "median": 11.5,
+     "p75": 19,
+     "p90": 22
+    },
+    "n_eligibility_items": {
+     "n": 29,
+     "p25": 12,
+     "median": 18,
+     "p75": 27,
+     "p90": 33
+    },
+    "eligibility_chars": {
+     "n": 29,
+     "p25": 921,
+     "median": 1386,
+     "p75": 2384,
+     "p90": 3446
+    },
+    "planned_enrollment": {
+     "n": 29,
+     "p25": 24,
+     "median": 45,
+     "p75": 100,
+     "p90": 174
+    },
+    "planned_duration_months": {
+     "n": 29,
+     "p25": 12.0,
+     "median": 23.0,
+     "p75": 35.0,
+     "p90": 48.0
+    },
+    "monthly_enrollment_burden": {
+     "n": 29,
+     "p25": 1.18,
+     "median": 2.0,
+     "p75": 4.84,
+     "p90": 9.09
+    },
+    "n_secondary_outcomes": {
+     "n": 29,
+     "p25": 2,
+     "median": 4,
+     "p75": 7,
+     "p90": 31
+    }
+   }
+  },
+  "cystic fibrosis|p2": {
+   "recruit_failed": {
+    "n_concurrent_phase2": null,
+    "n_concurrent_trials": null,
+    "total_competing_seats": null,
+    "n_inclusion_items": null,
+    "n_exclusion_items": null,
+    "n_eligibility_items": null,
+    "eligibility_chars": null,
+    "planned_enrollment": null,
+    "planned_duration_months": null,
+    "monthly_enrollment_burden": null,
+    "n_secondary_outcomes": null
+   },
+   "completed": {
+    "n_concurrent_phase2": {
+     "n": 29,
+     "p25": 24,
+     "median": 28,
+     "p75": 31,
+     "p90": 35
+    },
+    "n_concurrent_trials": {
+     "n": 29,
+     "p25": 116,
+     "median": 131,
+     "p75": 145,
+     "p90": 153
+    },
+    "total_competing_seats": {
+     "n": 29,
+     "p25": 13001,
+     "median": 16261,
+     "p75": 17292,
+     "p90": 19062
+    },
+    "n_inclusion_items": {
+     "n": 29,
+     "p25": 6,
+     "median": 8,
+     "p75": 10,
+     "p90": 14
+    },
+    "n_exclusion_items": {
+     "n": 29,
+     "p25": 6,
+     "median": 9,
+     "p75": 17,
+     "p90": 22
+    },
+    "n_eligibility_items": {
+     "n": 29,
+     "p25": 13,
+     "median": 17,
+     "p75": 28,
+     "p90": 37
+    },
+    "eligibility_chars": {
+     "n": 29,
+     "p25": 1091,
+     "median": 1537,
+     "p75": 2609,
+     "p90": 4146
+    },
+    "planned_enrollment": {
+     "n": 29,
+     "p25": 22,
+     "median": 45,
+     "p75": 90,
+     "p90": 180
+    },
+    "planned_duration_months": {
+     "n": 28,
+     "p25": 11.0,
+     "median": 15.5,
+     "p75": 23.0,
+     "p90": 25.2
+    },
+    "monthly_enrollment_burden": {
+     "n": 28,
+     "p25": 1.67,
+     "median": 3.42,
+     "p75": 9.38,
+     "p90": 15.0
+    },
+    "n_secondary_outcomes": {
+     "n": 28,
+     "p25": 2,
+     "median": 4.0,
+     "p75": 7,
+     "p90": 8
+    }
+   }
+  },
+  "cystic fibrosis": {
+   "recruit_failed": {
+    "n_concurrent_phase2": null,
+    "n_concurrent_trials": null,
+    "total_competing_seats": null,
+    "n_inclusion_items": null,
+    "n_exclusion_items": null,
+    "n_eligibility_items": null,
+    "eligibility_chars": null,
+    "planned_enrollment": null,
+    "planned_duration_months": null,
+    "monthly_enrollment_burden": null,
+    "n_secondary_outcomes": null
+   },
+   "completed": {
+    "n_concurrent_phase2": {
+     "n": 40,
+     "p25": 25,
+     "median": 28.0,
+     "p75": 33,
+     "p90": 35
+    },
+    "n_concurrent_trials": {
+     "n": 40,
+     "p25": 117,
+     "median": 132.5,
+     "p75": 151,
+     "p90": 155
+    },
+    "total_competing_seats": {
+     "n": 40,
+     "p25": 13001,
+     "median": 16555.0,
+     "p75": 17827,
+     "p90": 19062
+    },
+    "n_inclusion_items": {
+     "n": 40,
+     "p25": 6,
+     "median": 8.0,
+     "p75": 10,
+     "p90": 13
+    },
+    "n_exclusion_items": {
+     "n": 40,
+     "p25": 6,
+     "median": 9.0,
+     "p75": 17,
+     "p90": 22
+    },
+    "n_eligibility_items": {
+     "n": 40,
+     "p25": 13,
+     "median": 17.0,
+     "p75": 26,
+     "p90": 37
+    },
+    "eligibility_chars": {
+     "n": 40,
+     "p25": 1029,
+     "median": 1487.5,
+     "p75": 2498,
+     "p90": 4061
+    },
+    "planned_enrollment": {
+     "n": 40,
+     "p25": 24,
+     "median": 45.5,
+     "p75": 90,
+     "p90": 180
+    },
+    "planned_duration_months": {
+     "n": 39,
+     "p25": 9.0,
+     "median": 15.0,
+     "p75": 23.0,
+     "p90": 29.0
+    },
+    "monthly_enrollment_burden": {
+     "n": 39,
+     "p25": 1.67,
+     "median": 3.22,
+     "p75": 9.38,
+     "p90": 15.0
+    },
+    "n_secondary_outcomes": {
+     "n": 39,
+     "p25": 1,
+     "median": 4,
+     "p75": 7,
+     "p90": 9
+    }
+   }
+  },
+  "cystic fibrosis|p1p2": {
+   "recruit_failed": {
+    "n_concurrent_phase2": null,
+    "n_concurrent_trials": null,
+    "total_competing_seats": null,
+    "n_inclusion_items": null,
+    "n_exclusion_items": null,
+    "n_eligibility_items": null,
+    "eligibility_chars": null,
+    "planned_enrollment": null,
+    "planned_duration_months": null,
+    "monthly_enrollment_burden": null,
+    "n_secondary_outcomes": null
+   },
+   "completed": {
+    "n_concurrent_phase2": {
+     "n": 11,
+     "p25": 26,
+     "median": 32,
+     "p75": 33,
+     "p90": 35
+    },
+    "n_concurrent_trials": {
+     "n": 11,
+     "p25": 119,
+     "median": 136,
+     "p75": 154,
+     "p90": 155
+    },
+    "total_competing_seats": {
+     "n": 11,
+     "p25": 10065,
+     "median": 17039,
+     "p75": 18785,
+     "p90": 18996
+    },
+    "n_inclusion_items": {
+     "n": 11,
+     "p25": 7,
+     "median": 8,
+     "p75": 10,
+     "p90": 10
+    },
+    "n_exclusion_items": {
+     "n": 11,
+     "p25": 6,
+     "median": 8,
+     "p75": 16,
+     "p90": 19
+    },
+    "n_eligibility_items": {
+     "n": 11,
+     "p25": 13,
+     "median": 17,
+     "p75": 26,
+     "p90": 26
+    },
+    "eligibility_chars": {
+     "n": 11,
+     "p25": 949,
+     "median": 1341,
+     "p75": 1875,
+     "p90": 2498
+    },
+    "planned_enrollment": {
+     "n": 11,
+     "p25": 30,
+     "median": 46,
+     "p75": 80,
+     "p90": 132
+    },
+    "planned_duration_months": {
+     "n": 11,
+     "p25": 9.0,
+     "median": 14.9,
+     "p75": 21.0,
+     "p90": 29.0
+    },
+    "monthly_enrollment_burden": {
+     "n": 11,
+     "p25": 1.69,
+     "median": 3.22,
+     "p75": 11.58,
+     "p90": 13.89
+    },
+    "n_secondary_outcomes": {
+     "n": 11,
+     "p25": 1,
+     "median": 3,
+     "p75": 6,
+     "p90": 9
+    }
+   }
+  },
+  "acute myeloid leukemia|p1p2": {
+   "recruit_failed": {
+    "n_concurrent_phase2": {
+     "n": 7,
+     "p25": 211,
+     "median": 226,
+     "p75": 234,
+     "p90": 256
+    },
+    "n_concurrent_trials": {
+     "n": 7,
+     "p25": 410,
+     "median": 421,
+     "p75": 432,
+     "p90": 476
+    },
+    "total_competing_seats": {
+     "n": 7,
+     "p25": 45359,
+     "median": 46531,
+     "p75": 49183,
+     "p90": 58096
+    },
+    "n_inclusion_items": {
+     "n": 7,
+     "p25": 9,
+     "median": 16,
+     "p75": 21,
+     "p90": 22
+    },
+    "n_exclusion_items": {
+     "n": 7,
+     "p25": 11,
+     "median": 15,
+     "p75": 20,
+     "p90": 28
+    },
+    "n_eligibility_items": {
+     "n": 7,
+     "p25": 26,
+     "median": 31,
+     "p75": 33,
+     "p90": 49
+    },
+    "eligibility_chars": {
+     "n": 7,
+     "p25": 2760,
+     "median": 3276,
+     "p75": 4058,
+     "p90": 8250
+    },
+    "planned_enrollment": {
+     "n": 7,
+     "p25": 36,
+     "median": 55,
+     "p75": 66,
+     "p90": 97
+    },
+    "planned_duration_months": {
+     "n": 7,
+     "p25": 24.0,
+     "median": 36.0,
+     "p75": 41.0,
+     "p90": 56.0
+    },
+    "monthly_enrollment_burden": {
+     "n": 7,
+     "p25": 1.0,
+     "median": 1.65,
+     "p75": 2.37,
+     "p90": 2.75
+    },
+    "n_secondary_outcomes": {
+     "n": 6,
+     "p25": 1,
+     "median": 1.0,
+     "p75": 5,
+     "p90": 5
+    }
+   },
+   "completed": {
+    "n_concurrent_phase2": {
+     "n": 13,
+     "p25": 231,
+     "median": 241,
+     "p75": 247,
+     "p90": 253
+    },
+    "n_concurrent_trials": {
+     "n": 13,
+     "p25": 427,
+     "median": 430,
+     "p75": 451,
+     "p90": 478
+    },
+    "total_competing_seats": {
+     "n": 13,
+     "p25": 46769,
+     "median": 51435,
+     "p75": 53917,
+     "p90": 59002
+    },
+    "n_inclusion_items": {
+     "n": 13,
+     "p25": 6,
+     "median": 10,
+     "p75": 13,
+     "p90": 21
+    },
+    "n_exclusion_items": {
+     "n": 13,
+     "p25": 6,
+     "median": 12,
+     "p75": 22,
+     "p90": 24
+    },
+    "n_eligibility_items": {
+     "n": 13,
+     "p25": 18,
+     "median": 21,
+     "p75": 33,
+     "p90": 49
+    },
+    "eligibility_chars": {
+     "n": 13,
+     "p25": 1658,
+     "median": 2183,
+     "p75": 4861,
+     "p90": 5267
+    },
+    "planned_enrollment": {
+     "n": 13,
+     "p25": 24,
+     "median": 40,
+     "p75": 60,
+     "p90": 67
+    },
+    "planned_duration_months": {
+     "n": 13,
+     "p25": 18.0,
+     "median": 25.0,
+     "p75": 37.0,
+     "p90": 48.0
+    },
+    "monthly_enrollment_burden": {
+     "n": 13,
+     "p25": 0.67,
+     "median": 1.5,
+     "p75": 2.78,
+     "p90": 5.0
+    },
+    "n_secondary_outcomes": {
+     "n": 10,
+     "p25": 2,
+     "median": 3.5,
+     "p75": 7,
+     "p90": 9
+    }
+   }
+  },
+  "acute myeloid leukemia": {
+   "recruit_failed": {
+    "n_concurrent_phase2": {
+     "n": 16,
+     "p25": 225,
+     "median": 228.5,
+     "p75": 246,
+     "p90": 275
+    },
+    "n_concurrent_trials": {
+     "n": 16,
+     "p25": 421,
+     "median": 425.5,
+     "p75": 447,
+     "p90": 546
+    },
+    "total_competing_seats": {
+     "n": 16,
+     "p25": 46347,
+     "median": 46970.0,
+     "p75": 53945,
+     "p90": 63692
+    },
+    "n_inclusion_items": {
+     "n": 16,
+     "p25": 11,
+     "median": 16.0,
+     "p75": 18,
+     "p90": 22
+    },
+    "n_exclusion_items": {
+     "n": 16,
+     "p25": 10,
+     "median": 15.0,
+     "p75": 20,
+     "p90": 27
+    },
+    "n_eligibility_items": {
+     "n": 16,
+     "p25": 26,
+     "median": 31.0,
+     "p75": 34,
+     "p90": 43
+    },
+    "eligibility_chars": {
+     "n": 16,
+     "p25": 2408,
+     "median": 3046.5,
+     "p75": 3643,
+     "p90": 4390
+    },
+    "planned_enrollment": {
+     "n": 16,
+     "p25": 33,
+     "median": 51.5,
+     "p75": 112,
+     "p90": 130
+    },
+    "planned_duration_months": {
+     "n": 16,
+     "p25": 24.0,
+     "median": 28.75,
+     "p75": 48.0,
+     "p90": 56.0
+    },
+    "monthly_enrollment_burden": {
+     "n": 16,
+     "p25": 1.2,
+     "median": 1.66,
+     "p75": 2.75,
+     "p90": 5.42
+    },
+    "n_secondary_outcomes": {
+     "n": 14,
+     "p25": 1,
+     "median": 4.5,
+     "p75": 5,
+     "p90": 9
+    }
+   },
+   "completed": {
+    "n_concurrent_phase2": {
+     "n": 40,
+     "p25": 228,
+     "median": 239.0,
+     "p75": 254,
+     "p90": 265
+    },
+    "n_concurrent_trials": {
+     "n": 40,
+     "p25": 425,
+     "median": 433.5,
+     "p75": 476,
+     "p90": 513
+    },
+    "total_competing_seats": {
+     "n": 40,
+     "p25": 46676,
+     "median": 51457.0,
+     "p75": 58897,
+     "p90": 59926
+    },
+    "n_inclusion_items": {
+     "n": 40,
+     "p25": 8,
+     "median": 13.0,
+     "p75": 21,
+     "p90": 31
+    },
+    "n_exclusion_items": {
+     "n": 39,
+     "p25": 7,
+     "median": 13,
+     "p75": 21,
+     "p90": 28
+    },
+    "n_eligibility_items": {
+     "n": 40,
+     "p25": 19,
+     "median": 28.0,
+     "p75": 38,
+     "p90": 52
+    },
+    "eligibility_chars": {
+     "n": 40,
+     "p25": 1913,
+     "median": 2838.0,
+     "p75": 4554,
+     "p90": 6405
+    },
+    "planned_enrollment": {
+     "n": 40,
+     "p25": 33,
+     "median": 50.0,
+     "p75": 95,
+     "p90": 236
+    },
+    "planned_duration_months": {
+     "n": 40,
+     "p25": 23.9,
+     "median": 30.0,
+     "p75": 48.0,
+     "p90": 60.0
+    },
+    "monthly_enrollment_burden": {
+     "n": 40,
+     "p25": 0.88,
+     "median": 1.77,
+     "p75": 3.17,
+     "p90": 6.13
+    },
+    "n_secondary_outcomes": {
+     "n": 33,
+     "p25": 3,
+     "median": 5,
+     "p75": 7,
+     "p90": 9
+    }
+   }
+  },
+  "acute myeloid leukemia|p2": {
+   "recruit_failed": {
+    "n_concurrent_phase2": {
+     "n": 9,
+     "p25": 226,
+     "median": 229,
+     "p75": 246,
+     "p90": 275
+    },
+    "n_concurrent_trials": {
+     "n": 9,
+     "p25": 422,
+     "median": 426,
+     "p75": 447,
+     "p90": 547
+    },
+    "total_competing_seats": {
+     "n": 9,
+     "p25": 46528,
+     "median": 48357,
+     "p75": 53945,
+     "p90": 63731
+    },
+    "n_inclusion_items": {
+     "n": 9,
+     "p25": 11,
+     "median": 16,
+     "p75": 17,
+     "p90": 23
+    },
+    "n_exclusion_items": {
+     "n": 9,
+     "p25": 8,
+     "median": 12,
+     "p75": 17,
+     "p90": 27
+    },
+    "n_eligibility_items": {
+     "n": 9,
+     "p25": 23,
+     "median": 31,
+     "p75": 34,
+     "p90": 43
+    },
+    "eligibility_chars": {
+     "n": 9,
+     "p25": 1793,
+     "median": 2483,
+     "p75": 3190,
+     "p90": 4390
+    },
+    "planned_enrollment": {
+     "n": 9,
+     "p25": 30,
+     "median": 39,
+     "p75": 120,
+     "p90": 180
+    },
+    "planned_duration_months": {
+     "n": 9,
+     "p25": 24.0,
+     "median": 24.0,
+     "p75": 48.0,
+     "p90": 72.0
+    },
+    "monthly_enrollment_burden": {
+     "n": 9,
+     "p25": 1.2,
+     "median": 1.67,
+     "p75": 4.67,
+     "p90": 7.5
+    },
+    "n_secondary_outcomes": {
+     "n": 8,
+     "p25": 4,
+     "median": 5.0,
+     "p75": 9,
+     "p90": 11
+    }
+   },
+   "completed": {
+    "n_concurrent_phase2": {
+     "n": 25,
+     "p25": 225,
+     "median": 237,
+     "p75": 256,
+     "p90": 265
+    },
+    "n_concurrent_trials": {
+     "n": 25,
+     "p25": 424,
+     "median": 433,
+     "p75": 476,
+     "p90": 518
+    },
+    "total_competing_seats": {
+     "n": 25,
+     "p25": 46665,
+     "median": 48360,
+     "p75": 58897,
+     "p90": 59926
+    },
+    "n_inclusion_items": {
+     "n": 25,
+     "p25": 11,
+     "median": 14,
+     "p75": 20,
+     "p90": 26
+    },
+    "n_exclusion_items": {
+     "n": 25,
+     "p25": 8,
+     "median": 14,
+     "p75": 18,
+     "p90": 30
+    },
+    "n_eligibility_items": {
+     "n": 25,
+     "p25": 21,
+     "median": 28,
+     "p75": 38,
+     "p90": 48
+    },
+    "eligibility_chars": {
+     "n": 25,
+     "p25": 2007,
+     "median": 2907,
+     "p75": 3953,
+     "p90": 5050
+    },
+    "planned_enrollment": {
+     "n": 25,
+     "p25": 36,
+     "median": 50,
+     "p75": 100,
+     "p90": 200
+    },
+    "planned_duration_months": {
+     "n": 25,
+     "p25": 23.9,
+     "median": 30.0,
+     "p75": 48.0,
+     "p90": 60.0
+    },
+    "monthly_enrollment_burden": {
+     "n": 25,
+     "p25": 0.89,
+     "median": 2.0,
+     "p75": 3.0,
+     "p90": 4.69
+    },
+    "n_secondary_outcomes": {
+     "n": 22,
+     "p25": 3,
+     "median": 5.0,
+     "p75": 8,
+     "p90": 9
+    }
+   }
+  },
+  "ovarian cancer|p2": {
+   "recruit_failed": {
+    "n_concurrent_phase2": {
+     "n": 10,
+     "p25": 126,
+     "median": 129.0,
+     "p75": 170,
+     "p90": 177
+    },
+    "n_concurrent_trials": {
+     "n": 10,
+     "p25": 330,
+     "median": 351.0,
+     "p75": 442,
+     "p90": 494
+    },
+    "total_competing_seats": {
+     "n": 10,
+     "p25": 125872,
+     "median": 128065.0,
+     "p75": 176249,
+     "p90": 348818
+    },
+    "n_inclusion_items": {
+     "n": 10,
+     "p25": 15,
+     "median": 18.5,
+     "p75": 27,
+     "p90": 42
+    },
+    "n_exclusion_items": {
+     "n": 9,
+     "p25": 11,
+     "median": 14,
+     "p75": 20,
+     "p90": 30
+    },
+    "n_eligibility_items": {
+     "n": 10,
+     "p25": 26,
+     "median": 35.5,
+     "p75": 44,
+     "p90": 54
+    },
+    "eligibility_chars": {
+     "n": 10,
+     "p25": 2801,
+     "median": 3520.5,
+     "p75": 4320,
+     "p90": 7499
+    },
+    "planned_enrollment": {
+     "n": 10,
+     "p25": 20,
+     "median": 40.0,
+     "p75": 60,
+     "p90": 134
+    },
+    "planned_duration_months": {
+     "n": 9,
+     "p25": 24.0,
+     "median": 30.0,
+     "p75": 36.0,
+     "p90": 120.0
+    },
+    "monthly_enrollment_burden": {
+     "n": 9,
+     "p25": 1.11,
+     "median": 1.12,
+     "p75": 1.33,
+     "p90": 2.14
+    },
+    "n_secondary_outcomes": {
+     "n": 9,
+     "p25": 4,
+     "median": 5,
+     "p75": 6,
+     "p90": 8
+    }
+   },
+   "completed": {
+    "n_concurrent_phase2": {
+     "n": 26,
+     "p25": 127,
+     "median": 132.5,
+     "p75": 176,
+     "p90": 182
+    },
+    "n_concurrent_trials": {
+     "n": 26,
+     "p25": 314,
+     "median": 369.5,
+     "p75": 453,
+     "p90": 479
+    },
+    "total_competing_seats": {
+     "n": 26,
+     "p25": 128322,
+     "median": 143171.0,
+     "p75": 348087,
+     "p90": 352489
+    },
+    "n_inclusion_items": {
+     "n": 26,
+     "p25": 8,
+     "median": 12.5,
+     "p75": 23,
+     "p90": 58
+    },
+    "n_exclusion_items": {
+     "n": 22,
+     "p25": 6,
+     "median": 13.0,
+     "p75": 19,
+     "p90": 25
+    },
+    "n_eligibility_items": {
+     "n": 26,
+     "p25": 13,
+     "median": 30.0,
+     "p75": 40,
+     "p90": 58
+    },
+    "eligibility_chars": {
+     "n": 26,
+     "p25": 1664,
+     "median": 3481.0,
+     "p75": 4741,
+     "p90": 5241
+    },
+    "planned_enrollment": {
+     "n": 26,
+     "p25": 34,
+     "median": 50.0,
+     "p75": 88,
+     "p90": 150
+    },
+    "planned_duration_months": {
+     "n": 26,
+     "p25": 13.9,
+     "median": 24.0,
+     "p75": 34.0,
+     "p90": 42.0
+    },
+    "monthly_enrollment_burden": {
+     "n": 26,
+     "p25": 1.67,
+     "median": 2.63,
+     "p75": 3.88,
+     "p90": 6.43
+    },
+    "n_secondary_outcomes": {
+     "n": 24,
+     "p25": 2,
+     "median": 3.5,
+     "p75": 6,
+     "p90": 10
+    }
+   }
+  },
+  "ovarian cancer": {
+   "recruit_failed": {
+    "n_concurrent_phase2": {
+     "n": 10,
+     "p25": 126,
+     "median": 129.0,
+     "p75": 170,
+     "p90": 177
+    },
+    "n_concurrent_trials": {
+     "n": 10,
+     "p25": 330,
+     "median": 351.0,
+     "p75": 442,
+     "p90": 494
+    },
+    "total_competing_seats": {
+     "n": 10,
+     "p25": 125872,
+     "median": 128065.0,
+     "p75": 176249,
+     "p90": 348818
+    },
+    "n_inclusion_items": {
+     "n": 10,
+     "p25": 15,
+     "median": 18.5,
+     "p75": 27,
+     "p90": 42
+    },
+    "n_exclusion_items": {
+     "n": 9,
+     "p25": 11,
+     "median": 14,
+     "p75": 20,
+     "p90": 30
+    },
+    "n_eligibility_items": {
+     "n": 10,
+     "p25": 26,
+     "median": 35.5,
+     "p75": 44,
+     "p90": 54
+    },
+    "eligibility_chars": {
+     "n": 10,
+     "p25": 2801,
+     "median": 3520.5,
+     "p75": 4320,
+     "p90": 7499
+    },
+    "planned_enrollment": {
+     "n": 10,
+     "p25": 20,
+     "median": 40.0,
+     "p75": 60,
+     "p90": 134
+    },
+    "planned_duration_months": {
+     "n": 9,
+     "p25": 24.0,
+     "median": 30.0,
+     "p75": 36.0,
+     "p90": 120.0
+    },
+    "monthly_enrollment_burden": {
+     "n": 9,
+     "p25": 1.11,
+     "median": 1.12,
+     "p75": 1.33,
+     "p90": 2.14
+    },
+    "n_secondary_outcomes": {
+     "n": 9,
+     "p25": 4,
+     "median": 5,
+     "p75": 6,
+     "p90": 8
+    }
+   },
+   "completed": {
+    "n_concurrent_phase2": {
+     "n": 37,
+     "p25": 127,
+     "median": 136,
+     "p75": 147,
+     "p90": 182
+    },
+    "n_concurrent_trials": {
+     "n": 37,
+     "p25": 327,
+     "median": 373,
+     "p75": 416,
+     "p90": 478
+    },
+    "total_competing_seats": {
+     "n": 37,
+     "p25": 128300,
+     "median": 138292,
+     "p75": 347201,
+     "p90": 349203
+    },
+    "n_inclusion_items": {
+     "n": 37,
+     "p25": 8,
+     "median": 12,
+     "p75": 21,
+     "p90": 51
+    },
+    "n_exclusion_items": {
+     "n": 32,
+     "p25": 6,
+     "median": 13.5,
+     "p75": 24,
+     "p90": 30
+    },
+    "n_eligibility_items": {
+     "n": 37,
+     "p25": 15,
+     "median": 32,
+     "p75": 42,
+     "p90": 57
+    },
+    "eligibility_chars": {
+     "n": 37,
+     "p25": 1654,
+     "median": 3430,
+     "p75": 4891,
+     "p90": 6356
+    },
+    "planned_enrollment": {
+     "n": 37,
+     "p25": 39,
+     "median": 50,
+     "p75": 84,
+     "p90": 150
+    },
+    "planned_duration_months": {
+     "n": 36,
+     "p25": 13.0,
+     "median": 24.0,
+     "p75": 35.5,
+     "p90": 46.0
+    },
+    "monthly_enrollment_burden": {
+     "n": 36,
+     "p25": 1.59,
+     "median": 2.63,
+     "p75": 4.0,
+     "p90": 9.11
+    },
+    "n_secondary_outcomes": {
+     "n": 34,
+     "p25": 2,
+     "median": 4.0,
+     "p75": 6,
+     "p90": 10
+    }
+   }
+  },
+  "heart failure|p2": {
+   "recruit_failed": {
+    "n_concurrent_phase2": null,
+    "n_concurrent_trials": null,
+    "total_competing_seats": null,
+    "n_inclusion_items": null,
+    "n_exclusion_items": null,
+    "n_eligibility_items": null,
+    "eligibility_chars": null,
+    "planned_enrollment": null,
+    "planned_duration_months": null,
+    "monthly_enrollment_burden": null,
+    "n_secondary_outcomes": null
+   },
+   "completed": {
+    "n_concurrent_phase2": {
+     "n": 27,
+     "p25": 40,
+     "median": 46,
+     "p75": 53,
+     "p90": 56
+    },
+    "n_concurrent_trials": {
+     "n": 27,
+     "p25": 288,
+     "median": 326,
+     "p75": 344,
+     "p90": 356
+    },
+    "total_competing_seats": {
+     "n": 27,
+     "p25": 113301,
+     "median": 120683,
+     "p75": 403796,
+     "p90": 445339
+    },
+    "n_inclusion_items": {
+     "n": 27,
+     "p25": 4,
+     "median": 7,
+     "p75": 9,
+     "p90": 10
+    },
+    "n_exclusion_items": {
+     "n": 27,
+     "p25": 7,
+     "median": 13,
+     "p75": 20,
+     "p90": 24
+    },
+    "n_eligibility_items": {
+     "n": 27,
+     "p25": 11,
+     "median": 20,
+     "p75": 30,
+     "p90": 33
+    },
+    "eligibility_chars": {
+     "n": 27,
+     "p25": 613,
+     "median": 1521,
+     "p75": 2306,
+     "p90": 3815
+    },
+    "planned_enrollment": {
+     "n": 27,
+     "p25": 36,
+     "median": 60,
+     "p75": 125,
+     "p90": 300
+    },
+    "planned_duration_months": {
+     "n": 27,
+     "p25": 12.0,
+     "median": 19.0,
+     "p75": 25.1,
+     "p90": 48.0
+    },
+    "monthly_enrollment_burden": {
+     "n": 27,
+     "p25": 2.35,
+     "median": 3.18,
+     "p75": 7.14,
+     "p90": 16.46
+    },
+    "n_secondary_outcomes": {
+     "n": 25,
+     "p25": 3,
+     "median": 4,
+     "p75": 7,
+     "p90": 13
+    }
+   }
+  },
+  "heart failure": {
+   "recruit_failed": {
+    "n_concurrent_phase2": {
+     "n": 8,
+     "p25": 43,
+     "median": 44.5,
+     "p75": 47,
+     "p90": 53
+    },
+    "n_concurrent_trials": {
+     "n": 8,
+     "p25": 308,
+     "median": 317.0,
+     "p75": 346,
+     "p90": 362
+    },
+    "total_competing_seats": {
+     "n": 8,
+     "p25": 103236,
+     "median": 241988.0,
+     "p75": 410596,
+     "p90": 448673
+    },
+    "n_inclusion_items": {
+     "n": 8,
+     "p25": 4,
+     "median": 5.5,
+     "p75": 9,
+     "p90": 16
+    },
+    "n_exclusion_items": {
+     "n": 8,
+     "p25": 5,
+     "median": 9.0,
+     "p75": 20,
+     "p90": 23
+    },
+    "n_eligibility_items": {
+     "n": 8,
+     "p25": 8,
+     "median": 15.5,
+     "p75": 25,
+     "p90": 39
+    },
+    "eligibility_chars": {
+     "n": 8,
+     "p25": 474,
+     "median": 1479.5,
+     "p75": 2223,
+     "p90": 3923
+    },
+    "planned_enrollment": {
+     "n": 8,
+     "p25": 30,
+     "median": 52.5,
+     "p75": 120,
+     "p90": 300
+    },
+    "planned_duration_months": {
+     "n": 8,
+     "p25": 12.0,
+     "median": 18.0,
+     "p75": 26.0,
+     "p90": 35.2
+    },
+    "monthly_enrollment_burden": {
+     "n": 8,
+     "p25": 2.5,
+     "median": 3.75,
+     "p75": 9.38,
+     "p90": 17.65
+    },
+    "n_secondary_outcomes": {
+     "n": 7,
+     "p25": 1,
+     "median": 3,
+     "p75": 6,
+     "p90": 10
+    }
+   },
+   "completed": {
+    "n_concurrent_phase2": {
+     "n": 40,
+     "p25": 41,
+     "median": 47.0,
+     "p75": 54,
+     "p90": 56
+    },
+    "n_concurrent_trials": {
+     "n": 40,
+     "p25": 292,
+     "median": 317.0,
+     "p75": 340,
+     "p90": 351
+    },
+    "total_competing_seats": {
+     "n": 40,
+     "p25": 106345,
+     "median": 119228.5,
+     "p75": 378370,
+     "p90": 445074
+    },
+    "n_inclusion_items": {
+     "n": 40,
+     "p25": 4,
+     "median": 6.0,
+     "p75": 8,
+     "p90": 10
+    },
+    "n_exclusion_items": {
+     "n": 39,
+     "p25": 5,
+     "median": 10,
+     "p75": 18,
+     "p90": 24
+    },
+    "n_eligibility_items": {
+     "n": 40,
+     "p25": 10,
+     "median": 16.0,
+     "p75": 27,
+     "p90": 33
+    },
+    "eligibility_chars": {
+     "n": 40,
+     "p25": 536,
+     "median": 1259.0,
+     "p75": 2238,
+     "p90": 3069
+    },
+    "planned_enrollment": {
+     "n": 40,
+     "p25": 40,
+     "median": 60.0,
+     "p75": 125,
+     "p90": 360
+    },
+    "planned_duration_months": {
+     "n": 40,
+     "p25": 14.0,
+     "median": 21.0,
+     "p75": 34.0,
+     "p90": 52.9
+    },
+    "monthly_enrollment_burden": {
+     "n": 40,
+     "p25": 1.68,
+     "median": 3.25,
+     "p75": 7.14,
+     "p90": 14.18
+    },
+    "n_secondary_outcomes": {
+     "n": 34,
+     "p25": 3,
+     "median": 4.0,
+     "p75": 7,
+     "p90": 13
+    }
+   }
+  },
+  "heart failure|p1p2": {
+   "recruit_failed": {
+    "n_concurrent_phase2": null,
+    "n_concurrent_trials": null,
+    "total_competing_seats": null,
+    "n_inclusion_items": null,
+    "n_exclusion_items": null,
+    "n_eligibility_items": null,
+    "eligibility_chars": null,
+    "planned_enrollment": null,
+    "planned_duration_months": null,
+    "monthly_enrollment_burden": null,
+    "n_secondary_outcomes": null
+   },
+   "completed": {
+    "n_concurrent_phase2": {
+     "n": 8,
+     "p25": 46,
+     "median": 51.0,
+     "p75": 53,
+     "p90": 54
+    },
+    "n_concurrent_trials": {
+     "n": 8,
+     "p25": 299,
+     "median": 300.5,
+     "p75": 311,
+     "p90": 342
+    },
+    "total_competing_seats": {
+     "n": 8,
+     "p25": 104217,
+     "median": 105581.5,
+     "p75": 371478,
+     "p90": 443187
+    },
+    "n_inclusion_items": {
+     "n": 8,
+     "p25": 3,
+     "median": 4.5,
+     "p75": 8,
+     "p90": 10
+    },
+    "n_exclusion_items": {
+     "n": 7,
+     "p25": 4,
+     "median": 14,
+     "p75": 22,
+     "p90": 26
+    },
+    "n_eligibility_items": {
+     "n": 8,
+     "p25": 7,
+     "median": 15.5,
+     "p75": 30,
+     "p90": 36
+    },
+    "eligibility_chars": {
+     "n": 8,
+     "p25": 536,
+     "median": 872.5,
+     "p75": 3026,
+     "p90": 3069
+    },
+    "planned_enrollment": {
+     "n": 8,
+     "p25": 40,
+     "median": 47.5,
+     "p75": 76,
+     "p90": 80
+    },
+    "planned_duration_months": {
+     "n": 8,
+     "p25": 19.0,
+     "median": 23.7,
+     "p75": 38.0,
+     "p90": 66.0
+    },
+    "monthly_enrollment_burden": {
+     "n": 8,
+     "p25": 1.28,
+     "median": 1.93,
+     "p75": 4.0,
+     "p90": 10.0
+    },
+    "n_secondary_outcomes": null
+   }
+  },
+  "heart failure|p2p3": {
+   "recruit_failed": {
+    "n_concurrent_phase2": null,
+    "n_concurrent_trials": null,
+    "total_competing_seats": null,
+    "n_inclusion_items": null,
+    "n_exclusion_items": null,
+    "n_eligibility_items": null,
+    "eligibility_chars": null,
+    "planned_enrollment": null,
+    "planned_duration_months": null,
+    "monthly_enrollment_burden": null,
+    "n_secondary_outcomes": null
+   },
+   "completed": {
+    "n_concurrent_phase2": null,
+    "n_concurrent_trials": null,
+    "total_competing_seats": null,
+    "n_inclusion_items": null,
+    "n_exclusion_items": null,
+    "n_eligibility_items": null,
+    "eligibility_chars": null,
+    "planned_enrollment": null,
+    "planned_duration_months": null,
+    "monthly_enrollment_burden": null,
+    "n_secondary_outcomes": null
+   }
+  },
+  "acute myeloid leukemia|p2p3": {
+   "completed": {
+    "n_concurrent_phase2": null,
+    "n_concurrent_trials": null,
+    "total_competing_seats": null,
+    "n_inclusion_items": null,
+    "n_exclusion_items": null,
+    "n_eligibility_items": null,
+    "eligibility_chars": null,
+    "planned_enrollment": null,
+    "planned_duration_months": null,
+    "monthly_enrollment_burden": null,
+    "n_secondary_outcomes": null
+   }
+  },
+  "amyotrophic lateral sclerosis|p1p2": {
+   "completed": {
+    "n_concurrent_phase2": {
+     "n": 10,
+     "p25": 17,
+     "median": 23.0,
+     "p75": 26,
+     "p90": 29
+    },
+    "n_concurrent_trials": {
+     "n": 10,
+     "p25": 41,
+     "median": 60.5,
+     "p75": 63,
+     "p90": 80
+    },
+    "total_competing_seats": {
+     "n": 10,
+     "p25": 3483,
+     "median": 3894.5,
+     "p75": 4896,
+     "p90": 9103
+    },
+    "n_inclusion_items": {
+     "n": 10,
+     "p25": 5,
+     "median": 8.5,
+     "p75": 10,
+     "p90": 14
+    },
+    "n_exclusion_items": {
+     "n": 10,
+     "p25": 6,
+     "median": 11.5,
+     "p75": 18,
+     "p90": 21
+    },
+    "n_eligibility_items": {
+     "n": 10,
+     "p25": 14,
+     "median": 20.0,
+     "p75": 30,
+     "p90": 30
+    },
+    "eligibility_chars": {
+     "n": 10,
+     "p25": 862,
+     "median": 1485.0,
+     "p75": 2612,
+     "p90": 3583
+    },
+    "planned_enrollment": {
+     "n": 10,
+     "p25": 20,
+     "median": 24.0,
+     "p75": 40,
+     "p90": 71
+    },
+    "planned_duration_months": {
+     "n": 10,
+     "p25": 12.0,
+     "median": 17.5,
+     "p75": 24.0,
+     "p90": 53.9
+    },
+    "monthly_enrollment_burden": {
+     "n": 10,
+     "p25": 1.31,
+     "median": 1.67,
+     "p75": 2.0,
+     "p90": 4.8
+    },
+    "n_secondary_outcomes": {
+     "n": 10,
+     "p25": 1,
+     "median": 4.5,
+     "p75": 6,
+     "p90": 87
+    }
+   }
+  },
+  "amyotrophic lateral sclerosis|p2p3": {
+   "completed": {
+    "n_concurrent_phase2": {
+     "n": 7,
+     "p25": 20,
+     "median": 30,
+     "p75": 42,
+     "p90": 49
+    },
+    "n_concurrent_trials": {
+     "n": 7,
+     "p25": 48,
+     "median": 81,
+     "p75": 97,
+     "p90": 106
+    },
+    "total_competing_seats": {
+     "n": 7,
+     "p25": 3222,
+     "median": 9126,
+     "p75": 212440,
+     "p90": 215109
+    },
+    "n_inclusion_items": {
+     "n": 7,
+     "p25": 2,
+     "median": 5,
+     "p75": 8,
+     "p90": 12
+    },
+    "n_exclusion_items": {
+     "n": 7,
+     "p25": 1,
+     "median": 5,
+     "p75": 10,
+     "p90": 19
+    },
+    "n_eligibility_items": {
+     "n": 7,
+     "p25": 7,
+     "median": 11,
+     "p75": 13,
+     "p90": 27
+    },
+    "eligibility_chars": {
+     "n": 7,
+     "p25": 485,
+     "median": 1058,
+     "p75": 2092,
+     "p90": 2643
+    },
+    "planned_enrollment": {
+     "n": 7,
+     "p25": 160,
+     "median": 160,
+     "p75": 350,
+     "p90": 381
+    },
+    "planned_duration_months": {
+     "n": 7,
+     "p25": 9.0,
+     "median": 15.9,
+     "p75": 32.0,
+     "p90": 48.0
+    },
+    "monthly_enrollment_burden": {
+     "n": 7,
+     "p25": 4.38,
+     "median": 11.91,
+     "p75": 17.78,
+     "p90": 20.59
+    },
+    "n_secondary_outcomes": {
+     "n": 7,
+     "p25": 3,
+     "median": 4,
+     "p75": 8,
+     "p90": 10
+    }
+   }
+  },
+  "idiopathic pulmonary fibrosis|p1p2": {
+   "completed": {
+    "n_concurrent_phase2": {
+     "n": 6,
+     "p25": 14,
+     "median": 19.5,
+     "p75": 23,
+     "p90": 26
+    },
+    "n_concurrent_trials": {
+     "n": 6,
+     "p25": 30,
+     "median": 38.0,
+     "p75": 48,
+     "p90": 48
+    },
+    "total_competing_seats": {
+     "n": 6,
+     "p25": 4087,
+     "median": 4848.5,
+     "p75": 5733,
+     "p90": 6112
+    },
+    "n_inclusion_items": {
+     "n": 6,
+     "p25": 3,
+     "median": 6.0,
+     "p75": 8,
+     "p90": 12
+    },
+    "n_exclusion_items": {
+     "n": 6,
+     "p25": 8,
+     "median": 12.0,
+     "p75": 14,
+     "p90": 14
+    },
+    "n_eligibility_items": {
+     "n": 6,
+     "p25": 11,
+     "median": 17.5,
+     "p75": 19,
+     "p90": 26
+    },
+    "eligibility_chars": {
+     "n": 6,
+     "p25": 1242,
+     "median": 1599.5,
+     "p75": 1904,
+     "p90": 2449
+    },
+    "planned_enrollment": {
+     "n": 6,
+     "p25": 20,
+     "median": 20.0,
+     "p75": 24,
+     "p90": 60
+    },
+    "planned_duration_months": {
+     "n": 6,
+     "p25": 15.0,
+     "median": 21.5,
+     "p75": 36.0,
+     "p90": 48.0
+    },
+    "monthly_enrollment_burden": {
+     "n": 6,
+     "p25": 0.45,
+     "median": 0.76,
+     "p75": 1.71,
+     "p90": 4.0
+    },
+    "n_secondary_outcomes": {
+     "n": 6,
+     "p25": 2,
+     "median": 3.0,
+     "p75": 5,
+     "p90": 5
+    }
+   }
+  },
+  "idiopathic pulmonary fibrosis|p2p3": {
+   "completed": {
+    "n_concurrent_phase2": null,
+    "n_concurrent_trials": null,
+    "total_competing_seats": null,
+    "n_inclusion_items": null,
+    "n_exclusion_items": null,
+    "n_eligibility_items": null,
+    "eligibility_chars": null,
+    "planned_enrollment": null,
+    "planned_duration_months": null,
+    "monthly_enrollment_burden": null,
+    "n_secondary_outcomes": null
+   }
+  },
+  "ovarian cancer|p1p2": {
+   "completed": {
+    "n_concurrent_phase2": {
+     "n": 10,
+     "p25": 128,
+     "median": 136.5,
+     "p75": 140,
+     "p90": 183
+    },
+    "n_concurrent_trials": {
+     "n": 10,
+     "p25": 342,
+     "median": 375.0,
+     "p75": 390,
+     "p90": 478
+    },
+    "total_competing_seats": {
+     "n": 10,
+     "p25": 128276,
+     "median": 131101.0,
+     "p75": 146051,
+     "p90": 349203
+    },
+    "n_inclusion_items": {
+     "n": 10,
+     "p25": 9,
+     "median": 12.0,
+     "p75": 18,
+     "p90": 51
+    },
+    "n_exclusion_items": {
+     "n": 9,
+     "p25": 9,
+     "median": 15,
+     "p75": 27,
+     "p90": 45
+    },
+    "n_eligibility_items": {
+     "n": 10,
+     "p25": 20,
+     "median": 41.0,
+     "p75": 51,
+     "p90": 57
+    },
+    "eligibility_chars": {
+     "n": 10,
+     "p25": 1654,
+     "median": 3816.0,
+     "p75": 5350,
+     "p90": 7640
+    },
+    "planned_enrollment": {
+     "n": 10,
+     "p25": 48,
+     "median": 56.0,
+     "p75": 82,
+     "p90": 120
+    },
+    "planned_duration_months": {
+     "n": 9,
+     "p25": 11.0,
+     "median": 19.0,
+     "p75": 35.0,
+     "p90": 48.0
+    },
+    "monthly_enrollment_burden": {
+     "n": 9,
+     "p25": 1.57,
+     "median": 1.75,
+     "p75": 3.69,
+     "p90": 24.0
+    },
+    "n_secondary_outcomes": {
+     "n": 9,
+     "p25": 3,
+     "median": 5,
+     "p75": 7,
+     "p90": 12
+    }
+   }
+  },
+  "ovarian cancer|p2p3": {
+   "completed": {
+    "n_concurrent_phase2": null,
+    "n_concurrent_trials": null,
+    "total_competing_seats": null,
+    "n_inclusion_items": null,
+    "n_exclusion_items": null,
+    "n_eligibility_items": null,
+    "eligibility_chars": null,
+    "planned_enrollment": null,
+    "planned_duration_months": null,
+    "monthly_enrollment_burden": null,
+    "n_secondary_outcomes": null
+   }
+  },
+  "sickle cell disease|p2p3": {
+   "completed": {
+    "n_concurrent_phase2": null,
+    "n_concurrent_trials": null,
+    "total_competing_seats": null,
+    "n_inclusion_items": null,
+    "n_exclusion_items": null,
+    "n_eligibility_items": null,
+    "eligibility_chars": null,
+    "planned_enrollment": null,
+    "planned_duration_months": null,
+    "monthly_enrollment_burden": null,
+    "n_secondary_outcomes": null
+   }
+  }
+ }
+}

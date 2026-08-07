@@ -1,0 +1,742 @@
+{
+ "_meta": {
+  "source": "data/criteria_signal.json",
+  "corpus_sha256_16": "9ba6a283b0997a4f",
+  "taxonomy_sha256_16": "b1d67972a5d6af28",
+  "n_tested": 20,
+  "n_rejected": 20,
+  "rejection_rate": 1.0,
+  "decisive_strata": [
+   "indication",
+   "indication+phase",
+   "items_tertile",
+   "indication+items",
+   "sponsor",
+   "indication+sponsor"
+  ],
+  "indication_only_control": 0.722,
+  "note": "T5 판정. 정답 라벨 불필요 — 코퍼스만으로 측정된다."
+ },
+ "by_status": {
+  "unvalidated": 19,
+  "reversed": 1
+ },
+ "verdicts": [
+  {
+   "feature": "lab_hematology",
+   "name": "혈액 수치 컷오프 (호중구·혈소판·헤모글로빈)",
+   "status": "unvalidated",
+   "target_auc": 0.5824,
+   "ci95": [
+    0.5338,
+    0.6361
+   ],
+   "control_auc": 0.722,
+   "beats_control": false,
+   "binary_ceiling": 0.6233,
+   "strata_passed": [
+    "indication",
+    "indication+phase",
+    "items_tertile",
+    "indication+items",
+    "sponsor"
+   ],
+   "strata_total": 6,
+   "specificity": {
+    "중단-과학적": 0.5148,
+    "중단-경영": 0.5117
+   },
+   "prevalence": {
+    "completed": [
+     162,
+     591
+    ],
+    "recruit_failed": [
+     63,
+     121
+    ]
+   },
+   "n_pos": 121,
+   "n_neg": 591,
+   "reason": "결정적 6축 중 5축만 통과. 탈락: indication+sponsor. 구분력 미입증이므로 위험 판정에 쓰지 않는다. ※ 유일한 탈락 축이 `적응증+스폰서` 다 — 이 근거가 스폰서 유형의 대리변수일 가능성을 시사한다. ※ 음성 대조군(0.722) 미달이나, 이진 범주의 구조적 AUC 상한이 0.6233 이므로 이를 결격 사유로 쓰지 않았다.",
+   "corpus_sha": "9ba6a283b0997a4f",
+   "labeler_sha": "b1d67972a5d6af28"
+  },
+  {
+   "feature": "lab_renal",
+   "name": "신기능 컷오프 (크레아티닌·eGFR)",
+   "status": "unvalidated",
+   "target_auc": 0.5735,
+   "ci95": [
+    0.5218,
+    0.6265
+   ],
+   "control_auc": 0.722,
+   "beats_control": false,
+   "binary_ceiling": 0.6418,
+   "strata_passed": [
+    "indication",
+    "indication+phase",
+    "items_tertile",
+    "indication+items",
+    "sponsor"
+   ],
+   "strata_total": 6,
+   "specificity": {
+    "중단-과학적": 0.501,
+    "중단-경영": 0.5214
+   },
+   "prevalence": {
+    "completed": [
+     228,
+     591
+    ],
+    "recruit_failed": [
+     81,
+     121
+    ]
+   },
+   "n_pos": 121,
+   "n_neg": 591,
+   "reason": "결정적 6축 중 5축만 통과. 탈락: indication+sponsor. 구분력 미입증이므로 위험 판정에 쓰지 않는다. ※ 유일한 탈락 축이 `적응증+스폰서` 다 — 이 근거가 스폰서 유형의 대리변수일 가능성을 시사한다. ※ 음성 대조군(0.722) 미달이나, 이진 범주의 구조적 AUC 상한이 0.6418 이므로 이를 결격 사유로 쓰지 않았다.",
+   "corpus_sha": "9ba6a283b0997a4f",
+   "labeler_sha": "b1d67972a5d6af28"
+  },
+  {
+   "feature": "lab_hepatic",
+   "name": "간기능 컷오프 (AST/ALT/빌리루빈)",
+   "status": "unvalidated",
+   "target_auc": 0.5619,
+   "ci95": [
+    0.5166,
+    0.61
+   ],
+   "control_auc": 0.722,
+   "beats_control": false,
+   "binary_ceiling": 0.61,
+   "strata_passed": [
+    "indication",
+    "indication+phase",
+    "items_tertile",
+    "indication+items",
+    "sponsor"
+   ],
+   "strata_total": 6,
+   "specificity": {
+    "중단-과학적": 0.5169,
+    "중단-경영": 0.5139
+   },
+   "prevalence": {
+    "completed": [
+     251,
+     591
+    ],
+    "recruit_failed": [
+     78,
+     121
+    ]
+   },
+   "n_pos": 121,
+   "n_neg": 591,
+   "reason": "결정적 6축 중 5축만 통과. 탈락: indication+sponsor. 구분력 미입증이므로 위험 판정에 쓰지 않는다. ※ 유일한 탈락 축이 `적응증+스폰서` 다 — 이 근거가 스폰서 유형의 대리변수일 가능성을 시사한다. ※ 음성 대조군(0.722) 미달이나, 이진 범주의 구조적 AUC 상한이 0.61 이므로 이를 결격 사유로 쓰지 않았다.",
+   "corpus_sha": "9ba6a283b0997a4f",
+   "labeler_sha": "b1d67972a5d6af28"
+  },
+  {
+   "feature": "second_malignancy",
+   "name": "2차·기왕 악성종양 제외",
+   "status": "unvalidated",
+   "target_auc": 0.5209,
+   "ci95": [
+    0.4772,
+    0.5682
+   ],
+   "control_auc": 0.722,
+   "beats_control": false,
+   "binary_ceiling": 0.5716,
+   "strata_passed": [
+    "items_tertile",
+    "sponsor"
+   ],
+   "strata_total": 6,
+   "specificity": {
+    "중단-과학적": 0.5254,
+    "중단-경영": 0.5113
+   },
+   "prevalence": {
+    "completed": [
+     140,
+     591
+    ],
+    "recruit_failed": [
+     46,
+     121
+    ]
+   },
+   "n_pos": 121,
+   "n_neg": 591,
+   "reason": "결정적 6축 중 2축만 통과. 탈락: indication, indication+phase, indication+items, indication+sponsor. 구분력 미입증이므로 위험 판정에 쓰지 않는다. ※ 음성 대조군(0.722) 미달이나, 이진 범주의 구조적 AUC 상한이 0.5716 이므로 이를 결격 사유로 쓰지 않았다.",
+   "corpus_sha": "9ba6a283b0997a4f",
+   "labeler_sha": "b1d67972a5d6af28"
+  },
+  {
+   "feature": "performance_status",
+   "name": "ECOG/KPS 성능 상태 컷오프",
+   "status": "unvalidated",
+   "target_auc": 0.5161,
+   "ci95": [
+    0.4827,
+    0.5532
+   ],
+   "control_auc": 0.722,
+   "beats_control": false,
+   "binary_ceiling": 0.6522,
+   "strata_passed": [
+    "items_tertile",
+    "sponsor"
+   ],
+   "strata_total": 6,
+   "specificity": {
+    "중단-과학적": 0.5078,
+    "중단-경영": 0.5003
+   },
+   "prevalence": {
+    "completed": [
+     162,
+     591
+    ],
+    "recruit_failed": [
+     70,
+     121
+    ]
+   },
+   "n_pos": 121,
+   "n_neg": 591,
+   "reason": "결정적 6축 중 2축만 통과. 탈락: indication, indication+phase, indication+items, indication+sponsor. 구분력 미입증이므로 위험 판정에 쓰지 않는다. ※ 음성 대조군(0.722) 미달이나, 이진 범주의 구조적 AUC 상한이 0.6522 이므로 이를 결격 사유로 쓰지 않았다.",
+   "corpus_sha": "9ba6a283b0997a4f",
+   "labeler_sha": "b1d67972a5d6af28"
+  },
+  {
+   "feature": "histologic_confirmation",
+   "name": "조직학적 확진 요구",
+   "status": "unvalidated",
+   "target_auc": 0.5097,
+   "ci95": [
+    0.4667,
+    0.5525
+   ],
+   "control_auc": 0.722,
+   "beats_control": false,
+   "binary_ceiling": 0.5963,
+   "strata_passed": [
+    "items_tertile",
+    "sponsor"
+   ],
+   "strata_total": 6,
+   "specificity": {
+    "중단-과학적": 0.5002,
+    "중단-경영": 0.5166
+   },
+   "prevalence": {
+    "completed": [
+     106,
+     591
+    ],
+    "recruit_failed": [
+     45,
+     121
+    ]
+   },
+   "n_pos": 121,
+   "n_neg": 591,
+   "reason": "결정적 6축 중 2축만 통과. 탈락: indication, indication+phase, indication+items, indication+sponsor. 구분력 미입증이므로 위험 판정에 쓰지 않는다. ※ 음성 대조군(0.722) 미달이나, 이진 범주의 구조적 AUC 상한이 0.5963 이므로 이를 결격 사유로 쓰지 않았다.",
+   "corpus_sha": "9ba6a283b0997a4f",
+   "labeler_sha": "b1d67972a5d6af28"
+  },
+  {
+   "feature": "measurable_disease",
+   "name": "측정가능 병변(RECIST) 요구",
+   "status": "unvalidated",
+   "target_auc": 0.4984,
+   "ci95": [
+    0.4579,
+    0.5352
+   ],
+   "control_auc": 0.722,
+   "beats_control": false,
+   "binary_ceiling": 0.5721,
+   "strata_passed": [
+    "items_tertile",
+    "sponsor"
+   ],
+   "strata_total": 6,
+   "specificity": {
+    "중단-과학적": 0.5038,
+    "중단-경영": 0.5402
+   },
+   "prevalence": {
+    "completed": [
+     76,
+     591
+    ],
+    "recruit_failed": [
+     33,
+     121
+    ]
+   },
+   "n_pos": 121,
+   "n_neg": 591,
+   "reason": "결정적 6축 중 2축만 통과. 탈락: indication, indication+phase, indication+items, indication+sponsor. 구분력 미입증이므로 위험 판정에 쓰지 않는다. ※ 음성 대조군(0.722) 미달이나, 이진 범주의 구조적 AUC 상한이 0.5721 이므로 이를 결격 사유로 쓰지 않았다.",
+   "corpus_sha": "9ba6a283b0997a4f",
+   "labeler_sha": "b1d67972a5d6af28"
+  },
+  {
+   "feature": "comorbid_cardiac",
+   "name": "심장 동반질환 제외",
+   "status": "unvalidated",
+   "target_auc": 0.525,
+   "ci95": [
+    0.4777,
+    0.5732
+   ],
+   "control_auc": 0.722,
+   "beats_control": false,
+   "binary_ceiling": 0.5674,
+   "strata_passed": [
+    "sponsor"
+   ],
+   "strata_total": 6,
+   "specificity": {
+    "중단-과학적": 0.4874,
+    "중단-경영": 0.5166
+   },
+   "prevalence": {
+    "completed": [
+     272,
+     591
+    ],
+    "recruit_failed": [
+     72,
+     121
+    ]
+   },
+   "n_pos": 121,
+   "n_neg": 591,
+   "reason": "결정적 6축 중 1축만 통과. 탈락: indication, indication+phase, items_tertile, indication+items, indication+sponsor. 구분력 미입증이므로 위험 판정에 쓰지 않는다. ※ 음성 대조군(0.722) 미달이나, 이진 범주의 구조적 AUC 상한이 0.5674 이므로 이를 결격 사유로 쓰지 않았다.",
+   "corpus_sha": "9ba6a283b0997a4f",
+   "labeler_sha": "b1d67972a5d6af28"
+  },
+  {
+   "feature": "prior_tx_required",
+   "name": "사전 치료 이력 있어야 함 (2차 이상 라인)",
+   "status": "unvalidated",
+   "target_auc": 0.5044,
+   "ci95": [
+    0.4595,
+    0.5494
+   ],
+   "control_auc": 0.722,
+   "beats_control": false,
+   "binary_ceiling": 0.5488,
+   "strata_passed": [
+    "sponsor"
+   ],
+   "strata_total": 6,
+   "specificity": {
+    "중단-과학적": 0.5335,
+    "중단-경영": 0.5525
+   },
+   "prevalence": {
+    "completed": [
+     84,
+     591
+    ],
+    "recruit_failed": [
+     29,
+     121
+    ]
+   },
+   "n_pos": 121,
+   "n_neg": 591,
+   "reason": "결정적 6축 중 1축만 통과. 탈락: indication, indication+phase, items_tertile, indication+items, indication+sponsor. 구분력 미입증이므로 위험 판정에 쓰지 않는다. ※ 음성 대조군(0.722) 미달이나, 이진 범주의 구조적 AUC 상한이 0.5488 이므로 이를 결격 사유로 쓰지 않았다.",
+   "corpus_sha": "9ba6a283b0997a4f",
+   "labeler_sha": "b1d67972a5d6af28"
+  },
+  {
+   "feature": "biomarker_requirement",
+   "name": "바이오마커·유전형 요구",
+   "status": "unvalidated",
+   "target_auc": 0.4835,
+   "ci95": [
+    0.4354,
+    0.5339
+   ],
+   "control_auc": 0.722,
+   "beats_control": false,
+   "binary_ceiling": 0.5584,
+   "strata_passed": [
+    "sponsor"
+   ],
+   "strata_total": 6,
+   "specificity": {
+    "중단-과학적": 0.5238,
+    "중단-경영": 0.5212
+   },
+   "prevalence": {
+    "completed": [
+     141,
+     591
+    ],
+    "recruit_failed": [
+     43,
+     121
+    ]
+   },
+   "n_pos": 121,
+   "n_neg": 591,
+   "reason": "결정적 6축 중 1축만 통과. 탈락: indication, indication+phase, items_tertile, indication+items, indication+sponsor. 구분력 미입증이므로 위험 판정에 쓰지 않는다. ※ 음성 대조군(0.722) 미달이나, 이진 범주의 구조적 AUC 상한이 0.5584 이므로 이를 결격 사유로 쓰지 않았다.",
+   "corpus_sha": "9ba6a283b0997a4f",
+   "labeler_sha": "b1d67972a5d6af28"
+  },
+  {
+   "feature": "comorbid_hepatic_renal",
+   "name": "간·신 동반질환 제외",
+   "status": "unvalidated",
+   "target_auc": 0.5082,
+   "ci95": [
+    0.4681,
+    0.5517
+   ],
+   "control_auc": 0.722,
+   "beats_control": false,
+   "binary_ceiling": 0.5076,
+   "strata_passed": [],
+   "strata_total": 6,
+   "specificity": {
+    "중단-과학적": 0.5247,
+    "중단-경영": 0.5227
+   },
+   "prevalence": {
+    "completed": [
+     136,
+     591
+    ],
+    "recruit_failed": [
+     26,
+     121
+    ]
+   },
+   "n_pos": 121,
+   "n_neg": 591,
+   "reason": "결정적 6축 중 0축만 통과. 탈락: indication, indication+phase, items_tertile, indication+items, sponsor, indication+sponsor. 구분력 미입증이므로 위험 판정에 쓰지 않는다. ※ 음성 대조군(0.722) 미달이나, 이진 범주의 구조적 AUC 상한이 0.5076 이므로 이를 결격 사유로 쓰지 않았다.",
+   "corpus_sha": "9ba6a283b0997a4f",
+   "labeler_sha": "b1d67972a5d6af28"
+  },
+  {
+   "feature": "pregnancy_contraception",
+   "name": "임신·수유·피임 요구",
+   "status": "unvalidated",
+   "target_auc": 0.5078,
+   "ci95": [
+    0.4639,
+    0.5488
+   ],
+   "control_auc": 0.722,
+   "beats_control": false,
+   "binary_ceiling": 0.5307,
+   "strata_passed": [],
+   "strata_total": 6,
+   "specificity": {
+    "중단-과학적": 0.4661,
+    "중단-경영": 0.5244
+   },
+   "prevalence": {
+    "completed": [
+     418,
+     591
+    ],
+    "recruit_failed": [
+     93,
+     121
+    ]
+   },
+   "n_pos": 121,
+   "n_neg": 591,
+   "reason": "결정적 6축 중 0축만 통과. 탈락: indication, indication+phase, items_tertile, indication+items, sponsor, indication+sponsor. 구분력 미입증이므로 위험 판정에 쓰지 않는다. ※ 음성 대조군(0.722) 미달이나, 이진 범주의 구조적 AUC 상한이 0.5307 이므로 이를 결격 사유로 쓰지 않았다.",
+   "corpus_sha": "9ba6a283b0997a4f",
+   "labeler_sha": "b1d67972a5d6af28"
+  },
+  {
+   "feature": "prior_tx_naive_required",
+   "name": "사전 치료 이력 없어야 함 (treatment-naive 요구)",
+   "status": "unvalidated",
+   "target_auc": 0.5,
+   "ci95": [
+    0.4714,
+    0.5336
+   ],
+   "control_auc": 0.722,
+   "beats_control": false,
+   "binary_ceiling": 0.5209,
+   "strata_passed": [],
+   "strata_total": 6,
+   "specificity": {
+    "중단-과학적": 0.4831,
+    "중단-경영": 0.4946
+   },
+   "prevalence": {
+    "completed": [
+     29,
+     591
+    ],
+    "recruit_failed": [
+     11,
+     121
+    ]
+   },
+   "n_pos": 121,
+   "n_neg": 591,
+   "reason": "결정적 6축 중 0축만 통과. 탈락: indication, indication+phase, items_tertile, indication+items, sponsor, indication+sponsor. 구분력 미입증이므로 위험 판정에 쓰지 않는다. ※ 음성 대조군(0.722) 미달이나, 이진 범주의 구조적 AUC 상한이 0.5209 이므로 이를 결격 사유로 쓰지 않았다.",
+   "corpus_sha": "9ba6a283b0997a4f",
+   "labeler_sha": "b1d67972a5d6af28"
+  },
+  {
+   "feature": "comorbid_autoimmune",
+   "name": "자가면역·면역억제 제외",
+   "status": "unvalidated",
+   "target_auc": 0.4934,
+   "ci95": [
+    0.446,
+    0.5428
+   ],
+   "control_auc": 0.722,
+   "beats_control": false,
+   "binary_ceiling": 0.5222,
+   "strata_passed": [],
+   "strata_total": 6,
+   "specificity": {
+    "중단-과학적": 0.5551,
+    "중단-경영": 0.509
+   },
+   "prevalence": {
+    "completed": [
+     174,
+     591
+    ],
+    "recruit_failed": [
+     41,
+     121
+    ]
+   },
+   "n_pos": 121,
+   "n_neg": 591,
+   "reason": "결정적 6축 중 0축만 통과. 탈락: indication, indication+phase, items_tertile, indication+items, sponsor, indication+sponsor. 구분력 미입증이므로 위험 판정에 쓰지 않는다. ※ 음성 대조군(0.722) 미달이나, 이진 범주의 구조적 AUC 상한이 0.5222 이므로 이를 결격 사유로 쓰지 않았다.",
+   "corpus_sha": "9ba6a283b0997a4f",
+   "labeler_sha": "b1d67972a5d6af28"
+  },
+  {
+   "feature": "concomitant_med_prohibited",
+   "name": "병용약 금지",
+   "status": "unvalidated",
+   "target_auc": 0.4858,
+   "ci95": [
+    0.4552,
+    0.5222
+   ],
+   "control_auc": 0.722,
+   "beats_control": false,
+   "binary_ceiling": 0.5004,
+   "strata_passed": [],
+   "strata_total": 6,
+   "specificity": {
+    "중단-과학적": 0.4912,
+    "중단-경영": 0.5168
+   },
+   "prevalence": {
+    "completed": [
+     64,
+     591
+    ],
+    "recruit_failed": [
+     13,
+     121
+    ]
+   },
+   "n_pos": 121,
+   "n_neg": 591,
+   "reason": "결정적 6축 중 0축만 통과. 탈락: indication, indication+phase, items_tertile, indication+items, sponsor, indication+sponsor. 구분력 미입증이므로 위험 판정에 쓰지 않는다. ※ 음성 대조군(0.722) 미달이나, 이진 범주의 구조적 AUC 상한이 0.5004 이므로 이를 결격 사유로 쓰지 않았다.",
+   "corpus_sha": "9ba6a283b0997a4f",
+   "labeler_sha": "b1d67972a5d6af28"
+  },
+  {
+   "feature": "infection_viral",
+   "name": "감염 제외 (HIV/HBV/HCV/TB)",
+   "status": "unvalidated",
+   "target_auc": 0.483,
+   "ci95": [
+    0.4326,
+    0.5323
+   ],
+   "control_auc": 0.722,
+   "beats_control": false,
+   "binary_ceiling": 0.5379,
+   "strata_passed": [],
+   "strata_total": 6,
+   "specificity": {
+    "중단-과학적": 0.5333,
+    "중단-경영": 0.5172
+   },
+   "prevalence": {
+    "completed": [
+     258,
+     591
+    ],
+    "recruit_failed": [
+     62,
+     121
+    ]
+   },
+   "n_pos": 121,
+   "n_neg": 591,
+   "reason": "결정적 6축 중 0축만 통과. 탈락: indication, indication+phase, items_tertile, indication+items, sponsor, indication+sponsor. 구분력 미입증이므로 위험 판정에 쓰지 않는다. ※ 음성 대조군(0.722) 미달이나, 이진 범주의 구조적 AUC 상한이 0.5379 이므로 이를 결격 사유로 쓰지 않았다.",
+   "corpus_sha": "9ba6a283b0997a4f",
+   "labeler_sha": "b1d67972a5d6af28"
+  },
+  {
+   "feature": "age_bound",
+   "name": "나이 상·하한",
+   "status": "unvalidated",
+   "target_auc": 0.4788,
+   "ci95": [
+    0.4288,
+    0.5293
+   ],
+   "control_auc": 0.722,
+   "beats_control": false,
+   "binary_ceiling": 0.5146,
+   "strata_passed": [],
+   "strata_total": 6,
+   "specificity": {
+    "중단-과학적": 0.4702,
+    "중단-경영": 0.4837
+   },
+   "prevalence": {
+    "completed": [
+     325,
+     591
+    ],
+    "recruit_failed": [
+     63,
+     121
+    ]
+   },
+   "n_pos": 121,
+   "n_neg": 591,
+   "reason": "결정적 6축 중 0축만 통과. 탈락: indication, indication+phase, items_tertile, indication+items, sponsor, indication+sponsor. 구분력 미입증이므로 위험 판정에 쓰지 않는다. ※ 음성 대조군(0.722) 미달이나, 이진 범주의 구조적 AUC 상한이 0.5146 이므로 이를 결격 사유로 쓰지 않았다.",
+   "corpus_sha": "9ba6a283b0997a4f",
+   "labeler_sha": "b1d67972a5d6af28"
+  },
+  {
+   "feature": "prior_trial_participation",
+   "name": "이전 임상시험 참여 제외",
+   "status": "unvalidated",
+   "target_auc": 0.4766,
+   "ci95": [
+    0.4539,
+    0.5
+   ],
+   "control_auc": 0.722,
+   "beats_control": false,
+   "binary_ceiling": 0.5352,
+   "strata_passed": [],
+   "strata_total": 6,
+   "specificity": {
+    "중단-과학적": 0.5028,
+    "중단-경영": 0.5204
+   },
+   "prevalence": {
+    "completed": [
+     66,
+     591
+    ],
+    "recruit_failed": [
+     5,
+     121
+    ]
+   },
+   "n_pos": 121,
+   "n_neg": 591,
+   "reason": "결정적 6축 중 0축만 통과. 탈락: indication, indication+phase, items_tertile, indication+items, sponsor, indication+sponsor. 구분력 미입증이므로 위험 판정에 쓰지 않는다. ※ 음성 대조군(0.722) 미달이나, 이진 범주의 구조적 AUC 상한이 0.5352 이므로 이를 결격 사유로 쓰지 않았다.",
+   "corpus_sha": "9ba6a283b0997a4f",
+   "labeler_sha": "b1d67972a5d6af28"
+  },
+  {
+   "feature": "washout_period",
+   "name": "워시아웃 기간",
+   "status": "unvalidated",
+   "target_auc": 0.4658,
+   "ci95": [
+    0.4174,
+    0.5163
+   ],
+   "control_auc": 0.722,
+   "beats_control": false,
+   "binary_ceiling": 0.5115,
+   "strata_passed": [],
+   "strata_total": 6,
+   "specificity": {
+    "중단-과학적": 0.5221,
+    "중단-경영": 0.4924
+   },
+   "prevalence": {
+    "completed": [
+     375,
+     591
+    ],
+    "recruit_failed": [
+     74,
+     121
+    ]
+   },
+   "n_pos": 121,
+   "n_neg": 591,
+   "reason": "결정적 6축 중 0축만 통과. 탈락: indication, indication+phase, items_tertile, indication+items, sponsor, indication+sponsor. 구분력 미입증이므로 위험 판정에 쓰지 않는다. ※ 음성 대조군(0.722) 미달이나, 이진 범주의 구조적 AUC 상한이 0.5115 이므로 이를 결격 사유로 쓰지 않았다.",
+   "corpus_sha": "9ba6a283b0997a4f",
+   "labeler_sha": "b1d67972a5d6af28"
+  },
+  {
+   "feature": "cns_involvement",
+   "name": "뇌전이·CNS 침범",
+   "status": "reversed",
+   "target_auc": 0.4477,
+   "ci95": [
+    0.4082,
+    0.4845
+   ],
+   "control_auc": 0.722,
+   "beats_control": false,
+   "binary_ceiling": 0.5305,
+   "strata_passed": [],
+   "strata_total": 6,
+   "specificity": {
+    "중단-과학적": 0.5176,
+    "중단-경영": 0.5148
+   },
+   "prevalence": {
+    "completed": [
+     86,
+     591
+    ],
+    "recruit_failed": [
+     25,
+     121
+    ]
+   },
+   "n_pos": 121,
+   "n_neg": 591,
+   "reason": "적응증 층화 AUC 0.4477 [CI 상한 0.4845] — 방향이 반대다. 이 근거로 공격하면 데이터와 거꾸로 된 조언이 된다. ※ 음성 대조군(0.722) 미달이나, 이진 범주의 구조적 AUC 상한이 0.5305 이므로 이를 결격 사유로 쓰지 않았다.",
+   "corpus_sha": "9ba6a283b0997a4f",
+   "labeler_sha": "b1d67972a5d6af28"
+  }
+ ]
+}

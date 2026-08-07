@@ -1,0 +1,71 @@
+{
+ "_meta": {
+  "dry_run": true,
+  "n_targets": 1,
+  "n_requested": 1,
+  "llm_calls": 2,
+  "provider": "gemini",
+  "spent_usd": 0,
+  "stopped": ""
+ },
+ "results": [
+  {
+   "nct_id": "NCT04524689",
+   "indication": "non-small cell lung cancer",
+   "cutoff": "2020-09-16",
+   "precedents": {
+    "tier": "적응증+Phase+개입유형",
+    "n_completed": 26,
+    "n_citable_a": 32,
+    "note": ""
+   },
+   "plan": {
+    "run": [
+     "quant_burden",
+     "criteria_density",
+     "reference_dist",
+     "precedent_recruit"
+    ],
+    "rejected": [
+     [
+      "site_burden",
+      "사이트 목록이 결측이다. 0으로 오해하면 계산이 망가진다"
+     ]
+    ],
+    "replans": [],
+    "rule_covered": 5,
+    "llm_decided": 0
+   },
+   "attempts": [
+    {
+     "attempt": 1,
+     "generated": 3,
+     "passed": 1
+    }
+   ],
+   "n_passed": 1,
+   "reject_reasons": {
+    "전례 NCT ID 가 코퍼스에 없음 (환각)": 1,
+    "금지된 공격 근거": 1
+   },
+   "revision": {
+    "proposals": [
+     {
+      "field": "planned_enrollment",
+      "from": null,
+      "to": 40,
+      "rationale": "모집 가능 규모에 맞춰 목표를 낮춘다.",
+      "addresses": "eligibility.inclusion_criteria"
+     }
+    ],
+    "side_effects": [
+     "목표 등록수만 낮추면 월 모집부담이 실패군 방향으로 내려갈 수 있다."
+    ],
+    "regressions": [
+     "monthly_enrollment_burden",
+     "planned_enrollment"
+    ]
+   }
+  }
+ ]
+}

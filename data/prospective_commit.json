@@ -1,0 +1,5253 @@
+{
+ "_meta": {
+  "purpose": "전향 예측 사전등록 (JUMP AI 4th, 분야 3)",
+  "committed_at_utc": "2026-08-04T15:45:11Z",
+  "n_predictions": 353,
+  "n_warn": 142,
+  "n_clear": 211,
+  "n_excluded": 69,
+  "integrity": "수집 시점 전 건이 overallStatus=RECRUITING 이고 whyStopped 가 비어 있음을 확인했다. 즉 예측 대상의 결과는 이 시각 현재 존재하지 않는다.",
+  "inclusion": {
+   "status": "RECRUITING",
+   "phase": "PHASE2",
+   "study_type": "INTERVENTIONAL",
+   "first_post_date_range": "2025-01-01..MAX",
+   "max_amendments": 6,
+   "input_version": "history/0 (최초 등록본) — 후향 백테스트와 동일 정의",
+   "buckets": [
+    "non-small cell lung cancer",
+    "atopic dermatitis",
+    "type 2 diabetes",
+    "rheumatoid arthritis",
+    "alzheimer disease",
+    "pancreatic cancer",
+    "glioblastoma",
+    "amyotrophic lateral sclerosis",
+    "idiopathic pulmonary fibrosis",
+    "systemic lupus erythematosus",
+    "sickle cell disease",
+    "cystic fibrosis",
+    "acute myeloid leukemia",
+    "ovarian cancer",
+    "heart failure"
+   ],
+   "per_bucket_cap": 40
+  },
+  "how_to_verify": "python src/analysis/prospective.py --verify — predictions/rule/commitment 세 블록을 canonical JSON 으로 직렬화해 SHA-256 을 다시 계산하고 아래 값과 대조한다."
+ },
+ "commit_sha256": "58b3c78304d5c347d69d32bf8a4be54ffe5a7a45a29f3bc841d7deeaaab384e4",
+ "prediction_sha256": "e055c5b6c1eae8d05b9edb578d23387fee7bf41c101ff7e09f819696f627ff15",
+ "excluded": [
+  {
+   "nct_id": "NCT06787612",
+   "reason": "개정 21회 (>6)"
+  },
+  {
+   "nct_id": "NCT06788756",
+   "reason": "개정 17회 (>6)"
+  },
+  {
+   "nct_id": "NCT06791291",
+   "reason": "개정 12회 (>6)"
+  },
+  {
+   "nct_id": "NCT06793371",
+   "reason": "개정 9회 (>6)"
+  },
+  {
+   "nct_id": "NCT06805305",
+   "reason": "개정 14회 (>6)"
+  },
+  {
+   "nct_id": "NCT06808984",
+   "reason": "개정 22회 (>6)"
+  },
+  {
+   "nct_id": "NCT06810544",
+   "reason": "개정 11회 (>6)"
+  },
+  {
+   "nct_id": "NCT06811233",
+   "reason": "개정 7회 (>6)"
+  },
+  {
+   "nct_id": "NCT06814496",
+   "reason": "개정 8회 (>6)"
+  },
+  {
+   "nct_id": "NCT06839976",
+   "reason": "개정 8회 (>6)"
+  },
+  {
+   "nct_id": "NCT06847321",
+   "reason": "개정 12회 (>6)"
+  },
+  {
+   "nct_id": "NCT06850623",
+   "reason": "개정 8회 (>6)"
+  },
+  {
+   "nct_id": "NCT06885034",
+   "reason": "개정 8회 (>6)"
+  },
+  {
+   "nct_id": "NCT06887192",
+   "reason": "개정 11회 (>6)"
+  },
+  {
+   "nct_id": "NCT06888921",
+   "reason": "개정 14회 (>6)"
+  },
+  {
+   "nct_id": "NCT06890338",
+   "reason": "개정 32회 (>6)"
+  },
+  {
+   "nct_id": "NCT06897475",
+   "reason": "개정 17회 (>6)"
+  },
+  {
+   "nct_id": "NCT06897930",
+   "reason": "개정 14회 (>6)"
+  },
+  {
+   "nct_id": "NCT06904482",
+   "reason": "개정 8회 (>6)"
+  },
+  {
+   "nct_id": "NCT06914128",
+   "reason": "개정 17회 (>6)"
+  },
+  {
+   "nct_id": "NCT06917911",
+   "reason": "개정 97회 (>6)"
+  },
+  {
+   "nct_id": "NCT06922591",
+   "reason": "개정 11회 (>6)"
+  },
+  {
+   "nct_id": "NCT06928662",
+   "reason": "개정 7회 (>6)"
+  },
+  {
+   "nct_id": "NCT06943755",
+   "reason": "개정 13회 (>6)"
+  },
+  {
+   "nct_id": "NCT06951217",
+   "reason": "개정 10회 (>6)"
+  },
+  {
+   "nct_id": "NCT06957418",
+   "reason": "개정 7회 (>6)"
+  },
+  {
+   "nct_id": "NCT06967805",
+   "reason": "개정 11회 (>6)"
+  },
+  {
+   "nct_id": "NCT06968845",
+   "reason": "개정 17회 (>6)"
+  },
+  {
+   "nct_id": "NCT06969430",
+   "reason": "개정 10회 (>6)"
+  },
+  {
+   "nct_id": "NCT06972446",
+   "reason": "개정 81회 (>6)"
+  },
+  {
+   "nct_id": "NCT06979362",
+   "reason": "개정 7회 (>6)"
+  },
+  {
+   "nct_id": "NCT06991114",
+   "reason": "개정 8회 (>6)"
+  },
+  {
+   "nct_id": "NCT06991257",
+   "reason": "개정 15회 (>6)"
+  },
+  {
+   "nct_id": "NCT06993844",
+   "reason": "개정 7회 (>6)"
+  },
+  {
+   "nct_id": "NCT07002034",
+   "reason": "개정 11회 (>6)"
+  },
+  {
+   "nct_id": "NCT07003425",
+   "reason": "개정 21회 (>6)"
+  },
+  {
+   "nct_id": "NCT07023627",
+   "reason": "개정 32회 (>6)"
+  },
+  {
+   "nct_id": "NCT07024784",
+   "reason": "개정 15회 (>6)"
+  },
+  {
+   "nct_id": "NCT07030257",
+   "reason": "개정 10회 (>6)"
+  },
+  {
+   "nct_id": "NCT07033494",
+   "reason": "개정 31회 (>6)"
+  },
+  {
+   "nct_id": "NCT07036523",
+   "reason": "개정 23회 (>6)"
+  },
+  {
+   "nct_id": "NCT07037901",
+   "reason": "개정 12회 (>6)"
+  },
+  {
+   "nct_id": "NCT07046078",
+   "reason": "개정 7회 (>6)"
+  },
+  {
+   "nct_id": "NCT07048197",
+   "reason": "개정 10회 (>6)"
+  },
+  {
+   "nct_id": "NCT07059845",
+   "reason": "개정 22회 (>6)"
+  },
+  {
+   "nct_id": "NCT07061574",
+   "reason": "개정 10회 (>6)"
+  },
+  {
+   "nct_id": "NCT07070232",
+   "reason": "개정 9회 (>6)"
+  },
+  {
+   "nct_id": "NCT07100080",
+   "reason": "개정 19회 (>6)"
+  },
+  {
+   "nct_id": "NCT07109726",
+   "reason": "개정 10회 (>6)"
+  },
+  {
+   "nct_id": "NCT07137598",
+   "reason": "개정 14회 (>6)"
+  },
+  {
+   "nct_id": "NCT07142291",
+   "reason": "개정 11회 (>6)"
+  },
+  {
+   "nct_id": "NCT07161999",
+   "reason": "개정 14회 (>6)"
+  },
+  {
+   "nct_id": "NCT07215559",
+   "reason": "개정 14회 (>6)"
+  },
+  {
+   "nct_id": "NCT07216443",
+   "reason": "개정 7회 (>6)"
+  },
+  {
+   "nct_id": "NCT07223697",
+   "reason": "개정 10회 (>6)"
+  },
+  {
+   "nct_id": "NCT07225621",
+   "reason": "개정 8회 (>6)"
+  },
+  {
+   "nct_id": "NCT07271186",
+   "reason": "개정 8회 (>6)"
+  },
+  {
+   "nct_id": "NCT07277660",
+   "reason": "개정 12회 (>6)"
+  },
+  {
+   "nct_id": "NCT07281456",
+   "reason": "개정 13회 (>6)"
+  },
+  {
+   "nct_id": "NCT07284459",
+   "reason": "개정 31회 (>6)"
+  },
+  {
+   "nct_id": "NCT07287397",
+   "reason": "개정 12회 (>6)"
+  },
+  {
+   "nct_id": "NCT07296484",
+   "reason": "개정 8회 (>6)"
+  },
+  {
+   "nct_id": "NCT07298395",
+   "reason": "개정 8회 (>6)"
+  },
+  {
+   "nct_id": "NCT07326566",
+   "reason": "개정 16회 (>6)"
+  },
+  {
+   "nct_id": "NCT07409181",
+   "reason": "개정 13회 (>6)"
+  },
+  {
+   "nct_id": "NCT07416188",
+   "reason": "개정 108회 (>6)"
+  },
+  {
+   "nct_id": "NCT07450547",
+   "reason": "개정 7회 (>6)"
+  },
+  {
+   "nct_id": "NCT07599176",
+   "reason": "개정 32회 (>6)"
+  },
+  {
+   "nct_id": "NCT07644559",
+   "reason": "개정 14회 (>6)"
+  }
+ ],
+ "predictions": [
+  {
+   "nct_id": "NCT06757244",
+   "bucket": "pancreatic cancer",
+   "phase_stratum": "p2",
+   "start_date": "2025-01-15",
+   "planned_primary_completion": "2028-01-15",
+   "first_posted": "2025-01-03",
+   "n_amendments": 1,
+   "monthly_enrollment_burden": 0.97,
+   "verdict": "WARN",
+   "severity": "high",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT06761027",
+   "bucket": "pancreatic cancer",
+   "phase_stratum": "p1p2",
+   "start_date": "2024-12-23",
+   "planned_primary_completion": "2027-03",
+   "first_posted": "2025-01-07",
+   "n_amendments": 0,
+   "monthly_enrollment_burden": 1.11,
+   "verdict": "WARN",
+   "severity": "medium",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT06762964",
+   "bucket": "heart failure",
+   "phase_stratum": "p2",
+   "start_date": "2025-02",
+   "planned_primary_completion": "2027-02",
+   "first_posted": "2025-01-08",
+   "n_amendments": 4,
+   "monthly_enrollment_burden": 1.12,
+   "verdict": "WARN",
+   "severity": "high",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT06765005",
+   "bucket": "atopic dermatitis",
+   "phase_stratum": "p1p2",
+   "start_date": "2024-07-19",
+   "planned_primary_completion": "2025-05",
+   "first_posted": "2025-01-09",
+   "n_amendments": 0,
+   "monthly_enrollment_burden": 2.55,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT06767813",
+   "bucket": "pancreatic cancer",
+   "phase_stratum": "p2",
+   "start_date": "2024-03-19",
+   "planned_primary_completion": "2025-03",
+   "first_posted": "2025-01-10",
+   "n_amendments": 1,
+   "monthly_enrollment_burden": 4.39,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT06769152",
+   "bucket": "ovarian cancer",
+   "phase_stratum": "p2",
+   "start_date": "2025-02-14",
+   "planned_primary_completion": "2026-10-31",
+   "first_posted": "2025-01-10",
+   "n_amendments": 4,
+   "monthly_enrollment_burden": 2.93,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT06770439",
+   "bucket": "pancreatic cancer",
+   "phase_stratum": "p2",
+   "start_date": "2025-01",
+   "planned_primary_completion": "2027-01",
+   "first_posted": "2025-01-13",
+   "n_amendments": 1,
+   "monthly_enrollment_burden": 2.67,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT06775275",
+   "bucket": "non-small cell lung cancer",
+   "phase_stratum": "p2",
+   "start_date": "2024-09-24",
+   "planned_primary_completion": "2025-12-31",
+   "first_posted": "2025-01-15",
+   "n_amendments": 0,
+   "monthly_enrollment_burden": 3.95,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT06775340",
+   "bucket": "cystic fibrosis",
+   "phase_stratum": "p2",
+   "start_date": "2025-01",
+   "planned_primary_completion": "2025-11",
+   "first_posted": "2025-01-15",
+   "n_amendments": 1,
+   "monthly_enrollment_burden": 1.8,
+   "verdict": "WARN",
+   "severity": "medium",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT06775964",
+   "bucket": "alzheimer disease",
+   "phase_stratum": "p1p2",
+   "start_date": "2025-02",
+   "planned_primary_completion": "2026-12",
+   "first_posted": "2025-01-15",
+   "n_amendments": 4,
+   "monthly_enrollment_burden": 0.55,
+   "verdict": "WARN",
+   "severity": "high",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT06778187",
+   "bucket": "acute myeloid leukemia",
+   "phase_stratum": "p2",
+   "start_date": "2025-02",
+   "planned_primary_completion": "2027-02",
+   "first_posted": "2025-01-16",
+   "n_amendments": 1,
+   "monthly_enrollment_burden": 1.25,
+   "verdict": "WARN",
+   "severity": "medium",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT06780293",
+   "bucket": "rheumatoid arthritis",
+   "phase_stratum": "p2",
+   "start_date": "2025-02-03",
+   "planned_primary_completion": "2025-04-30",
+   "first_posted": "2025-01-17",
+   "n_amendments": 1,
+   "monthly_enrollment_burden": 50.0,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT06781333",
+   "bucket": "alzheimer disease",
+   "phase_stratum": "p2",
+   "start_date": "2025-03-01",
+   "planned_primary_completion": "2026-06-15",
+   "first_posted": "2025-01-17",
+   "n_amendments": 3,
+   "monthly_enrollment_burden": 0.52,
+   "verdict": "WARN",
+   "severity": "high",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT06782412",
+   "bucket": "pancreatic cancer",
+   "phase_stratum": "p2p3",
+   "start_date": "2025-01",
+   "planned_primary_completion": "2027-12",
+   "first_posted": "2025-01-17",
+   "n_amendments": 1,
+   "monthly_enrollment_burden": 3.11,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT06782555",
+   "bucket": "pancreatic cancer",
+   "phase_stratum": "p1p2",
+   "start_date": "2025-01-08",
+   "planned_primary_completion": "2027-10",
+   "first_posted": "2025-01-20",
+   "n_amendments": 1,
+   "monthly_enrollment_burden": 2.17,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT06782724",
+   "bucket": "amyotrophic lateral sclerosis",
+   "phase_stratum": "p2",
+   "start_date": "2025-03-01",
+   "planned_primary_completion": "2027-01-01",
+   "first_posted": "2025-01-20",
+   "n_amendments": 1,
+   "monthly_enrollment_burden": 4.91,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT06783166",
+   "bucket": "heart failure",
+   "phase_stratum": "p2p3",
+   "start_date": "2024-08-15",
+   "planned_primary_completion": "2025-07-01",
+   "first_posted": "2025-01-20",
+   "n_amendments": 0,
+   "monthly_enrollment_burden": 9.52,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT06783790",
+   "bucket": "acute myeloid leukemia",
+   "phase_stratum": "p2",
+   "start_date": "2025-01-20",
+   "planned_primary_completion": "2026-12",
+   "first_posted": "2025-01-20",
+   "n_amendments": 0,
+   "monthly_enrollment_burden": 0.9,
+   "verdict": "WARN",
+   "severity": "medium",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT06784791",
+   "bucket": "non-small cell lung cancer",
+   "phase_stratum": "p2",
+   "start_date": "2024-11-06",
+   "planned_primary_completion": "2027-07-31",
+   "first_posted": "2025-01-20",
+   "n_amendments": 2,
+   "monthly_enrollment_burden": 0.61,
+   "verdict": "WARN",
+   "severity": "high",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT06789679",
+   "bucket": "pancreatic cancer",
+   "phase_stratum": "p2",
+   "start_date": "2025-01-15",
+   "planned_primary_completion": "2026-06-30",
+   "first_posted": "2025-01-23",
+   "n_amendments": 1,
+   "monthly_enrollment_burden": 7.36,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT06791460",
+   "bucket": "ovarian cancer",
+   "phase_stratum": "p2p3",
+   "start_date": "2025-02-15",
+   "planned_primary_completion": "2028-02-14",
+   "first_posted": "2025-01-24",
+   "n_amendments": 1,
+   "monthly_enrollment_burden": 8.25,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT06794008",
+   "bucket": "rheumatoid arthritis",
+   "phase_stratum": "p2",
+   "start_date": "2024-12-26",
+   "planned_primary_completion": "2027-12-30",
+   "first_posted": "2025-01-27",
+   "n_amendments": 2,
+   "monthly_enrollment_burden": 1.39,
+   "verdict": "WARN",
+   "severity": "high",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT06802315",
+   "bucket": "acute myeloid leukemia",
+   "phase_stratum": "p2",
+   "start_date": "2025-03",
+   "planned_primary_completion": "2030-03",
+   "first_posted": "2025-01-31",
+   "n_amendments": 3,
+   "monthly_enrollment_burden": 0.63,
+   "verdict": "WARN",
+   "severity": "high",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT06803823",
+   "bucket": "alzheimer disease",
+   "phase_stratum": "p2",
+   "start_date": "2025-02-01",
+   "planned_primary_completion": "2026-12-31",
+   "first_posted": "2025-01-31",
+   "n_amendments": 4,
+   "monthly_enrollment_burden": 3.93,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT06805448",
+   "bucket": "rheumatoid arthritis",
+   "phase_stratum": "p1p2",
+   "start_date": "2025-01-21",
+   "planned_primary_completion": "2025-12",
+   "first_posted": "2025-02-03",
+   "n_amendments": 0,
+   "monthly_enrollment_burden": 3.88,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT06810726",
+   "bucket": "type 2 diabetes",
+   "phase_stratum": "p2",
+   "start_date": "2025-02-15",
+   "planned_primary_completion": "2026-05-15",
+   "first_posted": "2025-02-06",
+   "n_amendments": 1,
+   "monthly_enrollment_burden": 2.01,
+   "verdict": "WARN",
+   "severity": "high",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT06813079",
+   "bucket": "pancreatic cancer",
+   "phase_stratum": "p2",
+   "start_date": "2025-02-17",
+   "planned_primary_completion": "2028-02-17",
+   "first_posted": "2025-02-06",
+   "n_amendments": 2,
+   "monthly_enrollment_burden": 0.69,
+   "verdict": "WARN",
+   "severity": "high",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT06816134",
+   "bucket": "acute myeloid leukemia",
+   "phase_stratum": "p2",
+   "start_date": "2025-01-30",
+   "planned_primary_completion": "2028-01-30",
+   "first_posted": "2025-02-10",
+   "n_amendments": 3,
+   "monthly_enrollment_burden": 1.33,
+   "verdict": "WARN",
+   "severity": "medium",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT06816927",
+   "bucket": "glioblastoma",
+   "phase_stratum": "p2",
+   "start_date": "2025-06-01",
+   "planned_primary_completion": "2029-06-01",
+   "first_posted": "2025-02-10",
+   "n_amendments": 3,
+   "monthly_enrollment_burden": 1.92,
+   "verdict": "WARN",
+   "severity": "medium",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT06820099",
+   "bucket": "heart failure",
+   "phase_stratum": "p2",
+   "start_date": "2025-02",
+   "planned_primary_completion": "2026-12",
+   "first_posted": "2025-02-11",
+   "n_amendments": 2,
+   "monthly_enrollment_burden": 8.22,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT06822543",
+   "bucket": "non-small cell lung cancer",
+   "phase_stratum": "p2",
+   "start_date": "2025-02-24",
+   "planned_primary_completion": "2027-04-01",
+   "first_posted": "2025-02-12",
+   "n_amendments": 3,
+   "monthly_enrollment_burden": 1.83,
+   "verdict": "WARN",
+   "severity": "medium",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT06824168",
+   "bucket": "acute myeloid leukemia",
+   "phase_stratum": "p2",
+   "start_date": "2025-03-25",
+   "planned_primary_completion": "2028-06-06",
+   "first_posted": "2025-02-13",
+   "n_amendments": 5,
+   "monthly_enrollment_burden": 3.39,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT06828042",
+   "bucket": "rheumatoid arthritis",
+   "phase_stratum": "p1p2",
+   "start_date": "2025-02-10",
+   "planned_primary_completion": "2027-12-31",
+   "first_posted": "2025-02-14",
+   "n_amendments": 1,
+   "monthly_enrollment_burden": 0.26,
+   "verdict": "WARN",
+   "severity": "high",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT06835803",
+   "bucket": "glioblastoma",
+   "phase_stratum": "p2",
+   "start_date": "2025-04-01",
+   "planned_primary_completion": "2028-03-31",
+   "first_posted": "2025-02-19",
+   "n_amendments": 1,
+   "monthly_enrollment_burden": 1.56,
+   "verdict": "WARN",
+   "severity": "medium",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT06839144",
+   "bucket": "ovarian cancer",
+   "phase_stratum": "p2",
+   "start_date": "2025-02-28",
+   "planned_primary_completion": "2027-02-28",
+   "first_posted": "2025-02-21",
+   "n_amendments": 1,
+   "monthly_enrollment_burden": 2.5,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT06840002",
+   "bucket": "ovarian cancer",
+   "phase_stratum": "p1p2",
+   "start_date": "2025-03",
+   "planned_primary_completion": "2026-05",
+   "first_posted": "2025-02-21",
+   "n_amendments": 2,
+   "monthly_enrollment_burden": 3.57,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT06841042",
+   "bucket": "systemic lupus erythematosus",
+   "phase_stratum": "p1p2",
+   "start_date": "2025-02",
+   "planned_primary_completion": "2027-05",
+   "first_posted": "2025-02-21",
+   "n_amendments": 0,
+   "monthly_enrollment_burden": 6.25,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT06842524",
+   "bucket": "ovarian cancer",
+   "phase_stratum": "p2",
+   "start_date": "2025-03-01",
+   "planned_primary_completion": "2026-09-30",
+   "first_posted": "2025-02-24",
+   "n_amendments": 1,
+   "monthly_enrollment_burden": 7.89,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT06843551",
+   "bucket": "pancreatic cancer",
+   "phase_stratum": "p2",
+   "start_date": "2025-06-01",
+   "planned_primary_completion": "2030-06-01",
+   "first_posted": "2025-02-25",
+   "n_amendments": 3,
+   "monthly_enrollment_burden": 0.33,
+   "verdict": "WARN",
+   "severity": "high",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT06843902",
+   "bucket": "type 2 diabetes",
+   "phase_stratum": "p2",
+   "start_date": "2025-04",
+   "planned_primary_completion": "2029-01",
+   "first_posted": "2025-02-25",
+   "n_amendments": 2,
+   "monthly_enrollment_burden": 1.78,
+   "verdict": "WARN",
+   "severity": "high",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT06850311",
+   "bucket": "atopic dermatitis",
+   "phase_stratum": "p2p3",
+   "start_date": "2025-03-01",
+   "planned_primary_completion": "2027-03-01",
+   "first_posted": "2025-02-27",
+   "n_amendments": 0,
+   "monthly_enrollment_burden": 2.75,
+   "verdict": "WARN",
+   "severity": "medium",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT06850597",
+   "bucket": "alzheimer disease",
+   "phase_stratum": "p2",
+   "start_date": "2024-10-28",
+   "planned_primary_completion": "2027-12-31",
+   "first_posted": "2025-02-27",
+   "n_amendments": 0,
+   "monthly_enrollment_burden": 0.79,
+   "verdict": "WARN",
+   "severity": "high",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT06851663",
+   "bucket": "ovarian cancer",
+   "phase_stratum": "p2",
+   "start_date": "2024-12-23",
+   "planned_primary_completion": "2027-12",
+   "first_posted": "2025-02-28",
+   "n_amendments": 3,
+   "monthly_enrollment_burden": 11.36,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT06851949",
+   "bucket": "heart failure",
+   "phase_stratum": "p2",
+   "start_date": "2024-11-15",
+   "planned_primary_completion": "2026-01",
+   "first_posted": "2025-02-28",
+   "n_amendments": 0,
+   "monthly_enrollment_burden": 1.48,
+   "verdict": "WARN",
+   "severity": "high",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT06852365",
+   "bucket": "ovarian cancer",
+   "phase_stratum": "p2",
+   "start_date": "2025-04",
+   "planned_primary_completion": "2028-04",
+   "first_posted": "2025-02-28",
+   "n_amendments": 4,
+   "monthly_enrollment_burden": 2.78,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT06855745",
+   "bucket": "atopic dermatitis",
+   "phase_stratum": "p2",
+   "start_date": "2025-03-10",
+   "planned_primary_completion": "2025-10-30",
+   "first_posted": "2025-03-04",
+   "n_amendments": 1,
+   "monthly_enrollment_burden": 9.35,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT06862908",
+   "bucket": "heart failure",
+   "phase_stratum": "p2",
+   "start_date": "2025-03-15",
+   "planned_primary_completion": "2026-09-24",
+   "first_posted": "2025-03-06",
+   "n_amendments": 2,
+   "monthly_enrollment_burden": 7.7,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT06862960",
+   "bucket": "alzheimer disease",
+   "phase_stratum": "p2",
+   "start_date": "2025-05-01",
+   "planned_primary_completion": "2027-06-30",
+   "first_posted": "2025-03-07",
+   "n_amendments": 2,
+   "monthly_enrollment_burden": 1.54,
+   "verdict": "WARN",
+   "severity": "high",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT06863506",
+   "bucket": "non-small cell lung cancer",
+   "phase_stratum": "p2",
+   "start_date": "2024-10-01",
+   "planned_primary_completion": "2027-06-30",
+   "first_posted": "2025-03-07",
+   "n_amendments": 0,
+   "monthly_enrollment_burden": 2.37,
+   "verdict": "WARN",
+   "severity": "medium",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT06868836",
+   "bucket": "non-small cell lung cancer",
+   "phase_stratum": "p2",
+   "start_date": "2025-03-28",
+   "planned_primary_completion": "2025-09-30",
+   "first_posted": "2025-03-11",
+   "n_amendments": 2,
+   "monthly_enrollment_burden": 6.89,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT06869265",
+   "bucket": "acute myeloid leukemia",
+   "phase_stratum": "p2",
+   "start_date": "2025-04-01",
+   "planned_primary_completion": "2028-04-01",
+   "first_posted": "2025-03-11",
+   "n_amendments": 1,
+   "monthly_enrollment_burden": 1.56,
+   "verdict": "WARN",
+   "severity": "medium",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT06872333",
+   "bucket": "sickle cell disease",
+   "phase_stratum": "p2",
+   "start_date": "2024-11-19",
+   "planned_primary_completion": "2030-06-01",
+   "first_posted": "2025-03-12",
+   "n_amendments": 2,
+   "monthly_enrollment_burden": 0.93,
+   "verdict": "WARN",
+   "severity": "high",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT06877299",
+   "bucket": "non-small cell lung cancer",
+   "phase_stratum": "p2",
+   "start_date": "2025-03-10",
+   "planned_primary_completion": "2027-07-01",
+   "first_posted": "2025-03-14",
+   "n_amendments": 2,
+   "monthly_enrollment_burden": 1.08,
+   "verdict": "WARN",
+   "severity": "high",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT06890858",
+   "bucket": "ovarian cancer",
+   "phase_stratum": "p2",
+   "start_date": "2025-04",
+   "planned_primary_completion": "2028-01",
+   "first_posted": "2025-03-24",
+   "n_amendments": 0,
+   "monthly_enrollment_burden": 0.61,
+   "verdict": "WARN",
+   "severity": "high",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT06893783",
+   "bucket": "pancreatic cancer",
+   "phase_stratum": "p2",
+   "start_date": "2025-05-23",
+   "planned_primary_completion": "2029-04-30",
+   "first_posted": "2025-03-25",
+   "n_amendments": 2,
+   "monthly_enrollment_burden": 1.27,
+   "verdict": "WARN",
+   "severity": "medium",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT06896890",
+   "bucket": "non-small cell lung cancer",
+   "phase_stratum": "p1p2",
+   "start_date": "2023-06-23",
+   "planned_primary_completion": "2026-10-01",
+   "first_posted": "2025-03-26",
+   "n_amendments": 0,
+   "monthly_enrollment_burden": 0.81,
+   "verdict": "WARN",
+   "severity": "high",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT06896981",
+   "bucket": "ovarian cancer",
+   "phase_stratum": "p2p3",
+   "start_date": "2025-02-01",
+   "planned_primary_completion": "2025-10-31",
+   "first_posted": "2025-03-26",
+   "n_amendments": 1,
+   "monthly_enrollment_burden": 3.37,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT06901817",
+   "bucket": "non-small cell lung cancer",
+   "phase_stratum": "p2",
+   "start_date": "2025-03-01",
+   "planned_primary_completion": "2027-11",
+   "first_posted": "2025-03-30",
+   "n_amendments": 0,
+   "monthly_enrollment_burden": 3.03,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT06902896",
+   "bucket": "heart failure",
+   "phase_stratum": "p1p2",
+   "start_date": "2025-03-19",
+   "planned_primary_completion": "2027-12-30",
+   "first_posted": "2025-03-30",
+   "n_amendments": 4,
+   "monthly_enrollment_burden": 0.27,
+   "verdict": "WARN",
+   "severity": "high",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT06903559",
+   "bucket": "heart failure",
+   "phase_stratum": "p1p2",
+   "start_date": "2025-04-15",
+   "planned_primary_completion": "2025-10-15",
+   "first_posted": "2025-03-30",
+   "n_amendments": 1,
+   "monthly_enrollment_burden": 7.67,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT06906081",
+   "bucket": "type 2 diabetes",
+   "phase_stratum": "p2",
+   "start_date": "2025-04",
+   "planned_primary_completion": "2027-11",
+   "first_posted": "2025-04-02",
+   "n_amendments": 1,
+   "monthly_enrollment_burden": 3.23,
+   "verdict": "WARN",
+   "severity": "medium",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT06910761",
+   "bucket": "non-small cell lung cancer",
+   "phase_stratum": "p2",
+   "start_date": "2025-09-24",
+   "planned_primary_completion": "2028-02-03",
+   "first_posted": "2025-04-04",
+   "n_amendments": 3,
+   "monthly_enrollment_burden": 1.24,
+   "verdict": "WARN",
+   "severity": "high",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT06915701",
+   "bucket": "rheumatoid arthritis",
+   "phase_stratum": "p2p3",
+   "start_date": "2025-04-28",
+   "planned_primary_completion": "2025-06-15",
+   "first_posted": "2025-04-08",
+   "n_amendments": 2,
+   "monthly_enrollment_burden": 28.75,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT06917573",
+   "bucket": "non-small cell lung cancer",
+   "phase_stratum": "p2",
+   "start_date": "2025-04-15",
+   "planned_primary_completion": "2031-12-30",
+   "first_posted": "2025-04-08",
+   "n_amendments": 1,
+   "monthly_enrollment_burden": 0.78,
+   "verdict": "WARN",
+   "severity": "high",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT06924320",
+   "bucket": "type 2 diabetes",
+   "phase_stratum": "p1p2",
+   "start_date": "2025-03-03",
+   "planned_primary_completion": "2025-10",
+   "first_posted": "2025-04-11",
+   "n_amendments": 4,
+   "monthly_enrollment_burden": 18.86,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT06924606",
+   "bucket": "non-small cell lung cancer",
+   "phase_stratum": "p2",
+   "start_date": "2025-05-15",
+   "planned_primary_completion": "2026-09-26",
+   "first_posted": "2025-04-11",
+   "n_amendments": 5,
+   "monthly_enrollment_burden": 2.56,
+   "verdict": "WARN",
+   "severity": "medium",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT06926075",
+   "bucket": "glioblastoma",
+   "phase_stratum": "p1p2",
+   "start_date": "2025-05-26",
+   "planned_primary_completion": "2027-10-26",
+   "first_posted": "2025-04-13",
+   "n_amendments": 4,
+   "monthly_enrollment_burden": 2.76,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT06928376",
+   "bucket": "acute myeloid leukemia",
+   "phase_stratum": "p2",
+   "start_date": "2024-04-18",
+   "planned_primary_completion": "2026-04-18",
+   "first_posted": "2025-04-15",
+   "n_amendments": 3,
+   "monthly_enrollment_burden": 6.67,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT06929169",
+   "bucket": "heart failure",
+   "phase_stratum": "p2",
+   "start_date": "2025-05",
+   "planned_primary_completion": "2026-07",
+   "first_posted": "2025-04-16",
+   "n_amendments": 0,
+   "monthly_enrollment_burden": 5.71,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT06930703",
+   "bucket": "sickle cell disease",
+   "phase_stratum": "p1p2",
+   "start_date": "2025-04",
+   "planned_primary_completion": "2027-02-01",
+   "first_posted": "2025-04-16",
+   "n_amendments": 1,
+   "monthly_enrollment_burden": 2.36,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT06936046",
+   "bucket": "glioblastoma",
+   "phase_stratum": "p2",
+   "start_date": "2025-01-01",
+   "planned_primary_completion": "2027-01-01",
+   "first_posted": "2025-04-20",
+   "n_amendments": 0,
+   "monthly_enrollment_burden": 8.33,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT06937203",
+   "bucket": "type 2 diabetes",
+   "phase_stratum": "p1p2",
+   "start_date": "2025-06-09",
+   "planned_primary_completion": "2027-08-31",
+   "first_posted": "2025-04-22",
+   "n_amendments": 6,
+   "monthly_enrollment_burden": 3.37,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT06943521",
+   "bucket": "ovarian cancer",
+   "phase_stratum": "p1p2",
+   "start_date": "2025-04",
+   "planned_primary_completion": "2028-08",
+   "first_posted": "2025-04-24",
+   "n_amendments": 6,
+   "monthly_enrollment_burden": 0.68,
+   "verdict": "WARN",
+   "severity": "high",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT06947460",
+   "bucket": "systemic lupus erythematosus",
+   "phase_stratum": "p1p2",
+   "start_date": "2025-04-18",
+   "planned_primary_completion": "2026-07-01",
+   "first_posted": "2025-04-27",
+   "n_amendments": 4,
+   "monthly_enrollment_burden": 3.12,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT06947473",
+   "bucket": "systemic lupus erythematosus",
+   "phase_stratum": "p1p2",
+   "start_date": "2025-04-18",
+   "planned_primary_completion": "2026-07-01",
+   "first_posted": "2025-04-27",
+   "n_amendments": 4,
+   "monthly_enrollment_burden": 3.12,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT06947980",
+   "bucket": "atopic dermatitis",
+   "phase_stratum": "p2",
+   "start_date": "2025-05-13",
+   "planned_primary_completion": "2026-03-18",
+   "first_posted": "2025-04-27",
+   "n_amendments": 1,
+   "monthly_enrollment_burden": 14.71,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT06947993",
+   "bucket": "atopic dermatitis",
+   "phase_stratum": "p2",
+   "start_date": "2025-07-01",
+   "planned_primary_completion": "2028-11-27",
+   "first_posted": "2025-04-27",
+   "n_amendments": 5,
+   "monthly_enrollment_burden": 5.48,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT06951464",
+   "bucket": "non-small cell lung cancer",
+   "phase_stratum": "p2",
+   "start_date": "2025-05-06",
+   "planned_primary_completion": "2027-05-05",
+   "first_posted": "2025-04-30",
+   "n_amendments": 1,
+   "monthly_enrollment_burden": 1.67,
+   "verdict": "WARN",
+   "severity": "medium",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT06951997",
+   "bucket": "pancreatic cancer",
+   "phase_stratum": "p2",
+   "start_date": "2025-05-15",
+   "planned_primary_completion": "2027-05-15",
+   "first_posted": "2025-04-30",
+   "n_amendments": 1,
+   "monthly_enrollment_burden": 1.38,
+   "verdict": "WARN",
+   "severity": "medium",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT06953843",
+   "bucket": "non-small cell lung cancer",
+   "phase_stratum": "p2",
+   "start_date": "2025-05-20",
+   "planned_primary_completion": "2027-06-30",
+   "first_posted": "2025-05-01",
+   "n_amendments": 2,
+   "monthly_enrollment_burden": 14.47,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT06964087",
+   "bucket": "type 2 diabetes",
+   "phase_stratum": "p2",
+   "start_date": "2025-05-27",
+   "planned_primary_completion": "2026-05-19",
+   "first_posted": "2025-05-09",
+   "n_amendments": 2,
+   "monthly_enrollment_burden": 6.15,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT06965621",
+   "bucket": "heart failure",
+   "phase_stratum": "p2",
+   "start_date": "2025-06-01",
+   "planned_primary_completion": "2026-05-01",
+   "first_posted": "2025-05-11",
+   "n_amendments": 5,
+   "monthly_enrollment_burden": 1.82,
+   "verdict": "WARN",
+   "severity": "medium",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT06972641",
+   "bucket": "acute myeloid leukemia",
+   "phase_stratum": "p2p3",
+   "start_date": "2025-06-10",
+   "planned_primary_completion": "2030-03-31",
+   "first_posted": "2025-05-15",
+   "n_amendments": 1,
+   "monthly_enrollment_burden": 2.18,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT06973564",
+   "bucket": "pancreatic cancer",
+   "phase_stratum": "p1p2",
+   "start_date": "2025-05",
+   "planned_primary_completion": "2027-11",
+   "first_posted": "2025-05-15",
+   "n_amendments": 2,
+   "monthly_enrollment_burden": 9.8,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT06974370",
+   "bucket": "non-small cell lung cancer",
+   "phase_stratum": "p2",
+   "start_date": "2025-12",
+   "planned_primary_completion": "2030-12",
+   "first_posted": "2025-05-15",
+   "n_amendments": 1,
+   "monthly_enrollment_burden": 0.75,
+   "verdict": "WARN",
+   "severity": "high",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT06976619",
+   "bucket": "type 2 diabetes",
+   "phase_stratum": "p2",
+   "start_date": "2025-09-01",
+   "planned_primary_completion": "2028-10-30",
+   "first_posted": "2025-05-16",
+   "n_amendments": 1,
+   "monthly_enrollment_burden": 1.58,
+   "verdict": "WARN",
+   "severity": "high",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT06979375",
+   "bucket": "heart failure",
+   "phase_stratum": "p2",
+   "start_date": "2025-07-01",
+   "planned_primary_completion": "2027-05-16",
+   "first_posted": "2025-05-19",
+   "n_amendments": 5,
+   "monthly_enrollment_burden": 8.89,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT06991101",
+   "bucket": "glioblastoma",
+   "phase_stratum": "p2",
+   "start_date": "2025-06",
+   "planned_primary_completion": "2031-07",
+   "first_posted": "2025-05-25",
+   "n_amendments": 4,
+   "monthly_enrollment_burden": 2.6,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT06992739",
+   "bucket": "non-small cell lung cancer",
+   "phase_stratum": "p2",
+   "start_date": "2025-06",
+   "planned_primary_completion": "2026-06",
+   "first_posted": "2025-05-28",
+   "n_amendments": 1,
+   "monthly_enrollment_burden": 4.08,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT06995573",
+   "bucket": "alzheimer disease",
+   "phase_stratum": "p1p2",
+   "start_date": "2025-06-30",
+   "planned_primary_completion": "2026-07-30",
+   "first_posted": "2025-05-29",
+   "n_amendments": 1,
+   "monthly_enrollment_burden": 6.92,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT06998043",
+   "bucket": "cystic fibrosis",
+   "phase_stratum": "p2",
+   "start_date": "2025-05",
+   "planned_primary_completion": "2026-03",
+   "first_posted": "2025-05-31",
+   "n_amendments": 2,
+   "monthly_enrollment_burden": 6.3,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT06998628",
+   "bucket": "rheumatoid arthritis",
+   "phase_stratum": "p2",
+   "start_date": "2025-05-30",
+   "planned_primary_completion": "2026-05-30",
+   "first_posted": "2025-05-31",
+   "n_amendments": 2,
+   "monthly_enrollment_burden": 4.17,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07003542",
+   "bucket": "glioblastoma",
+   "phase_stratum": "p2",
+   "start_date": "2025-06",
+   "planned_primary_completion": "2027-06",
+   "first_posted": "2025-06-04",
+   "n_amendments": 6,
+   "monthly_enrollment_burden": 2.0,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07007208",
+   "bucket": "alzheimer disease",
+   "phase_stratum": "p2",
+   "start_date": "2025-06-01",
+   "planned_primary_completion": "2029-01-31",
+   "first_posted": "2025-06-05",
+   "n_amendments": 2,
+   "monthly_enrollment_burden": 2.27,
+   "verdict": "WARN",
+   "severity": "medium",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT07007949",
+   "bucket": "acute myeloid leukemia",
+   "phase_stratum": "p2",
+   "start_date": "2025-06-01",
+   "planned_primary_completion": "2026-04-30",
+   "first_posted": "2025-06-06",
+   "n_amendments": 0,
+   "monthly_enrollment_burden": 3.85,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07008638",
+   "bucket": "acute myeloid leukemia",
+   "phase_stratum": "p1p2",
+   "start_date": "2025-07-01",
+   "planned_primary_completion": "2027-12-30",
+   "first_posted": "2025-06-06",
+   "n_amendments": 2,
+   "monthly_enrollment_burden": 1.07,
+   "verdict": "WARN",
+   "severity": "medium",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT07010835",
+   "bucket": "systemic lupus erythematosus",
+   "phase_stratum": "p1p2",
+   "start_date": "2025-07",
+   "planned_primary_completion": "2027-06",
+   "first_posted": "2025-06-08",
+   "n_amendments": 3,
+   "monthly_enrollment_burden": 6.26,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07012993",
+   "bucket": "alzheimer disease",
+   "phase_stratum": "p2",
+   "start_date": "2025-05-20",
+   "planned_primary_completion": "2030-06-30",
+   "first_posted": "2025-06-10",
+   "n_amendments": 1,
+   "monthly_enrollment_burden": 3.26,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07013110",
+   "bucket": "rheumatoid arthritis",
+   "phase_stratum": "p2",
+   "start_date": "2025-06",
+   "planned_primary_completion": "2028-11",
+   "first_posted": "2025-06-10",
+   "n_amendments": 2,
+   "monthly_enrollment_burden": 3.02,
+   "verdict": "WARN",
+   "severity": "medium",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT07017946",
+   "bucket": "amyotrophic lateral sclerosis",
+   "phase_stratum": "p1p2",
+   "start_date": "2025-07-01",
+   "planned_primary_completion": "2026-07-01",
+   "first_posted": "2025-06-12",
+   "n_amendments": 5,
+   "monthly_enrollment_burden": 1.67,
+   "verdict": "WARN",
+   "severity": "medium",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT07020065",
+   "bucket": "non-small cell lung cancer",
+   "phase_stratum": "p2",
+   "start_date": "2025-11",
+   "planned_primary_completion": "2028-03",
+   "first_posted": "2025-06-13",
+   "n_amendments": 4,
+   "monthly_enrollment_burden": 5.57,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07022535",
+   "bucket": "ovarian cancer",
+   "phase_stratum": "p2",
+   "start_date": "2024-05-28",
+   "planned_primary_completion": "2025-12-31",
+   "first_posted": "2025-06-15",
+   "n_amendments": 1,
+   "monthly_enrollment_burden": 0.94,
+   "verdict": "WARN",
+   "severity": "high",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT07023484",
+   "bucket": "ovarian cancer",
+   "phase_stratum": "p2",
+   "start_date": "2025-05-22",
+   "planned_primary_completion": "2028-12-31",
+   "first_posted": "2025-06-17",
+   "n_amendments": 1,
+   "monthly_enrollment_burden": 2.91,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07023588",
+   "bucket": "acute myeloid leukemia",
+   "phase_stratum": "p2",
+   "start_date": "2025-06",
+   "planned_primary_completion": "2029-05",
+   "first_posted": "2025-06-17",
+   "n_amendments": 1,
+   "monthly_enrollment_burden": 1.49,
+   "verdict": "WARN",
+   "severity": "medium",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT07023666",
+   "bucket": "sickle cell disease",
+   "phase_stratum": "p2",
+   "start_date": "2025-06-30",
+   "planned_primary_completion": "2026-06-30",
+   "first_posted": "2025-06-17",
+   "n_amendments": 2,
+   "monthly_enrollment_burden": 8.33,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07023835",
+   "bucket": "amyotrophic lateral sclerosis",
+   "phase_stratum": "p2",
+   "start_date": "2025-09",
+   "planned_primary_completion": "2028-03",
+   "first_posted": "2025-06-17",
+   "n_amendments": 4,
+   "monthly_enrollment_burden": 8.0,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07027072",
+   "bucket": "alzheimer disease",
+   "phase_stratum": "p2",
+   "start_date": "2025-06-25",
+   "planned_primary_completion": "2027-06-30",
+   "first_posted": "2025-06-18",
+   "n_amendments": 3,
+   "monthly_enrollment_burden": 4.73,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07029009",
+   "bucket": "type 2 diabetes",
+   "phase_stratum": "p2",
+   "start_date": "2025-05-08",
+   "planned_primary_completion": "2026-08",
+   "first_posted": "2025-06-19",
+   "n_amendments": 1,
+   "monthly_enrollment_burden": 3.38,
+   "verdict": "WARN",
+   "severity": "medium",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT07029503",
+   "bucket": "heart failure",
+   "phase_stratum": "p2",
+   "start_date": "2025-10",
+   "planned_primary_completion": "2026-10",
+   "first_posted": "2025-06-19",
+   "n_amendments": 3,
+   "monthly_enrollment_burden": 3.33,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07033819",
+   "bucket": "ovarian cancer",
+   "phase_stratum": "p2",
+   "start_date": "2025-06-25",
+   "planned_primary_completion": "2027-06-20",
+   "first_posted": "2025-06-24",
+   "n_amendments": 1,
+   "monthly_enrollment_burden": 2.02,
+   "verdict": "WARN",
+   "severity": "medium",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT07036796",
+   "bucket": "type 2 diabetes",
+   "phase_stratum": "p2",
+   "start_date": "2025-07-04",
+   "planned_primary_completion": "2026-07-04",
+   "first_posted": "2025-06-25",
+   "n_amendments": 2,
+   "monthly_enrollment_burden": 5.0,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07037680",
+   "bucket": "non-small cell lung cancer",
+   "phase_stratum": "p2",
+   "start_date": "2024-01-01",
+   "planned_primary_completion": "2026-01-01",
+   "first_posted": "2025-06-25",
+   "n_amendments": 1,
+   "monthly_enrollment_burden": 1.83,
+   "verdict": "WARN",
+   "severity": "medium",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT07038382",
+   "bucket": "systemic lupus erythematosus",
+   "phase_stratum": "p2",
+   "start_date": "2025-08-31",
+   "planned_primary_completion": "2027-01",
+   "first_posted": "2025-06-26",
+   "n_amendments": 2,
+   "monthly_enrollment_burden": 1.5,
+   "verdict": "WARN",
+   "severity": "high",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT07041801",
+   "bucket": "systemic lupus erythematosus",
+   "phase_stratum": "p1p2",
+   "start_date": "2025-06-28",
+   "planned_primary_completion": "2027-09-05",
+   "first_posted": "2025-06-27",
+   "n_amendments": 0,
+   "monthly_enrollment_burden": 2.21,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07044453",
+   "bucket": "pancreatic cancer",
+   "phase_stratum": "p2p3",
+   "start_date": "2025-09",
+   "planned_primary_completion": "2030-09",
+   "first_posted": "2025-07-01",
+   "n_amendments": 1,
+   "monthly_enrollment_burden": 6.5,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07048262",
+   "bucket": "cystic fibrosis",
+   "phase_stratum": "p2",
+   "start_date": "2025-07-27",
+   "planned_primary_completion": "2028-02-28",
+   "first_posted": "2025-07-02",
+   "n_amendments": 3,
+   "monthly_enrollment_burden": 14.47,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07050771",
+   "bucket": "ovarian cancer",
+   "phase_stratum": "p2",
+   "start_date": "2025-07-01",
+   "planned_primary_completion": "2027-07-01",
+   "first_posted": "2025-07-03",
+   "n_amendments": 2,
+   "monthly_enrollment_burden": 6.17,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07053800",
+   "bucket": "systemic lupus erythematosus",
+   "phase_stratum": "p2",
+   "start_date": "2025-07",
+   "planned_primary_completion": "2028-12",
+   "first_posted": "2025-07-08",
+   "n_amendments": 5,
+   "monthly_enrollment_burden": 0.85,
+   "verdict": "WARN",
+   "severity": "high",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT07058688",
+   "bucket": "alzheimer disease",
+   "phase_stratum": "p2",
+   "start_date": "2025-03-01",
+   "planned_primary_completion": "2025-12-31",
+   "first_posted": "2025-07-10",
+   "n_amendments": 0,
+   "monthly_enrollment_burden": 4.8,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07062523",
+   "bucket": "rheumatoid arthritis",
+   "phase_stratum": "p1p2",
+   "start_date": "2024-07-01",
+   "planned_primary_completion": "2025-09-01",
+   "first_posted": "2025-07-14",
+   "n_amendments": 1,
+   "monthly_enrollment_burden": 2.14,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07064018",
+   "bucket": "non-small cell lung cancer",
+   "phase_stratum": "p1p2",
+   "start_date": "2025-04-30",
+   "planned_primary_completion": "2029-12-31",
+   "first_posted": "2025-07-14",
+   "n_amendments": 1,
+   "monthly_enrollment_burden": 1.2,
+   "verdict": "WARN",
+   "severity": "medium",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT07066995",
+   "bucket": "pancreatic cancer",
+   "phase_stratum": "p1p2",
+   "start_date": "2025-04-29",
+   "planned_primary_completion": "2027-12-10",
+   "first_posted": "2025-07-15",
+   "n_amendments": 0,
+   "monthly_enrollment_burden": 1.91,
+   "verdict": "WARN",
+   "severity": "medium",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT07067255",
+   "bucket": "ovarian cancer",
+   "phase_stratum": "p1p2",
+   "start_date": "2025-04-29",
+   "planned_primary_completion": "2028-12-10",
+   "first_posted": "2025-07-16",
+   "n_amendments": 0,
+   "monthly_enrollment_burden": 1.84,
+   "verdict": "WARN",
+   "severity": "medium",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT07071935",
+   "bucket": "amyotrophic lateral sclerosis",
+   "phase_stratum": "p2",
+   "start_date": "2025-11",
+   "planned_primary_completion": "2029-05",
+   "first_posted": "2025-07-17",
+   "n_amendments": 4,
+   "monthly_enrollment_burden": 1.14,
+   "verdict": "WARN",
+   "severity": "high",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT07079735",
+   "bucket": "heart failure",
+   "phase_stratum": "p2p3",
+   "start_date": "2025-08-17",
+   "planned_primary_completion": "2028-01-17",
+   "first_posted": "2025-07-23",
+   "n_amendments": 1,
+   "monthly_enrollment_burden": 5.17,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07083011",
+   "bucket": "heart failure",
+   "phase_stratum": "p2",
+   "start_date": "2025-08",
+   "planned_primary_completion": "2027-07",
+   "first_posted": "2025-07-24",
+   "n_amendments": 3,
+   "monthly_enrollment_burden": 1.52,
+   "verdict": "WARN",
+   "severity": "high",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT07089121",
+   "bucket": "systemic lupus erythematosus",
+   "phase_stratum": "p1p2",
+   "start_date": "2025-12",
+   "planned_primary_completion": "2026-12",
+   "first_posted": "2025-07-28",
+   "n_amendments": 5,
+   "monthly_enrollment_burden": 4.17,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07093814",
+   "bucket": "glioblastoma",
+   "phase_stratum": "p1p2",
+   "start_date": "2025-07-16",
+   "planned_primary_completion": "2028-12-31",
+   "first_posted": "2025-07-30",
+   "n_amendments": 2,
+   "monthly_enrollment_burden": 1.01,
+   "verdict": "WARN",
+   "severity": "high",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT07094516",
+   "bucket": "alzheimer disease",
+   "phase_stratum": "p2",
+   "start_date": "2025-09-18",
+   "planned_primary_completion": "2028-09-14",
+   "first_posted": "2025-07-30",
+   "n_amendments": 4,
+   "monthly_enrollment_burden": 11.34,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07098663",
+   "bucket": "type 2 diabetes",
+   "phase_stratum": "p2",
+   "start_date": "2025-07-21",
+   "planned_primary_completion": "2025-09-09",
+   "first_posted": "2025-08-01",
+   "n_amendments": 1,
+   "monthly_enrollment_burden": 42.5,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07105709",
+   "bucket": "alzheimer disease",
+   "phase_stratum": "p2",
+   "start_date": "2025-08-11",
+   "planned_primary_completion": "2028-08-29",
+   "first_posted": "2025-08-06",
+   "n_amendments": 3,
+   "monthly_enrollment_burden": 6.17,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07108530",
+   "bucket": "acute myeloid leukemia",
+   "phase_stratum": "p2",
+   "start_date": "2025-08-06",
+   "planned_primary_completion": "2027-08-06",
+   "first_posted": "2025-08-07",
+   "n_amendments": 0,
+   "monthly_enrollment_burden": 2.08,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07109700",
+   "bucket": "type 2 diabetes",
+   "phase_stratum": "p2",
+   "start_date": "2025-04-30",
+   "planned_primary_completion": "2026-01-31",
+   "first_posted": "2025-08-07",
+   "n_amendments": 1,
+   "monthly_enrollment_burden": 23.74,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07118241",
+   "bucket": "rheumatoid arthritis",
+   "phase_stratum": "p2",
+   "start_date": "2025-08",
+   "planned_primary_completion": "2026-03-30",
+   "first_posted": "2025-08-12",
+   "n_amendments": 5,
+   "monthly_enrollment_burden": 10.13,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07121413",
+   "bucket": "idiopathic pulmonary fibrosis",
+   "phase_stratum": "p2",
+   "start_date": "2025-08-31",
+   "planned_primary_completion": "2026-12-31",
+   "first_posted": "2025-08-13",
+   "n_amendments": 1,
+   "monthly_enrollment_burden": 3.0,
+   "verdict": "WARN",
+   "severity": "medium",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT07125391",
+   "bucket": "ovarian cancer",
+   "phase_stratum": "p2",
+   "start_date": "2025-06-20",
+   "planned_primary_completion": "2026-08-30",
+   "first_posted": "2025-08-15",
+   "n_amendments": 1,
+   "monthly_enrollment_burden": 2.8,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07126158",
+   "bucket": "pancreatic cancer",
+   "phase_stratum": "p2",
+   "start_date": "2025-11-30",
+   "planned_primary_completion": "2029-11-30",
+   "first_posted": "2025-08-17",
+   "n_amendments": 3,
+   "monthly_enrollment_burden": 0.75,
+   "verdict": "WARN",
+   "severity": "high",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT07131514",
+   "bucket": "pancreatic cancer",
+   "phase_stratum": "p2",
+   "start_date": "2025-08",
+   "planned_primary_completion": "2027-06",
+   "first_posted": "2025-08-20",
+   "n_amendments": 2,
+   "monthly_enrollment_burden": 1.36,
+   "verdict": "WARN",
+   "severity": "medium",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT07132918",
+   "bucket": "non-small cell lung cancer",
+   "phase_stratum": "p2",
+   "start_date": "2025-09",
+   "planned_primary_completion": "2029-03",
+   "first_posted": "2025-08-20",
+   "n_amendments": 5,
+   "monthly_enrollment_burden": 1.43,
+   "verdict": "WARN",
+   "severity": "high",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT07138898",
+   "bucket": "rheumatoid arthritis",
+   "phase_stratum": "p2",
+   "start_date": "2025-09",
+   "planned_primary_completion": "2027-09",
+   "first_posted": "2025-08-24",
+   "n_amendments": 1,
+   "monthly_enrollment_burden": 3.33,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07143734",
+   "bucket": "alzheimer disease",
+   "phase_stratum": "p2",
+   "start_date": "2025-07-21",
+   "planned_primary_completion": "2025-12",
+   "first_posted": "2025-08-27",
+   "n_amendments": 2,
+   "monthly_enrollment_burden": 9.09,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07145047",
+   "bucket": "glioblastoma",
+   "phase_stratum": "p1p2",
+   "start_date": "2023-11-02",
+   "planned_primary_completion": "2025-12-31",
+   "first_posted": "2025-08-28",
+   "n_amendments": 1,
+   "monthly_enrollment_burden": 0.77,
+   "verdict": "WARN",
+   "severity": "high",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT07148180",
+   "bucket": "acute myeloid leukemia",
+   "phase_stratum": "p1p2",
+   "start_date": "2026-02",
+   "planned_primary_completion": "2026-12-31",
+   "first_posted": "2025-08-29",
+   "n_amendments": 2,
+   "monthly_enrollment_burden": 2.84,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07151040",
+   "bucket": "non-small cell lung cancer",
+   "phase_stratum": "p1p2",
+   "start_date": "2025-08-22",
+   "planned_primary_completion": "2026-12",
+   "first_posted": "2025-09-02",
+   "n_amendments": 2,
+   "monthly_enrollment_burden": 2.81,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07153068",
+   "bucket": "acute myeloid leukemia",
+   "phase_stratum": "p1p2",
+   "start_date": "2025-06-28",
+   "planned_primary_completion": "2028-06-28",
+   "first_posted": "2025-09-03",
+   "n_amendments": 1,
+   "monthly_enrollment_burden": 0.33,
+   "verdict": "WARN",
+   "severity": "high",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT07158021",
+   "bucket": "ovarian cancer",
+   "phase_stratum": "p2",
+   "start_date": "2025-10-01",
+   "planned_primary_completion": "2027-10-01",
+   "first_posted": "2025-09-05",
+   "n_amendments": 5,
+   "monthly_enrollment_burden": 3.12,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07159451",
+   "bucket": "ovarian cancer",
+   "phase_stratum": "p2",
+   "start_date": "2025-09-23",
+   "planned_primary_completion": "2026-11-23",
+   "first_posted": "2025-09-08",
+   "n_amendments": 1,
+   "monthly_enrollment_burden": 10.0,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07167693",
+   "bucket": "type 2 diabetes",
+   "phase_stratum": "p1p2",
+   "start_date": "2025-11-01",
+   "planned_primary_completion": "2027-10-31",
+   "first_posted": "2025-09-11",
+   "n_amendments": 1,
+   "monthly_enrollment_burden": 2.51,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07171528",
+   "bucket": "ovarian cancer",
+   "phase_stratum": "p2",
+   "start_date": "2025-09-10",
+   "planned_primary_completion": "2027-12-31",
+   "first_posted": "2025-09-12",
+   "n_amendments": 0,
+   "monthly_enrollment_burden": 2.89,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07172204",
+   "bucket": "acute myeloid leukemia",
+   "phase_stratum": "p2",
+   "start_date": "2025-08-15",
+   "planned_primary_completion": "2027-07-31",
+   "first_posted": "2025-09-15",
+   "n_amendments": 2,
+   "monthly_enrollment_burden": 1.06,
+   "verdict": "WARN",
+   "severity": "medium",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT07175051",
+   "bucket": "sickle cell disease",
+   "phase_stratum": "p2",
+   "start_date": "2025-12",
+   "planned_primary_completion": "2029-10",
+   "first_posted": "2025-09-16",
+   "n_amendments": 1,
+   "monthly_enrollment_burden": 0.43,
+   "verdict": "WARN",
+   "severity": "high",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT07180927",
+   "bucket": "glioblastoma",
+   "phase_stratum": "p1p2",
+   "start_date": "2025-09-10",
+   "planned_primary_completion": "2028-12-31",
+   "first_posted": "2025-09-18",
+   "n_amendments": 0,
+   "monthly_enrollment_burden": 0.76,
+   "verdict": "WARN",
+   "severity": "high",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT07185269",
+   "bucket": "systemic lupus erythematosus",
+   "phase_stratum": "p1p2",
+   "start_date": "2025-09-11",
+   "planned_primary_completion": "2028-08-12",
+   "first_posted": "2025-09-22",
+   "n_amendments": 1,
+   "monthly_enrollment_burden": 5.66,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07185880",
+   "bucket": "glioblastoma",
+   "phase_stratum": "p1p2",
+   "start_date": "2025-11-01",
+   "planned_primary_completion": "2026-08-31",
+   "first_posted": "2025-09-22",
+   "n_amendments": 1,
+   "monthly_enrollment_burden": 3.6,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07186842",
+   "bucket": "pancreatic cancer",
+   "phase_stratum": "p1p2",
+   "start_date": "2025-10",
+   "planned_primary_completion": "2030-05",
+   "first_posted": "2025-09-22",
+   "n_amendments": 5,
+   "monthly_enrollment_burden": 4.45,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07189871",
+   "bucket": "non-small cell lung cancer",
+   "phase_stratum": "p1p2",
+   "start_date": "2025-11",
+   "planned_primary_completion": "2027-12",
+   "first_posted": "2025-09-24",
+   "n_amendments": 2,
+   "monthly_enrollment_burden": 2.44,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07192068",
+   "bucket": "non-small cell lung cancer",
+   "phase_stratum": "p2",
+   "start_date": "2025-10-20",
+   "planned_primary_completion": "2028-03-13",
+   "first_posted": "2025-09-25",
+   "n_amendments": 2,
+   "monthly_enrollment_burden": 3.66,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07192211",
+   "bucket": "heart failure",
+   "phase_stratum": "p2",
+   "start_date": "2025-09",
+   "planned_primary_completion": "2028-09-30",
+   "first_posted": "2025-09-25",
+   "n_amendments": 1,
+   "monthly_enrollment_burden": 1.35,
+   "verdict": "WARN",
+   "severity": "high",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT07193589",
+   "bucket": "atopic dermatitis",
+   "phase_stratum": "p2",
+   "start_date": "2025-10-30",
+   "planned_primary_completion": "2026-12-30",
+   "first_posted": "2025-09-26",
+   "n_amendments": 1,
+   "monthly_enrollment_burden": 7.93,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07193654",
+   "bucket": "glioblastoma",
+   "phase_stratum": "p2",
+   "start_date": "2025-04-01",
+   "planned_primary_completion": "2027-04-01",
+   "first_posted": "2025-09-26",
+   "n_amendments": 0,
+   "monthly_enrollment_burden": 1.58,
+   "verdict": "WARN",
+   "severity": "medium",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT07194382",
+   "bucket": "idiopathic pulmonary fibrosis",
+   "phase_stratum": "p2",
+   "start_date": "2026-01",
+   "planned_primary_completion": "2026-12",
+   "first_posted": "2025-09-26",
+   "n_amendments": 1,
+   "monthly_enrollment_burden": 14.55,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07199764",
+   "bucket": "pancreatic cancer",
+   "phase_stratum": "p2",
+   "start_date": "2025-10",
+   "planned_primary_completion": "2026-02",
+   "first_posted": "2025-09-30",
+   "n_amendments": 3,
+   "monthly_enrollment_burden": 25.0,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07202000",
+   "bucket": "heart failure",
+   "phase_stratum": "p2",
+   "start_date": "2025-11-01",
+   "planned_primary_completion": "2027-07",
+   "first_posted": "2025-10-01",
+   "n_amendments": 2,
+   "monthly_enrollment_burden": 2.41,
+   "verdict": "WARN",
+   "severity": "medium",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT07211542",
+   "bucket": "atopic dermatitis",
+   "phase_stratum": "p2",
+   "start_date": "2025-11",
+   "planned_primary_completion": "2026-04",
+   "first_posted": "2025-10-08",
+   "n_amendments": 4,
+   "monthly_enrollment_burden": 4.0,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07213349",
+   "bucket": "alzheimer disease",
+   "phase_stratum": "p2",
+   "start_date": "2025-10-07",
+   "planned_primary_completion": "2028-12",
+   "first_posted": "2025-10-08",
+   "n_amendments": 1,
+   "monthly_enrollment_burden": 6.35,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07214298",
+   "bucket": "pancreatic cancer",
+   "phase_stratum": "p1p2",
+   "start_date": "2025-11-01",
+   "planned_primary_completion": "2027-10-01",
+   "first_posted": "2025-10-09",
+   "n_amendments": 6,
+   "monthly_enrollment_burden": 1.52,
+   "verdict": "WARN",
+   "severity": "medium",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT07216027",
+   "bucket": "atopic dermatitis",
+   "phase_stratum": "p2",
+   "start_date": "2025-10-31",
+   "planned_primary_completion": "2027-08-23",
+   "first_posted": "2025-10-14",
+   "n_amendments": 5,
+   "monthly_enrollment_burden": 9.22,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07217912",
+   "bucket": "alzheimer disease",
+   "phase_stratum": "p2",
+   "start_date": "2025-10-20",
+   "planned_primary_completion": "2027-11-01",
+   "first_posted": "2025-10-20",
+   "n_amendments": 3,
+   "monthly_enrollment_burden": 3.28,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07219238",
+   "bucket": "pancreatic cancer",
+   "phase_stratum": "p2p3",
+   "start_date": "2026-03",
+   "planned_primary_completion": "2029-06",
+   "first_posted": "2025-10-21",
+   "n_amendments": 2,
+   "monthly_enrollment_burden": 4.49,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07221344",
+   "bucket": "alzheimer disease",
+   "phase_stratum": "p1p2",
+   "start_date": "2025-11",
+   "planned_primary_completion": "2027-06",
+   "first_posted": "2025-10-27",
+   "n_amendments": 4,
+   "monthly_enrollment_burden": 5.89,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07223047",
+   "bucket": "non-small cell lung cancer",
+   "phase_stratum": "p1p2",
+   "start_date": "2025-11-26",
+   "planned_primary_completion": "2028-10-13",
+   "first_posted": "2025-10-31",
+   "n_amendments": 6,
+   "monthly_enrollment_burden": 7.28,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07223242",
+   "bucket": "heart failure",
+   "phase_stratum": "p2p3",
+   "start_date": "2025-02-18",
+   "planned_primary_completion": "2026-12-30",
+   "first_posted": "2025-10-31",
+   "n_amendments": 0,
+   "monthly_enrollment_burden": 5.38,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07224360",
+   "bucket": "sickle cell disease",
+   "phase_stratum": "p2",
+   "start_date": "2025-11-15",
+   "planned_primary_completion": "2028-06-29",
+   "first_posted": "2025-11-04",
+   "n_amendments": 2,
+   "monthly_enrollment_burden": 2.01,
+   "verdict": "WARN",
+   "severity": "medium",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT07225543",
+   "bucket": "systemic lupus erythematosus",
+   "phase_stratum": "p2",
+   "start_date": "2026-05-15",
+   "planned_primary_completion": "2030-07-31",
+   "first_posted": "2025-11-06",
+   "n_amendments": 2,
+   "monthly_enrollment_burden": 0.83,
+   "verdict": "WARN",
+   "severity": "high",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT07226856",
+   "bucket": "pancreatic cancer",
+   "phase_stratum": "p2",
+   "start_date": "2025-12-01",
+   "planned_primary_completion": "2028-12-01",
+   "first_posted": "2025-11-12",
+   "n_amendments": 4,
+   "monthly_enrollment_burden": 1.19,
+   "verdict": "WARN",
+   "severity": "medium",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT07228078",
+   "bucket": "alzheimer disease",
+   "phase_stratum": "p2",
+   "start_date": "2025-06-30",
+   "planned_primary_completion": "2028-04",
+   "first_posted": "2025-11-13",
+   "n_amendments": 0,
+   "monthly_enrollment_burden": 0.91,
+   "verdict": "WARN",
+   "severity": "high",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT07228273",
+   "bucket": "acute myeloid leukemia",
+   "phase_stratum": "p2",
+   "start_date": "2025-12-24",
+   "planned_primary_completion": "2029-06-24",
+   "first_posted": "2025-11-14",
+   "n_amendments": 2,
+   "monthly_enrollment_burden": 2.43,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07229040",
+   "bucket": "ovarian cancer",
+   "phase_stratum": "p2",
+   "start_date": "2025-02-21",
+   "planned_primary_completion": "2028-10-21",
+   "first_posted": "2025-11-14",
+   "n_amendments": 0,
+   "monthly_enrollment_burden": 2.05,
+   "verdict": "WARN",
+   "severity": "medium",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT07230288",
+   "bucket": "idiopathic pulmonary fibrosis",
+   "phase_stratum": "p2",
+   "start_date": "2026-02-11",
+   "planned_primary_completion": "2029-09",
+   "first_posted": "2025-11-17",
+   "n_amendments": 6,
+   "monthly_enrollment_burden": 3.87,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07230405",
+   "bucket": "non-small cell lung cancer",
+   "phase_stratum": "p2",
+   "start_date": "2025-12-13",
+   "planned_primary_completion": "2027-12-13",
+   "first_posted": "2025-11-17",
+   "n_amendments": 4,
+   "monthly_enrollment_burden": 7.92,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07230483",
+   "bucket": "atopic dermatitis",
+   "phase_stratum": "p2",
+   "start_date": "2025-12",
+   "planned_primary_completion": "2027-12",
+   "first_posted": "2025-11-17",
+   "n_amendments": 0,
+   "monthly_enrollment_burden": 10.25,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07236190",
+   "bucket": "alzheimer disease",
+   "phase_stratum": "p1p2",
+   "start_date": "2025-12",
+   "planned_primary_completion": "2027-06",
+   "first_posted": "2025-11-19",
+   "n_amendments": 5,
+   "monthly_enrollment_burden": 2.22,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07242638",
+   "bucket": "atopic dermatitis",
+   "phase_stratum": "p2",
+   "start_date": "2026-01-05",
+   "planned_primary_completion": "2027-03-01",
+   "first_posted": "2025-11-21",
+   "n_amendments": 2,
+   "monthly_enrollment_burden": 4.06,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07245069",
+   "bucket": "heart failure",
+   "phase_stratum": "p2",
+   "start_date": "2025-02-01",
+   "planned_primary_completion": "2028-11",
+   "first_posted": "2025-11-24",
+   "n_amendments": 0,
+   "monthly_enrollment_burden": 2.22,
+   "verdict": "WARN",
+   "severity": "medium",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT07252050",
+   "bucket": "sickle cell disease",
+   "phase_stratum": "p1p2",
+   "start_date": "2026-01-01",
+   "planned_primary_completion": "2028-11-19",
+   "first_posted": "2025-11-26",
+   "n_amendments": 3,
+   "monthly_enrollment_burden": 0.69,
+   "verdict": "WARN",
+   "severity": "high",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT07252440",
+   "bucket": "alzheimer disease",
+   "phase_stratum": "p2",
+   "start_date": "2025-12-05",
+   "planned_primary_completion": "2028-10-23",
+   "first_posted": "2025-11-26",
+   "n_amendments": 1,
+   "monthly_enrollment_burden": 5.2,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07256210",
+   "bucket": "acute myeloid leukemia",
+   "phase_stratum": "p2",
+   "start_date": "2025-05-09",
+   "planned_primary_completion": "2026-10",
+   "first_posted": "2025-12-01",
+   "n_amendments": 0,
+   "monthly_enrollment_burden": 0.89,
+   "verdict": "WARN",
+   "severity": "medium",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT07259317",
+   "bucket": "pancreatic cancer",
+   "phase_stratum": "p2",
+   "start_date": "2025-12",
+   "planned_primary_completion": "2027-07",
+   "first_posted": "2025-12-02",
+   "n_amendments": 6,
+   "monthly_enrollment_burden": 3.16,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07259707",
+   "bucket": "acute myeloid leukemia",
+   "phase_stratum": "p2",
+   "start_date": "2025-12-01",
+   "planned_primary_completion": "2027-12-31",
+   "first_posted": "2025-12-02",
+   "n_amendments": 1,
+   "monthly_enrollment_burden": 1.0,
+   "verdict": "WARN",
+   "severity": "medium",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT07260877",
+   "bucket": "systemic lupus erythematosus",
+   "phase_stratum": "p2",
+   "start_date": "2025-12",
+   "planned_primary_completion": "2026-07",
+   "first_posted": "2025-12-03",
+   "n_amendments": 4,
+   "monthly_enrollment_burden": 3.43,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07263438",
+   "bucket": "glioblastoma",
+   "phase_stratum": "p2",
+   "start_date": "2025-11-03",
+   "planned_primary_completion": "2028-03-30",
+   "first_posted": "2025-12-04",
+   "n_amendments": 2,
+   "monthly_enrollment_burden": 2.05,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07265349",
+   "bucket": "heart failure",
+   "phase_stratum": "p1p2",
+   "start_date": "2025-12-01",
+   "planned_primary_completion": "2026-12-31",
+   "first_posted": "2025-12-04",
+   "n_amendments": 1,
+   "monthly_enrollment_burden": 3.92,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07269626",
+   "bucket": "pancreatic cancer",
+   "phase_stratum": "p2",
+   "start_date": "2025-11-14",
+   "planned_primary_completion": "2027-12-31",
+   "first_posted": "2025-12-08",
+   "n_amendments": 0,
+   "monthly_enrollment_burden": 1.84,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07269717",
+   "bucket": "heart failure",
+   "phase_stratum": "p2",
+   "start_date": "2025-12",
+   "planned_primary_completion": "2027-03",
+   "first_posted": "2025-12-08",
+   "n_amendments": 1,
+   "monthly_enrollment_burden": 3.22,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07273838",
+   "bucket": "heart failure",
+   "phase_stratum": "p2",
+   "start_date": "2026-01",
+   "planned_primary_completion": "2029-01",
+   "first_posted": "2025-12-10",
+   "n_amendments": 3,
+   "monthly_enrollment_burden": 3.61,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07276581",
+   "bucket": "rheumatoid arthritis",
+   "phase_stratum": "p2",
+   "start_date": "2025-12-15",
+   "planned_primary_completion": "2027-11-12",
+   "first_posted": "2025-12-11",
+   "n_amendments": 5,
+   "monthly_enrollment_burden": 13.97,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07279714",
+   "bucket": "alzheimer disease",
+   "phase_stratum": "p2",
+   "start_date": "2025-12",
+   "planned_primary_completion": "2026-11",
+   "first_posted": "2025-12-12",
+   "n_amendments": 1,
+   "monthly_enrollment_burden": 0.45,
+   "verdict": "WARN",
+   "severity": "high",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT07279740",
+   "bucket": "alzheimer disease",
+   "phase_stratum": "p2",
+   "start_date": "2026-01",
+   "planned_primary_completion": "2027-10-01",
+   "first_posted": "2025-12-12",
+   "n_amendments": 0,
+   "monthly_enrollment_burden": 0.57,
+   "verdict": "WARN",
+   "severity": "high",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT07282743",
+   "bucket": "type 2 diabetes",
+   "phase_stratum": "p2",
+   "start_date": "2026-01",
+   "planned_primary_completion": "2027-04",
+   "first_posted": "2025-12-15",
+   "n_amendments": 2,
+   "monthly_enrollment_burden": 19.13,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07283705",
+   "bucket": "pancreatic cancer",
+   "phase_stratum": "p2",
+   "start_date": "2026-05-18",
+   "planned_primary_completion": "2029-10-01",
+   "first_posted": "2025-12-16",
+   "n_amendments": 5,
+   "monthly_enrollment_burden": 1.48,
+   "verdict": "WARN",
+   "severity": "medium",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT07284472",
+   "bucket": "alzheimer disease",
+   "phase_stratum": "p2p3",
+   "start_date": "2026-01",
+   "planned_primary_completion": "2028-12",
+   "first_posted": "2025-12-16",
+   "n_amendments": 3,
+   "monthly_enrollment_burden": 8.57,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07284628",
+   "bucket": "glioblastoma",
+   "phase_stratum": "p2",
+   "start_date": "2025-12-15",
+   "planned_primary_completion": "2029-06",
+   "first_posted": "2025-12-16",
+   "n_amendments": 1,
+   "monthly_enrollment_burden": 1.88,
+   "verdict": "WARN",
+   "severity": "medium",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT07285044",
+   "bucket": "glioblastoma",
+   "phase_stratum": "p2",
+   "start_date": "2026-01-15",
+   "planned_primary_completion": "2026-12-18",
+   "first_posted": "2025-12-16",
+   "n_amendments": 3,
+   "monthly_enrollment_burden": 2.43,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07286240",
+   "bucket": "ovarian cancer",
+   "phase_stratum": "p2",
+   "start_date": "2025-11-15",
+   "planned_primary_completion": "2027-09-30",
+   "first_posted": "2025-12-16",
+   "n_amendments": 0,
+   "monthly_enrollment_burden": 1.78,
+   "verdict": "WARN",
+   "severity": "medium",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT07294144",
+   "bucket": "amyotrophic lateral sclerosis",
+   "phase_stratum": "p2",
+   "start_date": "2025-12",
+   "planned_primary_completion": "2027-01",
+   "first_posted": "2025-12-19",
+   "n_amendments": 3,
+   "monthly_enrollment_burden": 2.31,
+   "verdict": "WARN",
+   "severity": "medium",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT07297212",
+   "bucket": "glioblastoma",
+   "phase_stratum": "p2",
+   "start_date": "2026-01",
+   "planned_primary_completion": "2028-01",
+   "first_posted": "2025-12-22",
+   "n_amendments": 3,
+   "monthly_enrollment_burden": 3.12,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07297602",
+   "bucket": "atopic dermatitis",
+   "phase_stratum": "p2",
+   "start_date": "2025-11-20",
+   "planned_primary_completion": "2026-05-20",
+   "first_posted": "2025-12-22",
+   "n_amendments": 1,
+   "monthly_enrollment_burden": 6.1,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07299422",
+   "bucket": "systemic lupus erythematosus",
+   "phase_stratum": "p2",
+   "start_date": "2025-12",
+   "planned_primary_completion": "2028-03",
+   "first_posted": "2025-12-23",
+   "n_amendments": 3,
+   "monthly_enrollment_burden": 9.07,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07301268",
+   "bucket": "glioblastoma",
+   "phase_stratum": "p2",
+   "start_date": "2025-12-29",
+   "planned_primary_completion": "2029-01-31",
+   "first_posted": "2025-12-24",
+   "n_amendments": 3,
+   "monthly_enrollment_burden": 0.97,
+   "verdict": "WARN",
+   "severity": "high",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT07303387",
+   "bucket": "ovarian cancer",
+   "phase_stratum": "p2",
+   "start_date": "2026-02-28",
+   "planned_primary_completion": "2031-02-28",
+   "first_posted": "2025-12-24",
+   "n_amendments": 1,
+   "monthly_enrollment_burden": 15.0,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07303803",
+   "bucket": "type 2 diabetes",
+   "phase_stratum": "p2",
+   "start_date": "2026-01-01",
+   "planned_primary_completion": "2030-12-01",
+   "first_posted": "2025-12-26",
+   "n_amendments": 2,
+   "monthly_enrollment_burden": 5.08,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07303894",
+   "bucket": "ovarian cancer",
+   "phase_stratum": "p2",
+   "start_date": "2026-01-31",
+   "planned_primary_completion": "2032-01",
+   "first_posted": "2025-12-26",
+   "n_amendments": 3,
+   "monthly_enrollment_burden": 1.27,
+   "verdict": "WARN",
+   "severity": "medium",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT07304232",
+   "bucket": "acute myeloid leukemia",
+   "phase_stratum": "p2",
+   "start_date": "2025-09-01",
+   "planned_primary_completion": "2026-12-31",
+   "first_posted": "2025-12-26",
+   "n_amendments": 0,
+   "monthly_enrollment_burden": 8.38,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07304739",
+   "bucket": "non-small cell lung cancer",
+   "phase_stratum": "p2",
+   "start_date": "2025-12-22",
+   "planned_primary_completion": "2028-12-30",
+   "first_posted": "2025-12-26",
+   "n_amendments": 0,
+   "monthly_enrollment_burden": 0.83,
+   "verdict": "WARN",
+   "severity": "high",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT07304817",
+   "bucket": "heart failure",
+   "phase_stratum": "p2",
+   "start_date": "2026-02",
+   "planned_primary_completion": "2028-02",
+   "first_posted": "2025-12-26",
+   "n_amendments": 2,
+   "monthly_enrollment_burden": 4.17,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07311200",
+   "bucket": "systemic lupus erythematosus",
+   "phase_stratum": "p2",
+   "start_date": "2026-01-15",
+   "planned_primary_completion": "2028-08-31",
+   "first_posted": "2025-12-30",
+   "n_amendments": 2,
+   "monthly_enrollment_burden": 3.81,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07311577",
+   "bucket": "ovarian cancer",
+   "phase_stratum": "p2",
+   "start_date": "2026-01-01",
+   "planned_primary_completion": "2027-12-30",
+   "first_posted": "2025-12-31",
+   "n_amendments": 0,
+   "monthly_enrollment_burden": 1.8,
+   "verdict": "WARN",
+   "severity": "medium",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT07314216",
+   "bucket": "non-small cell lung cancer",
+   "phase_stratum": "p2",
+   "start_date": "2026-01-01",
+   "planned_primary_completion": "2030-12-31",
+   "first_posted": "2026-01-02",
+   "n_amendments": 2,
+   "monthly_enrollment_burden": 0.25,
+   "verdict": "WARN",
+   "severity": "high",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT07318103",
+   "bucket": "heart failure",
+   "phase_stratum": "p2",
+   "start_date": "2026-01",
+   "planned_primary_completion": "2026-07",
+   "first_posted": "2026-01-05",
+   "n_amendments": 3,
+   "monthly_enrollment_burden": 20.0,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07318818",
+   "bucket": "glioblastoma",
+   "phase_stratum": "p1p2",
+   "start_date": "2026-01-13",
+   "planned_primary_completion": "2028-02-29",
+   "first_posted": "2026-01-06",
+   "n_amendments": 1,
+   "monthly_enrollment_burden": 0.94,
+   "verdict": "WARN",
+   "severity": "high",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT07322094",
+   "bucket": "ovarian cancer",
+   "phase_stratum": "p1p2",
+   "start_date": "2025-12-10",
+   "planned_primary_completion": "2027-12",
+   "first_posted": "2026-01-07",
+   "n_amendments": 1,
+   "monthly_enrollment_burden": 2.53,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07330934",
+   "bucket": "atopic dermatitis",
+   "phase_stratum": "p2",
+   "start_date": "2025-12-31",
+   "planned_primary_completion": "2027-06-30",
+   "first_posted": "2026-01-09",
+   "n_amendments": 1,
+   "monthly_enrollment_burden": 22.51,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07332858",
+   "bucket": "non-small cell lung cancer",
+   "phase_stratum": "p1p2",
+   "start_date": "2026-01-20",
+   "planned_primary_completion": "2028-10-30",
+   "first_posted": "2026-01-12",
+   "n_amendments": 2,
+   "monthly_enrollment_burden": 3.15,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07340320",
+   "bucket": "type 2 diabetes",
+   "phase_stratum": "p2",
+   "start_date": "2026-02-05",
+   "planned_primary_completion": "2026-12-23",
+   "first_posted": "2026-01-14",
+   "n_amendments": 2,
+   "monthly_enrollment_burden": 22.86,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07340463",
+   "bucket": "systemic lupus erythematosus",
+   "phase_stratum": "p2",
+   "start_date": "2026-01",
+   "planned_primary_completion": "2027-06",
+   "first_posted": "2026-01-14",
+   "n_amendments": 1,
+   "monthly_enrollment_burden": 2.94,
+   "verdict": "WARN",
+   "severity": "medium",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT07341737",
+   "bucket": "pancreatic cancer",
+   "phase_stratum": "p1p2",
+   "start_date": "2026-02-01",
+   "planned_primary_completion": "2027-01-01",
+   "first_posted": "2026-01-14",
+   "n_amendments": 3,
+   "monthly_enrollment_burden": 5.45,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07346144",
+   "bucket": "glioblastoma",
+   "phase_stratum": "p1p2",
+   "start_date": "2026-03",
+   "planned_primary_completion": "2030-03",
+   "first_posted": "2026-01-16",
+   "n_amendments": 3,
+   "monthly_enrollment_burden": 1.42,
+   "verdict": "WARN",
+   "severity": "medium",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT07348055",
+   "bucket": "systemic lupus erythematosus",
+   "phase_stratum": "p1p2",
+   "start_date": "2025-12-31",
+   "planned_primary_completion": "2027-06-01",
+   "first_posted": "2026-01-16",
+   "n_amendments": 1,
+   "monthly_enrollment_burden": 2.59,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07355075",
+   "bucket": "atopic dermatitis",
+   "phase_stratum": "p2",
+   "start_date": "2025-07-11",
+   "planned_primary_completion": "2026-05-31",
+   "first_posted": "2026-01-21",
+   "n_amendments": 2,
+   "monthly_enrollment_burden": 9.43,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07356154",
+   "bucket": "acute myeloid leukemia",
+   "phase_stratum": "p1p2",
+   "start_date": "2026-01-16",
+   "planned_primary_completion": "2029-01-16",
+   "first_posted": "2026-01-21",
+   "n_amendments": 1,
+   "monthly_enrollment_burden": 1.44,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07363460",
+   "bucket": "systemic lupus erythematosus",
+   "phase_stratum": "p2",
+   "start_date": "2025-11-18",
+   "planned_primary_completion": "2027-11-05",
+   "first_posted": "2026-01-23",
+   "n_amendments": 0,
+   "monthly_enrollment_burden": 4.45,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07364786",
+   "bucket": "glioblastoma",
+   "phase_stratum": "p2",
+   "start_date": "2024-10-07",
+   "planned_primary_completion": "2026-10",
+   "first_posted": "2026-01-23",
+   "n_amendments": 0,
+   "monthly_enrollment_burden": 0.42,
+   "verdict": "WARN",
+   "severity": "high",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT07365319",
+   "bucket": "non-small cell lung cancer",
+   "phase_stratum": "p2p3",
+   "start_date": "2026-05-18",
+   "planned_primary_completion": "2035-12-31",
+   "first_posted": "2026-01-26",
+   "n_amendments": 2,
+   "monthly_enrollment_burden": 6.5,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07366801",
+   "bucket": "acute myeloid leukemia",
+   "phase_stratum": "p2p3",
+   "start_date": "2025-09-03",
+   "planned_primary_completion": "2027-06-01",
+   "first_posted": "2026-01-26",
+   "n_amendments": 0,
+   "monthly_enrollment_burden": 3.06,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07367815",
+   "bucket": "alzheimer disease",
+   "phase_stratum": "p1p2",
+   "start_date": "2026-03-01",
+   "planned_primary_completion": "2029-03-01",
+   "first_posted": "2026-01-26",
+   "n_amendments": 1,
+   "monthly_enrollment_burden": 0.25,
+   "verdict": "WARN",
+   "severity": "high",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT07369024",
+   "bucket": "sickle cell disease",
+   "phase_stratum": "p2",
+   "start_date": "2026-01",
+   "planned_primary_completion": "2027-01",
+   "first_posted": "2026-01-27",
+   "n_amendments": 1,
+   "monthly_enrollment_burden": 10.0,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07369076",
+   "bucket": "amyotrophic lateral sclerosis",
+   "phase_stratum": "p1p2",
+   "start_date": "2026-02",
+   "planned_primary_completion": "2027-04",
+   "first_posted": "2026-01-27",
+   "n_amendments": 4,
+   "monthly_enrollment_burden": 5.76,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07372040",
+   "bucket": "heart failure",
+   "phase_stratum": "p2",
+   "start_date": "2026-02-01",
+   "planned_primary_completion": "2027-02-01",
+   "first_posted": "2026-01-28",
+   "n_amendments": 1,
+   "monthly_enrollment_burden": 5.5,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07374328",
+   "bucket": "type 2 diabetes",
+   "phase_stratum": "p1p2",
+   "start_date": "2025-06-01",
+   "planned_primary_completion": "2026-05-31",
+   "first_posted": "2026-01-28",
+   "n_amendments": 0,
+   "monthly_enrollment_burden": 20.0,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07375316",
+   "bucket": "non-small cell lung cancer",
+   "phase_stratum": "p2",
+   "start_date": "2025-12-15",
+   "planned_primary_completion": "2028-06-30",
+   "first_posted": "2026-01-29",
+   "n_amendments": 3,
+   "monthly_enrollment_burden": 3.93,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07391215",
+   "bucket": "glioblastoma",
+   "phase_stratum": "p1p2",
+   "start_date": "2026-01-19",
+   "planned_primary_completion": "2029-01-19",
+   "first_posted": "2026-02-05",
+   "n_amendments": 0,
+   "monthly_enrollment_burden": 1.78,
+   "verdict": "WARN",
+   "severity": "medium",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT07391813",
+   "bucket": "non-small cell lung cancer",
+   "phase_stratum": "p1p2",
+   "start_date": "2026-02",
+   "planned_primary_completion": "2028-12",
+   "first_posted": "2026-02-06",
+   "n_amendments": 1,
+   "monthly_enrollment_burden": 1.62,
+   "verdict": "WARN",
+   "severity": "medium",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT07392723",
+   "bucket": "alzheimer disease",
+   "phase_stratum": "p2",
+   "start_date": "2025-01-12",
+   "planned_primary_completion": "2027-04",
+   "first_posted": "2026-02-06",
+   "n_amendments": 0,
+   "monthly_enrollment_burden": 0.75,
+   "verdict": "WARN",
+   "severity": "high",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT07392957",
+   "bucket": "glioblastoma",
+   "phase_stratum": "p1p2",
+   "start_date": "2026-03-31",
+   "planned_primary_completion": "2029-03-31",
+   "first_posted": "2026-02-06",
+   "n_amendments": 3,
+   "monthly_enrollment_burden": 1.5,
+   "verdict": "WARN",
+   "severity": "medium",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT07396155",
+   "bucket": "type 2 diabetes",
+   "phase_stratum": "p1p2",
+   "start_date": "2026-07-01",
+   "planned_primary_completion": "2027-07",
+   "first_posted": "2026-02-09",
+   "n_amendments": 0,
+   "monthly_enrollment_burden": 0.83,
+   "verdict": "WARN",
+   "severity": "high",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT07397338",
+   "bucket": "non-small cell lung cancer",
+   "phase_stratum": "p1p2",
+   "start_date": "2026-01-30",
+   "planned_primary_completion": "2029-05",
+   "first_posted": "2026-02-09",
+   "n_amendments": 6,
+   "monthly_enrollment_burden": 9.49,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07399067",
+   "bucket": "atopic dermatitis",
+   "phase_stratum": "p2",
+   "start_date": "2026-01-30",
+   "planned_primary_completion": "2027-03-23",
+   "first_posted": "2026-02-10",
+   "n_amendments": 1,
+   "monthly_enrollment_burden": 7.01,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07399587",
+   "bucket": "heart failure",
+   "phase_stratum": "p2p3",
+   "start_date": "2025-01-17",
+   "planned_primary_completion": "2028-12-31",
+   "first_posted": "2026-02-10",
+   "n_amendments": 0,
+   "monthly_enrollment_burden": 0.32,
+   "verdict": "WARN",
+   "severity": "high",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT07405190",
+   "bucket": "non-small cell lung cancer",
+   "phase_stratum": "p2",
+   "start_date": "2026-08-04",
+   "planned_primary_completion": "2028-03-01",
+   "first_posted": "2026-02-12",
+   "n_amendments": 1,
+   "monthly_enrollment_burden": 2.43,
+   "verdict": "WARN",
+   "severity": "medium",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT07408024",
+   "bucket": "rheumatoid arthritis",
+   "phase_stratum": "p2",
+   "start_date": "2025-09-10",
+   "planned_primary_completion": "2026-12",
+   "first_posted": "2026-02-12",
+   "n_amendments": 1,
+   "monthly_enrollment_burden": 1.63,
+   "verdict": "WARN",
+   "severity": "medium",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT07409103",
+   "bucket": "rheumatoid arthritis",
+   "phase_stratum": "p2",
+   "start_date": "2026-01-31",
+   "planned_primary_completion": "2027-04-15",
+   "first_posted": "2026-02-13",
+   "n_amendments": 2,
+   "monthly_enrollment_burden": 12.5,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07410494",
+   "bucket": "pancreatic cancer",
+   "phase_stratum": "p1p2",
+   "start_date": "2026-02-01",
+   "planned_primary_completion": "2027-12-28",
+   "first_posted": "2026-02-13",
+   "n_amendments": 1,
+   "monthly_enrollment_burden": 3.73,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07410676",
+   "bucket": "glioblastoma",
+   "phase_stratum": "p1p2",
+   "start_date": "2026-02-01",
+   "planned_primary_completion": "2028-12-21",
+   "first_posted": "2026-02-13",
+   "n_amendments": 1,
+   "monthly_enrollment_burden": 2.4,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07414212",
+   "bucket": "amyotrophic lateral sclerosis",
+   "phase_stratum": "p1p2",
+   "start_date": "2025-11-25",
+   "planned_primary_completion": "2026-11-25",
+   "first_posted": "2026-02-17",
+   "n_amendments": 0,
+   "monthly_enrollment_burden": 7.5,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07415954",
+   "bucket": "type 2 diabetes",
+   "phase_stratum": "p2",
+   "start_date": "2026-04-17",
+   "planned_primary_completion": "2027-09-03",
+   "first_posted": "2026-02-17",
+   "n_amendments": 4,
+   "monthly_enrollment_burden": 16.27,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07423533",
+   "bucket": "rheumatoid arthritis",
+   "phase_stratum": "p2",
+   "start_date": "2026-02",
+   "planned_primary_completion": "2027-09",
+   "first_posted": "2026-02-20",
+   "n_amendments": 1,
+   "monthly_enrollment_burden": 23.68,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07428044",
+   "bucket": "non-small cell lung cancer",
+   "phase_stratum": "p2",
+   "start_date": "2026-02-13",
+   "planned_primary_completion": "2027-02-13",
+   "first_posted": "2026-02-23",
+   "n_amendments": 0,
+   "monthly_enrollment_burden": 1.17,
+   "verdict": "WARN",
+   "severity": "high",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT07432867",
+   "bucket": "sickle cell disease",
+   "phase_stratum": "p1p2",
+   "start_date": "2026-02",
+   "planned_primary_completion": "2032-02",
+   "first_posted": "2026-02-25",
+   "n_amendments": 1,
+   "monthly_enrollment_burden": 0.21,
+   "verdict": "WARN",
+   "severity": "high",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT07438106",
+   "bucket": "pancreatic cancer",
+   "phase_stratum": "p2",
+   "start_date": "2026-02",
+   "planned_primary_completion": "2027-10",
+   "first_posted": "2026-02-27",
+   "n_amendments": 2,
+   "monthly_enrollment_burden": 1.51,
+   "verdict": "WARN",
+   "severity": "medium",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT07439094",
+   "bucket": "non-small cell lung cancer",
+   "phase_stratum": "p1p2",
+   "start_date": "2026-03",
+   "planned_primary_completion": "2029-12",
+   "first_posted": "2026-02-27",
+   "n_amendments": 2,
+   "monthly_enrollment_burden": 3.11,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07441395",
+   "bucket": "atopic dermatitis",
+   "phase_stratum": "p2",
+   "start_date": "2026-02",
+   "planned_primary_completion": "2027-08",
+   "first_posted": "2026-03-02",
+   "n_amendments": 1,
+   "monthly_enrollment_burden": 11.17,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07443696",
+   "bucket": "heart failure",
+   "phase_stratum": "p2",
+   "start_date": "2025-12-18",
+   "planned_primary_completion": "2026-08",
+   "first_posted": "2026-03-02",
+   "n_amendments": 0,
+   "monthly_enrollment_burden": 5.41,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07445919",
+   "bucket": "atopic dermatitis",
+   "phase_stratum": "p2",
+   "start_date": "2026-04-05",
+   "planned_primary_completion": "2027-04-25",
+   "first_posted": "2026-03-03",
+   "n_amendments": 2,
+   "monthly_enrollment_burden": 15.87,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07447102",
+   "bucket": "idiopathic pulmonary fibrosis",
+   "phase_stratum": "p2",
+   "start_date": "2026-04-01",
+   "planned_primary_completion": "2029-04-01",
+   "first_posted": "2026-03-03",
+   "n_amendments": 1,
+   "monthly_enrollment_burden": 2.67,
+   "verdict": "WARN",
+   "severity": "medium",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT07447986",
+   "bucket": "systemic lupus erythematosus",
+   "phase_stratum": "p2",
+   "start_date": "2026-03-15",
+   "planned_primary_completion": "2027-09-30",
+   "first_posted": "2026-03-04",
+   "n_amendments": 2,
+   "monthly_enrollment_burden": 6.49,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07457125",
+   "bucket": "alzheimer disease",
+   "phase_stratum": "p1p2",
+   "start_date": "2026-03-10",
+   "planned_primary_completion": "2028-12-30",
+   "first_posted": "2026-03-09",
+   "n_amendments": 1,
+   "monthly_enrollment_burden": 0.98,
+   "verdict": "WARN",
+   "severity": "high",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT07459660",
+   "bucket": "alzheimer disease",
+   "phase_stratum": "p2",
+   "start_date": "2026-03",
+   "planned_primary_completion": "2029-03",
+   "first_posted": "2026-03-10",
+   "n_amendments": 2,
+   "monthly_enrollment_burden": 5.83,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07460752",
+   "bucket": "ovarian cancer",
+   "phase_stratum": "p2",
+   "start_date": "2026-03-24",
+   "planned_primary_completion": "2028-09-26",
+   "first_posted": "2026-03-10",
+   "n_amendments": 1,
+   "monthly_enrollment_burden": 3.26,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07462507",
+   "bucket": "glioblastoma",
+   "phase_stratum": "p2",
+   "start_date": "2026-03-31",
+   "planned_primary_completion": "2031-05-31",
+   "first_posted": "2026-03-10",
+   "n_amendments": 1,
+   "monthly_enrollment_burden": 1.68,
+   "verdict": "WARN",
+   "severity": "medium",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT07465224",
+   "bucket": "type 2 diabetes",
+   "phase_stratum": "p2",
+   "start_date": "2026-01-15",
+   "planned_primary_completion": "2027-05-28",
+   "first_posted": "2026-03-11",
+   "n_amendments": 4,
+   "monthly_enrollment_burden": 2.44,
+   "verdict": "WARN",
+   "severity": "high",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT07468136",
+   "bucket": "glioblastoma",
+   "phase_stratum": "p1p2",
+   "start_date": "2026-04-24",
+   "planned_primary_completion": "2030-10-25",
+   "first_posted": "2026-03-12",
+   "n_amendments": 2,
+   "monthly_enrollment_burden": 0.61,
+   "verdict": "WARN",
+   "severity": "high",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT07471789",
+   "bucket": "acute myeloid leukemia",
+   "phase_stratum": "p1p2",
+   "start_date": "2026-02-04",
+   "planned_primary_completion": "2029-05-31",
+   "first_posted": "2026-03-13",
+   "n_amendments": 0,
+   "monthly_enrollment_burden": 0.83,
+   "verdict": "WARN",
+   "severity": "medium",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT07473154",
+   "bucket": "rheumatoid arthritis",
+   "phase_stratum": "p1p2",
+   "start_date": "2026-04",
+   "planned_primary_completion": "2028-08",
+   "first_posted": "2026-03-16",
+   "n_amendments": 3,
+   "monthly_enrollment_burden": 0.57,
+   "verdict": "WARN",
+   "severity": "high",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT07476794",
+   "bucket": "glioblastoma",
+   "phase_stratum": "p2",
+   "start_date": "2025-11-01",
+   "planned_primary_completion": "2027-10",
+   "first_posted": "2026-03-17",
+   "n_amendments": 0,
+   "monthly_enrollment_burden": 5.13,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07477431",
+   "bucket": "alzheimer disease",
+   "phase_stratum": "p2",
+   "start_date": "2025-10-23",
+   "planned_primary_completion": "2027-01",
+   "first_posted": "2026-03-17",
+   "n_amendments": 1,
+   "monthly_enrollment_burden": 2.8,
+   "verdict": "WARN",
+   "severity": "medium",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT07478523",
+   "bucket": "pancreatic cancer",
+   "phase_stratum": "p2",
+   "start_date": "2026-03-16",
+   "planned_primary_completion": "2028-03-16",
+   "first_posted": "2026-03-17",
+   "n_amendments": 1,
+   "monthly_enrollment_burden": 5.0,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07480954",
+   "bucket": "ovarian cancer",
+   "phase_stratum": "p1p2",
+   "start_date": "2026-02-04",
+   "planned_primary_completion": "2027-02-17",
+   "first_posted": "2026-03-18",
+   "n_amendments": 0,
+   "monthly_enrollment_burden": 2.9,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07483983",
+   "bucket": "non-small cell lung cancer",
+   "phase_stratum": "p2",
+   "start_date": "2026-03",
+   "planned_primary_completion": "2027-09",
+   "first_posted": "2026-03-19",
+   "n_amendments": 1,
+   "monthly_enrollment_burden": 3.33,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07489547",
+   "bucket": "heart failure",
+   "phase_stratum": "p2p3",
+   "start_date": "2025-03-01",
+   "planned_primary_completion": "2026-12",
+   "first_posted": "2026-03-24",
+   "n_amendments": 1,
+   "monthly_enrollment_burden": 4.29,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07492342",
+   "bucket": "non-small cell lung cancer",
+   "phase_stratum": "p2",
+   "start_date": "2026-01-29",
+   "planned_primary_completion": "2027-03-31",
+   "first_posted": "2026-03-25",
+   "n_amendments": 0,
+   "monthly_enrollment_burden": 2.14,
+   "verdict": "WARN",
+   "severity": "medium",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT07492680",
+   "bucket": "pancreatic cancer",
+   "phase_stratum": "p2",
+   "start_date": "2026-07-17",
+   "planned_primary_completion": "2032-05-20",
+   "first_posted": "2026-03-25",
+   "n_amendments": 3,
+   "monthly_enrollment_burden": 3.71,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07495956",
+   "bucket": "type 2 diabetes",
+   "phase_stratum": "p1p2",
+   "start_date": "2026-03-16",
+   "planned_primary_completion": "2029-03-31",
+   "first_posted": "2026-03-27",
+   "n_amendments": 0,
+   "monthly_enrollment_burden": 0.82,
+   "verdict": "WARN",
+   "severity": "high",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT07496177",
+   "bucket": "type 2 diabetes",
+   "phase_stratum": "p2",
+   "start_date": "2026-05-01",
+   "planned_primary_completion": "2027-05-31",
+   "first_posted": "2026-03-27",
+   "n_amendments": 1,
+   "monthly_enrollment_burden": 5.77,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07496918",
+   "bucket": "alzheimer disease",
+   "phase_stratum": "p2",
+   "start_date": "2018-02-20",
+   "planned_primary_completion": "2027-01-30",
+   "first_posted": "2026-03-27",
+   "n_amendments": 0,
+   "monthly_enrollment_burden": 1.4,
+   "verdict": "WARN",
+   "severity": "high",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT07501559",
+   "bucket": "glioblastoma",
+   "phase_stratum": "p1p2",
+   "start_date": "2026-04",
+   "planned_primary_completion": "2030-04",
+   "first_posted": "2026-03-30",
+   "n_amendments": 0,
+   "monthly_enrollment_burden": 0.83,
+   "verdict": "WARN",
+   "severity": "high",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT07502495",
+   "bucket": "type 2 diabetes",
+   "phase_stratum": "p2",
+   "start_date": "2026-03",
+   "planned_primary_completion": "2027-06",
+   "first_posted": "2026-03-31",
+   "n_amendments": 2,
+   "monthly_enrollment_burden": 4.0,
+   "verdict": "WARN",
+   "severity": "medium",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT07502508",
+   "bucket": "type 2 diabetes",
+   "phase_stratum": "p2",
+   "start_date": "2026-03",
+   "planned_primary_completion": "2027-06",
+   "first_posted": "2026-03-31",
+   "n_amendments": 3,
+   "monthly_enrollment_burden": 4.0,
+   "verdict": "WARN",
+   "severity": "medium",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT07507760",
+   "bucket": "acute myeloid leukemia",
+   "phase_stratum": "p2",
+   "start_date": "2026-04",
+   "planned_primary_completion": "2029-04",
+   "first_posted": "2026-04-02",
+   "n_amendments": 1,
+   "monthly_enrollment_burden": 1.39,
+   "verdict": "WARN",
+   "severity": "medium",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT07509892",
+   "bucket": "systemic lupus erythematosus",
+   "phase_stratum": "p2",
+   "start_date": "2026-04",
+   "planned_primary_completion": "2027-11",
+   "first_posted": "2026-04-03",
+   "n_amendments": 2,
+   "monthly_enrollment_burden": 10.42,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07511725",
+   "bucket": "glioblastoma",
+   "phase_stratum": "p2",
+   "start_date": "2026-01-04",
+   "planned_primary_completion": "2028-01-04",
+   "first_posted": "2026-04-06",
+   "n_amendments": 0,
+   "monthly_enrollment_burden": 1.58,
+   "verdict": "WARN",
+   "severity": "medium",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT07512362",
+   "bucket": "alzheimer disease",
+   "phase_stratum": "p2",
+   "start_date": "2026-06-15",
+   "planned_primary_completion": "2028-06-15",
+   "first_posted": "2026-04-06",
+   "n_amendments": 1,
+   "monthly_enrollment_burden": 0.42,
+   "verdict": "WARN",
+   "severity": "high",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT07514494",
+   "bucket": "ovarian cancer",
+   "phase_stratum": "p2",
+   "start_date": "2025-04-02",
+   "planned_primary_completion": "2026-10-02",
+   "first_posted": "2026-04-07",
+   "n_amendments": 0,
+   "monthly_enrollment_burden": 8.89,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07514832",
+   "bucket": "acute myeloid leukemia",
+   "phase_stratum": "p2",
+   "start_date": "2026-04-15",
+   "planned_primary_completion": "2028-04-01",
+   "first_posted": "2026-04-07",
+   "n_amendments": 0,
+   "monthly_enrollment_burden": 2.03,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07514936",
+   "bucket": "acute myeloid leukemia",
+   "phase_stratum": "p2",
+   "start_date": "2024-11-18",
+   "planned_primary_completion": "2027-12-30",
+   "first_posted": "2026-04-07",
+   "n_amendments": 1,
+   "monthly_enrollment_burden": 3.21,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07515014",
+   "bucket": "systemic lupus erythematosus",
+   "phase_stratum": "p2",
+   "start_date": "2026-03-31",
+   "planned_primary_completion": "2028-08-05",
+   "first_posted": "2026-04-07",
+   "n_amendments": 4,
+   "monthly_enrollment_burden": 9.08,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07516951",
+   "bucket": "idiopathic pulmonary fibrosis",
+   "phase_stratum": "p2",
+   "start_date": "2026-06-01",
+   "planned_primary_completion": "2028-02-12",
+   "first_posted": "2026-04-08",
+   "n_amendments": 1,
+   "monthly_enrollment_burden": 11.76,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07523529",
+   "bucket": "glioblastoma",
+   "phase_stratum": "p1p2",
+   "start_date": "2026-03-02",
+   "planned_primary_completion": "2027-04-14",
+   "first_posted": "2026-04-13",
+   "n_amendments": 0,
+   "monthly_enrollment_burden": 5.37,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07523542",
+   "bucket": "systemic lupus erythematosus",
+   "phase_stratum": "p1p2",
+   "start_date": "2026-03-02",
+   "planned_primary_completion": "2027-03-14",
+   "first_posted": "2026-04-13",
+   "n_amendments": 0,
+   "monthly_enrollment_burden": 1.94,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07527650",
+   "bucket": "type 2 diabetes",
+   "phase_stratum": "p2",
+   "start_date": "2026-05",
+   "planned_primary_completion": "2027-09",
+   "first_posted": "2026-04-14",
+   "n_amendments": 4,
+   "monthly_enrollment_burden": 11.25,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07529483",
+   "bucket": "pancreatic cancer",
+   "phase_stratum": "p2",
+   "start_date": "2026-06-12",
+   "planned_primary_completion": "2027-12-31",
+   "first_posted": "2026-04-14",
+   "n_amendments": 2,
+   "monthly_enrollment_burden": 1.88,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07529808",
+   "bucket": "pancreatic cancer",
+   "phase_stratum": "p1p2",
+   "start_date": "2026-06",
+   "planned_primary_completion": "2028-12",
+   "first_posted": "2026-04-14",
+   "n_amendments": 4,
+   "monthly_enrollment_burden": 5.47,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07537660",
+   "bucket": "pancreatic cancer",
+   "phase_stratum": "p2",
+   "start_date": "2025-11-25",
+   "planned_primary_completion": "2026-11",
+   "first_posted": "2026-04-17",
+   "n_amendments": 0,
+   "monthly_enrollment_burden": 2.23,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07546929",
+   "bucket": "type 2 diabetes",
+   "phase_stratum": "p2",
+   "start_date": "2023-02-03",
+   "planned_primary_completion": "2026-10",
+   "first_posted": "2026-04-23",
+   "n_amendments": 0,
+   "monthly_enrollment_burden": 6.83,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07548710",
+   "bucket": "acute myeloid leukemia",
+   "phase_stratum": "p2",
+   "start_date": "2026-05-01",
+   "planned_primary_completion": "2027-05-31",
+   "first_posted": "2026-04-23",
+   "n_amendments": 3,
+   "monthly_enrollment_burden": 15.77,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07553338",
+   "bucket": "alzheimer disease",
+   "phase_stratum": "p2",
+   "start_date": "2026-04",
+   "planned_primary_completion": "2027-11",
+   "first_posted": "2026-04-28",
+   "n_amendments": 2,
+   "monthly_enrollment_burden": 1.05,
+   "verdict": "WARN",
+   "severity": "high",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT07560436",
+   "bucket": "heart failure",
+   "phase_stratum": "p2",
+   "start_date": "2026-03-23",
+   "planned_primary_completion": "2028-11",
+   "first_posted": "2026-05-01",
+   "n_amendments": 0,
+   "monthly_enrollment_burden": 11.18,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07563179",
+   "bucket": "acute myeloid leukemia",
+   "phase_stratum": "p2",
+   "start_date": "2026-04-21",
+   "planned_primary_completion": "2029-06-30",
+   "first_posted": "2026-05-01",
+   "n_amendments": 0,
+   "monthly_enrollment_burden": 0.26,
+   "verdict": "WARN",
+   "severity": "high",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT07566351",
+   "bucket": "rheumatoid arthritis",
+   "phase_stratum": "p2",
+   "start_date": "2026-04-23",
+   "planned_primary_completion": "2027-06",
+   "first_posted": "2026-05-05",
+   "n_amendments": 1,
+   "monthly_enrollment_burden": 6.77,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07569042",
+   "bucket": "glioblastoma",
+   "phase_stratum": "p1p2",
+   "start_date": "2026-04-20",
+   "planned_primary_completion": "2029-09-30",
+   "first_posted": "2026-05-06",
+   "n_amendments": 0,
+   "monthly_enrollment_burden": 0.36,
+   "verdict": "WARN",
+   "severity": "high",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT07572383",
+   "bucket": "idiopathic pulmonary fibrosis",
+   "phase_stratum": "p2",
+   "start_date": "2026-04",
+   "planned_primary_completion": "2028-12-31",
+   "first_posted": "2026-05-07",
+   "n_amendments": 1,
+   "monthly_enrollment_burden": 0.45,
+   "verdict": "WARN",
+   "severity": "high",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT07581002",
+   "bucket": "acute myeloid leukemia",
+   "phase_stratum": "p2p3",
+   "start_date": "2026-07-22",
+   "planned_primary_completion": "2032-06",
+   "first_posted": "2026-05-12",
+   "n_amendments": 2,
+   "monthly_enrollment_burden": 9.39,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07583888",
+   "bucket": "acute myeloid leukemia",
+   "phase_stratum": "p2p3",
+   "start_date": "2026-05-07",
+   "planned_primary_completion": "2027-08-15",
+   "first_posted": "2026-05-13",
+   "n_amendments": 1,
+   "monthly_enrollment_burden": 1.31,
+   "verdict": "WARN",
+   "severity": "medium",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT07584889",
+   "bucket": "acute myeloid leukemia",
+   "phase_stratum": "p1p2",
+   "start_date": "2024-04-20",
+   "planned_primary_completion": "2029-04-19",
+   "first_posted": "2026-05-13",
+   "n_amendments": 0,
+   "monthly_enrollment_burden": 0.17,
+   "verdict": "WARN",
+   "severity": "high",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT07586813",
+   "bucket": "pancreatic cancer",
+   "phase_stratum": "p2",
+   "start_date": "2025-12-22",
+   "planned_primary_completion": "2027-10-31",
+   "first_posted": "2026-05-14",
+   "n_amendments": 0,
+   "monthly_enrollment_burden": 9.87,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07586826",
+   "bucket": "ovarian cancer",
+   "phase_stratum": "p2",
+   "start_date": "2025-12-22",
+   "planned_primary_completion": "2027-10-31",
+   "first_posted": "2026-05-14",
+   "n_amendments": 0,
+   "monthly_enrollment_burden": 9.87,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07589543",
+   "bucket": "ovarian cancer",
+   "phase_stratum": "p1p2",
+   "start_date": "2026-03-02",
+   "planned_primary_completion": "2027-03-14",
+   "first_posted": "2026-05-15",
+   "n_amendments": 0,
+   "monthly_enrollment_burden": 3.39,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07589595",
+   "bucket": "alzheimer disease",
+   "phase_stratum": "p2",
+   "start_date": "2026-05",
+   "planned_primary_completion": "2028-08",
+   "first_posted": "2026-05-15",
+   "n_amendments": 3,
+   "monthly_enrollment_burden": 12.96,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07589608",
+   "bucket": "type 2 diabetes",
+   "phase_stratum": "p2",
+   "start_date": "2026-06",
+   "planned_primary_completion": "2027-09",
+   "first_posted": "2026-05-15",
+   "n_amendments": 3,
+   "monthly_enrollment_burden": 26.67,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07590531",
+   "bucket": "non-small cell lung cancer",
+   "phase_stratum": "p1p2",
+   "start_date": "2026-05-01",
+   "planned_primary_completion": "2027-05-30",
+   "first_posted": "2026-05-15",
+   "n_amendments": 1,
+   "monthly_enrollment_burden": 9.15,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07598383",
+   "bucket": "atopic dermatitis",
+   "phase_stratum": "p2",
+   "start_date": "2026-05-30",
+   "planned_primary_completion": "2027-02-22",
+   "first_posted": "2026-05-20",
+   "n_amendments": 1,
+   "monthly_enrollment_burden": 13.64,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07598396",
+   "bucket": "systemic lupus erythematosus",
+   "phase_stratum": "p2",
+   "start_date": "2026-05-29",
+   "planned_primary_completion": "2028-02-28",
+   "first_posted": "2026-05-20",
+   "n_amendments": 3,
+   "monthly_enrollment_burden": 1.43,
+   "verdict": "WARN",
+   "severity": "high",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT07599410",
+   "bucket": "type 2 diabetes",
+   "phase_stratum": "p2",
+   "start_date": "2026-07",
+   "planned_primary_completion": "2027-05",
+   "first_posted": "2026-05-20",
+   "n_amendments": 1,
+   "monthly_enrollment_burden": 24.0,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07599670",
+   "bucket": "alzheimer disease",
+   "phase_stratum": "p1p2",
+   "start_date": "2026-05-15",
+   "planned_primary_completion": "2030-04",
+   "first_posted": "2026-05-20",
+   "n_amendments": 2,
+   "monthly_enrollment_burden": 4.51,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07599813",
+   "bucket": "atopic dermatitis",
+   "phase_stratum": "p2",
+   "start_date": "2026-05-15",
+   "planned_primary_completion": "2027-10-31",
+   "first_posted": "2026-05-20",
+   "n_amendments": 1,
+   "monthly_enrollment_burden": 16.0,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07607418",
+   "bucket": "acute myeloid leukemia",
+   "phase_stratum": "p2",
+   "start_date": "2026-05-22",
+   "planned_primary_completion": "2027-05-30",
+   "first_posted": "2026-05-26",
+   "n_amendments": 0,
+   "monthly_enrollment_burden": 1.63,
+   "verdict": "WARN",
+   "severity": "medium",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT07610798",
+   "bucket": "ovarian cancer",
+   "phase_stratum": "p1p2",
+   "start_date": "2026-05",
+   "planned_primary_completion": "2029-05",
+   "first_posted": "2026-05-28",
+   "n_amendments": 1,
+   "monthly_enrollment_burden": 4.94,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07616154",
+   "bucket": "sickle cell disease",
+   "phase_stratum": "p2",
+   "start_date": "2026-09",
+   "planned_primary_completion": "2034-09",
+   "first_posted": "2026-06-01",
+   "n_amendments": 1,
+   "monthly_enrollment_burden": 0.47,
+   "verdict": "WARN",
+   "severity": "high",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT07620392",
+   "bucket": "rheumatoid arthritis",
+   "phase_stratum": "p2",
+   "start_date": "2026-06-05",
+   "planned_primary_completion": "2032-06-05",
+   "first_posted": "2026-06-02",
+   "n_amendments": 2,
+   "monthly_enrollment_burden": 1.67,
+   "verdict": "WARN",
+   "severity": "medium",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT07627711",
+   "bucket": "pancreatic cancer",
+   "phase_stratum": "p1p2",
+   "start_date": "2026-03-02",
+   "planned_primary_completion": "2027-04-14",
+   "first_posted": "2026-06-04",
+   "n_amendments": 0,
+   "monthly_enrollment_burden": 3.13,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07629778",
+   "bucket": "atopic dermatitis",
+   "phase_stratum": "p1p2",
+   "start_date": "2026-05-11",
+   "planned_primary_completion": "2027-06-30",
+   "first_posted": "2026-06-05",
+   "n_amendments": 1,
+   "monthly_enrollment_burden": 11.47,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07632846",
+   "bucket": "rheumatoid arthritis",
+   "phase_stratum": "p2",
+   "start_date": "2026-05-19",
+   "planned_primary_completion": "2026-10",
+   "first_posted": "2026-06-08",
+   "n_amendments": 0,
+   "monthly_enrollment_burden": 11.36,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07632872",
+   "bucket": "rheumatoid arthritis",
+   "phase_stratum": "p2",
+   "start_date": "2026-05-23",
+   "planned_primary_completion": "2026-11",
+   "first_posted": "2026-06-08",
+   "n_amendments": 0,
+   "monthly_enrollment_burden": 11.32,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07651319",
+   "bucket": "alzheimer disease",
+   "phase_stratum": "p1p2",
+   "start_date": "2026-07",
+   "planned_primary_completion": "2029-06",
+   "first_posted": "2026-06-16",
+   "n_amendments": 0,
+   "monthly_enrollment_burden": 0.86,
+   "verdict": "WARN",
+   "severity": "high",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT07652658",
+   "bucket": "idiopathic pulmonary fibrosis",
+   "phase_stratum": "p2",
+   "start_date": "2026-06-15",
+   "planned_primary_completion": "2028-09-18",
+   "first_posted": "2026-06-17",
+   "n_amendments": 1,
+   "monthly_enrollment_burden": 13.25,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07654426",
+   "bucket": "heart failure",
+   "phase_stratum": "p2",
+   "start_date": "2026-10-02",
+   "planned_primary_completion": "2030-12-31",
+   "first_posted": "2026-06-17",
+   "n_amendments": 2,
+   "monthly_enrollment_burden": 1.18,
+   "verdict": "WARN",
+   "severity": "high",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT07657793",
+   "bucket": "systemic lupus erythematosus",
+   "phase_stratum": "p2p3",
+   "start_date": "2026-06-07",
+   "planned_primary_completion": "2027-09-30",
+   "first_posted": "2026-06-18",
+   "n_amendments": 0,
+   "monthly_enrollment_burden": 10.38,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07660614",
+   "bucket": "amyotrophic lateral sclerosis",
+   "phase_stratum": "p1p2",
+   "start_date": "2026-04-29",
+   "planned_primary_completion": "2031-06",
+   "first_posted": "2026-06-22",
+   "n_amendments": 0,
+   "monthly_enrollment_burden": 0.92,
+   "verdict": "WARN",
+   "severity": "high",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT07667751",
+   "bucket": "ovarian cancer",
+   "phase_stratum": "p2",
+   "start_date": "2026-06-01",
+   "planned_primary_completion": "2027-12-31",
+   "first_posted": "2026-06-25",
+   "n_amendments": 0,
+   "monthly_enrollment_burden": 1.84,
+   "verdict": "WARN",
+   "severity": "medium",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT07668388",
+   "bucket": "type 2 diabetes",
+   "phase_stratum": "p2",
+   "start_date": "2026-06-22",
+   "planned_primary_completion": "2027-10-04",
+   "first_posted": "2026-06-25",
+   "n_amendments": 1,
+   "monthly_enrollment_burden": 19.48,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07670026",
+   "bucket": "glioblastoma",
+   "phase_stratum": "p2",
+   "start_date": "2025-12-01",
+   "planned_primary_completion": "2027-12-01",
+   "first_posted": "2026-06-25",
+   "n_amendments": 0,
+   "monthly_enrollment_burden": 1.29,
+   "verdict": "WARN",
+   "severity": "medium",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT07675499",
+   "bucket": "type 2 diabetes",
+   "phase_stratum": "p2p3",
+   "start_date": "2026-08-03",
+   "planned_primary_completion": "2029-05-18",
+   "first_posted": "2026-06-30",
+   "n_amendments": 0,
+   "monthly_enrollment_burden": 1.79,
+   "verdict": "WARN",
+   "severity": "high",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT07679893",
+   "bucket": "idiopathic pulmonary fibrosis",
+   "phase_stratum": "p2",
+   "start_date": "2026-06-30",
+   "planned_primary_completion": "2028-01-30",
+   "first_posted": "2026-07-01",
+   "n_amendments": 4,
+   "monthly_enrollment_burden": 11.05,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07692256",
+   "bucket": "heart failure",
+   "phase_stratum": "p2",
+   "start_date": "2025-12-01",
+   "planned_primary_completion": "2026-12-01",
+   "first_posted": "2026-07-09",
+   "n_amendments": 0,
+   "monthly_enrollment_burden": 5.0,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07693036",
+   "bucket": "type 2 diabetes",
+   "phase_stratum": "p1p2",
+   "start_date": "2026-06-05",
+   "planned_primary_completion": "2028-06-04",
+   "first_posted": "2026-07-09",
+   "n_amendments": 0,
+   "monthly_enrollment_burden": 2.75,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07693140",
+   "bucket": "alzheimer disease",
+   "phase_stratum": "p1p2",
+   "start_date": "2026-07-15",
+   "planned_primary_completion": "2029-05-21",
+   "first_posted": "2026-07-09",
+   "n_amendments": 0,
+   "monthly_enrollment_burden": 1.46,
+   "verdict": "WARN",
+   "severity": "medium",
+   "codes": [
+    "feature.monthly_enrollment_burden"
+   ]
+  },
+  {
+   "nct_id": "NCT07695090",
+   "bucket": "heart failure",
+   "phase_stratum": "p2",
+   "start_date": "2026-07",
+   "planned_primary_completion": "2027-05",
+   "first_posted": "2026-07-10",
+   "n_amendments": 1,
+   "monthly_enrollment_burden": 6.0,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07702292",
+   "bucket": "pancreatic cancer",
+   "phase_stratum": "p2",
+   "start_date": "2026-06",
+   "planned_primary_completion": "2028-02",
+   "first_posted": "2026-07-14",
+   "n_amendments": 1,
+   "monthly_enrollment_burden": 3.25,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07702890",
+   "bucket": "type 2 diabetes",
+   "phase_stratum": "p1p2",
+   "start_date": "2026-07",
+   "planned_primary_completion": "2028-12",
+   "first_posted": "2026-07-14",
+   "n_amendments": 1,
+   "monthly_enrollment_burden": 6.48,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07704580",
+   "bucket": "rheumatoid arthritis",
+   "phase_stratum": "p1p2",
+   "start_date": "2026-07-02",
+   "planned_primary_completion": "2028-10-26",
+   "first_posted": "2026-07-15",
+   "n_amendments": 0,
+   "monthly_enrollment_burden": 5.04,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07708714",
+   "bucket": "sickle cell disease",
+   "phase_stratum": "p1p2",
+   "start_date": "2026-05-13",
+   "planned_primary_completion": "2030-11-30",
+   "first_posted": "2026-07-16",
+   "n_amendments": 0,
+   "monthly_enrollment_burden": 4.58,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07724340",
+   "bucket": "type 2 diabetes",
+   "phase_stratum": "p2",
+   "start_date": "2026-06-19",
+   "planned_primary_completion": "2027-02",
+   "first_posted": "2026-07-24",
+   "n_amendments": 0,
+   "monthly_enrollment_burden": 20.0,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07743112",
+   "bucket": "acute myeloid leukemia",
+   "phase_stratum": "p2",
+   "start_date": "2025-09-05",
+   "planned_primary_completion": "2027-09-01",
+   "first_posted": "2026-08-03",
+   "n_amendments": 0,
+   "monthly_enrollment_burden": 1.8,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  },
+  {
+   "nct_id": "NCT07745426",
+   "bucket": "rheumatoid arthritis",
+   "phase_stratum": "p2",
+   "start_date": "2026-08-01",
+   "planned_primary_completion": "2027-08-01",
+   "first_posted": "2026-08-04",
+   "n_amendments": 0,
+   "monthly_enrollment_burden": 5.5,
+   "verdict": "CLEAR",
+   "severity": null,
+   "codes": []
+  }
+ ],
+ "rule": {
+  "risk_eligible": [
+   "monthly_enrollment_burden"
+  ],
+  "feature_status": {
+   "eligibility_chars": "unvalidated",
+   "monthly_enrollment_burden": "validated",
+   "n_concurrent_phase2": "retracted",
+   "n_concurrent_trials": "retracted",
+   "n_eligibility_items": "unvalidated",
+   "n_exclusion_items": "unvalidated",
+   "n_inclusion_items": "unvalidated",
+   "n_secondary_outcomes": "reversed",
+   "planned_duration_months": "nonspecific",
+   "planned_enrollment": "unvalidated",
+   "total_competing_seats": "retracted"
+  },
+  "severity_rule": "관측값이 완주군 참조분포의 p25 미만(또는 higher_is_riskier 피처는 p75 초과)이면 medium, 실패군 중앙값을 넘어서면 high. 임계값은 참조 분포의 분위수에서 나오며 참조 분포는 아래 해시로 고정된다.",
+  "warn_definition": "위험 판정(severity ∈ {high, medium}) 이 1건 이상이면 WARN",
+  "pipeline_sha256": "0f80fdcf7f5c554c044ce05348884e21c179abe06000b3b96bb790f41c872113",
+  "benchmarks_sha256": "b893f339bfeac7cb6556d4acf2b04be3a3e8bbe9d4e6c31f74175e6d9bf386f2",
+  "corpus_sha256": "9ba6a283b0997a4fa8f2a2cb83a9113a22777b8e979893c4f33f038f85600a63",
+  "corpus_note": "2010-2020 개시 Phase 2 코퍼스 1,463건. 전향 예측 대상과 시간축이 겹치지 않는다."
+ },
+ "commitment": {
+  "primary_hypothesis": "H1: WARN 군의 '모집 실패 중단'(라벨 A) 발생률이 CLEAR 군보다 높다. 개별 시험의 결과를 예측하지 않는다 — 모수 PPV 10.7% 이므로 개별 예측은 설계상 대부분 빗나가며, 그것이 이 도구의 정상 동작이다.",
+  "effect_measure": "위험비(RR) = P(A분류 중단 | WARN) / P(A분류 중단 | CLEAR)",
+  "success_criterion": "RR 의 95% CI 하한 > 1.0 이면 가설 지지, 1.0 을 포함하면 미지지",
+  "prespecified_null_result": "RR ≤ 1 또는 CI 가 1 을 포함하면 '전향 검증 실패'로 그대로 보고한다. 사후에 하위군을 나누거나 기준을 바꾸지 않는다.",
+  "outcome_ascertainment": "CT.gov v2 의 overallStatus 와 whyStopped 를 받아 src/labels/taxonomy.py 의 classify() 로 분류한다. 분류기도 이 커밋 시점의 버전을 쓴다(pipeline_sha256 과 동일 저장소 상태).",
+  "checkpoints": [
+   {
+    "date": "2027-08-07",
+    "purpose": "1차 중간 판정 — 이 시점까지 종료된 건만으로 산출"
+   },
+   {
+    "date": "2029-08-07",
+    "purpose": "최종 판정 — 대다수 시험의 계획 완료일 경과 후"
+   }
+  ],
+  "censoring": "판정 시점에 아직 RECRUITING/ACTIVE 인 시험은 중도절단으로 처리하고 분모에서 뺀다. 종료됐으나 사유 미기재인 건은 '분류 불가'로 별도 보고한다.",
+  "falsifiability": "이 커밋의 해시는 제안서에 인쇄된다. 목록·규칙·기준을 사후에 바꾸면 해시가 달라지므로 누구나 검산으로 적발할 수 있다.",
+  "known_biases": [
+   {
+    "name": "생존 편향 — RECRUITING 만 뽑은 데서 오는 구조적 편향",
+    "detail": "예측이 성립하려면 결과가 아직 없어야 하므로 모집 중인 시험만 대상이 된다. 그런데 모집이 빠른 시험은 이미 등록을 마치고 ACTIVE_NOT_RECRUITING 으로 넘어가 표본에서 빠진다. 따라서 이 표본은 모집이 느린 쪽으로 기울어 있고, 실제로 경고율이 모수 유병률로 계산한 기대치(약 31%)보다 높게 나온다.",
+    "why_it_does_not_invalidate_h1": "H1 은 절대 경고율이 아니라 **WARN 군과 CLEAR 군의 대비**를 본다. 표본 전체가 한쪽으로 기울어도 두 군 사이의 위험비는 여전히 해석 가능하다. 다만 이 표본에서 얻은 경고율을 모집단의 경고율로 일반화해서는 안 된다."
+   },
+   {
+    "name": "시대 차이 — 참조 분포는 2010–2020 개시 코퍼스에서 나왔다",
+    "detail": "예측 대상은 2025년 이후 최초 등록분이라 15년의 간극이 있다. 설계 관행이 변했다면 임계값이 체계적으로 어긋날 수 있다. 참고로 전향 대상의 월 모집부담 중앙값은 코퍼스 완주군과 가까웠고 모집실패군과는 뚜렷이 달랐다.",
+    "why_it_does_not_invalidate_h1": "참조 분포를 예측 대상으로 다시 추정하면 사전등록이 무너지므로 하지 않는다. 시대 차이는 검증 시점에 '이 도구가 2020년대 시험에도 통하는가'라는 질문의 답으로 함께 보고한다."
+   },
+   {
+    "name": "개정 누적 — 최초 등록본을 입력으로 쓴다",
+    "detail": "모집이 부진하면 목표 등록수를 낮추거나 기간을 늘리므로, 현재 등록본을 쓰면 이미 일어난 결과가 피처에 새어든다. 첫 설계에서 개시일 기준으로 표본을 뽑았다가 최초 완료예정이 2019년인데 아직 모집 중인 시험이 섞여 들어온 것을 발견하고, 최초 등록일 기준 + 최초 등록본(history/0) + 개정 상한으로 바꿨다.",
+    "why_it_does_not_invalidate_h1": "후향 백테스트와 입력 정의가 같아졌으므로 두 결과를 같은 잣대로 비교할 수 있다."
+   }
+  ]
+ }
+}

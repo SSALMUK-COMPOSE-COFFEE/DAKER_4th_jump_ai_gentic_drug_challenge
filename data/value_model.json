@@ -1,0 +1,887 @@
+{
+ "_meta": {
+  "generated_by": "src/analysis/value_model.py",
+  "feature": "monthly_enrollment_burden",
+  "direction": "낮을수록 위험 (임계값 이하 = 경고)",
+  "corpus": "data/raw/ctgov_phase2.jsonl",
+  "census": "data/census.json",
+  "second_pass_labels": "data/census_unmatched_sample_labels.json",
+  "sample_seed": 20260730,
+  "warning": "Z(사전 경고로 회피 가능한 비율)는 실측된 값이 없어 이 파일에 없다."
+ },
+ "second_pass": {
+  "taxonomy_sha256": "b1d67972a5d6af28",
+  "n_labeled_total": 300,
+  "n_unmatched": 1478,
+  "n_sample_effective": 263,
+  "n_label_now_rule_matched": 37,
+  "rule_vs_llm_agreement": {
+   "n_compared": 37,
+   "n_agree": 35,
+   "agreement_rate": 0.9459,
+   "examples_of_disagreement": [
+    {
+     "nct": "NCT02010203",
+     "rule": "D",
+     "llm": "A?",
+     "why": "Inability to accrue due to changing treatment landscape (PD-1 approvals)"
+    },
+    {
+     "nct": "NCT01690468",
+     "rule": "A",
+     "llm": "C",
+     "why": "Enrollment stopped prior to Phase 1b, change in strategic focus"
+    }
+   ]
+  },
+  "sample_counts": {
+   "A": 43,
+   "A?": 36,
+   "B": 55,
+   "C": 81,
+   "D": 18,
+   "?": 30
+  },
+  "n_reason_stated": 4885,
+  "rule_only": {
+   "A": 1321,
+   "B": 755,
+   "C": 1295,
+   "D": 36
+  },
+  "extrapolated": {
+   "A": {
+    "sample_rate": 0.1635,
+    "sample_ci95": [
+     0.1237,
+     0.213
+    ],
+    "n_added_point": 241.7,
+    "total_point": 1562.7,
+    "share_of_stated_point": 0.3199,
+    "share_of_stated_ci95": [
+     0.3078,
+     0.3349
+    ]
+   },
+   "A?": {
+    "sample_rate": 0.1369,
+    "sample_ci95": [
+     0.1005,
+     0.1837
+    ],
+    "n_added_point": 202.3,
+    "total_point": 202.3,
+    "share_of_stated_point": 0.0414,
+    "share_of_stated_ci95": [
+     0.0304,
+     0.0556
+    ]
+   },
+   "B": {
+    "sample_rate": 0.2091,
+    "sample_ci95": [
+     0.1643,
+     0.2623
+    ],
+    "n_added_point": 309.1,
+    "total_point": 1064.1,
+    "share_of_stated_point": 0.2178,
+    "share_of_stated_ci95": [
+     0.2043,
+     0.2339
+    ]
+   },
+   "C": {
+    "sample_rate": 0.308,
+    "sample_ci95": [
+     0.2553,
+     0.3662
+    ],
+    "n_added_point": 455.2,
+    "total_point": 1750.2,
+    "share_of_stated_point": 0.3583,
+    "share_of_stated_ci95": [
+     0.3423,
+     0.3759
+    ]
+   },
+   "D": {
+    "sample_rate": 0.0684,
+    "sample_ci95": [
+     0.0437,
+     0.1056
+    ],
+    "n_added_point": 101.2,
+    "total_point": 137.2,
+    "share_of_stated_point": 0.0281,
+    "share_of_stated_ci95": [
+     0.0206,
+     0.0393
+    ]
+   },
+   "?": {
+    "sample_rate": 0.1141,
+    "sample_ci95": [
+     0.0811,
+     0.1582
+    ],
+    "n_added_point": 168.6,
+    "total_point": 168.6,
+    "share_of_stated_point": 0.0345,
+    "share_of_stated_ci95": [
+     0.0245,
+     0.0479
+    ]
+   }
+  },
+  "A_share_of_stated_range": [
+   0.3199,
+   0.3613
+  ]
+ },
+ "prevalence": {
+  "n_determined": 29575,
+  "n_completed": 22401,
+  "n_terminated": 5299,
+  "n_withdrawn": 1875,
+  "pi_rule_only": 0.04467,
+  "pi_second_pass": 0.05284,
+  "pi_second_pass_upper": 0.05968,
+  "note": "분모 = 결과 확정(COMPLETED+TERMINATED+WITHDRAWN). 분자 = A분류 TERMINATED만 (코퍼스 라벨 정의와 일치). WITHDRAWN 의 A분류는 제외 → 보수적."
+ },
+ "operating_points": [
+  {
+   "threshold": 1.0,
+   "rule": "monthly_enrollment_burden <= 1.0 → 경고",
+   "중단-모집실패": {
+    "n": 116,
+    "n_flag": 34,
+    "rate": 0.2931,
+    "ci95": [
+     0.218,
+     0.3815
+    ]
+   },
+   "완주": {
+    "n": 582,
+    "n_flag": 79,
+    "rate": 0.1357,
+    "ci95": [
+     0.1103,
+     0.166
+    ]
+   },
+   "중단-과학적": {
+    "n": 115,
+    "n_flag": 7,
+    "rate": 0.0609,
+    "ci95": [
+     0.0298,
+     0.1203
+    ]
+   },
+   "중단-경영": {
+    "n": 140,
+    "n_flag": 19,
+    "rate": 0.1357,
+    "ci95": [
+     0.0886,
+     0.2023
+    ]
+   },
+   "중단-경쟁환경": {
+    "n": 10,
+    "n_flag": 0,
+    "rate": 0.0,
+    "ci95": [
+     0.0,
+     0.2775
+    ]
+   },
+   "중단-미분류": {
+    "n": 205,
+    "n_flag": 22,
+    "rate": 0.1073,
+    "ci95": [
+     0.0719,
+     0.1571
+    ]
+   },
+   "철회(개시전)": {
+    "n": 264,
+    "n_flag": 56,
+    "rate": 0.2121,
+    "ci95": [
+     0.1671,
+     0.2654
+    ]
+   },
+   "indication_standardized": {
+    "중단-모집실패": 0.2458,
+    "완주": 0.1434
+   }
+  },
+  {
+   "threshold": 1.5,
+   "rule": "monthly_enrollment_burden <= 1.5 → 경고",
+   "중단-모집실패": {
+    "n": 116,
+    "n_flag": 58,
+    "rate": 0.5,
+    "ci95": [
+     0.4105,
+     0.5895
+    ]
+   },
+   "완주": {
+    "n": 582,
+    "n_flag": 130,
+    "rate": 0.2234,
+    "ci95": [
+     0.1914,
+     0.259
+    ]
+   },
+   "중단-과학적": {
+    "n": 115,
+    "n_flag": 17,
+    "rate": 0.1478,
+    "ci95": [
+     0.0944,
+     0.224
+    ]
+   },
+   "중단-경영": {
+    "n": 140,
+    "n_flag": 28,
+    "rate": 0.2,
+    "ci95": [
+     0.1422,
+     0.2739
+    ]
+   },
+   "중단-경쟁환경": {
+    "n": 10,
+    "n_flag": 3,
+    "rate": 0.3,
+    "ci95": [
+     0.1078,
+     0.6032
+    ]
+   },
+   "중단-미분류": {
+    "n": 205,
+    "n_flag": 53,
+    "rate": 0.2585,
+    "ci95": [
+     0.2034,
+     0.3225
+    ]
+   },
+   "철회(개시전)": {
+    "n": 264,
+    "n_flag": 96,
+    "rate": 0.3636,
+    "ci95": [
+     0.3079,
+     0.4232
+    ]
+   },
+   "indication_standardized": {
+    "중단-모집실패": 0.4953,
+    "완주": 0.2364
+   }
+  },
+  {
+   "threshold": 2.0,
+   "rule": "monthly_enrollment_burden <= 2.0 → 경고",
+   "중단-모집실패": {
+    "n": 116,
+    "n_flag": 70,
+    "rate": 0.6034,
+    "ci95": [
+     0.5125,
+     0.6878
+    ]
+   },
+   "완주": {
+    "n": 582,
+    "n_flag": 187,
+    "rate": 0.3213,
+    "ci95": [
+     0.2846,
+     0.3603
+    ]
+   },
+   "중단-과학적": {
+    "n": 115,
+    "n_flag": 21,
+    "rate": 0.1826,
+    "ci95": [
+     0.1227,
+     0.2631
+    ]
+   },
+   "중단-경영": {
+    "n": 140,
+    "n_flag": 47,
+    "rate": 0.3357,
+    "ci95": [
+     0.2628,
+     0.4174
+    ]
+   },
+   "중단-경쟁환경": {
+    "n": 10,
+    "n_flag": 5,
+    "rate": 0.5,
+    "ci95": [
+     0.2366,
+     0.7634
+    ]
+   },
+   "중단-미분류": {
+    "n": 205,
+    "n_flag": 74,
+    "rate": 0.361,
+    "ci95": [
+     0.2983,
+     0.4287
+    ]
+   },
+   "철회(개시전)": {
+    "n": 264,
+    "n_flag": 137,
+    "rate": 0.5189,
+    "ci95": [
+     0.4588,
+     0.5785
+    ]
+   },
+   "indication_standardized": {
+    "중단-모집실패": 0.5978,
+    "완주": 0.3459
+   }
+  },
+  {
+   "threshold": 2.5,
+   "rule": "monthly_enrollment_burden <= 2.5 → 경고",
+   "중단-모집실패": {
+    "n": 116,
+    "n_flag": 79,
+    "rate": 0.681,
+    "ci95": [
+     0.5916,
+     0.7589
+    ]
+   },
+   "완주": {
+    "n": 582,
+    "n_flag": 226,
+    "rate": 0.3883,
+    "ci95": [
+     0.3496,
+     0.4285
+    ]
+   },
+   "중단-과학적": {
+    "n": 115,
+    "n_flag": 29,
+    "rate": 0.2522,
+    "ci95": [
+     0.1817,
+     0.3387
+    ]
+   },
+   "중단-경영": {
+    "n": 140,
+    "n_flag": 61,
+    "rate": 0.4357,
+    "ci95": [
+     0.3564,
+     0.5185
+    ]
+   },
+   "중단-경쟁환경": {
+    "n": 10,
+    "n_flag": 5,
+    "rate": 0.5,
+    "ci95": [
+     0.2366,
+     0.7634
+    ]
+   },
+   "중단-미분류": {
+    "n": 205,
+    "n_flag": 91,
+    "rate": 0.4439,
+    "ci95": [
+     0.3775,
+     0.5123
+    ]
+   },
+   "철회(개시전)": {
+    "n": 264,
+    "n_flag": 155,
+    "rate": 0.5871,
+    "ci95": [
+     0.5269,
+     0.6448
+    ]
+   },
+   "indication_standardized": {
+    "중단-모집실패": 0.6833,
+    "완주": 0.4278
+   }
+  },
+  {
+   "threshold": 3.0,
+   "rule": "monthly_enrollment_burden <= 3.0 → 경고",
+   "중단-모집실패": {
+    "n": 116,
+    "n_flag": 86,
+    "rate": 0.7414,
+    "ci95": [
+     0.6549,
+     0.8124
+    ]
+   },
+   "완주": {
+    "n": 582,
+    "n_flag": 268,
+    "rate": 0.4605,
+    "ci95": [
+     0.4204,
+     0.5011
+    ]
+   },
+   "중단-과학적": {
+    "n": 115,
+    "n_flag": 33,
+    "rate": 0.287,
+    "ci95": [
+     0.2122,
+     0.3755
+    ]
+   },
+   "중단-경영": {
+    "n": 140,
+    "n_flag": 72,
+    "rate": 0.5143,
+    "ci95": [
+     0.4322,
+     0.5956
+    ]
+   },
+   "중단-경쟁환경": {
+    "n": 10,
+    "n_flag": 5,
+    "rate": 0.5,
+    "ci95": [
+     0.2366,
+     0.7634
+    ]
+   },
+   "중단-미분류": {
+    "n": 205,
+    "n_flag": 102,
+    "rate": 0.4976,
+    "ci95": [
+     0.4298,
+     0.5654
+    ]
+   },
+   "철회(개시전)": {
+    "n": 264,
+    "n_flag": 170,
+    "rate": 0.6439,
+    "ci95": [
+     0.5845,
+     0.6993
+    ]
+   },
+   "indication_standardized": {
+    "중단-모집실패": 0.745,
+    "완주": 0.52
+   }
+  }
+ ],
+ "ppv": [
+  {
+   "threshold": 1.0,
+   "sens_pooled": 0.2931,
+   "sens_standardized": 0.2458,
+   "fpr_completed_only": 0.1357,
+   "fpr_composite": 0.1368,
+   "composite_detail": {
+    "composite_fpr": 0.1368,
+    "negative_weights_total": 27811.1,
+    "per_group": {
+     "완주": {
+      "weight_share": 0.8055,
+      "fpr": 0.1357,
+      "n_corpus": 582
+     },
+     "중단-과학적": {
+      "weight_share": 0.0383,
+      "fpr": 0.0609,
+      "n_corpus": 115
+     },
+     "중단-경영": {
+      "weight_share": 0.0629,
+      "fpr": 0.1357,
+      "n_corpus": 140
+     },
+     "중단-경쟁환경": {
+      "weight_share": 0.0049,
+      "fpr": 0.0,
+      "n_corpus": 10
+     },
+     "중단-미분류": {
+      "weight_share": 0.021,
+      "fpr": 0.1073,
+      "n_corpus": 205
+     },
+     "철회(개시전)": {
+      "weight_share": 0.0674,
+      "fpr": 0.2121,
+      "n_corpus": 264
+     }
+    }
+   },
+   "ppv": {
+    "pi_rule_only": 0.0775,
+    "pi_second_pass": 0.0911,
+    "pi_upper": 0.1024,
+    "corpus_prevalence_for_contrast": 0.1367
+   },
+   "triage_at_pi_second_pass": {
+    "flag_rate": 0.1426,
+    "fail_rate_if_flagged": 0.0911,
+    "fail_rate_if_not_flagged": 0.0465,
+    "risk_ratio": 1.96,
+    "lift_over_base": 1.72,
+    "n_screened_per_true_case": 77.0
+   }
+  },
+  {
+   "threshold": 1.5,
+   "sens_pooled": 0.5,
+   "sens_standardized": 0.4953,
+   "fpr_completed_only": 0.2234,
+   "fpr_composite": 0.2296,
+   "composite_detail": {
+    "composite_fpr": 0.2296,
+    "negative_weights_total": 27811.1,
+    "per_group": {
+     "완주": {
+      "weight_share": 0.8055,
+      "fpr": 0.2234,
+      "n_corpus": 582
+     },
+     "중단-과학적": {
+      "weight_share": 0.0383,
+      "fpr": 0.1478,
+      "n_corpus": 115
+     },
+     "중단-경영": {
+      "weight_share": 0.0629,
+      "fpr": 0.2,
+      "n_corpus": 140
+     },
+     "중단-경쟁환경": {
+      "weight_share": 0.0049,
+      "fpr": 0.3,
+      "n_corpus": 10
+     },
+     "중단-미분류": {
+      "weight_share": 0.021,
+      "fpr": 0.2585,
+      "n_corpus": 205
+     },
+     "철회(개시전)": {
+      "weight_share": 0.0674,
+      "fpr": 0.3636,
+      "n_corpus": 264
+     }
+    }
+   },
+   "ppv": {
+    "pi_rule_only": 0.0916,
+    "pi_second_pass": 0.1074,
+    "pi_upper": 0.1204,
+    "corpus_prevalence_for_contrast": 0.1598
+   },
+   "triage_at_pi_second_pass": {
+    "flag_rate": 0.2436,
+    "fail_rate_if_flagged": 0.1074,
+    "fail_rate_if_not_flagged": 0.0353,
+    "risk_ratio": 3.05,
+    "lift_over_base": 2.03,
+    "n_screened_per_true_case": 38.2
+   }
+  },
+  {
+   "threshold": 2.0,
+   "sens_pooled": 0.6034,
+   "sens_standardized": 0.5978,
+   "fpr_completed_only": 0.3213,
+   "fpr_composite": 0.3319,
+   "composite_detail": {
+    "composite_fpr": 0.3319,
+    "negative_weights_total": 27811.1,
+    "per_group": {
+     "완주": {
+      "weight_share": 0.8055,
+      "fpr": 0.3213,
+      "n_corpus": 582
+     },
+     "중단-과학적": {
+      "weight_share": 0.0383,
+      "fpr": 0.1826,
+      "n_corpus": 115
+     },
+     "중단-경영": {
+      "weight_share": 0.0629,
+      "fpr": 0.3357,
+      "n_corpus": 140
+     },
+     "중단-경쟁환경": {
+      "weight_share": 0.0049,
+      "fpr": 0.5,
+      "n_corpus": 10
+     },
+     "중단-미분류": {
+      "weight_share": 0.021,
+      "fpr": 0.361,
+      "n_corpus": 205
+     },
+     "철회(개시전)": {
+      "weight_share": 0.0674,
+      "fpr": 0.5189,
+      "n_corpus": 264
+     }
+    }
+   },
+   "ppv": {
+    "pi_rule_only": 0.0777,
+    "pi_second_pass": 0.0913,
+    "pi_upper": 0.1026,
+    "corpus_prevalence_for_contrast": 0.137
+   },
+   "triage_at_pi_second_pass": {
+    "flag_rate": 0.346,
+    "fail_rate_if_flagged": 0.0913,
+    "fail_rate_if_not_flagged": 0.0325,
+    "risk_ratio": 2.81,
+    "lift_over_base": 1.73,
+    "n_screened_per_true_case": 31.7
+   }
+  },
+  {
+   "threshold": 2.5,
+   "sens_pooled": 0.681,
+   "sens_standardized": 0.6833,
+   "fpr_completed_only": 0.3883,
+   "fpr_composite": 0.4012,
+   "composite_detail": {
+    "composite_fpr": 0.4012,
+    "negative_weights_total": 27811.1,
+    "per_group": {
+     "완주": {
+      "weight_share": 0.8055,
+      "fpr": 0.3883,
+      "n_corpus": 582
+     },
+     "중단-과학적": {
+      "weight_share": 0.0383,
+      "fpr": 0.2522,
+      "n_corpus": 115
+     },
+     "중단-경영": {
+      "weight_share": 0.0629,
+      "fpr": 0.4357,
+      "n_corpus": 140
+     },
+     "중단-경쟁환경": {
+      "weight_share": 0.0049,
+      "fpr": 0.5,
+      "n_corpus": 10
+     },
+     "중단-미분류": {
+      "weight_share": 0.021,
+      "fpr": 0.4439,
+      "n_corpus": 205
+     },
+     "철회(개시전)": {
+      "weight_share": 0.0674,
+      "fpr": 0.5871,
+      "n_corpus": 264
+     }
+    }
+   },
+   "ppv": {
+    "pi_rule_only": 0.0738,
+    "pi_second_pass": 0.0868,
+    "pi_upper": 0.0975,
+    "corpus_prevalence_for_contrast": 0.1305
+   },
+   "triage_at_pi_second_pass": {
+    "flag_rate": 0.4161,
+    "fail_rate_if_flagged": 0.0868,
+    "fail_rate_if_not_flagged": 0.0287,
+    "risk_ratio": 3.03,
+    "lift_over_base": 1.64,
+    "n_screened_per_true_case": 27.7
+   }
+  },
+  {
+   "threshold": 3.0,
+   "sens_pooled": 0.7414,
+   "sens_standardized": 0.745,
+   "fpr_completed_only": 0.4605,
+   "fpr_composite": 0.4706,
+   "composite_detail": {
+    "composite_fpr": 0.4706,
+    "negative_weights_total": 27811.1,
+    "per_group": {
+     "완주": {
+      "weight_share": 0.8055,
+      "fpr": 0.4605,
+      "n_corpus": 582
+     },
+     "중단-과학적": {
+      "weight_share": 0.0383,
+      "fpr": 0.287,
+      "n_corpus": 115
+     },
+     "중단-경영": {
+      "weight_share": 0.0629,
+      "fpr": 0.5143,
+      "n_corpus": 140
+     },
+     "중단-경쟁환경": {
+      "weight_share": 0.0049,
+      "fpr": 0.5,
+      "n_corpus": 10
+     },
+     "중단-미분류": {
+      "weight_share": 0.021,
+      "fpr": 0.4976,
+      "n_corpus": 205
+     },
+     "철회(개시전)": {
+      "weight_share": 0.0674,
+      "fpr": 0.6439,
+      "n_corpus": 264
+     }
+    }
+   },
+   "ppv": {
+    "pi_rule_only": 0.0689,
+    "pi_second_pass": 0.0811,
+    "pi_upper": 0.0913,
+    "corpus_prevalence_for_contrast": 0.1225
+   },
+   "triage_at_pi_second_pass": {
+    "flag_rate": 0.4851,
+    "fail_rate_if_flagged": 0.0811,
+    "fail_rate_if_not_flagged": 0.0262,
+    "risk_ratio": 3.1,
+    "lift_over_base": 1.54,
+    "n_screened_per_true_case": 25.4
+   }
+  }
+ ],
+ "holdout_gate_crosscheck": {
+  "test": {
+   "sensitivity": 0.594,
+   "false_positive_rate": 0.294,
+   "ppv_pi_second_pass": 0.1013,
+   "ppv_pi_rule_only": 0.0863,
+   "triage": {
+    "flag_rate": 0.3099,
+    "fail_rate_if_flagged": 0.1013,
+    "fail_rate_if_not_flagged": 0.0311,
+    "risk_ratio": 3.26,
+    "lift_over_base": 1.92,
+    "n_screened_per_true_case": 31.9
+   }
+  },
+  "train": {
+   "sensitivity": 0.596,
+   "false_positive_rate": 0.353,
+   "ppv_pi_second_pass": 0.0861,
+   "ppv_pi_rule_only": 0.0732,
+   "triage": {
+    "flag_rate": 0.3658,
+    "fail_rate_if_flagged": 0.0861,
+    "fail_rate_if_not_flagged": 0.0337,
+    "risk_ratio": 2.56,
+    "lift_over_base": 1.63,
+    "n_screened_per_true_case": 31.8
+   }
+  }
+ },
+ "scale": {
+  "n_phase2_registered_2010_2020": 38987,
+  "per_year_mean": 3544.3,
+  "n_A_terminated_point": 1562.7,
+  "n_A_terminated_per_year": 142.1
+ },
+ "saving_sensitivity": {
+  "assumptions": {
+   "cost_phase2_usd": 13350000,
+   "cost_source": "Sertkaya et al., ASPE/ERG 2014 Table 1 (Phase 2 weighted mean). 물가조정 없음. 산업주도 기준.",
+   "f_spent_fraction": "가정·미검증 (0.20/0.35/0.50)",
+   "z_avoidable_fraction": "가정·미검증 (0.10/0.25/0.50)",
+   "kr_phase2_share": "0.205 (2차 출처, 식약처 1차 미확인)"
+  },
+  "pi": 0.05284,
+  "sens": 0.4953,
+  "catch_per_screened": 0.02617,
+  "identity_check": {
+   "flag_rate_x_ppv": 0.02616,
+   "note": "pi*sens 와 같아야 한다 (반올림 오차 범위 내)"
+  },
+  "per_screened_protocol_usd": {
+   "f=0.2,Z=0.1": 6988,
+   "f=0.2,Z=0.25": 17470,
+   "f=0.2,Z=0.5": 34939,
+   "f=0.35,Z=0.1": 12229,
+   "f=0.35,Z=0.25": 30572,
+   "f=0.35,Z=0.5": 61144,
+   "f=0.5,Z=0.1": 17470,
+   "f=0.5,Z=0.25": 43674,
+   "f=0.5,Z=0.5": 87348
+  },
+  "global_annual_usd": {
+   "f=0.2,Z=0.1": 24766970,
+   "f=0.2,Z=0.25": 61917424,
+   "f=0.2,Z=0.5": 123834849,
+   "f=0.35,Z=0.1": 43342197,
+   "f=0.35,Z=0.25": 108355492,
+   "f=0.35,Z=0.5": 216710985,
+   "f=0.5,Z=0.1": 61917424,
+   "f=0.5,Z=0.25": 154793561,
+   "f=0.5,Z=0.5": 309587121
+  },
+  "korea_annual_usd": {
+   "f=0.2,Z=0.1": 1121652,
+   "f=0.2,Z=0.25": 2804129,
+   "f=0.2,Z=0.5": 5608259,
+   "f=0.35,Z=0.1": 1962890,
+   "f=0.35,Z=0.25": 4907226,
+   "f=0.35,Z=0.5": 9814452,
+   "f=0.5,Z=0.1": 2804129,
+   "f=0.5,Z=0.25": 7010323,
+   "f=0.5,Z=0.5": 14020646
+  },
+  "annual_waste_usd_no_Z": {
+   "f=0.2": 379407000,
+   "f=0.35": 663962250,
+   "f=0.5": 948517500
+  }
+ }
+}

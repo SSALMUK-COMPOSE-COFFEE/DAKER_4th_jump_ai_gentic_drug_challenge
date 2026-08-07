@@ -1,0 +1,270 @@
+{
+ "_meta": {
+  "n_targets": 50,
+  "llm_calls": 50,
+  "measures": "프로토콜 본문 없이 NCT ID 만으로 검증 가능한 근거를 만드는가",
+  "verdict": "블라인드 주장 성립 — 모델은 재료 없이 검증 가능한 근거를 만들지 못했다."
+ },
+ "n_generated": 39,
+ "n_passed": 0,
+ "n_precedent_citations": 39,
+ "n_precedent_verified": 0,
+ "leakage_rate": 0.0,
+ "reject_reasons": {
+  "전례 NCT ID 가 코퍼스에 없음 (환각)": 30,
+  "수치가 T1 출력과 불일치 (환각)": 39,
+  "전례 인용문이 원문과 불일치 (환각)": 9
+ },
+ "per_target": [
+  {
+   "nct_id": "NCT04524689",
+   "generated": 1,
+   "passed": 0
+  },
+  {
+   "nct_id": "NCT01342770",
+   "generated": 1,
+   "passed": 0
+  },
+  {
+   "nct_id": "NCT02564380",
+   "generated": 1,
+   "passed": 0
+  },
+  {
+   "nct_id": "NCT01268059",
+   "generated": 1,
+   "passed": 0
+  },
+  {
+   "nct_id": "NCT03805841",
+   "generated": 1,
+   "passed": 0
+  },
+  {
+   "nct_id": "NCT02485652",
+   "generated": 0,
+   "passed": 0
+  },
+  {
+   "nct_id": "NCT01511081",
+   "generated": 1,
+   "passed": 0
+  },
+  {
+   "nct_id": "NCT02412371",
+   "generated": 0,
+   "passed": 0
+  },
+  {
+   "nct_id": "NCT04418648",
+   "generated": 1,
+   "passed": 0
+  },
+  {
+   "nct_id": "NCT02117024",
+   "generated": 1,
+   "passed": 0
+  },
+  {
+   "nct_id": "NCT04099836",
+   "generated": 1,
+   "passed": 0
+  },
+  {
+   "nct_id": "NCT01664663",
+   "generated": 1,
+   "passed": 0
+  },
+  {
+   "nct_id": "NCT03430063",
+   "generated": 0,
+   "passed": 0
+  },
+  {
+   "nct_id": "NCT03091491",
+   "generated": 1,
+   "passed": 0
+  },
+  {
+   "nct_id": "NCT01577212",
+   "generated": 0,
+   "passed": 0
+  },
+  {
+   "nct_id": "NCT02469701",
+   "generated": 1,
+   "passed": 0
+  },
+  {
+   "nct_id": "NCT01313663",
+   "generated": 1,
+   "passed": 0
+  },
+  {
+   "nct_id": "NCT02132598",
+   "generated": 1,
+   "passed": 0
+  },
+  {
+   "nct_id": "NCT03337698",
+   "generated": 1,
+   "passed": 0
+  },
+  {
+   "nct_id": "NCT01108666",
+   "generated": 1,
+   "passed": 0
+  },
+  {
+   "nct_id": "NCT02985203",
+   "generated": 1,
+   "passed": 0
+  },
+  {
+   "nct_id": "NCT02095782",
+   "generated": 0,
+   "passed": 0
+  },
+  {
+   "nct_id": "NCT01356368",
+   "generated": 0,
+   "passed": 0
+  },
+  {
+   "nct_id": "NCT02630186",
+   "generated": 1,
+   "passed": 0
+  },
+  {
+   "nct_id": "NCT04364048",
+   "generated": 1,
+   "passed": 0
+  },
+  {
+   "nct_id": "NCT04163432",
+   "generated": 0,
+   "passed": 0
+  },
+  {
+   "nct_id": "NCT02443337",
+   "generated": 0,
+   "passed": 0
+  },
+  {
+   "nct_id": "NCT03302247",
+   "generated": 1,
+   "passed": 0
+  },
+  {
+   "nct_id": "NCT03904108",
+   "generated": 1,
+   "passed": 0
+  },
+  {
+   "nct_id": "NCT02109016",
+   "generated": 1,
+   "passed": 0
+  },
+  {
+   "nct_id": "NCT03041181",
+   "generated": 1,
+   "passed": 0
+  },
+  {
+   "nct_id": "NCT03361228",
+   "generated": 1,
+   "passed": 0
+  },
+  {
+   "nct_id": "NCT00976677",
+   "generated": 1,
+   "passed": 0
+  },
+  {
+   "nct_id": "NCT02584634",
+   "generated": 1,
+   "passed": 0
+  },
+  {
+   "nct_id": "NCT03445000",
+   "generated": 1,
+   "passed": 0
+  },
+  {
+   "nct_id": "NCT03802058",
+   "generated": 1,
+   "passed": 0
+  },
+  {
+   "nct_id": "NCT01284348",
+   "generated": 1,
+   "passed": 0
+  },
+  {
+   "nct_id": "NCT04394624",
+   "generated": 1,
+   "passed": 0
+  },
+  {
+   "nct_id": "NCT01646125",
+   "generated": 0,
+   "passed": 0
+  },
+  {
+   "nct_id": "NCT03419559",
+   "generated": 1,
+   "passed": 0
+  },
+  {
+   "nct_id": "NCT02661100",
+   "generated": 1,
+   "passed": 0
+  },
+  {
+   "nct_id": "NCT02947113",
+   "generated": 1,
+   "passed": 0
+  },
+  {
+   "nct_id": "NCT02662634",
+   "generated": 1,
+   "passed": 0
+  },
+  {
+   "nct_id": "NCT03042013",
+   "generated": 1,
+   "passed": 0
+  },
+  {
+   "nct_id": "NCT02607423",
+   "generated": 1,
+   "passed": 0
+  },
+  {
+   "nct_id": "NCT03361319",
+   "generated": 1,
+   "passed": 0
+  },
+  {
+   "nct_id": "NCT03121417",
+   "generated": 0,
+   "passed": 0
+  },
+  {
+   "nct_id": "NCT03370159",
+   "generated": 0,
+   "passed": 0
+  },
+  {
+   "nct_id": "NCT02735850",
+   "generated": 1,
+   "passed": 0
+  },
+  {
+   "nct_id": "NCT02623595",
+   "generated": 1,
+   "passed": 0
+  }
+ ]
+}
